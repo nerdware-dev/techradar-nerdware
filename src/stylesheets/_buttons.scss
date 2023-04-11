@@ -23,11 +23,12 @@
     button {
       border: none;
       font-size: 20px;
-      color: $white;
+      color: $nerdwarewhite;
       width: 220px;
       height: 48px;
       margin: 0 15px 32px;
       cursor: pointer;
+      font-weight: bold;
 
       @include media-query-medium {
         margin: 0 15px;
@@ -44,14 +45,17 @@
     }
 
     &__wave-btn {
-      background-color: $wave;
+      background-color: $nerdwaregrey;
+      &:hover {
+        background-color: $nerdwaregreen;
+      }
     }
 
     &__flamingo-btn {
-      background-color: $flamingo-s40;
+      background-color: $nerdwaregrey;
 
       &:hover {
-        background-color: $link-hover;
+        background-color: $nerdwaregreen;
       }
     }
   }

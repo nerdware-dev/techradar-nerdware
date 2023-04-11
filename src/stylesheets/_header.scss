@@ -3,6 +3,7 @@
 
 header {
   text-align: center;
+  position:static;
 }
 
 .radar-title,
@@ -16,7 +17,7 @@ header {
 }
 
 .radar-title {
-  background-color: $grey-light;
+  background-color: $nerdwaregrey;
   padding: 30px 0;
 
   display: table;
@@ -171,7 +172,7 @@ header {
   }
 
   .search-radar {
-    border: 1px solid #aaa;
+    border: 1px solid $nerdwaregrey;
     background-color: inherit;
     background-image: url('/images/search-logo-2x.svg');
     background-repeat: no-repeat;
@@ -208,17 +209,18 @@ header {
 
 @if $UIRefresh2022 {
   header {
-    height: $headerHeight;
+    height: 200px;
     width: 100%;
     display: flex;
     align-items: center;
+    background-color: $nerdwaregrey;
 
     div {
       display: flex;
       flex-direction: row;
 
-      margin: auto;
-      width: 90%;
+      margin-left: 1.5px;
+      width: 100%;
 
       @include layout-margin(1, $screen-small);
       @include layout-margin(1, $screen-medium);
@@ -231,6 +233,7 @@ header {
         margin-right: 5px;
         font-family: $baseFontFamily;
         font-weight: 630;
+
       }
 
       a {
@@ -238,9 +241,10 @@ header {
         border-bottom: none;
 
         img {
-          height: 20px;
+          height: 150px;
           width: auto;
           margin-top: 1.5px;
+          float: left;
         }
       }
     }
