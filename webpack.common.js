@@ -2,7 +2,7 @@
 
 const webpack = require('webpack')
 const path = require('path')
-const buildPath = path.resolve(__dirname, 'dist')
+const buildPath = path.resolve(__dirname, 'docs')
 const args = require('yargs').argv
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
