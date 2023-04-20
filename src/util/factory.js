@@ -336,7 +336,7 @@ const Factory = function () {
     const queryParams = queryString ? QueryParams(queryString[0]) : {}
 
     //const paramId = featureToggles.UIRefresh2022 ? queryParams.documentId : queryParams.sheetId
-    const paramId = 'https://raw.githubusercontent.com/abendheimer/Techradar_Nerdware/master/data/tech-radar.json'
+    const paramId = 'https://raw.githubusercontent.com/nerdware-dev/techradar_nerdware/master/data/tech-radar.json?token=GHSAT0AAAAAACA7HJIRZDKTBFUXJJYE6WAMZCBJ4UA'
     if (paramId && paramId.endsWith('.csv')) {
       sheet = CSVDocument(paramId)
       sheet.init().build()
