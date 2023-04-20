@@ -2,12 +2,13 @@
 @import 'fonts';
 
 #footer {
-  text-align: center;
   clear: both;
 
   .footer-content {
     width: 50%;
     margin: 0 auto;
+    text-align: center;
+
 
     p {
       padding-top: 60px;
@@ -21,7 +22,10 @@
 @if $UIRefresh2022 {
   footer {
     margin-bottom: 40px;
+    text-align: center;
 
+
+    
     p {
       @include eight-column-layout-margin;
       font-family: $baseFontFamily;
@@ -29,6 +33,7 @@
       margin-top: 80px;
       text-align: center;
       font-size: 16px !important;
+      
 
       @include media-query-large {
         font-size: 18px !important;
