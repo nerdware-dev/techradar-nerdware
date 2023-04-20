@@ -45,7 +45,8 @@ Da Github Pages Probleme mit einigen Pfadangaben hat, muss man an einigen Stelle
 
 Im Dokument ./Docs/index.html in folgenden Zeilen:
 
-Zeile 12:  href="./main.8b265bb19ea3a3919f40.css" rel="stylesheet" <br>
-Zeile 18: img src="./images/logo-nw.png" alt="Nerdware logo" <br>
-Zeile 69: script defer src="./main.e67352f84492fd84252e.js"
+Zeile 6:    link href="./images/favicon.ico" rel="icon"
+Zeile 12:   href="./main.8b265bb19ea3a3919f40.css" rel="stylesheet" <br>
+Zeile 18:   img src="./images/logo-nw.png" alt="Nerdware logo" <br>
+Zeile 69:   script defer src="./main.e67352f84492fd84252e.js"
 
