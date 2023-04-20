@@ -451,7 +451,7 @@ module.exports = __webpack_require__.p + "images/logo-nw.png";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + ".images/new.svg";
+module.exports = __webpack_require__.p + "./images/new.svg";
 
 /***/ }),
 
@@ -462,7 +462,7 @@ module.exports = __webpack_require__.p + ".images/new.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + ".images/no-change.svg";
+module.exports = __webpack_require__.p + "./images/no-change.svg";
 
 /***/ }),
 
