@@ -6,9 +6,9 @@ Beim Hinzufügen von neuen Punkten muss der Aufbau genau eingehalten werden, da 
 Folgende Werte müssen ausgefüllt werden:
 
 
-**_"name":_** Hier kann der Name der Technologie angegeben werden <br>
+**_"name":_** Hier kann der Name der Technologie angegeben werden. <br>
 
-**_"ring":_** Insgesamt gibt es vier verschiedene Ringe angeben, in denen die Technologie stehen soll <br>
+**_"ring":_** Insgesamt gibt es vier verschiedene Ringe angeben, in denen die Technologie eingeordnet werden soll. <br>
         1. adopt <br>
         2. trial <br>
         3. assess <br>
@@ -45,7 +45,7 @@ Da Github Pages Probleme mit einigen Pfadangaben hat, muss man an einigen Stelle
 
 Im Dokument ./Docs/index.html in folgenden Zeilen:
 
-Zeile 12: '<link href="./main.8b265bb19ea3a3919f40.css" rel="stylesheet"></head> '
-Zeile 18: <img src="./images/logo-nw.png" alt="Nerdware logo" /></a>
-Zeile 69: <script defer src="./main.e67352f84492fd84252e.js"></script></body>
+Zeile 12:  href="./main.8b265bb19ea3a3919f40.css" rel="stylesheet"
+Zeile 18: img src="./images/logo-nw.png" alt="Nerdware logo"
+Zeile 69: script defer src="./main.e67352f84492fd84252e.js"
 
