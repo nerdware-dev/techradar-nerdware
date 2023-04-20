@@ -13,7 +13,7 @@
       padding-top: 60px;
       font-size: $baseFont;
       font-weight: $baseWeight;
-      text-align: left;
+      text-align: center;
     }
   }
 }
@@ -27,6 +27,7 @@
       font-family: $baseFontFamily;
       font-weight: normal;
       margin-top: 80px;
+      text-align: center;
       font-size: 16px !important;
 
       @include media-query-large {
