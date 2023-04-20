@@ -7,17 +7,21 @@ Folgende Werte müssen ausgefüllt werden:
 
 
 **_"name":_** Hier kann der Name der Technologie angegeben werden <br>
+
 **_"ring":_** Insgesamt gibt es vier verschiedene Ringe angeben, in denen die Technologie stehen soll <br>
         1. adopt <br>
         2. trial <br>
         3. assess <br>
         4. hold <br>
+
 **_"quadrant":_** Im Feld Quadrant kann man die Technologie nocheinmal in verschiedene Kategorieren unterglieden. Es gibt vier zur Auswahl. <br>
         1. techniques <br>
         2. platforms <br>
         3. tools <br>
         4.languages & frameworks <br>
+
 **_"isNew":_** Es kann "TRUE" oder "FALSE" angegeben werden. Sollte man "TRUE" angeben, wird der Eintrag mit einem Ring gekennzeichnet. <br>
+
 **_"description":_** Hier kann man zu den jeweiligen Technologien eine Beschreibung hinzufügen. Durch das Einfügen von "<a href>" kann man hier einen Link miteinfügen. <br>
 
 ## Beispieleintrag
