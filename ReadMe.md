@@ -18,7 +18,7 @@ Folgende Werte müssen ausgefüllt werden:
         1. techniques <br>
         2. platforms <br>
         3. tools <br>
-        4.languages & frameworks <br>
+        4. languages & frameworks <br>
 
 **_"isNew":_** Es kann "TRUE" oder "FALSE" angegeben werden. Sollte man "TRUE" angeben, wird der Eintrag mit einem Ring gekennzeichnet. <br>
 
@@ -35,14 +35,14 @@ Folgende Werte müssen ausgefüllt werden:
 
 ## Anpassung des Quellcodes
 
-Ändert man etwas am Quellcode muss man, damit das Techradar auf GitHub Pages gehostet werden kann, eine statische Website generieren.
+Ändert man etwas am Quellcode muss man erneute statische Website generieren. 
 Das funktioniert folgendermaßen:
 
-Erst npm i und danach npm run build:dev ausführen. Dadurch wird der Ordner "Docs" aktualisiert.
+1. **_npm i_** ausführen
+2. **_npm run build:dev_** ausführen. Dadurch wird der Ordner "Docs" aktualisiert.
 !! Es wird die dev Version verwendet, da hier bereits das neue Design von Thoughtworks für das Radar verwendet wird !!
 
 Da Github Pages Probleme mit den Pfadangaben hat, muss man an einigen Stellen noch einen Punkt zum Pfad hinzufügen.
-
 Im Dokument ./Docs/index.html in folgenden Zeilen:
 
 Zeile 6:    link href="./images/favicon.ico" rel="icon" <br> 
