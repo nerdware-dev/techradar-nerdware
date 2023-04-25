@@ -39,13 +39,13 @@ Folgende Werte müssen ausgefüllt werden:
 Das funktioniert folgendermaßen:
 
 Erst npm i und danach npm run build:dev ausführen. Dadurch wird der Ordner "Docs" aktualisiert.
-!! Es wird die dev Version verwendet, da hier bereits das neue Design verwendet wurde !!
+!! Es wird die dev Version verwendet, da hier bereits das neue Design von Thoughtworks für das Radar verwendet wird !!
 
-Da Github Pages Probleme mit einigen Pfadangaben hat, muss man an einigen Stellen noch einen Punkt zum Pfad hinzufügen.
+Da Github Pages Probleme mit den Pfadangaben hat, muss man an einigen Stellen noch einen Punkt zum Pfad hinzufügen.
 
 Im Dokument ./Docs/index.html in folgenden Zeilen:
 
-Zeile 6:    link href="./images/favicon.ico" rel="icon"
+Zeile 6:    link href="./images/favicon.ico" rel="icon" <br> 
 Zeile 12:   href="./main.8b265bb19ea3a3919f40.css" rel="stylesheet" <br>
 Zeile 18:   img src="./images/logo-nw.png" alt="Nerdware logo" <br>
 Zeile 69:   script defer src="./main.e67352f84492fd84252e.js"
