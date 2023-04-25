@@ -1,18 +1,18 @@
 function renderButtons(radarFooter) {
-  const buttonsRow = radarFooter.append('div').classed('buttons', true)
+  // const buttonsRow = radarFooter.append('div').classed('buttons', true)
 
-  buttonsRow
-    .append('button')
-    .classed('buttons__wave-btn', true)
-    .text('Print this Radar')
-    .on('click', window.print.bind(window))
+  // buttonsRow
+  //   .append('button')
+  //   .classed('buttons__wave-btn', true)
+  //   .text('Print this Radar')
+  //   .on('click', window.print.bind(window))
 
-  buttonsRow
-    .append('button')
-    .classed('buttons__flamingo-btn', true)
-    .append('a')
-    .attr('href', window.location.href.substring(0, window.location.href.indexOf(window.location.search)))
-    .text('Generate new Radar')
+  // buttonsRow
+  //   .append('button')
+  //   .classed('buttons__flamingo-btn', true)
+  //   .append('a')
+  //   .attr('href', window.location.href.substring(0, window.location.href.indexOf(window.location.search)))
+  //   .text('Generate new Radar')
 }
 
 module.exports = {

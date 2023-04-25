@@ -2,12 +2,11 @@
 @import 'fonts';
 
 #footer {
-  clear: both;
+  clear: both; 
 
   .footer-content {
     width: 50%;
     margin: 0 auto;
-    text-align: center;
 
 
     p {
@@ -25,19 +24,24 @@
     text-align: center;
 
 
-    
+
+
     p {
+
       @include eight-column-layout-margin;
       font-family: $baseFontFamily;
       font-weight: normal;
       margin-top: 80px;
       text-align: center;
       font-size: 16px !important;
-      
+
 
       @include media-query-large {
-        font-size: 18px !important;
+        font-size: 19px !important;
+        text-align: center;
+
       }
     }
   }
 }
+
