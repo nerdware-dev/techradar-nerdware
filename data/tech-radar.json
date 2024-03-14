@@ -1,21 +1,21 @@
 [
   {
     "name": "Babel",
-    "ring": "adopt",
+    "ring": "Developing",
     "quadrant": "tools",
     "isNew": "TRUE",
     "description": "This is the from Andreas again. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
   },
   {
     "name": "Docker",
-    "ring": "hold",
+    "ring": "High Competency",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": "This is the from Andreas again. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
   },
   {
     "name": "Kubernetes",
-    "ring": "Asses",
+    "ring": "High Competency",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": "This is the from Andreas again. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
