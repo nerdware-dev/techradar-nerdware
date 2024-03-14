@@ -1166,7 +1166,7 @@ var getQuadrants = function getQuadrants() {
   return JSON.parse( false || null) || ['Techniques', 'Platforms', 'Tools', 'Languages & Frameworks'];
 };
 var getRings = function getRings() {
-  return JSON.parse( false || null) || ['Low Experience', 'Developing', 'High Competency', 'No Longer Used'];
+  return JSON.parse( false || null) || ['Low', 'Dev', 'High', 'Out'];
 };
 var isBetween = function isBetween(number, startNumber, endNumber) {
   return startNumber <= number && number <= endNumber;
@@ -82431,4 +82431,4 @@ Factory().build();
 
 /******/ })()
 ;
-//# sourceMappingURL=main.00975fa26e19c3f3e1ae.js.map
+//# sourceMappingURL=main.3e2240e80894c1a35658.js.map
