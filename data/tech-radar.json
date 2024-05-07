@@ -60,7 +60,7 @@
     "ring": "dev",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": "Prisma ist ein Open-Source-basiertes Datenbank-Toolkit. Es besteht aus drei Haupttools: \nPrisma Client: Ein automatisch generierter und typensicherer Query Builder für Node.js und TypeScript. \nPrisma Migrate: Ein deklaratives Modellierungs- und Migrationssystem für Daten.\n Prisma Studio: Eine GUI zum Anzeigen und Bearbeiten von Daten in Ihrer Datenbank."
+    "description": "Prisma ist ein Open-Source-basiertes Datenbank-Toolkit. Es besteht aus drei Haupttools: Prisma Client: Ein automatisch generierter und typensicherer Query Builder für Node.js und TypeScript. Prisma Migrate: Ein deklaratives Modellierungs- und Migrationssystem für Daten. Prisma Studio: Eine GUI zum Anzeigen und Bearbeiten von Daten in Ihrer Datenbank."
   },
   {
     "name": "Dynatrace",
@@ -109,7 +109,7 @@
     "ring": "Dev",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": "Grafana ist eine Open-Source-Software, mit der sich plattformübergreifend Metriken und Daten aus Anwendungen analysieren lassen. "
+    "description": "Grafana ist eine Open-Source-Software, mit der sich plattformübergreifend Metriken und Daten aus Anwendungen analysieren lassen."
   },
   {
     "name": "Maven",
