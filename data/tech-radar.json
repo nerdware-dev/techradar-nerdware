@@ -14,11 +14,151 @@
     "description": "Amazon Web Services, auch als AWS bekannt, ist eine vom gleichnamigen Unternehmen angebotene Plattform für Cloud-Computing."
   },
   {
+    "name": "AWS Lambda",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "AWS Lambda ist ein Rechenservice, der Ihren Code als Reaktion auf Ereignisse ausführt und die Rechenressourcen automatisch verwaltet. Dies ist der schnellste Weg, eine Idee in eine moderne, Serverless-Produktionsanwendung umzusetzen."
+  },
+  {
+    "name": "AWS API Gateway",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Amazon API Gateway ist ein vollständig verwalteter Service, der das Erstellen, Veröffentlichen, Warten, Überwachen und Sichern von APIs für Entwickler in jeder beliebigen Größenordnung vereinfacht. APIs fungieren als „Vordertür“ für Anwendungen, die über Ihre Backend-Services auf Daten, Geschäftslogik oder Funktionalitäten zugreifen. Mit API Gateway können Sie RESTful-APIs und WebSocket-APIs erstellen, die Anwendungen mit bidirektionaler Kommunikation in Echtzeit ermöglichen. API Gateway unterstützt containerisierte und serverlose Workloads sowie Webanwendungen."
+  },
+  {
+    "name": "AWS VPC",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Mit Amazon Virtual Private Cloud (Amazon VPC) können Sie AWS Ressourcen in einem von Ihnen definierten logisch isolierten virtuellen Netzwerk starten. Dieses virtuelle Netzwerk entspricht weitgehend einem herkömmlichen Netzwerk, wie Sie es in Ihrem Rechenzentrum betreiben, kann jedoch die Vorzüge der skalierbaren Infrastruktur von AWS nutzen."
+  },
+  {
+    "name": "AWS Step Functions",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "AWS Step Functions ist ein visueller Workflow-Service, der Entwicklern hilft, AWS-Services zu nutzen, um verteilte Anwendungen zu entwickeln, Prozesse zu automatisieren, Microservices zu orchestrieren und Daten- und Machine Learning (ML)-Pipelines zu erstellen."
+  },
+  {
+    "name": "AWS ECS",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Amazon Elastic Container Service (Amazon ECS) ist ein vollständig verwalteter Container-Orchestrierungsservice, mit dem Sie containerisierte Anwendungen einfach bereitstellen, verwalten und skalieren können. Als vollständig verwalteter Service verfügt Amazon ECS über eine integrierte AWS-Konfiguration und bewährte Methoden für den Betrieb. Er ist sowohl in AWS als auch in Tools von Drittanbietern integriert, wie z. B. Amazon Elastic Container Registry und Docker. Diese Integration erleichtert es Teams, sich auf die Erstellung der Anwendungen zu konzentrieren, nicht auf die Umgebung. Sie können Ihre Container-Workloads über AWS-Regionen in der Cloud und On-Premises ausführen und skalieren, ohne die Komplexität der Verwaltung einer Steuerebene."
+  },
+  {
+    "name": "AWS S3",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Amazon Simple Storage Service (Amazon S3) ist ein Objektspeicherservice, der branchenführende Skalierbarkeit, Datenverfügbarkeit, Sicherheit und Leistung bietet. Kunden aller Größen und Branchen können Amazon S3 für die Speicherung und den Schutz beliebiger Datenmengen für eine Reihe von Anwendungsfällen verwenden, wie Data Lakes, Websites, mobile Anwendungen, Backup und Wiederherstellung, Archivierung, Unternehmensanwendungen, IoT-Geräte und Big-Data-Analysen. Amazon S3 bietet Verwaltungsfunktionen, mit denen Sie den Zugriff auf Ihre Daten optimieren, organisieren und konfigurieren können, um Ihre spezifischen geschäftlichen, organisatorischen und Compliance-Anforderungen zu erfüllen."
+  },
+  {
+    "name": "AWS Aurora",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Amazon Aurora (Aurora) ist eine vollständig verwaltete, mit MySQL und PostgreSQL kompatible relationale Datenbank-Engine. Sie wissen bereits, wie MySQL und PostgreSQL die Geschwindigkeit und Zuverlässigkeit von kommerziellen High-End-Datenbanken mit der Einfachheit und Kosteneffizienz von Open-Source-Datenbanken verbinden. Der Code, die Tools und Anwendungen, die Sie heute mit Ihren bestehenden MySQL- und PostgreSQL-Datenbanken verwenden, können auch mit Aurora verwendet werden. Bei manchen Workloads kann Aurora einen bis zu fünfmal höheren Durchsatz als MySQL und einen bis zu dreimal höheren Durchsatz als PostgreSQL liefern, ohne dass die meisten Ihrer bestehenden Anwendungen geändert werden müssen."
+  },
+  {
+    "name": "Amazon ECR",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Amazon Elastic Container Registry (Amazon ECR) ist ein AWS verwalteter Container-Image-Registry-Service, der sicher, skalierbar und zuverlässig ist. Amazon ECR unterstützt private Container-Image-Repositories mit ressourcenbasierten Berechtigungen unter Verwendung von AWS IAM. So können bestimmte Benutzer oder Amazon EC2-Instanzen auf Ihre Container-Repositories und Images zugreifen. Sie können Ihre bevorzugte CLI verwenden, um Docker-Images, Open Container Initiative (OCI)-Images und OCI-kompatible Artefakte zu schieben, zu ziehen und zu verwalten."
+  },
+  {
+    "name": "Amazon DynamoDB",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Amazon DynamoDB ist ein vollständig verwalteter NoSQL-Datenbank-Service, der schnelle und planbare Leistung mit nahtloser Skalierbarkeit bereitstellt. Mit DynamoDB können Sie den Verwaltungsaufwand für den Betrieb und die Skalierung verteilter Datenbanken verringern, sodass Sie sich nicht um Hardwarebereitstellung, Einrichtung und Konfiguration, Replikation, Software-Patching oder Cluster-Skalierung kümmern müssen. DynamoDB bietet auch Verschlüsselung im Ruhezustand, wodurch der Betriebsaufwand und die Komplexität, die mit dem Schutz sensibler Daten verbunden sind, eliminiert werden."
+  },
+  {
+    "name": "AWS EC2",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Amazon Elastic Compute Cloud (Amazon EC2) bietet bedarfsbasiert skalierbare Rechenkapazität in der Amazon Web Services Cloud (AWS Cloud). Mit Amazon EC2 reduzieren Sie die Hardwarekosten, so dass Sie Anwendungen schneller entwickeln und bereitstellen können. Mit Amazon EC2 können Sie so viele oder so wenige virtuelle Server starten, wie Sie benötigen, die Sicherheit und das Netzwerk konfigurieren und den Speicher verwalten. Sie können Kapazität hinzufügen (skalieren), um rechenintensive Aufgaben wie monatliche oder jährliche Prozesse oder Spitzen im Website-Datenverkehr zu bewältigen. Wenn die Nutzung abnimmt, können Sie die Kapazität wieder reduzieren (herunterskalieren)."
+  },
+  {
+    "name": "Amazon SNS",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Amazon Simple Notification Service (Amazon SNS) ist ein verwalteter Service, der die Nachrichtenzustellung von Publishern an Abonnenten (auch bekannt alsProduzentenundKonsumenten) umfasst. Herausgeber kommunizieren asynchron mit Abonnenten, indem sie eine Nachricht erstellen und an ein Thema senden, bei dem es sich um einen logischen Zugriffspunkt und Kommunikationskanal handelt. Clients können das SNS-Thema abonnieren und veröffentlichte Nachrichten mit einem unterstützten Endpunkttyp wie Amazon Data Firehose, Amazon SQS, AWS Lambda, HTTP, E-Mail, mobile Push-Benachrichtigungen und mobile Textnachrichten (SMS) empfangen.    "
+  },
+  {
+    "name": "Amazon SQS",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Amazon Simple Queue Service (Amazon SQS) bietet eine sichere, dauerhafte und verfügbare gehostete Warteschlange, die es Ihnen ermöglicht, verteilte Softwaresysteme und -komponenten zu integrieren und zu entkoppeln. Amazon SQS bietet gängige Konstrukte, wie z. B. Warteschlangen für unzustellbare Nachrichten und Kostenzuordnungs-Tags. Es bietet eine generische Web-Services-API, die über alle Programmiersprachen zugänglich ist, die vom AWS SDK unterstützt werden."
+  },
+  {
     "name": "Azure",
     "ring": "High",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "description": "Die Azure-Cloudplattform besteht aus mehr als 200 Produkten und Clouddiensten und wurde dafür konzipiert, Sie bei der Entwicklung neuer Lösungen zu unterstützen. So können Sie aktuelle Herausforderungen bewältigen und den Weg für die Zukunft ebnen. Sie können Anwendungen in mehreren Clouds, lokal oder am Edge entwickeln, ausführen und verwalten."
+  },
+  {
+    "name": "Azure App Service",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Azure App Service ist ein HTTP-basierter Dienst zum Hosten von Webanwendungen, REST-APIs und mobilen Back-Ends. Sie können in Ihrer bevorzugten Sprache entwickeln, z. B. .NET, .NET Core, Java, Node.js, PHP und Python. Anwendungen können mühelos in Windows- und Linux-basierten Umgebungen ausgeführt und skaliert werden."
+  },
+  {
+    "name": "Azure Storage Account",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Ein Azure Storage-Konto enthält all Ihre Azure Storage-Datenobjekte: Blobs, Dateien, Warteschlangen und Tabellen. Das Speicherkonto stellt einen eindeutigen Namespace für Ihre Azure Storage-Daten bereit, auf den von jedem Ort der Welt aus über HTTP oder HTTPS zugegriffen werden kann. Daten in Ihrem Speicherkonto sind dauerhaft und hochverfügbar, sicher und extrem skalierbar."
+  },
+  {
+    "name": "Azure Service Bus",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Bei Azure Service Bus handelt es sich um einen vollständig verwalteten Nachrichtenbroker für Unternehmen mit Nachrichtenwarteschlangen und Publish/Subscribe-Themen. Service Bus wird verwendet, um Anwendungen und Dienste voneinander zu entkoppeln und so die folgenden Vorteile zu erzielen:\n - Übergreifender Lastenausgleich für konkurrierende Worker\n - Sicherheit beim Routing und der  Übertragung von Daten sowie Kontrolle über Dienst- und Anwendungsgrenzen hinweg \n - Koordinierung von Transaktionsausgaben mit hohen Anforderungen an die Zuverlässigkeit"
+  },
+  {
+    "name": "Azure Data Factory",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Azure Data Factory ist ein spezieller verwalteter Clouddienst für diese komplexen Hybridprojekte mit ETL (Extrahieren, Transformieren und Laden), ELT (Extrahieren, Laden und Transformieren) und Datenintegration."
+  },
+  {
+    "name": "Azure Functions",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Azure Functions ist eine serverlose Lösung, die es Ihnen ermöglicht, weniger Code zu schreiben, weniger Infrastruktur zu verwalten und Kosten zu sparen. Da durch die Cloudinfrastruktur alle aktuellen Ressourcen bereitgestellt werden, die zum Ausführen Ihrer Anwendungen benötigt werden, müssen Sie sich nicht mit der Bereitstellung und Wartung von Servern befassen."
+  },
+  {
+    "name": "Azure Container Instances",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Azure Container Instances unterstützt die Planung von Gruppen mit mehreren Containern mit gemeinsamem Hostcomputer, lokalem Netzwerk, Speicher und Lebenszyklus. Dadurch können Sie Ihren Hauptanwendungscontainer mit anderen unterstützenden Rollencontainern (beispielsweise Protokollierungs-Sidecars) kombinieren."
+  },
+  {
+    "name": "Azure Service Bus",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Bei Azure Service Bus handelt es sich um einen vollständig verwalteten Nachrichtenbroker für Unternehmen mit Nachrichtenwarteschlangen und Publish/Subscribe-Themen. Service Bus wird verwendet, um Anwendungen und Dienste voneinander zu entkoppeln und so die folgenden Vorteile zu erzielen:\n - Übergreifender Lastenausgleich für konkurrierende Worker\n - Sicherheit beim Routing und der  Übertragung von Daten sowie Kontrolle über Dienst- und Anwendungsgrenzen hinweg \n - Koordinierung von Transaktionsausgaben mit hohen Anforderungen an die Zuverlässigkeit"
+  },
+  {
+    "name": "Azure App Insights",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Mit Application Insights liefert Microsoft einen Dienst zur Anwendungsüberwachung für Entwicklung und DevOps. Damit kann so gut wie alles erfasst werden – von Antwortzeiten und -raten über Fehler und Ausnahmen, Seitenaufrufe, Benutzer (-Sitzungen), Backend bis hin zu Desktop-Anwendungen."
   },
   {
     "name": "Docker",
@@ -60,7 +200,7 @@
     "ring": "Dev",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": "Prisma ist ein Open-Source-basiertes Datenbank-Toolkit. Es besteht aus drei Haupttools: Prisma Client: Ein automatisch generierter und typensicherer Query Builder für Node.js und TypeScript. Prisma Migrate: Ein deklaratives Modellierungs- und Migrationssystem für Daten. Prisma Studio: Eine GUI zum Anzeigen und Bearbeiten von Daten in Ihrer Datenbank."
+    "description": "Prisma ist ein Open-Source-basiertes Datenbank-Toolkit. Es besteht aus drei Haupttools: \nPrisma Client: Ein automatisch generierter und typensicherer Query Builder für Node.js und TypeScript. \nPrisma Migrate: Ein deklaratives Modellierungs- und Migrationssystem für Daten.\n Prisma Studio: Eine GUI zum Anzeigen und Bearbeiten von Daten in Ihrer Datenbank."
   },
   {
     "name": "Dynatrace",
@@ -109,7 +249,7 @@
     "ring": "Dev",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": "Grafana ist eine Open-Source-Software, mit der sich plattformübergreifend Metriken und Daten aus Anwendungen analysieren lassen."
+    "description": "Grafana ist eine Open-Source-Software, mit der sich plattformübergreifend Metriken und Daten aus Anwendungen analysieren lassen. "
   },
   {
     "name": "Maven",
@@ -145,5 +285,159 @@
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": "Ein NX-Monorepo ist eine weit verbreitete Architektur für moderne Webentwicklungsprojekte. Es bietet eine einfachere Wartbarkeit und Skalierbarkeit, indem es eine einheitliche Struktur und Werkzeuge für alle Projekte innerhalb des Monorepos bereitstellt."
+  },
+  {
+    "name": "Angular",
+    "ring": "High",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": "Angular ist die nächste Version des OpenSource Frameworks AngularJS. Die Code-Basis wurde komplett neu geschrieben und nutzt nun als Basis die Sprache TypeScript. Grundidee und Konzepte des Frameworks sind jedoch identisch geblieben was eine Migration oder sogar einen hybriden Einsatz der Versionen ermöglicht. Der Fokus des Projektes hat sich von der Entwicklung eines Frameworks auf die Entwicklung einer ganzen Plattform für WebAnwendungen erweitert. Aktuell arbeiten über 30 MitarbeiterInnen fest an dem Projekt und werden von hunderten Entwicklern aus der OpenSource-Community unterstützt. Durch die Einführung von Werkzeugen wie dem Kommandozeilenwerkzeug Angular-CLI können Projekte jetzt noch schneller erstellt und in Produktion überführt werden."
+  },
+  {
+    "name": "C#",
+    "ring": "High",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": "C# (Aussprache „C Sharp“) ist eine moderne, objektorientierte und typsichere Programmiersprache. C# ermöglicht Entwicklern das Erstellen zahlreicher sicherer und robuster Anwendungen, die in .NET ausgeführt werden. C# hat seine Wurzeln in der C-Sprachenfamilie und ist Programmierern, die mit C, C++, Java und JavaScript arbeiten, sofort vertraut."
+  },
+  {
+    "name": ".NET",
+    "ring": "High",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": "NET ist eine kostenlose, plattformübergreifende Open-Source-Entwicklerplattform für die Erstellung vieler verschiedener Arten von Anwendungen. Es kann Programme ausführen, die in mehreren Sprachen geschrieben wurden, wobei C# am beliebtesten ist. Es basiert auf einer leistungsstarken Runtime, die in der Produktion von vielen anspruchsvollen Apps verwendet wird."
+  },
+  {
+    "name": "Python",
+    "ring": "High",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": "Python ist eine universelle Programmiersprache, mit der sich Probleme und Aufgaben aus unterschiedlichsten Bereichen lösen lassen. Python setzt den Schwerpunkt auf Lesbarkeit und Einfachheit und verzichtet weitestgehend auf Klammern und das obligatorische Semikolon am Ende einer Zeile. Stattdessen ist penibel auf die korrekte Einrückung von Codezeilen und -blöcken zu achten."
+  },
+  {
+    "name": "Typescript",
+    "ring": "High",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": "TypeScript ist ein Superset von JavaScript, das JavaScript um optionale statische Typisierung und erweiterte Funktionen erweitert. Es wurde von Microsoft entwickelt und erstmals im Oktober 2012 veröffentlicht. Seit seiner Veröffentlichung im Jahr 2012 hat es sich in der Webentwicklergemeinschaft schnell durchgesetzt"
+  },
+  {
+    "name": "Go",
+    "ring": "Dev",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": "Go (auch Golang genannt - kurz für Go Language) ist eine Open-Source-Programmiersprache für allgemeine Zwecke. Go wurde von Google-Ingenieuren entwickelt, um zuverlässige und effiziente Software zu erstellen. Es ähnelt stark der Programmiersprache C, ist statisch typisiert und explizit."
+  },
+  {
+    "name": "Java",
+    "ring": "High",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": "ava ist eine Programmiersprache und Computing-Plattform, die 1995 von Sun Microsystems veröffentlicht wurde. Sie stellt mittlerweile eine Basis für den Großteil der digitalen Welt von heute bereit und dient als zuverlässige Plattform für viele Services und Anwendungen. Auch neue, innovative und zukunftsgerichtete Produkte und digitale Services basieren nach wie vor auf Java."
+  },
+  {
+    "name": "Spring",
+    "ring": "High",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": "Das Spring Framework (kurz Spring) ist ein quelloffenes Framework für die Java-Plattform, welches oft für Web-Anwendungen verwendet wird. Ziel des Spring Frameworks ist es, die Entwicklung mit Java/Java EE zu vereinfachen und gute Programmierpraktiken zu fördern.[3] Das Spring Framework bietet mit einem breiten Spektrum an Funktionalität eine ganzheitliche Lösung zur Entwicklung von Anwendungen und deren Geschäftslogiken. Dabei steht die Entkopplung der Applikationskomponenten im Vordergrund."
+  },
+  {
+    "name": "Springboot",
+    "ring": "High",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": "Java Spring Boot (Spring Boot) ist ein Tool, das die Entwicklung von Webanwendungen und Mikroservices mit Spring Framework durch drei Kernfunktionen schneller und einfacher macht.\n- Autokonfiguration\n- Ein „Opinionated-Konfigurationsansatz \n - Die Fähigkeit, eigenständige Anwendungen zu erstellen."
+  },
+  {
+    "name": "Bash Scripting",
+    "ring": "Dev",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": "Ein BASH-Skript besteht aus einer Textdatei, in der Kommandos aufgeführt sind. Ruft man nun die Textdatei als Programm auf, werden die Kommandos darin nacheinander abgearbeitet. Alles was wir in der Shell ausführen, kann in ein Skript geschrieben werden und umgekehrt kann auch das Skript in die Shell kopiert und so ausgeführt werden. Auf diese Weise können wir in der Übung ausprobieren, ob der geschriebene Code auch funktioniert."
+  },
+  {
+    "name": "Opentelemetry",
+    "ring": "Dev",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": "OpenTelemetry (OTel) ist ein Open-Source-Framework für Observability, mit dem Entwicklungsteams Telemetriedaten in einem einzigen, einheitlichen Format generieren, verarbeiten und übertragen können. Dieses Format wurde von der Cloud Native Computing Foundation (CNCF) entwickelt, um standardisierte Protokolle und Tools zum Erfassen und Weiterleiten von Metriken, Logs und Traces an Überwachungsplattformen bereitzustellen."
+  },
+  {
+    "name": "GraalVM",
+    "ring": "Dev",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": "GraalVM ist ein leistungsstarkes JDK, das Java- und JVM-basierte Anwendungen beschleunigt und das Erstellen und Ausführen von Cloud-nativen Java-Diensten vereinfacht. Der optimierte Compiler generiert schnelleren Code und verwendet weniger Compute-Ressourcen, sodass Microservices sofort gestartet werden können."
+  },
+  {
+    "name": "Serverless architecture",
+    "ring": "High",
+    "quadrant": "techniques",
+    "isNew": "FALSE",
+    "description": "Serverlose Architekturen sind Anwendungsdesigns, die Drittanbieter 'Backend as a Service' (BaaS)-Dienste integrieren und/oder benutzerdefinierten Code ausführen, der in verwalteten, ephemeren Containern auf einer 'Functions as a Service' (FaaS)-Plattform läuft. Durch die Verwendung dieser Konzepte sowie verwandter Ansätze wie Single-Page-Anwendungen beseitigen solche Architekturen weitgehend die Notwendigkeit für eine traditionelle, ständig aktive Serverkomponente. Serverlose Architekturen können erheblich von reduzierten Betriebskosten, Komplexität und Entwicklungszeiten profitieren, jedoch auf Kosten einer erhöhten Abhängigkeit von Anbieterabhängigkeiten und vergleichsweise unreifen unterstützenden Diensten."
+  },
+  {
+    "name": "CI/CD",
+    "ring": "High",
+    "quadrant": "techniques",
+    "isNew": "FALSE",
+    "description": "Ziel von CI/CD, kurz für Continuous Integration und Continuous Delivery/Deployment, ist die Optimierung und Beschleunigung des Softwareentwicklungs-Lifecycle. Continuous Integration (CI) bezieht sich auf die Praktik, Codeänderungen automatisch und regelmäßig in ein gemeinsames Quellcode-Repository zu integrieren. Continuous Delivery und/oder Continuous Deployment (CD) ist ein zweiteiliger Prozess, der die Integration, das Testen und die Bereitstellung der Codeänderungen umfasst. Continuous Delivery beinhaltet kein automatisches Produktiv-Deployment, während beim Continuous Deployment Update-Releases automatisch in die Produktivumgebung übergeben werden."
+  },
+  {
+    "name": "Microservices",
+    "ring": "High",
+    "quadrant": "techniques",
+    "isNew": "FALSE",
+    "description": "Microservices sind ein architekturbezogener und organisatorischer Ansatz in der Softwareentwicklung, bei dem Software aus kleinen unabhängigen Services besteht, die über sorgfältig definierte APIs kommunizieren. Diese Services gehören kleinen, eigenständigen Teams. Microservices-Architekturen vereinfachen die Skalierbarkeit und verringern die Entwicklungszeit von Anwendungen, ermöglichen Innovationen und verkürzen die Markteinführungszeit für neue Funktionen."
+  },
+  {
+    "name": "Message Queues",
+    "ring": "High",
+    "quadrant": "techniques",
+    "isNew": "FALSE",
+    "description": "Eine Message Queues (Nachrichtenwarteschlange) ist eine Art der Kommunikation zwischen Services, die in Serverless-Architekturen und Architekturen mit Mikroservices verwendet wird. Die Nachrichten werden in der Warteschlange gespeichert, bis sie verarbeitet und gelöscht werden. Jede Nachricht wird von einem einzelnen Nutzer immer nur einmal verarbeitet. Mithilfe von Message Queues können umfangreiche Verarbeitungsprozesse entkoppelt, Aufgaben gepuffert oder im Stapelbetrieb verarbeitet und hohe Workloads entschärft werden."
+  },
+  {
+    "name": "Design Systems",
+    "ring": "High",
+    "quadrant": "techniques",
+    "isNew": "FALSE",
+    "description": "Mit der zunehmenden Dynamik und Komplexität der Anwendungsentwicklung wird es zu einer Herausforderung, barrierefreie und benutzerfreundliche Produkte mit konsistentem Stil zu liefern. Dies gilt insbesondere für größere Organisationen mit mehreren Teams, die an verschiedenen Produkten arbeiten. Design-Systeme definieren eine Sammlung von Design-Mustern, Komponentenbibliotheken und bewährten Design- und Entwicklungspraktiken, die konsistente digitale Produkte gewährleisten. Entstanden aus den Corporate-Styleguides der Vergangenheit bieten Design-Systeme gemeinsame Bibliotheken und Dokumente, die leicht zu finden und zu verwenden sind. Im Allgemeinen werden Anleitungen als Code niedergeschrieben und unter Versionskontrolle gehalten, sodass der Leitfaden weniger mehrdeutig ist und einfacher zu pflegen ist als einfache Dokumente. Design-Systeme sind zu einem Standardansatz geworden, wenn Teams und Disziplinen in der Produktentwicklung zusammenarbeiten, weil sie es Teams ermöglichen, sich zu konzentrieren. Sie können strategische Herausforderungen rund um das Produkt selbst angehen, ohne jedes Mal das Rad neu zu erfinden, wenn eine neue visuelle Komponente benötigt wird."
+  },
+  {
+    "name": "GitOps",
+    "ring": "High",
+    "quadrant": "techniques",
+    "isNew": "FALSE",
+    "description": "GitOps ist eine Technik zur Bereitstellung von Anwendungen über das Kontrollschleifenmuster. Ein Operator hält die bereitgestellte Anwendung mit der Konfiguration synchron, normalerweise ein Git-Repository."
+  },
+  {
+    "name": "Design system decision records",
+    "ring": "High",
+    "quadrant": "techniques",
+    "isNew": "FALSE",
+    "description": "In einer schnelllebigen Produktentwicklungsumgebung, in der sich die Bedürfnisse der Benutzer ständig weiterentwickeln, ist Design ein Bereich, der sich ständig verändert. Dies bedeutet, dass kontinuierlich Input zu Designentscheidungen erforderlich ist. Inspiriert von der Idee, Architekturentscheidungen über ADRs zu dokumentieren, haben wir begonnen, ein ähnliches Format zu übernehmen - design system decision records -, um 'Design-System-Records' mit entsprechender Begründung, Forschungsergebnissen und Experimentenergebnissen zu dokumentieren. Die effektive Kommunikation von 'Design-System-Records' scheint ein aufkommendes Bedürfnis von Produktentwicklungsteams zu sein; dies in dieser transparenten Art und Weise zu tun, wird auch von zeroheight empfohlen. Diese Technik hat uns geholfen, die Einarbeitungszeiten zu verkürzen, Gespräche voranzutreiben und Arbeitsströme zu harmonisieren, die das gleiche Design-System teilen."
+  },
+  {
+    "name": "Single Page Application",
+    "ring": "High",
+    "quadrant": "techniques",
+    "isNew": "FALSE",
+    "description": "Eine Single Page Application ist eine Webanwendung oder Website, deren Content nur einmal geladen und dann dynamisch „aktualisiert“ wird. Für Interaktionen mit der Seite oder mit Folgeseiten muss nicht extra der Server angesprochen werden, was bedeutet, dass die Seite nicht neu geladen wird. Die daraus entstehende User Experience ist mit der einer Desktop- oder nativen App vergleichbar."
+  },
+  {
+    "name": "Cloud Networking",
+    "ring": "High",
+    "quadrant": "techniques",
+    "isNew": "FALSE",
+    "description": "Cloud-Networking bezieht sich auf die Gestaltung, Implementierung und Verwaltung von Netzwerkressourcen und -diensten in der Cloud. Es umfasst verschiedene Aspekte der Netzwerkkommunikation und -infrastruktur, die es Organisationen ermöglichen, ihre IT-Ressourcen in Cloud-Umgebungen effizient zu nutzen und zu verwalten."
+  },
+  {
+    "name": "Infrastructure as Code",
+    "ring": "High",
+    "quadrant": "techniques",
+    "isNew": "FALSE",
+    "description": "Infrastructure as Code (IaC) ist die Fähigkeit, Ihre Computerinfrastruktur mithilfe von Code anstelle manueller Prozesse und Einstellungen bereitzustellen und zu unterstützen. Jede Anwendungsumgebung erfordert viele Infrastrukturkomponenten wie Betriebssysteme, Datenbankverbindungen und Speicher. "
   }
 ]
