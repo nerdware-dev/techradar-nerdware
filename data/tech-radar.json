@@ -50,21 +50,21 @@
   },
   {
     "name": "WIZ",
-    "ring": "dev",
+    "ring": "Dev",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "description": "WIZ ist ein weiterer Anwärter in der reifenden Cloud-Sicherheitsplattform-Landschaft, der seinen Benutzern ermöglicht, Sicherheitsrisiken und -bedrohungen in einer Plattform zu verhindern, zu erkennen und darauf zu reagieren. Wiz kann Fehlkonfigurationen, Schwachstellen und durchgesickerte Geheimnisse sowohl in Artefakten, die noch nicht in Live-Umgebungen bereitgestellt wurden (Containerbilder, Infrastrukturcode), als auch in Live-Workloads (Container, VMs und Cloud-Dienste) erkennen und darauf hinweisen. Es kontextualisiert auch Erkenntnisse auf die spezifische Cloud-Landschaft des Kunden, um Reaktionsteams ein besseres Verständnis des Problems zu ermöglichen und Abhilfemaßnahmen zu priorisieren."
   },
   {
     "name": "Prisma",
-    "ring": "dev",
+    "ring": "Dev",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": "Prisma ist ein Open-Source-basiertes Datenbank-Toolkit. Es besteht aus drei Haupttools: Prisma Client: Ein automatisch generierter und typensicherer Query Builder für Node.js und TypeScript. Prisma Migrate: Ein deklaratives Modellierungs- und Migrationssystem für Daten. Prisma Studio: Eine GUI zum Anzeigen und Bearbeiten von Daten in Ihrer Datenbank."
   },
   {
     "name": "Dynatrace",
-    "ring": "low",
+    "ring": "Low",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": "Dynatrace überwacht die gesamte Infrastruktur, unabhängig von Standort und Technologie. Sowohl Server, Netzwerk, Virtualisierungen als auch Microservices und Container werden automatisch überwacht. Dabei spielt es keine Rolle, ob sich diese in einer Private-, Public- oder Hybrid-Cloud-Lösung befinden."
@@ -85,7 +85,7 @@
   },
   {
     "name": "Terratest",
-    "ring": "dev",
+    "ring": "Dev",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": "Terratest ist eine Golang-Bibliothek, die das Schreiben automatisierter Tests für Infrastrukturcode erleichtert. Ein Testlauf erstellt echte Infrastrukturkomponenten (wie Server, Firewalls oder Load Balancer), setzt Anwendungen auf ihnen ein und validiert das erwartete Verhalten mit Terratest. Am Ende des Tests kann Terratest die Apps undeployen und Ressourcen aufräumen. Dies macht es weitgehend nützlich für End-to-End-Tests Ihrer Infrastruktur in einer realen Umgebung."
@@ -127,21 +127,21 @@
   },
   {
     "name": "Sonatype Nexus Repository",
-    "ring": "high",
+    "ring": "High",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": "Zentrale Lösung zur Ablage von Komponenten (z.B. Binaries, Pakete und Build-Artefakte). Nexus Repository deckt Funktionen wie z.B. Hochverfügbarkeit, Replikation und Staging von Komponenten ab."
   },
   {
     "name": "SonarQube",
-    "ring": "high",
+    "ring": "High",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": "SonarQube ist eine Open-Source-Plattform für statische Codeanalysen und wird zur Prüfung der technischen Qualität von Quellcode eingesetzt."
   },
   {
     "name": "Nx",
-    "ring": "high",
+    "ring": "High",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": "Ein NX-Monorepo ist eine weit verbreitete Architektur für moderne Webentwicklungsprojekte. Es bietet eine einfachere Wartbarkeit und Skalierbarkeit, indem es eine einheitliche Struktur und Werkzeuge für alle Projekte innerhalb des Monorepos bereitstellt."
