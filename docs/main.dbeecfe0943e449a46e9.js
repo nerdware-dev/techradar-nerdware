@@ -1028,8 +1028,8 @@ function renderRadarQuadrants(size, svg, quadrant, rings, ringCalculator, tip) {
 }
 function renderRadarLegends(radarElement) {
   var legendsContainer = radarElement.append('div').classed('radar-legends', true);
-  var newImage = legendsContainer.append('img').attr('src', './images/new.svg').attr('width', '37px').attr('height', '37px').attr('alt', 'new blip legend icon').node().outerHTML;
-  var noChangeImage = legendsContainer.append('img').attr('src', './images/no-change.svg').attr('width', '37px').attr('height', '37px').attr('alt', 'no change blip legend icon').node().outerHTML;
+  var newImage = legendsContainer.append('img').attr('src', '/images/new.svg').attr('width', '37px').attr('height', '37px').attr('alt', 'new blip legend icon').node().outerHTML;
+  var noChangeImage = legendsContainer.append('img').attr('src', '/images/no-change.svg').attr('width', '37px').attr('height', '37px').attr('alt', 'no change blip legend icon').node().outerHTML;
   legendsContainer.html("".concat(newImage, " New ").concat(noChangeImage, " No change"));
 }
 function renderMobileView(quadrant) {
@@ -82431,4 +82431,4 @@ Factory().build();
 
 /******/ })()
 ;
-//# sourceMappingURL=main.3e2240e80894c1a35658.js.map
+//# sourceMappingURL=main.dbeecfe0943e449a46e9.js.map
