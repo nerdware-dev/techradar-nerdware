@@ -12,5 +12,166 @@
     "quadrant": "platforms",
     "isNew": "FALSE",
     "description": "Amazon Web Services, auch als AWS bekannt, ist eine vom gleichnamigen Unternehmen angebotene Plattform für Cloud-Computing."
+  },
+  {
+    "name": "AWS Lambda",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "AWS Lambda ist ein Rechenservice, der Ihren Code als Reaktion auf Ereignisse ausführt und die Rechenressourcen automatisch verwaltet. Dies ist der schnellste Weg, eine Idee in eine moderne, Serverless-Produktionsanwendung umzusetzen."
+  },
+  {
+    "name": "AWS API Gateway",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Amazon API Gateway ist ein vollständig verwalteter Service, der das Erstellen, Veröffentlichen, Warten, Überwachen und Sichern von APIs für Entwickler in jeder beliebigen Größenordnung vereinfacht. APIs fungieren als „Vordertür“ für Anwendungen, die über Ihre Backend-Services auf Daten, Geschäftslogik oder Funktionalitäten zugreifen. Mit API Gateway können Sie RESTful-APIs und WebSocket-APIs erstellen, die Anwendungen mit bidirektionaler Kommunikation in Echtzeit ermöglichen. API Gateway unterstützt containerisierte und serverlose Workloads sowie Webanwendungen."
+  },
+  {
+    "name": "AWS VPC",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Mit Amazon Virtual Private Cloud (Amazon VPC) können Sie AWS Ressourcen in einem von Ihnen definierten logisch isolierten virtuellen Netzwerk starten. Dieses virtuelle Netzwerk entspricht weitgehend einem herkömmlichen Netzwerk, wie Sie es in Ihrem Rechenzentrum betreiben, kann jedoch die Vorzüge der skalierbaren Infrastruktur von AWS nutzen."
+  },
+  {
+    "name": "AWS Step Functions",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "AWS Step Functions ist ein visueller Workflow-Service, der Entwicklern hilft, AWS-Services zu nutzen, um verteilte Anwendungen zu entwickeln, Prozesse zu automatisieren, Microservices zu orchestrieren und Daten- und Machine Learning (ML)-Pipelines zu erstellen."
+  },
+  {
+    "name": "AWS ECS",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Amazon Elastic Container Service (Amazon ECS) ist ein vollständig verwalteter Container-Orchestrierungsservice, mit dem Sie containerisierte Anwendungen einfach bereitstellen, verwalten und skalieren können. Als vollständig verwalteter Service verfügt Amazon ECS über eine integrierte AWS-Konfiguration und bewährte Methoden für den Betrieb. Er ist sowohl in AWS als auch in Tools von Drittanbietern integriert, wie z. B. Amazon Elastic Container Registry und Docker. Diese Integration erleichtert es Teams, sich auf die Erstellung der Anwendungen zu konzentrieren, nicht auf die Umgebung. Sie können Ihre Container-Workloads über AWS-Regionen in der Cloud und On-Premises ausführen und skalieren, ohne die Komplexität der Verwaltung einer Steuerebene."
+  },
+  {
+    "name": "AWS S3",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Amazon Simple Storage Service (Amazon S3) ist ein Objektspeicherservice, der branchenführende Skalierbarkeit, Datenverfügbarkeit, Sicherheit und Leistung bietet. Kunden aller Größen und Branchen können Amazon S3 für die Speicherung und den Schutz beliebiger Datenmengen für eine Reihe von Anwendungsfällen verwenden, wie Data Lakes, Websites, mobile Anwendungen, Backup und Wiederherstellung, Archivierung, Unternehmensanwendungen, IoT-Geräte und Big-Data-Analysen. Amazon S3 bietet Verwaltungsfunktionen, mit denen Sie den Zugriff auf Ihre Daten optimieren, organisieren und konfigurieren können, um Ihre spezifischen geschäftlichen, organisatorischen und Compliance-Anforderungen zu erfüllen."
+  },
+  {
+    "name": "AWS Aurora",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Amazon Aurora (Aurora) ist eine vollständig verwaltete, mit MySQL und PostgreSQL kompatible relationale Datenbank-Engine. Sie wissen bereits, wie MySQL und PostgreSQL die Geschwindigkeit und Zuverlässigkeit von kommerziellen High-End-Datenbanken mit der Einfachheit und Kosteneffizienz von Open-Source-Datenbanken verbinden. Der Code, die Tools und Anwendungen, die Sie heute mit Ihren bestehenden MySQL- und PostgreSQL-Datenbanken verwenden, können auch mit Aurora verwendet werden. Bei manchen Workloads kann Aurora einen bis zu fünfmal höheren Durchsatz als MySQL und einen bis zu dreimal höheren Durchsatz als PostgreSQL liefern, ohne dass die meisten Ihrer bestehenden Anwendungen geändert werden müssen."
+  },
+  {
+    "name": "Amazon ECR",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Amazon Elastic Container Registry (Amazon ECR) ist ein AWS verwalteter Container-Image-Registry-Service, der sicher, skalierbar und zuverlässig ist. Amazon ECR unterstützt private Container-Image-Repositories mit ressourcenbasierten Berechtigungen unter Verwendung von AWS IAM. So können bestimmte Benutzer oder Amazon EC2-Instanzen auf Ihre Container-Repositories und Images zugreifen. Sie können Ihre bevorzugte CLI verwenden, um Docker-Images, Open Container Initiative (OCI)-Images und OCI-kompatible Artefakte zu schieben, zu ziehen und zu verwalten."
+  },
+  {
+    "name": "Amazon DynamoDB",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Amazon DynamoDB ist ein vollständig verwalteter NoSQL-Datenbank-Service, der schnelle und planbare Leistung mit nahtloser Skalierbarkeit bereitstellt. Mit DynamoDB können Sie den Verwaltungsaufwand für den Betrieb und die Skalierung verteilter Datenbanken verringern, sodass Sie sich nicht um Hardwarebereitstellung, Einrichtung und Konfiguration, Replikation, Software-Patching oder Cluster-Skalierung kümmern müssen. DynamoDB bietet auch Verschlüsselung im Ruhezustand, wodurch der Betriebsaufwand und die Komplexität, die mit dem Schutz sensibler Daten verbunden sind, eliminiert werden."
+  },
+  {
+    "name": "AWS EC2",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Amazon Elastic Compute Cloud (Amazon EC2) bietet bedarfsbasiert skalierbare Rechenkapazität in der Amazon Web Services Cloud (AWS Cloud). Mit Amazon EC2 reduzieren Sie die Hardwarekosten, so dass Sie Anwendungen schneller entwickeln und bereitstellen können. Mit Amazon EC2 können Sie so viele oder so wenige virtuelle Server starten, wie Sie benötigen, die Sicherheit und das Netzwerk konfigurieren und den Speicher verwalten. Sie können Kapazität hinzufügen (skalieren), um rechenintensive Aufgaben wie monatliche oder jährliche Prozesse oder Spitzen im Website-Datenverkehr zu bewältigen. Wenn die Nutzung abnimmt, können Sie die Kapazität wieder reduzieren (herunterskalieren)."
+  },
+  {
+    "name": "Amazon SNS",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Amazon Simple Notification Service (Amazon SNS) ist ein verwalteter Service, der die Nachrichtenzustellung von Publishern an Abonnenten (auch bekannt alsProduzentenundKonsumenten) umfasst. Herausgeber kommunizieren asynchron mit Abonnenten, indem sie eine Nachricht erstellen und an ein Thema senden, bei dem es sich um einen logischen Zugriffspunkt und Kommunikationskanal handelt. Clients können das SNS-Thema abonnieren und veröffentlichte Nachrichten mit einem unterstützten Endpunkttyp wie Amazon Data Firehose, Amazon SQS, AWS Lambda, HTTP, E-Mail, mobile Push-Benachrichtigungen und mobile Textnachrichten (SMS) empfangen.    "
+  },
+  {
+    "name": "Amazon SQS",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Amazon Simple Queue Service (Amazon SQS) bietet eine sichere, dauerhafte und verfügbare gehostete Warteschlange, die es Ihnen ermöglicht, verteilte Softwaresysteme und -komponenten zu integrieren und zu entkoppeln. Amazon SQS bietet gängige Konstrukte, wie z. B. Warteschlangen für unzustellbare Nachrichten und Kostenzuordnungs-Tags. Es bietet eine generische Web-Services-API, die über alle Programmiersprachen zugänglich ist, die vom AWS SDK unterstützt werden."
+  },
+  {
+    "name": "Azure",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Die Azure-Cloudplattform besteht aus mehr als 200 Produkten und Clouddiensten und wurde dafür konzipiert, Sie bei der Entwicklung neuer Lösungen zu unterstützen. So können Sie aktuelle Herausforderungen bewältigen und den Weg für die Zukunft ebnen. Sie können Anwendungen in mehreren Clouds, lokal oder am Edge entwickeln, ausführen und verwalten."
+  },
+  {
+    "name": "Azure App Service",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Azure App Service ist ein HTTP-basierter Dienst zum Hosten von Webanwendungen, REST-APIs und mobilen Back-Ends. Sie können in Ihrer bevorzugten Sprache entwickeln, z. B. .NET, .NET Core, Java, Node.js, PHP und Python. Anwendungen können mühelos in Windows- und Linux-basierten Umgebungen ausgeführt und skaliert werden."
+  },
+  {
+    "name": "Azure Storage Account",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Ein Azure Storage-Konto enthält all Ihre Azure Storage-Datenobjekte: Blobs, Dateien, Warteschlangen und Tabellen. Das Speicherkonto stellt einen eindeutigen Namespace für Ihre Azure Storage-Daten bereit, auf den von jedem Ort der Welt aus über HTTP oder HTTPS zugegriffen werden kann. Daten in Ihrem Speicherkonto sind dauerhaft und hochverfügbar, sicher und extrem skalierbar."
+  },
+  {
+    "name": "Azure Service Bus",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Bei Azure Service Bus handelt es sich um einen vollständig verwalteten Nachrichtenbroker für Unternehmen mit Nachrichtenwarteschlangen und Publish/Subscribe-Themen. Service Bus wird verwendet, um Anwendungen und Dienste voneinander zu entkoppeln und so die folgenden Vorteile zu erzielen:\n - Übergreifender Lastenausgleich für konkurrierende Worker\n - Sicherheit beim Routing und der  Übertragung von Daten sowie Kontrolle über Dienst- und Anwendungsgrenzen hinweg \n - Koordinierung von Transaktionsausgaben mit hohen Anforderungen an die Zuverlässigkeit"
+  },
+  {
+    "name": "Azure Data Factory",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Azure Data Factory ist ein spezieller verwalteter Clouddienst für diese komplexen Hybridprojekte mit ETL (Extrahieren, Transformieren und Laden), ELT (Extrahieren, Laden und Transformieren) und Datenintegration."
+  },
+  {
+    "name": "Azure Functions",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Azure Functions ist eine serverlose Lösung, die es Ihnen ermöglicht, weniger Code zu schreiben, weniger Infrastruktur zu verwalten und Kosten zu sparen. Da durch die Cloudinfrastruktur alle aktuellen Ressourcen bereitgestellt werden, die zum Ausführen Ihrer Anwendungen benötigt werden, müssen Sie sich nicht mit der Bereitstellung und Wartung von Servern befassen."
+  },
+  {
+    "name": "Azure Container Instances",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Azure Container Instances unterstützt die Planung von Gruppen mit mehreren Containern mit gemeinsamem Hostcomputer, lokalem Netzwerk, Speicher und Lebenszyklus. Dadurch können Sie Ihren Hauptanwendungscontainer mit anderen unterstützenden Rollencontainern (beispielsweise Protokollierungs-Sidecars) kombinieren."
+  },
+  {
+    "name": "Azure Service Bus",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Bei Azure Service Bus handelt es sich um einen vollständig verwalteten Nachrichtenbroker für Unternehmen mit Nachrichtenwarteschlangen und Publish/Subscribe-Themen. Service Bus wird verwendet, um Anwendungen und Dienste voneinander zu entkoppeln und so die folgenden Vorteile zu erzielen:\n - Übergreifender Lastenausgleich für konkurrierende Worker\n - Sicherheit beim Routing und der  Übertragung von Daten sowie Kontrolle über Dienst- und Anwendungsgrenzen hinweg \n - Koordinierung von Transaktionsausgaben mit hohen Anforderungen an die Zuverlässigkeit"
+  },
+  {
+    "name": "Azure App Insights",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Mit Application Insights liefert Microsoft einen Dienst zur Anwendungsüberwachung für Entwicklung und DevOps. Damit kann so gut wie alles erfasst werden – von Antwortzeiten und -raten über Fehler und Ausnahmen, Seitenaufrufe, Benutzer (-Sitzungen), Backend bis hin zu Desktop-Anwendungen."
+  },
+  {
+    "name": "Docker",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Docker ist eine Open-Source-Plattform, die Entwicklern die Erstellung, Bereitstellung, Ausführung, Aktualisierung und Verwaltung von Containern ermöglicht. Container sind standardisierte ausführbare Komponenten, die den Anwendungsquellcode mit den Betriebssystembibliotheken und den Abhängigkeiten kombinieren, die zur Ausführung des Codes in jeder beliebigen Umgebung erforderlich sind."
+  },
+  {
+    "name": "GitHub Actions",
+    "ring": "High",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "GitHub Actions ist eine Plattform für Continuous Integration und Continuous Delivery (CI/CD), mit der du deine Build-, Test- und Bereitstellungspipeline automatisieren kannst. Man kann Workflows erstellen, mit denen man alle Pull Requests für das Repository erstellen und testen sowie gemergte Pull Requests für die Produktion bereitstellen kann."
   }
 ]
