@@ -433,6 +433,17 @@ module.exports = __webpack_require__.p + "images/fourth-quadrant-btn-bg.svg";
 
 /***/ }),
 
+/***/ "./src/images/logo-nw-neu.png":
+/*!************************************!*\
+  !*** ./src/images/logo-nw-neu.png ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/logo-nw-neu.png";
+
+/***/ }),
+
 /***/ "./src/images/logo-nw.png":
 /*!********************************!*\
   !*** ./src/images/logo-nw.png ***!
@@ -625,6 +636,7 @@ __webpack_require__(/*! ./images/search-logo-2x.svg */ "./src/images/search-logo
 __webpack_require__(/*! ./images/banner-image-mobile.jpg */ "./src/images/banner-image-mobile.jpg");
 __webpack_require__(/*! ./images/banner-image-desktop.jpg */ "./src/images/banner-image-desktop.jpg");
 __webpack_require__(/*! ./images/logo-nw.png */ "./src/images/logo-nw.png");
+__webpack_require__(/*! ./images/logo-nw-neu.png */ "./src/images/logo-nw-neu.png");
 __webpack_require__(/*! ./images/new.svg */ "./src/images/new.svg");
 __webpack_require__(/*! ./images/no-change.svg */ "./src/images/no-change.svg");
 __webpack_require__(/*! ./images/arrow-icon.svg */ "./src/images/arrow-icon.svg");
@@ -638,4 +650,4 @@ __webpack_require__(/*! ./images/search-active-wave.svg */ "./src/images/search-
 
 /******/ })()
 ;
-//# sourceMappingURL=common.164cf16259e253bc9e03.js.map
+//# sourceMappingURL=common.0c44144482e8ca3d79a2.js.map

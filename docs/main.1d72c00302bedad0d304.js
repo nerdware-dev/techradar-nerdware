@@ -16,6 +16,7 @@ __webpack_require__(/*! ./images/search-logo-2x.svg */ "./src/images/search-logo
 __webpack_require__(/*! ./images/banner-image-mobile.jpg */ "./src/images/banner-image-mobile.jpg");
 __webpack_require__(/*! ./images/banner-image-desktop.jpg */ "./src/images/banner-image-desktop.jpg");
 __webpack_require__(/*! ./images/logo-nw.png */ "./src/images/logo-nw.png");
+__webpack_require__(/*! ./images/logo-nw-neu.png */ "./src/images/logo-nw-neu.png");
 __webpack_require__(/*! ./images/new.svg */ "./src/images/new.svg");
 __webpack_require__(/*! ./images/no-change.svg */ "./src/images/no-change.svg");
 __webpack_require__(/*! ./images/arrow-icon.svg */ "./src/images/arrow-icon.svg");
@@ -47810,6 +47811,17 @@ module.exports = __webpack_require__.p + "images/fourth-quadrant-btn-bg.svg";
 
 /***/ }),
 
+/***/ "./src/images/logo-nw-neu.png":
+/*!************************************!*\
+  !*** ./src/images/logo-nw-neu.png ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/logo-nw-neu.png";
+
+/***/ }),
+
 /***/ "./src/images/logo-nw.png":
 /*!********************************!*\
   !*** ./src/images/logo-nw.png ***!
@@ -82423,6 +82435,7 @@ var __webpack_exports__ = {};
 __webpack_require__(/*! ./common */ "./src/common.js");
 __webpack_require__(/*! ./images/logo.png */ "./src/images/logo.png");
 __webpack_require__(/*! ./images/logo-nw.png */ "./src/images/logo-nw.png");
+__webpack_require__(/*! ./images/logo-nw-neu.png */ "./src/images/logo-nw-neu.png");
 __webpack_require__(/*! ./images/radar_legend.png */ "./src/images/radar_legend.png");
 __webpack_require__(/*! ./gtm.js */ "./src/gtm.js");
 var Factory = __webpack_require__(/*! ./util/factory */ "./src/util/factory.js");
@@ -82431,4 +82444,4 @@ Factory().build();
 
 /******/ })()
 ;
-//# sourceMappingURL=main.dbeecfe0943e449a46e9.js.map
+//# sourceMappingURL=main.1d72c00302bedad0d304.js.map

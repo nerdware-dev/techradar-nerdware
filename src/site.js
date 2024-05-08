@@ -1,6 +1,7 @@
 require('./common')
 require('./images/logo.png')
 require('./images/logo-nw.png')
+require('./images/logo-nw-neu.png')
 require('./images/radar_legend.png')
 require('./gtm.js')
 
