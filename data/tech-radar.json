@@ -91,6 +91,13 @@
     "description": "Terratest ist eine Golang-Bibliothek, die das Schreiben automatisierter Tests für Infrastrukturcode erleichtert. Ein Testlauf erstellt echte Infrastrukturkomponenten (wie Server, Firewalls oder Load Balancer), setzt Anwendungen auf ihnen ein und validiert das erwartete Verhalten mit Terratest. Am Ende des Tests kann Terratest die Apps undeployen und Ressourcen aufräumen. Dies macht es weitgehend nützlich für End-to-End-Tests Ihrer Infrastruktur in einer realen Umgebung."
   },
   {
+    "name": "Crossplane",
+    "ring": "Low",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": "Crossplane ist ein plattformübergreifendes Kontrollsystem (Control-Plane), das das Management von Cloud-Ressourcen vereinfachen und automatisieren soll. Das Tool ermöglicht es, verschiedene Cloud-Provider und lokale Ressourcen, z. B. Kubernetes-Cluster, als einheitliche Infrastruktur zu verwalten. Das Hauptproblem, das Crossplane löst, ist die Herausforderung, verschiedene Cloud-Provider und lokale Ressourcen zu integrieren und zu automatisieren. In einer zunehmend hybriden Cloud-Umgebung ist es schwierig, die Komplexität und Heterogenität der Cloud-Infrastruktur zu managen. Crossplane stellt eine einheitliche API und einheitliche Tools zur Verfügung, um verschiedene Cloud-Provider und lokale Ressourcen effizient zu verwalten."
+  },
+  {
     "name": "GitHub",
     "ring": "High",
     "quadrant": "tools",
