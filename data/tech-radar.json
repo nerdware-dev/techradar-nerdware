@@ -231,6 +231,13 @@
     "description": "OpenTelemetry (OTel) ist ein Open-Source-Framework für Observability, mit dem Entwicklungsteams Telemetriedaten in einem einzigen, einheitlichen Format generieren, verarbeiten und übertragen können. Dieses Format wurde von der Cloud Native Computing Foundation (CNCF) entwickelt, um standardisierte Protokolle und Tools zum Erfassen und Weiterleiten von Metriken, Logs und Traces an Überwachungsplattformen bereitzustellen."
   },
   {
+    "name": "PHP",
+    "ring": "Out",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": "PHP ist eine Skriptsprache mit einer an C und Perl angelehnten Syntax, die hauptsächlich zur Erstellung dynamischer Webseiten oder Webanwendungen verwendet wird."
+  },
+  {
     "name": "GraalVM",
     "ring": "Dev",
     "quadrant": "languages & frameworks",
