@@ -1,3 +1,6 @@
+##Notion Page
+[Link zur Notion Page](https://www.notion.so/nerdware/Techradar-063f46f06b764e20a5fa610e024c64b4?pvs=4)
+
 ## How To Use
 
 Den Inhalt des Radars kann in GitHub direkt unter ./Data/tech-radar.json gepflegt werden.
