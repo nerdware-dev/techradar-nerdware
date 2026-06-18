@@ -1,0 +1,28 @@
+.wrap {
+  position: relative;
+  max-width: 320px;
+}
+.input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 14px;
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  z-index: 10;
+}
+.option {
+  padding: 0.4rem 0.75rem;
+  cursor: pointer;
+}
+.option:hover {
+  background: #f3f3f3;
+}
