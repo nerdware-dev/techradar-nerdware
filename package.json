@@ -18,7 +18,8 @@
     "test:e2e": "playwright test",
     "lint": "eslint . && prettier --check .",
     "lint:fix": "eslint . --fix && prettier --write .",
-    "quality": "npm run lint && npm run coverage"
+    "typecheck": "tsc -b",
+    "quality": "npm run lint && npm run typecheck && npm run coverage"
   },
   "dependencies": {
     "dompurify": "^3.4.11",

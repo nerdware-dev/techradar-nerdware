@@ -4,12 +4,15 @@ import { useEffect, type ReactNode } from 'react'
 import { RadarView } from './Radar'
 import { RadarStoreProvider, useRadarDispatch } from '../state/radarStore'
 import { parseRadar } from '../data/schema'
+import { placeBlips } from '../radar/placement'
+import { RADAR_SIZE } from '../config'
 
 const radar = parseRadar([
   { name: 'Docker', ring: 'High', quadrant: 'platforms', isNew: 'FALSE', description: 'd' },
   { name: 'AWS', ring: 'Low', quadrant: 'platforms', isNew: 'TRUE', description: 'a' },
   { name: 'Go', ring: 'Dev', quadrant: 'languages & frameworks', isNew: 'FALSE', description: 'g' },
 ])
+const placed = placeBlips(radar.blips, radar.rings, radar.quadrants, RADAR_SIZE)
 
 function FocusOn({ id, children }: { id: 'platforms'; children: ReactNode }) {
   const dispatch = useRadarDispatch()
@@ -23,7 +26,7 @@ describe('RadarView', () => {
   it('renders an svg with one circle per ring', () => {
     const { container } = render(
       <RadarStoreProvider>
-        <RadarView radar={radar} />
+        <RadarView radar={radar} placed={placed} />
       </RadarStoreProvider>,
     )
     const svg = container.querySelector('svg')
@@ -34,7 +37,7 @@ describe('RadarView', () => {
   it('renders one blip group per blip', () => {
     const { container } = render(
       <RadarStoreProvider>
-        <RadarView radar={radar} />
+        <RadarView radar={radar} placed={placed} />
       </RadarStoreProvider>,
     )
     expect(container.querySelectorAll('[role="button"]')).toHaveLength(3)
@@ -43,7 +46,7 @@ describe('RadarView', () => {
   it('renders no overlay path when nothing is focused', () => {
     const { container } = render(
       <RadarStoreProvider>
-        <RadarView radar={radar} />
+        <RadarView radar={radar} placed={placed} />
       </RadarStoreProvider>,
     )
     expect(container.querySelectorAll('path')).toHaveLength(0)
@@ -53,7 +56,7 @@ describe('RadarView', () => {
     const { container } = render(
       <RadarStoreProvider>
         <FocusOn id="platforms">
-          <RadarView radar={radar} />
+          <RadarView radar={radar} placed={placed} />
         </FocusOn>
       </RadarStoreProvider>,
     )

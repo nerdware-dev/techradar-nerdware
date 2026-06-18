@@ -3,12 +3,15 @@ import { render } from '@testing-library/react'
 import { QuadrantTable } from './QuadrantTable'
 import { RadarStoreProvider, radarReducer, initialState } from '../state/radarStore'
 import { parseRadar } from '../data/schema'
+import { placeBlips } from '../radar/placement'
+import { RADAR_SIZE } from '../config'
 
 const radar = parseRadar([
   { name: 'Docker', ring: 'High', quadrant: 'platforms', isNew: 'FALSE', description: 'd' },
   { name: 'AWS', ring: 'Low', quadrant: 'platforms', isNew: 'FALSE', description: 'a' },
   { name: 'Go', ring: 'Dev', quadrant: 'tools', isNew: 'FALSE', description: 'g' },
 ])
+const placed = placeBlips(radar.blips, radar.rings, radar.quadrants, RADAR_SIZE)
 
 // Provider seeded with a focused quadrant for the test
 function Seeded({ children }: { children: React.ReactNode }) {
@@ -19,7 +22,7 @@ describe('QuadrantTable', () => {
   it('renders nothing when no quadrant is focused', () => {
     const { container } = render(
       <Seeded>
-        <QuadrantTable radar={radar} />
+        <QuadrantTable radar={radar} placed={placed} />
       </Seeded>,
     )
     expect(container.querySelector('[data-quadrant-table]')).toBeNull()

@@ -50,7 +50,8 @@ npm run dev      # Entwicklungsserver starten (http://localhost:5173)
 ```bash
 npm test             # Unit-Tests (Vitest + React Testing Library)
 npm run test:e2e     # End-to-End-Tests (Playwright)
-npm run lint         # ESLint + Prettier + TypeScript-Prüfung
+npm run lint         # ESLint + Prettier (nur Code-Stil, keine TypeScript-Prüfung)
+npm run typecheck    # TypeScript-Typprüfung via tsc -b
 ```
 
 ---

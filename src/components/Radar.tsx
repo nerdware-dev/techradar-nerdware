@@ -2,19 +2,15 @@ import { useMemo } from 'react'
 import type { Radar } from '../data/types'
 import { RADAR_SIZE } from '../config'
 import { ringRadii, quadrantAngles, annularSectorPath } from '../radar/geometry'
-import { placeBlips } from '../radar/placement'
+import type { PlacedBlip } from '../radar/placement'
 import { Blip } from './Blip'
 import { useRadarState } from '../state/radarStore'
 import styles from '../styles/radar.module.scss'
 
-export function RadarView({ radar }: { radar: Radar }) {
+export function RadarView({ radar, placed }: { radar: Radar; placed: PlacedBlip[] }) {
   const { focusedQuadrant } = useRadarState()
   const max = RADAR_SIZE
   const bands = useMemo(() => ringRadii(radar.rings.length, max), [radar.rings.length, max])
-  const placed = useMemo(
-    () => placeBlips(radar.blips, radar.rings, radar.quadrants, max),
-    [radar, max],
-  )
   const pad = 20
   const view = max + pad
 

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import './styles/tokens.scss'
 import styles from './styles/app.module.scss'
 import type { Radar } from './data/types'
@@ -10,6 +10,8 @@ import { RadarView } from './components/Radar'
 import { QuadrantTable } from './components/QuadrantTable'
 import { Tooltip } from './components/Tooltip'
 import { Legend } from './components/Legend'
+import { placeBlips } from './radar/placement'
+import { RADAR_SIZE } from './config'
 
 type Load =
   | { status: 'loading' }
@@ -29,6 +31,12 @@ export default function App() {
     }
   }, [])
 
+  const radar = load.status === 'ready' ? load.radar : null
+  const placed = useMemo(
+    () => (radar ? placeBlips(radar.blips, radar.rings, radar.quadrants, RADAR_SIZE) : []),
+    [radar],
+  )
+
   return (
     <RadarStoreProvider>
       <Header />
@@ -40,12 +48,12 @@ export default function App() {
       )}
       {load.status === 'ready' && (
         <main className={styles.layout}>
-          <RadarView radar={load.radar} />
+          <RadarView radar={load.radar} placed={placed} />
           <div className={styles.sidebar}>
             <Search radar={load.radar} />
             <Legend radar={load.radar} />
             <Tooltip radar={load.radar} />
-            <QuadrantTable radar={load.radar} />
+            <QuadrantTable radar={load.radar} placed={placed} />
           </div>
         </main>
       )}
