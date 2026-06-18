@@ -500,15 +500,27 @@ export const RADAR_DATA_URL: string =
 export const RADAR_SIZE = 400
 ```
 
-- [ ] **Step 7: Run full test suite + lint**
+- [ ] **Step 7: Declare the custom env var type**
 
-Run: `npm test && npm run lint`
-Expected: all pass (run `npm run lint:fix` first if Prettier complains).
+`config.ts` reads `import.meta.env.VITE_RADAR_DATA_URL`. Vite's `ImportMetaEnv` type does not include custom vars, so under `strict` TypeScript this can be a compile error. Augment the interface in `src/vite-env.d.ts` (created by the scaffold) so it reads:
 
-- [ ] **Step 8: Commit**
+```ts
+/// <reference types="vite/client" />
+
+interface ImportMetaEnv {
+  readonly VITE_RADAR_DATA_URL?: string
+}
+```
+
+- [ ] **Step 8: Verify (type-check, tests, lint)**
+
+Run: `npm run build && npm test && npm run lint`
+Expected: build type-checks with zero errors (this is what confirms the `import.meta.env` usage is typed — `npm test` alone does not type-check), tests pass, lint clean (run `npm run lint:fix` first if Prettier complains).
+
+- [ ] **Step 9: Commit**
 
 ```bash
-git add src/data/types.ts src/data/slug.ts src/data/slug.test.ts src/config.ts
+git add src/data/types.ts src/data/slug.ts src/data/slug.test.ts src/config.ts src/vite-env.d.ts
 git commit -m "feat: add radar types, slugify helper, and config
 
 Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>"
