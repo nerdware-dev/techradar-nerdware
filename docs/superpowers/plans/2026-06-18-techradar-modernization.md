@@ -215,7 +215,22 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 
 export default tseslint.config(
-  { ignores: ['dist', 'data', 'public', 'coverage', 'playwright-report'] },
+  {
+    ignores: [
+      'dist',
+      'data',
+      'public',
+      'coverage',
+      'playwright-report',
+      'docs',
+      // legacy code, removed in Task 17 — not linted in the interim
+      'src/**/*.js',
+      'webpack.*.js',
+      'jest.config.js',
+      'cypress.config.js',
+      'spec',
+    ],
+  },
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ['**/*.{ts,tsx}'],
@@ -226,11 +241,44 @@ export default tseslint.config(
 )
 ```
 
-- [ ] **Step 7: Write `.prettierrc`, `.nvmrc`**
+- [ ] **Step 7: Write `.prettierrc`, `.prettierignore`, `.nvmrc`** (overwrite the legacy `.prettierrc`/`.prettierignore`/`.nvmrc` if present)
 
 `.prettierrc`:
 ```json
 { "semi": false, "singleQuote": true, "printWidth": 100, "trailingComma": "all" }
+```
+`.prettierignore` (keeps Prettier off generated/legacy files until Task 17 removes the legacy):
+```
+node_modules
+dist
+coverage
+playwright-report
+test-results
+package-lock.json
+docs
+data
+public
+*.min.js
+# legacy — removed in Task 17
+src/graphing
+src/util
+src/models
+src/exceptions
+src/stylesheets
+src/images
+src/common.js
+src/site.js
+src/gtm.js
+src/config.js
+src/index.html
+src/error.html
+webpack.common.js
+webpack.dev.js
+webpack.dev-old-ui.js
+webpack.prod.js
+jest.config.js
+cypress.config.js
+spec
 ```
 `.nvmrc`:
 ```
@@ -2313,6 +2361,8 @@ git rm -r --ignore-unmatch \
 git rm -r --ignore-unmatch docs/*.js docs/*.css docs/*.map docs/index.html docs/error.html docs/images
 ```
 > Keep `docs/superpowers/` (specs + this plan). Keep `data/`, `LICENSE.md`, `CONTRIBUTORS.md`, `.devcontainer`, `.vscode`, `.editorconfig`.
+
+After deleting the legacy files, remove the now-obsolete legacy entries from `eslint.config.js` `ignores` (the `src/**/*.js`, `webpack.*.js`, `jest.config.js`, `cypress.config.js`, `spec` lines) and the `# legacy — removed in Task 17` section of `.prettierignore`, since the files they reference no longer exist. Keep the `docs` ignore (still holds specs/plans) and the build/generated ignores.
 
 - [ ] **Step 2: Remove now-unused dependencies** (if any survived the scaffold reset)
 
