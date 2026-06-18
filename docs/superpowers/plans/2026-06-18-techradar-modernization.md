@@ -196,15 +196,18 @@ export default defineConfig({
     "module": "ESNext",
     "skipLibCheck": true,
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
+    "composite": true,
+    "outDir": "./node_modules/.tmp/tsnode",
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
     "strict": true
   },
-  "include": ["vite.config.ts", "playwright.config.ts", "eslint.config.js"]
+  "include": ["vite.config.ts"]
 }
 ```
+
+> `composite: true` is required because `tsconfig.json` references this project. A referenced composite project may **not** set `noEmit` (TypeScript errors with `TS6310`), so instead `outDir` + `tsBuildInfoFile` redirect the composite-mandated emit into `node_modules/.tmp`, keeping the working tree clean. (Task 14 adds `playwright.config.ts` to `include`.)
 
 - [ ] **Step 6: Write `eslint.config.js`**
 
