@@ -1,0 +1,27 @@
+.svg {
+  width: 100%;
+  height: auto;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+}
+.ring {
+  fill: none;
+  stroke: #d8d8d8;
+  stroke-width: 1;
+}
+.axis {
+  stroke: #d8d8d8;
+  stroke-width: 1;
+}
+.dim {
+  fill: #ffffff;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.ringLabel {
+  fill: #9b9b9b;
+  font-size: 11px;
+  text-anchor: middle;
+  pointer-events: none;
+}
