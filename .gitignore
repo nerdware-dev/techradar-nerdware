@@ -1,14 +1,22 @@
 node_modules
 bower_components
 dist
+coverage
+playwright-report
+test-results
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
 *.swa
 *.swp
 *.swo
 
-coverage/
-
 .idea/
 .DS_Store
+
+.env
+.env.*
+!.env.example
 
 spec/end_to_end_tests/reports/
 src/stylesheets/_featuretoggles.scss
