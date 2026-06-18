@@ -34,9 +34,18 @@
   color: var(--brand);
 }
 
-/* Tooltip — sits below the list; grows to fit, scrolls only if huge */
+/* Detail column */
+.detailHint {
+  border: 1px dashed var(--panel-border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  color: var(--text-mute);
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+}
 .tooltip {
-  max-height: 52vh;
+  max-height: calc(100vh - 5rem);
   overflow-y: auto;
   border: 1px solid var(--panel-border);
   border-left: 3px solid var(--accent, var(--brand));
