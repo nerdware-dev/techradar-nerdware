@@ -6,6 +6,19 @@
   opacity: 0.2;
 }
 
+/* kill the default square focus outline; show a round glow instead */
+.group:focus {
+  outline: none;
+}
+.group:focus-visible .circle {
+  transform: scale(1.45);
+  filter: drop-shadow(0 0 11px var(--q, #00ffbf));
+}
+.group:focus-visible .halo {
+  transform: scale(2.7);
+  opacity: 0.3;
+}
+
 /* entrance lives on an inner <g> so it never fights the outer translate
    transform or the per-element hover transforms */
 .enter {
