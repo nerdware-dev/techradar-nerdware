@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { placeBlips } from './placement'
+import { ringRadii } from './geometry'
 import { RINGS, QUADRANTS } from '../config'
 import type { Blip } from '../data/types'
 
@@ -40,9 +41,21 @@ describe('placeBlips', () => {
     const platforms = placed
       .filter((p) => p.blip.quadrant === 'platforms')
       .map((p) => p.number)
-      .sort()
+      .sort((a, b) => a - b)
     expect(platforms).toEqual([1, 2, 3])
     const langs = placed.filter((p) => p.blip.quadrant === 'languages-frameworks')
     expect(langs[0].number).toBe(1)
+  })
+
+  it('places every blip inside its ring band', () => {
+    const placed = placeBlips(blips, RINGS, QUADRANTS, 400)
+    const bands = ringRadii(RINGS.length, 400)
+    const ringOrder = new Map(RINGS.map((r) => [r.id, r.order]))
+    for (const p of placed) {
+      const band = bands[ringOrder.get(p.blip.ring)!]
+      const r = Math.hypot(p.x, p.y)
+      expect(r).toBeGreaterThanOrEqual(band.inner)
+      expect(r).toBeLessThanOrEqual(band.outer)
+    }
   })
 })
