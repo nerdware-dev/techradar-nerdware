@@ -1,0 +1,42 @@
+// Nerdware brand tokens
+// Colors sourced from src/stylesheets/_colors.scss
+// Font sourced from src/stylesheets/_fonts.scss
+//
+// Blip fill: the legacy radar used per-quadrant colors (sapphire, turmeric, jade, flamingo).
+// The new React app uses a single CSS variable. Since there is no single dominant blip color
+// in the legacy codebase, --blip-fill defaults to $wave (#163c4d), the primary brand/button
+// color. This is the brief-recommended fallback. Flag for review.
+
+:root {
+  // Primary brand
+  --nw-wave: #163c4d;
+  --nw-wave-light: #6b8591;
+
+  // Quadrant accent colors (legacy: first=sapphire, second=turmeric, third=jade, fourth=flamingo)
+  --nw-sapphire: #47a1ad;
+  --nw-turmeric: #cc850a;
+  --nw-jade: #6b9e78;
+  --nw-flamingo: #e16a7c;
+  --nw-amethyst: #634f7d;
+
+  // Additional brand colors
+  --nw-pink: #ee0b77;
+  --nw-violet: #b32059;
+  --nw-mist: #edf1f3;
+
+  // Blip fill: fallback to primary brand color (wave) — no single legacy blip color
+  --blip-fill: #163c4d;
+  --blip-fill-active: #000000;
+
+  // UI
+  --bg: #ffffff;
+  --text: #1a1a1a;
+}
+
+body {
+  margin: 0;
+  // font-family from src/stylesheets/_fonts.scss: $baseFontFamily: 'Inter', sans-serif
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
