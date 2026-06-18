@@ -95,8 +95,9 @@ npm install
 npm install -D vitest @testing-library/react @testing-library/jest-dom @testing-library/user-event jsdom @vitejs/plugin-react
 npm install -D eslint @eslint/js typescript-eslint eslint-plugin-react-hooks eslint-plugin-react-refresh prettier
 npm install zod dompurify
-npm install -D @types/dompurify
 ```
+
+> DOMPurify v3 ships its own TypeScript types — do **not** install `@types/dompurify` (that stub is for v2 and conflicts).
 
 If `npm create vite` refuses because the directory isn't empty, scaffold in a temp dir and copy `package.json`, `tsconfig*.json`, `vite.config.ts`, `index.html`, `src/main.tsx` over, then delete the generated `src/App.css`, `src/index.css`, `src/assets`.
 
@@ -127,7 +128,7 @@ If `npm create vite` refuses because the directory isn't empty, scaffold in a te
     "dompurify": "^3.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "zod": "^3.24.0"
+    "zod": "^4.0.0"
   },
   "devDependencies": {}
 }
