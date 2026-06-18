@@ -56,8 +56,8 @@ export default function App() {
             <Search radar={load.radar} />
             <QuadrantNav radar={load.radar} />
             <Legend radar={load.radar} />
-            <Tooltip radar={load.radar} />
             <QuadrantTable radar={load.radar} placed={placed} />
+            <Tooltip radar={load.radar} />
           </aside>
         </main>
       )}

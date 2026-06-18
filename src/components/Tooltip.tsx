@@ -8,24 +8,18 @@ export function Tooltip({ radar }: { radar: Radar }) {
   const { hoveredBlipId, selectedBlipId } = useRadarState()
   const id = hoveredBlipId ?? selectedBlipId
   const blip = id ? radar.blips.find((b) => b.id === id) : undefined
-
-  // Constant-height slot: content changes but the outer height never does,
-  // so hovering list rows can't shift the layout (no flicker loop).
+  if (!blip) return null
+  // Rendered last in the sidebar (below the list), so it can grow to any height
+  // without shifting the list above it — no clipping, no hover flicker loop.
   return (
-    <div className={styles.tooltipSlot}>
-      {blip ? (
-        <aside
-          data-tooltip
-          className={styles.tooltip}
-          style={{ '--accent': quadrantColor(blip.quadrant) } as CSSProperties}
-        >
-          <h3>{blip.name}</h3>
-          {/* description was sanitized in schema.ts via DOMPurify */}
-          <div dangerouslySetInnerHTML={{ __html: blip.description }} />
-        </aside>
-      ) : (
-        <div className={styles.tooltipHint}>Punkt antippen oder überfahren für Details</div>
-      )}
-    </div>
+    <aside
+      data-tooltip
+      className={styles.tooltip}
+      style={{ '--accent': quadrantColor(blip.quadrant) } as CSSProperties}
+    >
+      <h3>{blip.name}</h3>
+      {/* description was sanitized in schema.ts via DOMPurify */}
+      <div dangerouslySetInnerHTML={{ __html: blip.description }} />
+    </aside>
   )
 }

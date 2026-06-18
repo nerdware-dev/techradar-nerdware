@@ -34,25 +34,9 @@
   color: var(--brand);
 }
 
-/* Tooltip — fixed-height slot keeps the layout stable (no hover flicker loop) */
-.tooltipSlot {
-  height: 148px;
-}
-.tooltipHint {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 1.2rem;
-  color: var(--text-mute);
-  font-size: 13px;
-  line-height: 18px;
-  border: 1px dashed var(--panel-border);
-  border-radius: 12px;
-}
+/* Tooltip — sits below the list; grows to fit, scrolls only if huge */
 .tooltip {
-  height: 100%;
+  max-height: 52vh;
   overflow-y: auto;
   border: 1px solid var(--panel-border);
   border-left: 3px solid var(--accent, var(--brand));

@@ -117,12 +117,8 @@ export function RadarView({ radar, placed }: { radar: Radar; placed: PlacedBlip[
         )
       })}
 
-      {/* blips */}
-      {placed.map((p) => (
-        <Blip key={p.blip.id} placed={p} />
-      ))}
-
-      {/* focus dim overlay (data-dim isolates these from the sector tints) */}
+      {/* focus dim overlay — UNDER the blips, so the active blip + its label
+          (which may extend over a neighbouring quadrant) never get darkened */}
       {focusedQuadrant &&
         radar.quadrants
           .filter((q) => q.id !== focusedQuadrant)
@@ -137,6 +133,11 @@ export function RadarView({ radar, placed }: { radar: Radar; placed: PlacedBlip[
               />
             )
           })}
+
+      {/* blips on top of everything */}
+      {placed.map((p) => (
+        <Blip key={p.blip.id} placed={p} />
+      ))}
     </svg>
   )
 }

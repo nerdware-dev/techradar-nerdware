@@ -5,6 +5,8 @@
   background: var(--panel);
   padding: 1rem 1.1rem 1.2rem;
   box-shadow: 0 14px 44px rgba(0, 0, 0, 0.45);
+  max-height: 52vh;
+  overflow-y: auto;
 }
 @keyframes rise {
   from {

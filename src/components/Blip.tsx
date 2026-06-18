@@ -12,7 +12,10 @@ export function Blip({ placed }: { placed: PlacedBlip }) {
   const dispatch = useRadarDispatch()
   const activeId = state.hoveredBlipId ?? state.selectedBlipId
   const isActive = activeId === blip.id
-  const dimmed = activeId !== null && !isActive
+  // dim when another blip is active, or when a different quadrant is focused
+  const dimmed =
+    (activeId !== null && !isActive) ||
+    (state.focusedQuadrant !== null && !isActive && blip.quadrant !== state.focusedQuadrant)
 
   return (
     <g
