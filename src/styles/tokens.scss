@@ -19,7 +19,7 @@
   --bg-2: #1c1c1c; // gray 950
   --surface: #222222; // gray 900
   --surface-2: #282828; // gray 800
-  --panel: rgba(34, 34, 34, 0.72); // gray-900 glass
+  --panel: #1e1e1e; // gray-900-ish solid (no blur → no repaint flicker)
   --panel-border: #333333; // gray 750
   --grid: rgba(173, 173, 173, 0.14); // gray 300 @ low alpha
   --grid-strong: rgba(173, 173, 173, 0.28);
@@ -55,6 +55,5 @@ body {
   background:
     radial-gradient(1100px 760px at 36% 14%, rgba(0, 255, 191, 0.06), transparent 60%),
     radial-gradient(900px 720px at 82% 92%, rgba(78, 74, 255, 0.07), transparent 60%), var(--bg);
-  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
 }

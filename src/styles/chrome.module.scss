@@ -8,7 +8,6 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  backdrop-filter: blur(10px);
 }
 .header::after {
   content: '';
@@ -42,9 +41,7 @@
   border-radius: 12px;
   padding: 0.9rem 1.05rem;
   background: var(--panel);
-  backdrop-filter: blur(14px);
   box-shadow: 0 14px 44px rgba(0, 0, 0, 0.5);
-  animation: rise 0.3s ease both;
 }
 .tooltip h3 {
   margin: 0 0 0.45rem;

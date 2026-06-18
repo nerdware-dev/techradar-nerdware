@@ -3,10 +3,8 @@
   border: 1px solid var(--panel-border);
   border-radius: 12px;
   background: var(--panel);
-  backdrop-filter: blur(14px);
   padding: 1rem 1.1rem 1.2rem;
   box-shadow: 0 14px 44px rgba(0, 0, 0, 0.45);
-  animation: rise 0.3s ease both;
 }
 @keyframes rise {
   from {
