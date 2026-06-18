@@ -25,6 +25,9 @@ export default tseslint.config(
     files: ['**/*.{ts,tsx}'],
     languageOptions: { ecmaVersion: 2022, sourceType: 'module' },
     plugins: { 'react-hooks': reactHooks, 'react-refresh': reactRefresh },
-    rules: { ...reactHooks.configs.recommended.rules },
+    rules: {
+      ...reactHooks.configs.recommended.rules,
+      'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+    },
   },
 )
