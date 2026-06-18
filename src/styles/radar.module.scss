@@ -1,0 +1,87 @@
+.svg {
+  width: 100%;
+  height: auto;
+  /* scale with viewport so the radar fills the space on large screens */
+  max-width: min(940px, 82vh);
+  display: block;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+/* per-quadrant sector tints */
+.sector {
+  transition: fill-opacity 0.35s ease;
+  cursor: pointer;
+}
+
+/* concentric band shading for depth (neutral) */
+.bandA {
+  fill: rgba(173, 173, 173, 0.05);
+  pointer-events: none;
+}
+.bandB {
+  fill: rgba(173, 173, 173, 0.022);
+  pointer-events: none;
+}
+
+/* rotating radar sweep (brand cyan) */
+.sweepArea {
+  fill: rgba(0, 255, 191, 0.07);
+  pointer-events: none;
+}
+.sweepBeam {
+  stroke: var(--brand);
+  stroke-width: 2;
+  opacity: 0.5;
+  filter: drop-shadow(0 0 7px rgba(0, 255, 191, 0.7));
+  pointer-events: none;
+}
+
+/* outer bezel + grid */
+.bezel {
+  fill: none;
+  stroke: var(--grid-strong);
+  stroke-width: 1.5;
+  pointer-events: none;
+}
+.ring {
+  fill: none;
+  stroke: var(--grid);
+  stroke-width: 1;
+  pointer-events: none;
+}
+.axis {
+  stroke: var(--grid);
+  stroke-width: 1;
+  stroke-dasharray: 2 7;
+  pointer-events: none;
+}
+
+/* labels (Inter, DS 0 tracking) */
+.ringLabel {
+  fill: var(--text-mute);
+  font-family: var(--font);
+  font-size: 11px;
+  font-weight: 600;
+  text-anchor: middle;
+  paint-order: stroke;
+  stroke: var(--bg);
+  stroke-width: 3px;
+  pointer-events: none;
+}
+.quadrantLabel {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-anchor: middle;
+  dominant-baseline: middle;
+  pointer-events: none;
+  opacity: 0.95;
+}
+
+/* focus dim overlay */
+.dim {
+  fill: rgba(21, 21, 21, 0.76);
+  pointer-events: none;
+}

@@ -1,22 +1,13 @@
-FROM nginx:1.23.0
+# --- build stage ---
+FROM node:22-alpine AS build
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
 
-RUN apt-get update && apt-get upgrade -y
-
-RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
-RUN apt-get install -y nodejs
-
-RUN                                                                       \
-  apt-get install -y                                                      \
-  libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3    \
-  libxss1 libasound2 libxtst6 xauth xvfb g++ make
-
-WORKDIR /src/build-your-own-radar
-COPY package.json ./
-RUN npm install
-
-COPY . ./
-
-# Override parent node image's entrypoint script (/usr/local/bin/docker-entrypoint.sh),
-# which tries to run CMD as a node command
-ENTRYPOINT []
-CMD ["./build_and_start_nginx.sh"]
+# --- serve stage ---
+FROM nginx:1.27-alpine
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=build /app/dist /usr/share/nginx/html
+EXPOSE 80

@@ -1,0 +1,59 @@
+// Nerdware Tech Radar — tokens aligned to the Nerdware dark-mode design system.
+// Font: Inter. Neutrals: DS gray scale. Brand: Cyan #00FFBF. Primary: Lavender #4E4AFF.
+
+:root {
+  // Brand / primary (DS)
+  --brand: #00ffbf; // Cyan 500 — nerdware brand / active
+  --brand-bright: #4dffd8; // Cyan 400
+  --primary: #4e4aff; // Lavender/Indigo 600 — primary
+  --primary-300: #a0aaff; // Indigo 300
+
+  // Per-quadrant accents (from DS palette; mirror quadrantColor.ts)
+  --q-techniques: #00ffbf; // Cyan (brand)
+  --q-platforms: #facc15; // Yellow 400
+  --q-tools: #a0aaff; // Indigo 300 (lavender)
+  --q-languages-frameworks: #fb7185; // Rose 400
+
+  // Neutrals (DS gray scale)
+  --bg: #151515; // gray 1000 / dark
+  --bg-2: #1c1c1c; // gray 950
+  --surface: #222222; // gray 900
+  --surface-2: #282828; // gray 800
+  --panel: #1e1e1e; // gray-900-ish solid (no blur → no repaint flicker)
+  --panel-border: #333333; // gray 750
+  --grid: rgba(173, 173, 173, 0.14); // gray 300 @ low alpha
+  --grid-strong: rgba(173, 173, 173, 0.28);
+
+  --text: #fafafa; // gray 50
+  --text-dim: #adadad; // gray 300
+  --text-mute: #828282; // gray 500
+
+  // Semantic (DS)
+  --danger: #f87171;
+  --success: #00a865;
+
+  // Back-compat aliases used across component styles → DS values
+  --nw-teal: #00ffbf;
+  --nw-teal-bright: #4dffd8;
+  --nw-pink: #fb7185;
+
+  // DS is Inter-only
+  --font: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Inter', system-ui, sans-serif;
+  --font-mono: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font);
+  color: var(--text);
+  background:
+    radial-gradient(1100px 760px at 36% 14%, rgba(0, 255, 191, 0.06), transparent 60%),
+    radial-gradient(900px 720px at 82% 92%, rgba(78, 74, 255, 0.07), transparent 60%), var(--bg);
+  -webkit-font-smoothing: antialiased;
+}

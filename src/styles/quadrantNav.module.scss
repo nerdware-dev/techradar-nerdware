@@ -1,0 +1,50 @@
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.7rem;
+  cursor: pointer;
+  text-align: left;
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  color: var(--text-dim);
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 500;
+  transition:
+    border-color 0.15s ease,
+    color 0.15s ease,
+    background 0.15s ease;
+}
+.chip:hover {
+  color: var(--text);
+  border-color: color-mix(in srgb, var(--c) 55%, var(--panel-border));
+}
+.chip.active {
+  color: var(--text);
+  border-color: var(--c);
+  background: color-mix(in srgb, var(--c) 12%, var(--panel));
+}
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--c);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--c) 70%, transparent);
+  flex: none;
+}
+.label {
+  flex: 1;
+  line-height: 1.15;
+}
+.count {
+  font-weight: 700;
+  color: var(--c);
+  font-variant-numeric: tabular-nums;
+}

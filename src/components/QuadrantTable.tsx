@@ -1,0 +1,52 @@
+import type { CSSProperties } from 'react'
+import type { Radar } from '../data/types'
+import { useMemo } from 'react'
+import { useRadarState, useRadarDispatch } from '../state/radarStore'
+import { quadrantColor } from '../radar/quadrantColor'
+import styles from '../styles/quadrantTable.module.scss'
+import type { PlacedBlip } from '../radar/placement'
+
+export function QuadrantTable({ radar, placed }: { radar: Radar; placed: PlacedBlip[] }) {
+  const { focusedQuadrant, selectedBlipId } = useRadarState()
+  const dispatch = useRadarDispatch()
+  const numbers = useMemo(() => new Map(placed.map((p) => [p.blip.id, p.number])), [placed])
+
+  if (!focusedQuadrant) return null
+  const quadrant = radar.quadrants.find((q) => q.id === focusedQuadrant)
+  if (!quadrant) return null
+
+  const rings = [...radar.rings].sort((a, b) => a.order - b.order)
+
+  return (
+    <div
+      data-quadrant-table
+      className={styles.table}
+      style={{ '--accent': quadrantColor(quadrant.id) } as CSSProperties}
+    >
+      <h2>{quadrant.name}</h2>
+      {rings.map((ring) => {
+        const blips = radar.blips
+          .filter((b) => b.quadrant === quadrant.id && b.ring === ring.id)
+          .sort((a, b) => a.name.localeCompare(b.name))
+        if (blips.length === 0) return null
+        return (
+          <div key={ring.id}>
+            <p className={styles.ringHeading}>{ring.name}</p>
+            {blips.map((b) => (
+              <button
+                key={b.id}
+                className={`${styles.row} ${selectedBlipId === b.id ? styles.rowSelected : ''}`}
+                onMouseEnter={() => dispatch({ type: 'HOVER_BLIP', id: b.id })}
+                onMouseLeave={() => dispatch({ type: 'HOVER_BLIP', id: null })}
+                onClick={() => dispatch({ type: 'SELECT_BLIP', id: b.id, quadrant: b.quadrant })}
+              >
+                <span className={styles.num}>{numbers.get(b.id)}</span>
+                <span>{b.name}</span>
+              </button>
+            ))}
+          </div>
+        )
+      })}
+    </div>
+  )
+}
