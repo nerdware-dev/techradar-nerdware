@@ -5,6 +5,8 @@ import { slugify } from './slug'
 import { RINGS, QUADRANTS } from '../config'
 
 const TRUTHY = new Set(['true', '1', 'yes'])
+const RING_IDS = RINGS.map((r) => r.id) as RingId[]
+const QUADRANT_IDS = QUADRANTS.map((q) => q.id) as QuadrantId[]
 
 function sanitize(html: string): string {
   return DOMPurify.sanitize(html, {
@@ -22,9 +24,6 @@ const rawBlipSchema = z.object({
 })
 
 function toBlip(raw: z.infer<typeof rawBlipSchema>, index: number): Blip {
-  const RING_IDS = RINGS.map((r) => r.id) as RingId[]
-  const QUADRANT_IDS = QUADRANTS.map((q) => q.id) as QuadrantId[]
-
   const ring = slugify(raw.ring)
   if (!RING_IDS.includes(ring as RingId)) {
     throw new Error(`Blip "${raw.name}" (#${index}) has unknown ring "${raw.ring}". Allowed: ${RING_IDS.join(', ')}`)
