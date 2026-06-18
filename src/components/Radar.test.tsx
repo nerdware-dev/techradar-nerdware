@@ -1,7 +1,8 @@
 import { describe, it, expect } from 'vitest'
 import { render } from '@testing-library/react'
+import { useEffect, type ReactNode } from 'react'
 import { RadarView } from './Radar'
-import { RadarStoreProvider } from '../state/radarStore'
+import { RadarStoreProvider, useRadarDispatch } from '../state/radarStore'
 import { parseRadar } from '../data/schema'
 
 const radar = parseRadar([
@@ -9,6 +10,14 @@ const radar = parseRadar([
   { name: 'AWS', ring: 'Low', quadrant: 'platforms', isNew: 'TRUE', description: 'a' },
   { name: 'Go', ring: 'Dev', quadrant: 'languages & frameworks', isNew: 'FALSE', description: 'g' },
 ])
+
+function FocusOn({ id, children }: { id: 'platforms'; children: ReactNode }) {
+  const dispatch = useRadarDispatch()
+  useEffect(() => {
+    dispatch({ type: 'FOCUS_QUADRANT', id })
+  }, [dispatch, id])
+  return <>{children}</>
+}
 
 describe('RadarView', () => {
   it('renders an svg with one circle per ring', () => {
@@ -29,5 +38,26 @@ describe('RadarView', () => {
       </RadarStoreProvider>,
     )
     expect(container.querySelectorAll('[role="button"]')).toHaveLength(3)
+  })
+
+  it('renders no overlay path when nothing is focused', () => {
+    const { container } = render(
+      <RadarStoreProvider>
+        <RadarView radar={radar} />
+      </RadarStoreProvider>,
+    )
+    expect(container.querySelectorAll('path')).toHaveLength(0)
+  })
+
+  it('renders a dim overlay over each non-focused quadrant when focused', () => {
+    const { container } = render(
+      <RadarStoreProvider>
+        <FocusOn id="platforms">
+          <RadarView radar={radar} />
+        </FocusOn>
+      </RadarStoreProvider>,
+    )
+    // 4 quadrants total, 1 focused → 3 overlay paths
+    expect(container.querySelectorAll('path')).toHaveLength(3)
   })
 })
