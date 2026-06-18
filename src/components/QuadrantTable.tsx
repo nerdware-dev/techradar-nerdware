@@ -1,4 +1,5 @@
 import type { Radar } from '../data/types'
+import { useMemo } from 'react'
 import { useRadarState, useRadarDispatch } from '../state/radarStore'
 import styles from '../styles/quadrantTable.module.scss'
 import { placeBlips } from '../radar/placement'
@@ -7,15 +8,21 @@ import { RADAR_SIZE } from '../config'
 export function QuadrantTable({ radar }: { radar: Radar }) {
   const { focusedQuadrant, selectedBlipId } = useRadarState()
   const dispatch = useRadarDispatch()
-  if (!focusedQuadrant) return null
-
-  const quadrant = radar.quadrants.find((q) => q.id === focusedQuadrant)!
-  const numbers = new Map(
-    placeBlips(radar.blips, radar.rings, radar.quadrants, RADAR_SIZE).map((p) => [
-      p.blip.id,
-      p.number,
-    ]),
+  const numbers = useMemo(
+    () =>
+      new Map(
+        placeBlips(radar.blips, radar.rings, radar.quadrants, RADAR_SIZE).map((p) => [
+          p.blip.id,
+          p.number,
+        ]),
+      ),
+    [radar],
   )
+
+  if (!focusedQuadrant) return null
+  const quadrant = radar.quadrants.find((q) => q.id === focusedQuadrant)
+  if (!quadrant) return null
+
   const rings = [...radar.rings].sort((a, b) => a.order - b.order)
 
   return (
