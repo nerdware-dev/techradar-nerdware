@@ -10,7 +10,8 @@
     "composite": true,
     "outDir": "./node_modules/.tmp/tsnode",
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
-    "strict": true
+    "strict": true,
+    "types": ["node"]
   },
   "include": ["vite.config.ts", "playwright.config.ts"]
 }
