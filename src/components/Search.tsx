@@ -23,7 +23,7 @@ export function Search({ radar }: { radar: Radar }) {
         onChange={(e) => dispatch({ type: 'SET_SEARCH', value: e.target.value })}
       />
       {matches.length > 0 && (
-        <ul className={styles.list}>
+        <ul role="listbox" aria-label="Suchergebnisse" className={styles.list}>
           {matches.map((b) => (
             <li
               key={b.id}

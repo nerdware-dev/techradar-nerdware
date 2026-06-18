@@ -1,6 +1,8 @@
+import type { CSSProperties } from 'react'
 import type { Radar } from '../data/types'
 import { useMemo } from 'react'
 import { useRadarState, useRadarDispatch } from '../state/radarStore'
+import { quadrantColor } from '../radar/quadrantColor'
 import styles from '../styles/quadrantTable.module.scss'
 import type { PlacedBlip } from '../radar/placement'
 
@@ -16,7 +18,11 @@ export function QuadrantTable({ radar, placed }: { radar: Radar; placed: PlacedB
   const rings = [...radar.rings].sort((a, b) => a.order - b.order)
 
   return (
-    <div data-quadrant-table className={styles.table}>
+    <div
+      data-quadrant-table
+      className={styles.table}
+      style={{ '--accent': quadrantColor(quadrant.id) } as CSSProperties}
+    >
       <h2>{quadrant.name}</h2>
       {rings.map((ring) => {
         const blips = radar.blips

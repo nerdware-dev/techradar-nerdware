@@ -7,6 +7,7 @@ import { RadarStoreProvider } from './state/radarStore'
 import { Header } from './components/Header'
 import { Search } from './components/Search'
 import { RadarView } from './components/Radar'
+import { QuadrantNav } from './components/QuadrantNav'
 import { QuadrantTable } from './components/QuadrantTable'
 import { Tooltip } from './components/Tooltip'
 import { Legend } from './components/Legend'
@@ -48,13 +49,16 @@ export default function App() {
       )}
       {load.status === 'ready' && (
         <main className={styles.layout}>
-          <RadarView radar={load.radar} placed={placed} />
-          <div className={styles.sidebar}>
+          <div className={styles.radarWrap}>
+            <RadarView radar={load.radar} placed={placed} />
+          </div>
+          <aside className={styles.sidebar}>
             <Search radar={load.radar} />
+            <QuadrantNav radar={load.radar} />
             <Legend radar={load.radar} />
             <Tooltip radar={load.radar} />
             <QuadrantTable radar={load.radar} placed={placed} />
-          </div>
+          </aside>
         </main>
       )}
     </RadarStoreProvider>

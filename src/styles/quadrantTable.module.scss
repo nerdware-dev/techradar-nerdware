@@ -1,27 +1,71 @@
 .table {
-  font-family: inherit;
+  font-family: var(--font);
+  border: 1px solid var(--panel-border);
+  border-radius: 12px;
+  background: var(--panel);
+  backdrop-filter: blur(14px);
+  padding: 1rem 1.1rem 1.2rem;
+  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.45);
+  animation: rise 0.3s ease both;
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.table h2 {
+  margin: 0 0 0.3rem;
+  font-family: var(--font);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  color: var(--accent, var(--brand));
 }
 .ringHeading {
-  font-size: 13px;
-  font-weight: 700;
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: 600;
   text-transform: uppercase;
-  margin: 0.75rem 0 0.25rem;
+  color: var(--text-mute);
+  margin: 0.9rem 0 0.35rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--panel-border);
 }
 .row {
   display: flex;
-  gap: 0.5rem;
-  padding: 0.15rem 0;
+  gap: 0.6rem;
+  align-items: baseline;
+  width: 100%;
+  padding: 0.3rem 0.4rem;
   cursor: pointer;
   background: none;
   border: none;
+  border-radius: 7px;
   text-align: left;
-  width: 100%;
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 20px;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
 }
-.row:hover,
+.row:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--accent, var(--brand));
+}
 .rowSelected {
-  color: #b9027f;
+  background: color-mix(in srgb, var(--accent, #00ffbf) 16%, transparent);
+  color: var(--accent, var(--brand));
 }
 .num {
+  font-family: var(--font);
   font-weight: 700;
-  min-width: 1.5rem;
+  min-width: 1.4rem;
+  color: var(--accent, var(--brand));
 }

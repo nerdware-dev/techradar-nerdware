@@ -43,13 +43,14 @@ describe('RadarView', () => {
     expect(container.querySelectorAll('[role="button"]')).toHaveLength(3)
   })
 
-  it('renders no overlay path when nothing is focused', () => {
+  it('renders no dim overlay when nothing is focused', () => {
     const { container } = render(
       <RadarStoreProvider>
         <RadarView radar={radar} placed={placed} />
       </RadarStoreProvider>,
     )
-    expect(container.querySelectorAll('path')).toHaveLength(0)
+    // sector tints are always present; the focus dim overlay is marked [data-dim]
+    expect(container.querySelectorAll('[data-dim]')).toHaveLength(0)
   })
 
   it('renders a dim overlay over each non-focused quadrant when focused', () => {
@@ -60,7 +61,7 @@ describe('RadarView', () => {
         </FocusOn>
       </RadarStoreProvider>,
     )
-    // 4 quadrants total, 1 focused → 3 overlay paths
-    expect(container.querySelectorAll('path')).toHaveLength(3)
+    // 4 quadrants total, 1 focused → 3 dim-overlay paths
+    expect(container.querySelectorAll('[data-dim]')).toHaveLength(3)
   })
 })

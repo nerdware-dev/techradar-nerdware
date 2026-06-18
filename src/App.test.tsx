@@ -18,8 +18,11 @@ describe('App', () => {
     render(<App />)
     await waitFor(() => expect(screen.getByLabelText('Docker')).toBeInTheDocument())
     fireEvent.click(screen.getByLabelText('Docker'))
-    // selecting a blip focuses its quadrant → table appears
-    await waitFor(() => expect(screen.getByText('Platforms')).toBeInTheDocument())
+    // selecting a blip focuses its quadrant → the quadrant table heading appears.
+    // (target the heading specifically — "Platforms" also appears as a radar quadrant label)
+    await waitFor(() =>
+      expect(screen.getByRole('heading', { name: 'Platforms' })).toBeInTheDocument(),
+    )
   })
 
   it('shows an error state when the fetch fails', async () => {
