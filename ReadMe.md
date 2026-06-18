@@ -48,9 +48,9 @@ npm run dev      # Entwicklungsserver starten (http://localhost:5173)
 ## Tests & Linting
 
 ```bash
-npm test             # 43 Unit-Tests (Vitest + React Testing Library)
+npm test             # Unit-Tests (Vitest + React Testing Library)
 npm run test:e2e     # End-to-End-Tests (Playwright)
-npm run lint         # ESLint + TypeScript-Prüfung
+npm run lint         # ESLint + Prettier + TypeScript-Prüfung
 ```
 
 ---
@@ -80,9 +80,9 @@ Bei jedem Push auf `master` baut die GitHub Actions Pipeline automatisch das Doc
 
 ## Konfiguration
 
-| Variable              | Beschreibung                                              | Standard           |
-| --------------------- | --------------------------------------------------------- | ------------------ |
-| `VITE_RADAR_DATA_URL` | URL zur Radar-JSON-Datei (kann auf externe Quelle zeigen) | `/tech-radar.json` |
+| Variable              | Beschreibung                                              | Standard                                                                                                                                                   |
+| --------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `VITE_RADAR_DATA_URL` | URL zur Radar-JSON-Datei (kann auf externe Quelle zeigen) | `https://raw.githubusercontent.com/nerdware-dev/techradar-nerdware/master/data/tech-radar.json` (definiert in `src/config.ts`, überschreibbar via Env-Var) |
 
 Beispiel für eine abweichende Datenquelle:
 
