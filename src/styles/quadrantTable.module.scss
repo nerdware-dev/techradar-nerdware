@@ -1,0 +1,27 @@
+.table {
+  font-family: inherit;
+}
+.ringHeading {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0.75rem 0 0.25rem;
+}
+.row {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.15rem 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  text-align: left;
+  width: 100%;
+}
+.row:hover,
+.rowSelected {
+  color: #b9027f;
+}
+.num {
+  font-weight: 700;
+  min-width: 1.5rem;
+}
