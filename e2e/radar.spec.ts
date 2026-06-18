@@ -36,5 +36,5 @@ test('radar loads and a quadrant can be focused', async ({ page }) => {
 test('search filters blips', async ({ page }) => {
   await page.goto('/')
   await page.getByRole('searchbox').fill('doc')
-  await expect(page.getByText('Docker')).toBeVisible()
+  await expect(page.getByRole('option', { name: /docker/i })).toBeVisible()
 })
