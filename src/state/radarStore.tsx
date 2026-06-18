@@ -58,12 +58,12 @@ export function RadarStoreProvider({ children }: { children: ReactNode }) {
 
 export function useRadarState(): RadarState {
   const ctx = useContext(StateContext)
-  if (!ctx) throw new Error('useRadarState must be used within RadarStoreProvider')
+  if (ctx === null) throw new Error('useRadarState must be used within RadarStoreProvider')
   return ctx
 }
 
 export function useRadarDispatch(): Dispatch<RadarAction> {
   const ctx = useContext(DispatchContext)
-  if (!ctx) throw new Error('useRadarDispatch must be used within RadarStoreProvider')
+  if (ctx === null) throw new Error('useRadarDispatch must be used within RadarStoreProvider')
   return ctx
 }
