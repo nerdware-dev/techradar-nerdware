@@ -8,23 +8,3 @@ docs
 data
 public
 *.min.js
-# legacy — removed in Task 17
-src/graphing
-src/util
-src/models
-src/exceptions
-src/stylesheets
-src/images
-src/common.js
-src/site.js
-src/gtm.js
-src/config.js
-src/index.html
-src/error.html
-webpack.common.js
-webpack.dev.js
-webpack.dev-old-ui.js
-webpack.prod.js
-jest.config.js
-cypress.config.js
-spec

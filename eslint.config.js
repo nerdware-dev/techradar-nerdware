@@ -5,20 +5,7 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 
 export default tseslint.config(
   {
-    ignores: [
-      'dist',
-      'data',
-      'public',
-      'coverage',
-      'playwright-report',
-      'docs',
-      // legacy code, removed in Task 17 — not linted in the interim
-      'src/**/*.js',
-      'webpack.*.js',
-      'jest.config.js',
-      'cypress.config.js',
-      'spec',
-    ],
+    ignores: ['dist', 'data', 'public', 'coverage', 'playwright-report', 'docs'],
   },
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
