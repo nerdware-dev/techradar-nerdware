@@ -46,7 +46,8 @@ async function main(): Promise<void> {
   await mkdir(SCANNER_CONFIG.paths.detectionsDir, { recursive: true })
   await writeFile(
     join(SCANNER_CONFIG.paths.detectionsDir, `${today}.json`),
-    JSON.stringify(result.detections, null, 2) + '\n',
+    JSON.stringify({ detections: result.detections, candidates: result.candidates }, null, 2) +
+      '\n',
   )
   process.stdout.write(result.report)
 }

@@ -16,6 +16,8 @@ export interface ScanResult {
   candidate: ScannerBlip[]
   report: string
   detections: Detection[]
+  /** Unrecognized dependencies, for human review (not published to the radar). */
+  candidates: Detection[]
 }
 
 /** Optional progress sink (run.ts wires it to stderr; tests leave it silent). */
@@ -54,10 +56,13 @@ export async function runScan(
     scans.push({ repo: repo.name, pushedAt: repo.pushedAt, tokens })
   }
 
-  const detections = aggregate(scans)
+  const { detections, candidates } = aggregate(scans)
   const existingSlugs = new Set(existing.map((b) => slugify(b.name)))
   const newCount = detections.filter((d) => !existingSlugs.has(slugify(d.name))).length
-  log(`Detected ${detections.length} techs (${newCount} new). Categorizing + drafting…`)
+  log(
+    `Detected ${detections.length} notable techs (${newCount} new) + ` +
+      `${candidates.length} candidates for review. Categorizing + drafting…`,
+  )
 
   const categorized = new Map<string, { quadrant: QuadrantId; needsReview: boolean }>()
   const descriptions = new Map<string, string>()
@@ -73,6 +78,6 @@ export async function runScan(
   }
 
   const { candidate, changes } = mergeRadar(existing, detections, categorized, descriptions)
-  const report = renderReport(changes, repos.length)
-  return { candidate, report, detections }
+  const report = renderReport(changes, repos.length, candidates.length)
+  return { candidate, report, detections, candidates }
 }
