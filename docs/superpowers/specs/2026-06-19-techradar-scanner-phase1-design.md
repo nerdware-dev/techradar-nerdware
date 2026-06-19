@@ -62,9 +62,9 @@ data/
   detections/        # machine-owned scan snapshots, one per run (enables trends + the future Out rule)
 ```
 
-**Dependencies to add:** `@octokit/rest` (pagination + rate-limit handling), `@anthropic-ai/sdk`, `tsx` (dev, to execute TS directly). **npm script:** `"scan": "tsx scanner/run.ts"`.
+**Dependencies (all devDependencies — the scanner is dev/CI-only, never bundled into the app):** `@octokit/rest` (pagination + rate-limit handling), `openai` (Forge gateway, OpenAI-wire), `tsx` (to execute TS directly). **npm script:** `"scan": "tsx scanner/run.ts"`.
 
-**Auth (env-based, portable to CI):** GitHub token from `GH_TOKEN`/`GITHUB_TOKEN`; Anthropic from `ANTHROPIC_API_KEY`. Local invocation: `GH_TOKEN=$(gh auth token) ANTHROPIC_API_KEY=… npm run scan`. The active `gh` account already has `repo` + `read:org` scopes (private repos readable).
+**Auth (env-based, portable to CI):** GitHub token from `GH_TOKEN`/`GITHUB_TOKEN`; Forge from `FORGE_API_KEY`. Local invocation: `GH_TOKEN=$(gh auth token) npm run scan` with `FORGE_API_KEY` in a gitignored `.env`. The active `gh` account already has `repo` + `read:org` scopes (private repos readable).
 
 ## 5. Data model (additive, app-safe)
 
@@ -114,41 +114,34 @@ Deterministic detection first; Claude only for genuinely ambiguous parts, gated 
 - **German descriptions** — for **new** blips only, a stronger Claude model (Sonnet/Opus-tier) drafts a description in the radar's German editorial voice. Existing descriptions are never sent or overwritten.
 - **Confidence gating** — categorizations below a configurable threshold are written with the tech marked `needs-review` (a machine field) and listed separately in the report; they are not silently published into a quadrant. Because AI runs only on new/unknown techs, most runs make few or zero calls.
 
-Exact model IDs, the SDK call shape, and prompts are pinned via the `claude-api` reference at implementation time (default to the latest capable Claude models — e.g. `claude-haiku-4-5` for categorization, `claude-opus-4-8` for German descriptions).
+Model IDs (Forge aliases): `claude-haiku-4-5` for categorization, `claude-opus-4-6` for German descriptions (Forge's best Opus).
 
 ### 7.1 Where the AI runs (execution model)
 
-There is **no persistent Claude process or hosted agent.** The scanner makes ordinary, stateless HTTPS calls to the Anthropic Messages API (`POST /v1/messages`) via the `@anthropic-ai/sdk` package, authenticated with `ANTHROPIC_API_KEY`. Both AI uses (categorize-unknown = classification; draft-description = text generation) are single-call requests — **not** the Managed Agents / Claude Code surface, which would add containers and session state we don't need.
+There is **no persistent Claude process or hosted agent.** The scanner makes ordinary, stateless HTTPS calls to the **Forge gateway** (`POST /v1/chat/completions`, OpenAI-wire) via the `openai` SDK, authenticated with a technical-user key (`sk-…`). Both AI uses (categorize-unknown = classification; draft-description = text generation) are single-call requests — **not** the Managed Agents / Claude Code surface, which would add containers and session state we don't need.
 
 The calls run **wherever the scanner process runs**:
-- **Step 1 (on-demand):** on the developer's machine via `npm run scan`, with `ANTHROPIC_API_KEY` in the local env.
-- **Step 2 (daily workflow):** on the GitHub Actions runner. The runner has network egress to `api.anthropic.com`; the key is supplied as a GitHub Actions secret (`ANTHROPIC_API_KEY`, repo- or org-level) and passed as an env var to `npm run scan`. Because AI fires only on new/unknown techs, most scheduled runs make few or zero calls; only the first bulk run (and occasional new tech) incurs meaningful cost.
+- **Step 1 (on-demand):** on the developer's machine via `npm run scan`, with `FORGE_API_KEY` in the local env (gitignored `.env`).
+- **Step 2 (daily workflow):** on the GitHub Actions runner, with `FORGE_API_KEY` supplied as a repo/org secret. Because AI fires only on new/unknown techs, most scheduled runs make few or zero calls; only the first bulk run (and occasional new tech) incurs meaningful cost.
 
-### 7.2 Pluggable LLM provider (`LLMClient` seam)
+### 7.2 LLM provider — Forge only (`LLMClient` seam)
 
-All AI access goes through one small interface, so the scanner never depends on *who* answers:
+All AI access goes through one small interface, so the scanner never depends on the transport:
 
 ```ts
 interface LLMClient {
-  categorizeUnknown(name: string, context: DetectionContext): Promise<{ quadrant: QuadrantId; confidence: number }>
-  draftDescription(name: string, context: DetectionContext): Promise<string>  // German
+  categorize(name: string, context: string): Promise<{ quadrant: QuadrantId; confidence: number }>
+  describe(name: string, context: string): Promise<string>  // German
 }
 ```
 
-Two interchangeable implementations sit behind it, selected by config:
+**Decision (2026-06-19):** the scanner uses **only** the Nerdware **Forge** gateway — an OpenAI-compatible transport (the `openai` SDK) at `FORGE_BASE_URL=https://forge.nerdware.ai/v1` (`POST /v1/chat/completions`), Bearer-authenticated with a technical-user key (`FORGE_API_KEY`, `sk-…`). The single `createForgeClient` implements `LLMClient`; `createLLMClient(env)` constructs it and validates the key. There is no direct-Anthropic path — `@anthropic-ai/sdk` is not a dependency. Shared prompt builders + the categorize-JSON parser live in `scanner/llm/prompts.ts`. Forge's registry is Bedrock-backed and tops out at `claude-opus-4-6`, so model aliases are: categorization `claude-haiku-4-5`, German descriptions `claude-opus-4-6`. Going OpenAI-wire forgoes Anthropic-only schema-enforced structured outputs (acceptable — both calls are simple and validated client-side).
 
-- **`anthropic` (default, built now)** — `@anthropic-ai/sdk` calling the Anthropic Messages API directly (§7.1). Zero extra setup; used for local dev, tests, and the first real run.
-- **`forge` (OpenAI-wire)** — an OpenAI-compatible transport (the `openai` SDK) pointed at Nerdware's **Forge** gateway (`POST /v1/chat/completions`), authenticated with a technical-user key (`sk-…`). Same `LLMClient` interface, so it's a drop-in alternative selected by `LLM_PROVIDER=forge`.
-
-**Decision (2026-06-19):** the gateway is **OpenAI-compatible** (`/v1/chat/completions`), not Anthropic-wire. Concrete details (confirmed against the live gateway):
+Concrete details (confirmed against the live gateway):
 
 - **Base URL:** `https://forge.nerdware.ai/v1` (env `FORGE_BASE_URL`). The gateway is mounted at `/v1`; the `openai` SDK appends `/chat/completions`.
 - **Auth:** `Authorization: Bearer sk-…` (the `openai` SDK's default), key in env `FORGE_API_KEY`. The key lives in a gitignored `.env` locally and a GitHub Actions secret in CI — never committed. `.env.example` documents all vars.
-- **Provider selection:** `LLM_PROVIDER` = `anthropic` (default) or `forge`. Direct Anthropic stays the zero-setup default for local dev and tests.
-- **Model aliases differ per provider** (Forge's registry, all Bedrock-backed, has no `claude-opus-4-8`):
-  - categorization: `claude-haiku-4-5` (available on both).
-  - German descriptions: `claude-opus-4-8` on the `anthropic` path; **`claude-opus-4-6`** on `forge` (its best Opus). Config holds a model pair per provider.
-- Going OpenAI-wire means we forgo Anthropic-only schema-enforced structured outputs (acceptable — both calls are simple and validated client-side). Both Forge models are Claude-tier, so categorization and German-description quality match the spec's intent.
+- **Model aliases** (Forge's Bedrock-backed registry has no `claude-opus-4-8`): categorization `claude-haiku-4-5`, German descriptions `claude-opus-4-6`. Held in `SCANNER_CONFIG.models`.
 
 ## 8. Outputs of one run
 
@@ -179,11 +172,11 @@ Pure, deterministic units are tested directly:
 
 ## 11. Step 2 (separate plan, after reviewing run 1)
 
-`.github/workflows/radar-scan.yml`: daily cron → `npm run scan` (with `GITHUB_TOKEN` + `ANTHROPIC_API_KEY` secrets) → open/update a pull request with the candidate + the report as the PR body → **human merges manually**. Auto-merge and the guardrail gate are deferred to vision Phase 2.
+`.github/workflows/radar-scan.yml`: daily cron → `npm run scan` (with `GITHUB_TOKEN` + `FORGE_API_KEY` secrets) → open/update a pull request with the candidate + the report as the PR body → **human merges manually**. Auto-merge and the guardrail gate are deferred to vision Phase 2.
 
 ## 12. Open items pinned at implementation time
 
 - Exact Claude model IDs + prompts (via `claude-api` reference).
 - Final language-noise threshold and the full seed contents of `mappings/` (bootstrapped from the existing 45 entries + common ecosystem libs).
 - `@octokit/rest` vs shelling out to `gh api` — design assumes Octokit for robust pagination/rate-limit handling; revisit only if dependency footprint is a concern.
-- **Forge gateway (OpenAI-wire) is now in scope** — both the default Anthropic client and the Forge gateway client are built, selected by `LLM_PROVIDER` (§7.2). Base URL, auth, env vars, and per-provider model aliases are pinned.
+- **Forge gateway (OpenAI-wire) is the only LLM provider** — the direct-Anthropic client was removed (§7.2). Base URL, auth, env vars, and model aliases are pinned.
