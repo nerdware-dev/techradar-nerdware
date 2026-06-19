@@ -124,6 +124,24 @@ The calls run **wherever the scanner process runs**:
 - **Step 1 (on-demand):** on the developer's machine via `npm run scan`, with `ANTHROPIC_API_KEY` in the local env.
 - **Step 2 (daily workflow):** on the GitHub Actions runner. The runner has network egress to `api.anthropic.com`; the key is supplied as a GitHub Actions secret (`ANTHROPIC_API_KEY`, repo- or org-level) and passed as an env var to `npm run scan`. Because AI fires only on new/unknown techs, most scheduled runs make few or zero calls; only the first bulk run (and occasional new tech) incurs meaningful cost.
 
+### 7.2 Pluggable LLM provider (`LLMClient` seam)
+
+All AI access goes through one small interface, so the scanner never depends on *who* answers:
+
+```ts
+interface LLMClient {
+  categorizeUnknown(name: string, context: DetectionContext): Promise<{ quadrant: QuadrantId; confidence: number }>
+  draftDescription(name: string, context: DetectionContext): Promise<string>  // German
+}
+```
+
+Two interchangeable implementations sit behind it, selected by config:
+
+- **`anthropic` (default, built now)** — `@anthropic-ai/sdk` calling the Anthropic Messages API directly (§7.1). Zero extra setup; used for local dev, tests, and the first real run.
+- **`gateway` (OpenAI-wire, wiring deferred)** — an OpenAI-compatible transport (the `openai` SDK) pointed at Nerdware's self-hosted LiteLLM proxy (`POST /v1/chat/completions`), authenticated with a gateway virtual key. Same `LLMClient` interface, so it's a drop-in addition.
+
+**Decision (2026-06-19):** the gateway is **OpenAI-compatible** (`/v1/chat/completions`), not Anthropic-wire. We build the `LLMClient` seam and the default Anthropic implementation **now**; the gateway transport is slotted in **later** (user will revisit). Its remaining details are deferred: env var names, whether the gateway is opt-in vs the only path, the virtual-key auth header, and which underlying model it routes to. Going OpenAI-wire means we forgo Anthropic-only schema-enforced structured outputs (acceptable — both calls are simple and validated client-side). Categorization and German-description quality assume the gateway ultimately routes to Claude-tier models (`claude-haiku-4-5` / `claude-opus-4-8`); routing elsewhere will shift results.
+
 ## 8. Outputs of one run
 
 1. **`data/tech-radar.json`** — the candidate radar (app-readable), updated in place.
@@ -160,3 +178,4 @@ Pure, deterministic units are tested directly:
 - Exact Claude model IDs + prompts (via `claude-api` reference).
 - Final language-noise threshold and the full seed contents of `mappings/` (bootstrapped from the existing 45 entries + common ecosystem libs).
 - `@octokit/rest` vs shelling out to `gh api` — design assumes Octokit for robust pagination/rate-limit handling; revisit only if dependency footprint is a concern.
+- **LiteLLM gateway transport (OpenAI-wire) is deferred** — the `LLMClient` seam and the default Anthropic implementation are built now; the OpenAI-compatible gateway implementation, its env config, auth, and model routing are wired in a later pass (§7.2).
