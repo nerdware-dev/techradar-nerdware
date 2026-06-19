@@ -10,6 +10,12 @@ export function createLLMClient(env: NodeJS.ProcessEnv = process.env): LLMClient
   const openai = new OpenAI({
     apiKey: env.FORGE_API_KEY,
     baseURL: env.FORGE_BASE_URL ?? SCANNER_CONFIG.forgeBaseUrl,
+    timeout: 60_000, // a stalled gateway call fails fast instead of hanging the scan
+    maxRetries: 2,
+    // This is a Node CLI tool. The jsdom window (added for DOMPurify) trips the
+    // SDK's browser guard, but the key comes from env and is never shipped to a
+    // real browser, so allowing it here is safe.
+    dangerouslyAllowBrowser: true,
   })
   return createForgeClient(openai as unknown as OpenAILike, SCANNER_CONFIG.models)
 }

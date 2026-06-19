@@ -19,13 +19,20 @@ async function main(): Promise<void> {
   const token = process.env.GH_TOKEN ?? process.env.GITHUB_TOKEN
   if (!token) throw new Error('Set GH_TOKEN (e.g. GH_TOKEN=$(gh auth token)).')
 
-  const gh = createGitHubClient(new Octokit({ auth: token }), SCANNER_CONFIG.org)
+  // Per-request timeout so a stalled GitHub call fails fast instead of hanging forever.
+  const timedFetch: typeof fetch = (url, init) =>
+    fetch(url, { ...init, signal: AbortSignal.timeout(20_000) })
+  const gh = createGitHubClient(
+    new Octokit({ auth: token, request: { fetch: timedFetch } }),
+    SCANNER_CONFIG.org,
+  )
   const llm = createLLMClient() // Forge gateway; validates FORGE_API_KEY
 
   const existingRaw = JSON.parse(
     await readFile(SCANNER_CONFIG.paths.radar, 'utf8'),
   ) as ScannerBlip[]
-  const result = await runScan(gh, llm, existingRaw)
+  const log = (m: string) => process.stderr.write(m + '\n')
+  const result = await runScan(gh, llm, existingRaw, log)
 
   // Safety guardrail: candidate must parse, and no pinned/existing blip may vanish.
   parseRadar(result.candidate)

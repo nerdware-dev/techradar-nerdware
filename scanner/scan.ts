@@ -18,16 +18,26 @@ export interface ScanResult {
   detections: Detection[]
 }
 
+/** Optional progress sink (run.ts wires it to stderr; tests leave it silent). */
+export type Logger = (message: string) => void
+const noop: Logger = () => {}
+
 /** Run the full pipeline against injected clients. Pure of file/network setup. */
 export async function runScan(
   gh: GitHubClient,
   llm: LLMClient,
   existing: ScannerBlip[],
+  log: Logger = noop,
 ): Promise<ScanResult> {
+  log('Listing org repos…')
   const repos = await gh.listRepos()
+  log(`Found ${repos.length} repos to scan.`)
   const scans: RepoScan[] = []
 
+  let i = 0
   for (const repo of repos) {
+    i += 1
+    log(`[${i}/${repos.length}] ${repo.name}`)
     const tokens: DetectedToken[] = []
     const languages = await gh.getLanguages(repo.name).catch(() => ({}))
     tokens.push(...detectLanguages(languages))
@@ -46,11 +56,16 @@ export async function runScan(
 
   const detections = aggregate(scans)
   const existingSlugs = new Set(existing.map((b) => slugify(b.name)))
+  const newCount = detections.filter((d) => !existingSlugs.has(slugify(d.name))).length
+  log(`Detected ${detections.length} techs (${newCount} new). Categorizing + drafting…`)
 
   const categorized = new Map<string, { quadrant: QuadrantId; needsReview: boolean }>()
   const descriptions = new Map<string, string>()
+  let n = 0
   for (const detection of detections) {
+    n += 1
     const slug = slugify(detection.name)
+    log(`  (${n}/${detections.length}) ${detection.name}`)
     categorized.set(slug, await categorize(detection, llm))
     if (!existingSlugs.has(slug)) {
       descriptions.set(slug, await draftDescription(detection, llm))
