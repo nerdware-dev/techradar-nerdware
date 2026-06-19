@@ -15,7 +15,9 @@ export const QUADRANTS: Quadrant[] = [
 ]
 
 export const RADAR_DATA_URL: string =
-  import.meta.env.VITE_RADAR_DATA_URL ??
+  // `import.meta.env` is injected by Vite in the app build but is undefined under
+  // plain Node (the scanner runs via tsx and imports this module for RINGS/QUADRANTS).
+  import.meta.env?.VITE_RADAR_DATA_URL ??
   'https://raw.githubusercontent.com/nerdware-dev/techradar-nerdware/master/data/tech-radar.json'
 
 /** Radius of the outermost ring, in SVG user units. */
