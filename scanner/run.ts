@@ -19,7 +19,7 @@ async function main(): Promise<void> {
   if (!token) throw new Error('Set GH_TOKEN (e.g. GH_TOKEN=$(gh auth token)).')
 
   const gh = createGitHubClient(new Octokit({ auth: token }), SCANNER_CONFIG.org)
-  const llm = createLLMClient() // provider chosen by LLM_PROVIDER; validates its own key
+  const llm = createLLMClient() // Forge gateway; validates FORGE_API_KEY
 
   const existingRaw = JSON.parse(
     await readFile(SCANNER_CONFIG.paths.radar, 'utf8'),

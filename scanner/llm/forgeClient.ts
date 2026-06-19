@@ -1,5 +1,5 @@
 import type { LLMClient, ModelPair } from './types'
-import { categorizePrompt, describePrompt, parseCategory } from './anthropicClient'
+import { categorizePrompt, describePrompt, parseCategory } from './prompts'
 
 /** Minimal shape of the OpenAI SDK we depend on (keeps tests SDK-free). */
 export interface OpenAILike {
@@ -14,8 +14,7 @@ function firstContent(res: { choices: { message: { content: string | null } }[] 
   return res.choices[0]?.message?.content ?? ''
 }
 
-/** OpenAI-wire LLM client for the Forge gateway. Same prompts as the Anthropic
- *  client so categorization/description behavior matches across providers. */
+/** OpenAI-wire LLM client for the Forge gateway (the scanner's only LLM provider). */
 export function createForgeClient(openai: OpenAILike, models: ModelPair): LLMClient {
   return {
     async categorize(name, context) {

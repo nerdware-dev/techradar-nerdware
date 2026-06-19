@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { mergeRadar } from './merge'
 import type { Detection, ScannerBlip } from './types'
+import type { RingId } from '../src/data/types'
 import { slugify } from '../src/data/slug'
 
 const existing: ScannerBlip[] = [
@@ -55,6 +56,29 @@ describe('mergeRadar', () => {
   it('reconciles a detected existing blip ring to autoRing and records the move', () => {
     expect(byName('React').ring).toBe('high') // 6 repos → high, was low
     expect(changes.ringMoves).toContainEqual({ name: 'React', from: 'low', to: 'high' })
+  })
+
+  it('does not record a phantom move when display-cased ring matches autoRing', () => {
+    // Existing entries store rings capitalized ("High"); a detection mapping back
+    // to the same ring must not register as a move, and casing is preserved.
+    const capitalized: ScannerBlip[] = [
+      // 'High' mirrors the display casing stored on disk (run.ts casts the raw JSON).
+      {
+        name: 'React',
+        ring: 'High' as RingId,
+        quadrant: 'languages-frameworks',
+        isNew: 'FALSE',
+        description: 'x',
+      },
+    ]
+    const { candidate: c, changes: ch } = mergeRadar(
+      capitalized,
+      detections,
+      categorized,
+      descriptions,
+    )
+    expect(ch.ringMoves).toHaveLength(0)
+    expect(c.find((b) => b.name === 'React')!.ring).toBe('High')
   })
 
   it('never overwrites an existing human description', () => {

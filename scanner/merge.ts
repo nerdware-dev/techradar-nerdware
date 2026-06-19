@@ -36,11 +36,15 @@ export function mergeRadar(
         lastSeen: detection.lastSeen,
         sourceRepos: detection.sourceRepos,
       }
+      // Existing entries store rings in display casing ("High"); normalize before
+      // comparing so unchanged rings don't register as phantom moves.
+      const currentRing = slugify(blip.ring) as RingId
       const effectiveRing = next.ringOverride ?? ar
-      if (effectiveRing !== blip.ring) {
-        changes.ringMoves.push({ name: blip.name, from: blip.ring as RingId, to: effectiveRing })
+      if (effectiveRing !== currentRing) {
+        changes.ringMoves.push({ name: blip.name, from: currentRing, to: effectiveRing })
+        next.ring = effectiveRing
       }
-      next.ring = effectiveRing
+      // else: leave next.ring at its original value to avoid casing churn in the JSON.
     } else {
       changes.undetected.push(blip.name)
     }
