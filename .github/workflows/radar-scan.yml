@@ -1,0 +1,62 @@
+name: Radar Scan
+
+# Weekly scan of the org's repos → opens a PR with the proposed radar changes.
+# Phase 1: a human reviews and merges the PR (no auto-merge).
+on:
+  schedule:
+    - cron: '0 6 * * 1' # Mondays 06:00 UTC
+  workflow_dispatch: {} # allow manual runs for testing
+
+permissions:
+  contents: write
+  pull-requests: write
+
+# Don't let two scans race on the same branch.
+concurrency:
+  group: radar-scan
+  cancel-in-progress: true
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Run scanner
+        env:
+          # RADAR_GH_TOKEN is a PAT with `repo` + `read:org` so the scan sees ALL
+          # org repos including private. The default GITHUB_TOKEN can only see this
+          # repo + public ones, so without the PAT the scan is incomplete.
+          GH_TOKEN: ${{ secrets.RADAR_GH_TOKEN || secrets.GITHUB_TOKEN }}
+          FORGE_API_KEY: ${{ secrets.FORGE_API_KEY }}
+          FORGE_BASE_URL: https://forge.nerdware.ai/v1
+        # Run tsx directly (not `npm run scan`) so stdout is just the report,
+        # with no npm banner; progress goes to stderr → the Actions log.
+        run: npx tsx scanner/run.ts > scan-report.md
+
+      - name: Open / update a PR if the radar changed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # PR creation uses the repo-scoped token
+        run: |
+          if git diff --quiet -- data/tech-radar.json; then
+            echo "No radar changes this week — nothing to propose."
+            exit 0
+          fi
+          DATE=$(date +%Y-%m-%d)
+          BRANCH="radar-scan/$DATE"
+          git config user.name "nerdware-radar-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add data/
+          git commit -m "data(radar): weekly scan $DATE"
+          git push -f origin "$BRANCH"
+          # Create the PR, or update its body if one already exists for this branch.
+          gh pr create --base master --head "$BRANCH" \
+            --title "Radar weekly scan — $DATE" \
+            --body-file scan-report.md \
+            || gh pr edit "$BRANCH" --body-file scan-report.md

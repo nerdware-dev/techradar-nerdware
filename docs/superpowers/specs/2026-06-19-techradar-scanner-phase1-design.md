@@ -172,7 +172,7 @@ Pure, deterministic units are tested directly:
 
 ## 11. Step 2 (separate plan, after reviewing run 1)
 
-`.github/workflows/radar-scan.yml`: daily cron → `npm run scan` (with `GITHUB_TOKEN` + `FORGE_API_KEY` secrets) → open/update a pull request with the candidate + the report as the PR body → **human merges manually**. Auto-merge and the guardrail gate are deferred to vision Phase 2.
+`.github/workflows/radar-scan.yml` (built): **weekly** cron (Mondays 06:00 UTC) + manual `workflow_dispatch` → `npx tsx scanner/run.ts` → if `data/tech-radar.json` changed, open/update a PR (`radar-scan/<date>`) with the report as the body → **human merges manually**. Secrets: `FORGE_API_KEY`, and `RADAR_GH_TOKEN` (a PAT with `repo` + `read:org` so the scan sees all private org repos — the default `GITHUB_TOKEN` only sees this repo + public ones). Auto-merge and the guardrail gate are deferred to vision Phase 2.
 
 ## 12. Open items pinned at implementation time
 
