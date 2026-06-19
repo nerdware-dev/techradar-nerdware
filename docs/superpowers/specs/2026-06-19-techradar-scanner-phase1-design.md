@@ -114,7 +114,15 @@ Deterministic detection first; Claude only for genuinely ambiguous parts, gated 
 - **German descriptions** — for **new** blips only, a stronger Claude model (Sonnet/Opus-tier) drafts a description in the radar's German editorial voice. Existing descriptions are never sent or overwritten.
 - **Confidence gating** — categorizations below a configurable threshold are written with the tech marked `needs-review` (a machine field) and listed separately in the report; they are not silently published into a quadrant. Because AI runs only on new/unknown techs, most runs make few or zero calls.
 
-Exact model IDs, the SDK call shape, and prompts are pinned via the `claude-api` reference at implementation time (default to the latest capable Claude models).
+Exact model IDs, the SDK call shape, and prompts are pinned via the `claude-api` reference at implementation time (default to the latest capable Claude models — e.g. `claude-haiku-4-5` for categorization, `claude-opus-4-8` for German descriptions).
+
+### 7.1 Where the AI runs (execution model)
+
+There is **no persistent Claude process or hosted agent.** The scanner makes ordinary, stateless HTTPS calls to the Anthropic Messages API (`POST /v1/messages`) via the `@anthropic-ai/sdk` package, authenticated with `ANTHROPIC_API_KEY`. Both AI uses (categorize-unknown = classification; draft-description = text generation) are single-call requests — **not** the Managed Agents / Claude Code surface, which would add containers and session state we don't need.
+
+The calls run **wherever the scanner process runs**:
+- **Step 1 (on-demand):** on the developer's machine via `npm run scan`, with `ANTHROPIC_API_KEY` in the local env.
+- **Step 2 (daily workflow):** on the GitHub Actions runner. The runner has network egress to `api.anthropic.com`; the key is supplied as a GitHub Actions secret (`ANTHROPIC_API_KEY`, repo- or org-level) and passed as an env var to `npm run scan`. Because AI fires only on new/unknown techs, most scheduled runs make few or zero calls; only the first bulk run (and occasional new tech) incurs meaningful cost.
 
 ## 8. Outputs of one run
 
