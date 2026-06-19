@@ -8,6 +8,9 @@ export interface ChangeSet {
   ringMoves: { name: string; from: RingId; to: RingId }[]
   undetected: string[]
   needsReview: string[]
+  /** Existing entries deliberately retired (ring "out") that were detected again —
+   *  kept at "out", surfaced so a human can promote them intentionally. */
+  reactivated: string[]
 }
 
 /** Combine machine detections with the existing radar, preserving all human-owned
@@ -19,7 +22,13 @@ export function mergeRadar(
   categorized: Map<string, { quadrant: QuadrantId; needsReview: boolean }>,
   descriptions: Map<string, string>,
 ): { candidate: ScannerBlip[]; changes: ChangeSet } {
-  const changes: ChangeSet = { added: [], ringMoves: [], undetected: [], needsReview: [] }
+  const changes: ChangeSet = {
+    added: [],
+    ringMoves: [],
+    undetected: [],
+    needsReview: [],
+    reactivated: [],
+  }
   const detectionBySlug = new Map(detections.map((d) => [slugify(d.name), d]))
   const candidate: ScannerBlip[] = []
 
@@ -39,12 +48,18 @@ export function mergeRadar(
       // Existing entries store rings in display casing ("High"); normalize before
       // comparing so unchanged rings don't register as phantom moves.
       const currentRing = slugify(blip.ring) as RingId
-      const effectiveRing = next.ringOverride ?? ar
-      if (effectiveRing !== currentRing) {
-        changes.ringMoves.push({ name: blip.name, from: currentRing, to: effectiveRing })
-        next.ring = effectiveRing
+      if (currentRing === 'out' && !next.ringOverride) {
+        // A bare "out" is a deliberate retirement: don't auto-promote on detection.
+        // Keep it out (detection data still recorded above) and flag for a human.
+        changes.reactivated.push(blip.name)
+      } else {
+        const effectiveRing = next.ringOverride ?? ar
+        if (effectiveRing !== currentRing) {
+          changes.ringMoves.push({ name: blip.name, from: currentRing, to: effectiveRing })
+          next.ring = effectiveRing
+        }
+        // else: leave next.ring at its original value to avoid casing churn in the JSON.
       }
-      // else: leave next.ring at its original value to avoid casing churn in the JSON.
     } else {
       changes.undetected.push(blip.name)
     }

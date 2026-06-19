@@ -6,13 +6,15 @@ const changes = {
   ringMoves: [{ name: 'React', from: 'low' as const, to: 'high' as const }],
   undetected: ['AWS'],
   needsReview: ['Grafana'],
+  reactivated: ['PHP'],
 }
 
 describe('renderReport', () => {
-  const md = renderReport(changes, 30)
+  const md = renderReport(changes, 30, 905)
   it('summarizes counts in a headline', () => {
     expect(md).toMatch(/30 repos/)
     expect(md).toMatch(/\+1 added/)
+    expect(md).toMatch(/905 candidates/)
   })
   it('lists ring moves with old and new ring', () => {
     expect(md).toMatch(/React.*low.*high/)
@@ -23,5 +25,9 @@ describe('renderReport', () => {
   })
   it('flags needs-review items', () => {
     expect(md).toMatch(/needs.review/i)
+  })
+  it('lists reactivated (currently-Out) entries', () => {
+    expect(md).toMatch(/Detected again/i)
+    expect(md).toMatch(/PHP/)
   })
 })

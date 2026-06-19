@@ -33,4 +33,22 @@ export const ALIASES: Record<string, string> = {
   terraform: 'Terraform',
   kubernetes: 'Kubernetes',
   'github-actions': 'GitHub Actions',
+  // promoted from candidates after the first real scan (high adoption across repos)
+  angular: 'Angular',
+  nestjs: 'NestJS',
+  tailwindcss: 'Tailwind CSS',
+  eslint: 'ESLint',
+  prettier: 'Prettier',
+  jest: 'Jest',
+  rxjs: 'RxJS',
+  zod: 'Zod',
+}
+
+/** Scoped npm packages collapse to one canonical blip by their `@scope`,
+ *  so e.g. all of `@angular/*` count as a single "Angular" adoption signal. */
+export const SCOPE_ALIASES: Record<string, string> = {
+  '@angular': 'Angular',
+  '@nestjs': 'NestJS',
+  '@aws-sdk': 'AWS',
+  '@reduxjs': 'Redux Toolkit',
 }

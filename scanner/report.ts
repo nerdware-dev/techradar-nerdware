@@ -24,6 +24,13 @@ export function renderReport(changes: ChangeSet, reposScanned: number, candidate
       ...changes.ringMoves.map((m) => `- ${m.name}: ${m.from} → ${m.to}`),
     )
   }
+  if (changes.reactivated.length) {
+    lines.push(
+      '',
+      '## Detected again — currently Out (confirm before promoting)',
+      ...changes.reactivated.map((n) => `- ${n}`),
+    )
+  }
   if (changes.needsReview.length) {
     lines.push(
       '',

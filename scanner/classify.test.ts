@@ -22,8 +22,19 @@ describe('classify', () => {
     expect(classify(dep('@types/node'))).toBeNull()
     expect(classify(lang('HTML'))).toBeNull()
   })
-  it('keeps language and tooling tokens notable with their name verbatim', () => {
-    expect(classify(lang('TypeScript'))).toEqual({ name: 'TypeScript', notable: true })
+  it('keeps tooling tokens notable with their name verbatim when unknown', () => {
     expect(classify(tool('GitLab CI/CD'))).toEqual({ name: 'GitLab CI/CD', notable: true })
+  })
+  it('collapses scoped packages to one canonical blip by @scope', () => {
+    expect(classify(dep('@angular/core'))).toEqual({ name: 'Angular', notable: true })
+    expect(classify(dep('@nestjs/common'))).toEqual({ name: 'NestJS', notable: true })
+  })
+  it('drops @types/* stubs whether or not they are in the ignore list', () => {
+    expect(classify(dep('@types/react'))).toBeNull()
+  })
+  it('canonicalizes a language token via the alias table (Vue → Vue.js)', () => {
+    // GitHub reports a "Vue" language; the `vue` package aliases to "Vue.js" — these collapse.
+    expect(classify(lang('Vue'))).toEqual({ name: 'Vue.js', notable: true })
+    expect(classify(dep('vue'))).toEqual({ name: 'Vue.js', notable: true })
   })
 })

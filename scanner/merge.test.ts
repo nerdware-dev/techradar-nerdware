@@ -96,6 +96,27 @@ describe('mergeRadar', () => {
     expect(byName('Scrum').ring).toBe('high')
   })
 
+  it('does not auto-promote an entry deliberately at Out; flags it as reactivated', () => {
+    const retired: ScannerBlip[] = [
+      {
+        name: 'PHP',
+        ring: 'Out' as RingId,
+        quadrant: 'languages-frameworks',
+        isNew: 'FALSE',
+        description: 'x',
+      },
+    ]
+    const detected: Detection[] = [
+      { name: 'PHP', repoCount: 3, sourceRepos: ['a', 'b', 'c'], lastSeen: '2026-06-18' },
+    ]
+    const { candidate: c, changes: ch } = mergeRadar(retired, detected, categorized, descriptions)
+    const php = c.find((b) => b.name === 'PHP')!
+    expect(php.ring).toBe('Out') // stays out despite 3-repo adoption
+    expect(php.detected?.repoCount).toBe(3) // detection data still recorded
+    expect(ch.reactivated).toContain('PHP')
+    expect(ch.ringMoves.find((m) => m.name === 'PHP')).toBeUndefined()
+  })
+
   it('honors a ringOverride instead of autoRing', () => {
     const withOverride: ScannerBlip[] = [
       {

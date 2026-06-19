@@ -28,4 +28,14 @@ export const QUADRANT_MAP: Record<string, QuadrantId> = {
   aws: 'platforms',
   redis: 'platforms',
   postgresql: 'platforms',
+  // promoted candidates (see aliases.ts)
+  angular: 'languages-frameworks',
+  nestjs: 'languages-frameworks',
+  'tailwind-css': 'languages-frameworks',
+  rxjs: 'languages-frameworks',
+  zod: 'languages-frameworks',
+  'redux-toolkit': 'languages-frameworks',
+  eslint: 'tools',
+  prettier: 'tools',
+  jest: 'tools',
 }
