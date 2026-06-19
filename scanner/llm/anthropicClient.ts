@@ -33,7 +33,8 @@ export function describePrompt(name: string, context: string): string {
 export function parseCategory(text: string): { quadrant: QuadrantId; confidence: number } {
   try {
     const parsed = JSON.parse(text) as { quadrant: string; confidence: number }
-    if (!DETECTABLE.includes(parsed.quadrant as QuadrantId)) return { quadrant: 'tools', confidence: 0 }
+    if (!DETECTABLE.includes(parsed.quadrant as QuadrantId))
+      return { quadrant: 'tools', confidence: 0 }
     return { quadrant: parsed.quadrant as QuadrantId, confidence: parsed.confidence }
   } catch {
     return { quadrant: 'tools', confidence: 0 }

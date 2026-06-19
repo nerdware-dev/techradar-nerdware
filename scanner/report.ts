@@ -17,7 +17,11 @@ export function renderReport(changes: ChangeSet, reposScanned: number): string {
     lines.push('', '## Added', ...changes.added.map((n) => `- ${n}`))
   }
   if (changes.ringMoves.length) {
-    lines.push('', '## Ring moves', ...changes.ringMoves.map((m) => `- ${m.name}: ${m.from} → ${m.to}`))
+    lines.push(
+      '',
+      '## Ring moves',
+      ...changes.ringMoves.map((m) => `- ${m.name}: ${m.from} → ${m.to}`),
+    )
   }
   if (changes.needsReview.length) {
     lines.push(

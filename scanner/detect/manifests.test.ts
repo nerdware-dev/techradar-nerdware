@@ -4,11 +4,19 @@ import { detectManifest } from './manifests'
 describe('detectManifest', () => {
   it('reads dependencies and devDependencies from package.json', () => {
     const json = JSON.stringify({ dependencies: { react: '^19' }, devDependencies: { vite: '^8' } })
-    expect(detectManifest('package.json', json).map((t) => t.raw).sort()).toEqual(['react', 'vite'])
+    expect(
+      detectManifest('package.json', json)
+        .map((t) => t.raw)
+        .sort(),
+    ).toEqual(['react', 'vite'])
   })
   it('reads top-level packages from requirements.txt', () => {
     const txt = 'fastapi==0.110\n# comment\nboto3>=1.0\n'
-    expect(detectManifest('requirements.txt', txt).map((t) => t.raw).sort()).toEqual(['boto3', 'fastapi'])
+    expect(
+      detectManifest('requirements.txt', txt)
+        .map((t) => t.raw)
+        .sort(),
+    ).toEqual(['boto3', 'fastapi'])
   })
   it('reads module paths from go.mod require blocks', () => {
     const mod = 'module x\n\nrequire (\n\tgithub.com/gin-gonic/gin v1.9.1\n)\n'
@@ -19,7 +27,8 @@ describe('detectManifest', () => {
     expect(detectManifest('composer.json', json).map((t) => t.raw)).toContain('laravel/framework')
   })
   it('reads artifactIds from pom.xml', () => {
-    const xml = '<project><dependencies><dependency><artifactId>spring-boot</artifactId></dependency></dependencies></project>'
+    const xml =
+      '<project><dependencies><dependency><artifactId>spring-boot</artifactId></dependency></dependencies></project>'
     expect(detectManifest('pom.xml', xml).map((t) => t.raw)).toContain('spring-boot')
   })
   it('returns nothing for an unknown file', () => {

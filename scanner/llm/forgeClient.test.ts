@@ -6,9 +6,20 @@ const models = { categorize: 'claude-haiku-4-5', describe: 'claude-opus-4-6' }
 
 describe('createForgeClient', () => {
   it('parses a quadrant + confidence object from an OpenAI-shaped response', async () => {
-    const openai = { chat: { completions: { create: vi.fn().mockResolvedValue(chatResponse('{"quadrant":"platforms","confidence":0.8}')) } } }
+    const openai = {
+      chat: {
+        completions: {
+          create: vi
+            .fn()
+            .mockResolvedValue(chatResponse('{"quadrant":"platforms","confidence":0.8}')),
+        },
+      },
+    }
     const client = createForgeClient(openai, models)
-    expect(await client.categorize('Redis', 'ctx')).toEqual({ quadrant: 'platforms', confidence: 0.8 })
+    expect(await client.categorize('Redis', 'ctx')).toEqual({
+      quadrant: 'platforms',
+      confidence: 0.8,
+    })
   })
 
   it('sends the configured forge model alias for describe', async () => {
@@ -21,7 +32,13 @@ describe('createForgeClient', () => {
   })
 
   it('tolerates a null message content', async () => {
-    const openai = { chat: { completions: { create: vi.fn().mockResolvedValue({ choices: [{ message: { content: null } }] }) } } }
+    const openai = {
+      chat: {
+        completions: {
+          create: vi.fn().mockResolvedValue({ choices: [{ message: { content: null } }] }),
+        },
+      },
+    }
     const client = createForgeClient(openai, models)
     expect(await client.describe('X', 'ctx')).toBe('')
   })

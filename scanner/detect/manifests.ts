@@ -13,7 +13,10 @@ function fromPackageJson(content: string): string[] {
 
 function fromComposerJson(content: string): string[] {
   try {
-    const pkg = JSON.parse(content) as { require?: Record<string, string>; 'require-dev'?: Record<string, string> }
+    const pkg = JSON.parse(content) as {
+      require?: Record<string, string>
+      'require-dev'?: Record<string, string>
+    }
     return [...Object.keys(pkg.require ?? {}), ...Object.keys(pkg['require-dev'] ?? {})]
   } catch {
     return []
@@ -57,4 +60,10 @@ export function detectManifest(path: string, content: string): DetectedToken[] {
 }
 
 /** Filenames this detector knows how to parse (used to decide which files to fetch). */
-export const MANIFEST_FILES = ['package.json', 'composer.json', 'requirements.txt', 'go.mod', 'pom.xml']
+export const MANIFEST_FILES = [
+  'package.json',
+  'composer.json',
+  'requirements.txt',
+  'go.mod',
+  'pom.xml',
+]

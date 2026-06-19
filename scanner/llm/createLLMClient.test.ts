@@ -4,13 +4,18 @@ import { createLLMClient } from './createLLMClient'
 
 describe('createLLMClient', () => {
   it('builds a forge client when LLM_PROVIDER=forge and a key is present', () => {
-    const client = createLLMClient({ LLM_PROVIDER: 'forge', FORGE_API_KEY: 'sk-x' } as NodeJS.ProcessEnv)
+    const client = createLLMClient({
+      LLM_PROVIDER: 'forge',
+      FORGE_API_KEY: 'sk-x',
+    } as NodeJS.ProcessEnv)
     expect(typeof client.categorize).toBe('function')
     expect(typeof client.describe).toBe('function')
   })
 
   it('throws when forge is selected without a key', () => {
-    expect(() => createLLMClient({ LLM_PROVIDER: 'forge' } as NodeJS.ProcessEnv)).toThrow(/FORGE_API_KEY/)
+    expect(() => createLLMClient({ LLM_PROVIDER: 'forge' } as NodeJS.ProcessEnv)).toThrow(
+      /FORGE_API_KEY/,
+    )
   })
 
   it('defaults to the anthropic provider and requires its key', () => {

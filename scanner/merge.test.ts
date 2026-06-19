@@ -5,13 +5,31 @@ import { slugify } from '../src/data/slug'
 
 const existing: ScannerBlip[] = [
   { name: 'AWS', ring: 'high', quadrant: 'platforms', isNew: 'FALSE', description: 'Cloud.' },
-  { name: 'React', ring: 'low', quadrant: 'languages-frameworks', isNew: 'FALSE', description: 'UI lib.' },
-  { name: 'Scrum', ring: 'high', quadrant: 'techniques', isNew: 'FALSE', description: 'Method.', pinned: true },
+  {
+    name: 'React',
+    ring: 'low',
+    quadrant: 'languages-frameworks',
+    isNew: 'FALSE',
+    description: 'UI lib.',
+  },
+  {
+    name: 'Scrum',
+    ring: 'high',
+    quadrant: 'techniques',
+    isNew: 'FALSE',
+    description: 'Method.',
+    pinned: true,
+  },
 ]
 
 // React detected widely; a brand-new tech "Grafana"; AWS and Scrum NOT detected.
 const detections: Detection[] = [
-  { name: 'React', repoCount: 6, sourceRepos: ['a', 'b', 'c', 'd', 'e', 'f'], lastSeen: '2026-06-18' },
+  {
+    name: 'React',
+    repoCount: 6,
+    sourceRepos: ['a', 'b', 'c', 'd', 'e', 'f'],
+    lastSeen: '2026-06-18',
+  },
   { name: 'Grafana', repoCount: 1, sourceRepos: ['a'], lastSeen: '2026-06-10' },
 ]
 const categorized = new Map([
@@ -56,7 +74,14 @@ describe('mergeRadar', () => {
 
   it('honors a ringOverride instead of autoRing', () => {
     const withOverride: ScannerBlip[] = [
-      { name: 'React', ring: 'dev', quadrant: 'languages-frameworks', isNew: 'FALSE', description: 'x', ringOverride: 'dev' },
+      {
+        name: 'React',
+        ring: 'dev',
+        quadrant: 'languages-frameworks',
+        isNew: 'FALSE',
+        description: 'x',
+        ringOverride: 'dev',
+      },
     ]
     const { candidate: c } = mergeRadar(withOverride, detections, categorized, descriptions)
     expect(c.find((b) => b.name === 'React')!.ring).toBe('dev')

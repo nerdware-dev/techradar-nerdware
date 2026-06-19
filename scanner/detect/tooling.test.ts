@@ -10,7 +10,9 @@ describe('detectTooling', () => {
     expect(detectTooling(['infra/main.tf']).map((t) => t.raw)).toContain('Terraform')
   })
   it('detects GitHub Actions from a workflow file', () => {
-    expect(detectTooling(['.github/workflows/ci.yml']).map((t) => t.raw)).toContain('GitHub Actions')
+    expect(detectTooling(['.github/workflows/ci.yml']).map((t) => t.raw)).toContain(
+      'GitHub Actions',
+    )
   })
   it('emits each tool at most once', () => {
     const tokens = detectTooling(['a/Dockerfile', 'b/Dockerfile'])
