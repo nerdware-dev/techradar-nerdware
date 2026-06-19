@@ -11,7 +11,31 @@
     "ring": "High",
     "quadrant": "platforms",
     "isNew": "FALSE",
-    "description": "Amazon Web Services, auch als AWS bekannt, ist eine vom gleichnamigen Unternehmen angebotene Plattform für Cloud-Computing."
+    "description": "Amazon Web Services, auch als AWS bekannt, ist eine vom gleichnamigen Unternehmen angebotene Plattform für Cloud-Computing.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 17,
+      "lastSeen": "2026-06-17",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "townhall",
+        "cloudapi",
+        "aws-user-group-multi-tenancy-and-ephemeral-environments",
+        "angular-nestjs-template",
+        "serverless-example",
+        "fantastic-garbanzo",
+        "production-ready-serverless",
+        "coffee-demo",
+        "coin-demo",
+        "tender-parser",
+        "bid-flow-backend",
+        "hack-zollhof-2025",
+        "ai-gtm",
+        "nerdware-order-app",
+        "nerdfinder"
+      ]
+    }
   },
   {
     "name": "Azure",
@@ -25,14 +49,103 @@
     "ring": "High",
     "quadrant": "platforms",
     "isNew": "FALSE",
-    "description": "Docker ist eine Open-Source-Plattform, die Entwicklern die Erstellung, Bereitstellung, Ausführung, Aktualisierung und Verwaltung von Containern ermöglicht. Container sind standardisierte ausführbare Komponenten, die den Anwendungsquellcode mit den Betriebssystembibliotheken und den Abhängigkeiten kombinieren, die zur Ausführung des Codes in jeder beliebigen Umgebung erforderlich sind."
+    "description": "Docker ist eine Open-Source-Plattform, die Entwicklern die Erstellung, Bereitstellung, Ausführung, Aktualisierung und Verwaltung von Containern ermöglicht. Container sind standardisierte ausführbare Komponenten, die den Anwendungsquellcode mit den Betriebssystembibliotheken und den Abhängigkeiten kombinieren, die zur Ausführung des Codes in jeder beliebigen Umgebung erforderlich sind.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 38,
+      "lastSeen": "2026-06-19",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "techradar-nerdware",
+        "townhall",
+        "hackathon",
+        "nerdware-cluster",
+        "nerdware-cluster-playground-services",
+        "pom-dekar-p",
+        "Skillerd",
+        "aws-user-group-multi-tenancy-and-ephemeral-environments",
+        "angular-nestjs-template",
+        "hackbay2024",
+        "fantastic-garbanzo",
+        "yt-semantic-release",
+        "nw-semantic-release",
+        "coffee-demo",
+        "llm-workshop",
+        "coin-demo",
+        "fourdrop",
+        "dtvp-scraper",
+        "tender-parser",
+        "bid-flow-backend",
+        "hack-zollhof-2025",
+        "ai-engineer-template",
+        "echo-clean-architecture",
+        "n8n-infra",
+        "stargate",
+        "skillard-excelled",
+        "ai-gtm",
+        "demo-mcp-nerdware",
+        "md-plattform-prototype",
+        "nerdware-order-app",
+        "hetzner-landing-zone",
+        "graphmind",
+        "nerdfinder",
+        "nerd-bites",
+        "vend",
+        "NerdBase"
+      ]
+    }
   },
   {
     "name": "GitHub Actions",
     "ring": "High",
     "quadrant": "platforms",
     "isNew": "FALSE",
-    "description": "GitHub Actions ist eine Plattform für Continuous Integration und Continuous Delivery (CI/CD), mit der du deine Build-, Test- und Bereitstellungspipeline automatisieren kannst. Man kann Workflows erstellen, mit denen man alle Pull Requests für das Repository erstellen und testen sowie gemergte Pull Requests für die Produktion bereitstellen kann."
+    "description": "GitHub Actions ist eine Plattform für Continuous Integration und Continuous Delivery (CI/CD), mit der du deine Build-, Test- und Bereitstellungspipeline automatisieren kannst. Man kann Workflows erstellen, mit denen man alle Pull Requests für das Repository erstellen und testen sowie gemergte Pull Requests für die Produktion bereitstellen kann.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 37,
+      "lastSeen": "2026-06-19",
+      "sourceRepos": [
+        "learning-digital",
+        "techradar-nerdware",
+        "townhall",
+        "hackathon",
+        "nerdware-cluster",
+        "nerdware-cluster-playground-services",
+        "pom-dekar-p",
+        "Skillerd",
+        "aws-user-group-multi-tenancy-and-ephemeral-environments",
+        "angular-nestjs-template",
+        "serverless-example",
+        "hackbay2024",
+        "fantastic-garbanzo",
+        "yt-semantic-release",
+        "nw-semantic-release",
+        "coffee-demo",
+        "coin-demo",
+        "fourdrop",
+        "dtvp-scraper",
+        "ai-engineer-template",
+        "ipsen-botulinumtoxin-injektionsmuster",
+        "SchickBauspeziAPI",
+        "SchickBauspeziTheme",
+        "n8n-infra",
+        "stargate",
+        "skillard-excelled",
+        "ai-gtm",
+        "claude-plugins",
+        "nerdlabs-homepage",
+        "nerdware-homepage",
+        "shopware6-plugin-reference",
+        "nerdware-order-app",
+        "hetzner-landing-zone",
+        "graphmind",
+        "nerdfinder",
+        "skaling-ai-compass",
+        "NerdBase"
+      ]
+    }
   },
   {
     "name": "Gitlab CI/CD",
@@ -60,7 +173,16 @@
     "ring": "Dev",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": "Prisma ist ein Open-Source-basiertes Datenbank-Toolkit. Es besteht aus drei Haupttools: \nPrisma Client: Ein automatisch generierter und typensicherer Query Builder für Node.js und TypeScript. \nPrisma Migrate: Ein deklaratives Modellierungs- und Migrationssystem für Daten.\n Prisma Studio: Eine GUI zum Anzeigen und Bearbeiten von Daten in Ihrer Datenbank."
+    "description": "Prisma ist ein Open-Source-basiertes Datenbank-Toolkit. Es besteht aus drei Haupttools: \nPrisma Client: Ein automatisch generierter und typensicherer Query Builder für Node.js und TypeScript. \nPrisma Migrate: Ein deklaratives Modellierungs- und Migrationssystem für Daten.\n Prisma Studio: Eine GUI zum Anzeigen und Bearbeiten von Daten in Ihrer Datenbank.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-17",
+      "sourceRepos": [
+        "nerdware-order-app",
+        "nerd-bites"
+      ]
+    }
   },
   {
     "name": "Dynatrace",
@@ -74,7 +196,26 @@
     "ring": "High",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": "Terraform ist ein quelloffenes „Infrastructure as Code“-Tool, das von HashiCorp entwickelt wurde. Terraform ist ein deklaratives Codierungstool, das es Entwicklern ermöglicht, mithilfe einer übergeordneten Konfigurationssprache namens HCL (HashiCorp Configuration Language) den gewünschten „Endzustand“ einer Cloud- oder lokalen Infrastruktur für die Ausführung einer Anwendung zu beschreiben. Es generiert dann einen Plan für das Erreichen dieses Endstatus und führt den Plan zur Bereitstellung der Infrastruktur aus."
+    "description": "Terraform ist ein quelloffenes „Infrastructure as Code“-Tool, das von HashiCorp entwickelt wurde. Terraform ist ein deklaratives Codierungstool, das es Entwicklern ermöglicht, mithilfe einer übergeordneten Konfigurationssprache namens HCL (HashiCorp Configuration Language) den gewünschten „Endzustand“ einer Cloud- oder lokalen Infrastruktur für die Ausführung einer Anwendung zu beschreiben. Es generiert dann einen Plan für das Erreichen dieses Endstatus und führt den Plan zur Bereitstellung der Infrastruktur aus.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 12,
+      "lastSeen": "2026-06-15",
+      "sourceRepos": [
+        "terraform-nerdware",
+        "townhall",
+        "hackathon",
+        "aws-user-group-multi-tenancy-and-ephemeral-environments",
+        "angular-nestjs-template",
+        "yt-semantic-release",
+        "nw-semantic-release",
+        "coffee-demo",
+        "dtvp-scraper",
+        "stargate",
+        "ai-gtm",
+        "hetzner-landing-zone"
+      ]
+    }
   },
   {
     "name": "Terragrunt",
@@ -158,14 +299,45 @@
     "ring": "High",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": "Angular ist die nächste Version des OpenSource Frameworks AngularJS. Die Code-Basis wurde komplett neu geschrieben und nutzt nun als Basis die Sprache TypeScript. Grundidee und Konzepte des Frameworks sind jedoch identisch geblieben was eine Migration oder sogar einen hybriden Einsatz der Versionen ermöglicht. Der Fokus des Projektes hat sich von der Entwicklung eines Frameworks auf die Entwicklung einer ganzen Plattform für WebAnwendungen erweitert. Aktuell arbeiten über 30 MitarbeiterInnen fest an dem Projekt und werden von hunderten Entwicklern aus der OpenSource-Community unterstützt. Durch die Einführung von Werkzeugen wie dem Kommandozeilenwerkzeug Angular-CLI können Projekte jetzt noch schneller erstellt und in Produktion überführt werden."
+    "description": "Angular ist die nächste Version des OpenSource Frameworks AngularJS. Die Code-Basis wurde komplett neu geschrieben und nutzt nun als Basis die Sprache TypeScript. Grundidee und Konzepte des Frameworks sind jedoch identisch geblieben was eine Migration oder sogar einen hybriden Einsatz der Versionen ermöglicht. Der Fokus des Projektes hat sich von der Entwicklung eines Frameworks auf die Entwicklung einer ganzen Plattform für WebAnwendungen erweitert. Aktuell arbeiten über 30 MitarbeiterInnen fest an dem Projekt und werden von hunderten Entwicklern aus der OpenSource-Community unterstützt. Durch die Einführung von Werkzeugen wie dem Kommandozeilenwerkzeug Angular-CLI können Projekte jetzt noch schneller erstellt und in Produktion überführt werden.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 16,
+      "lastSeen": "2026-06-19",
+      "sourceRepos": [
+        "townhall",
+        "hackathon",
+        "chat-room",
+        "Skillerd",
+        "angular-nestjs-template",
+        "hackbay2024",
+        "hackbay-demo",
+        "fantastic-garbanzo",
+        "health-hackathon",
+        "coin-demo",
+        "fourdrop",
+        "ipsen-botulinumtoxin-injektionsmuster",
+        "nerdAI",
+        "skillard-excelled",
+        "claude-project-kickstart-example",
+        "NerdBase"
+      ]
+    }
   },
   {
     "name": "C#",
-    "ring": "High",
+    "ring": "low",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": "C# (Aussprache „C Sharp“) ist eine moderne, objektorientierte und typsichere Programmiersprache. C# ermöglicht Entwicklern das Erstellen zahlreicher sicherer und robuster Anwendungen, die in .NET ausgeführt werden. C# hat seine Wurzeln in der C-Sprachenfamilie und ist Programmierern, die mit C, C++, Java und JavaScript arbeiten, sofort vertraut."
+    "description": "C# (Aussprache „C Sharp“) ist eine moderne, objektorientierte und typsichere Programmiersprache. C# ermöglicht Entwicklern das Erstellen zahlreicher sicherer und robuster Anwendungen, die in .NET ausgeführt werden. C# hat seine Wurzeln in der C-Sprachenfamilie und ist Programmierern, die mit C, C++, Java und JavaScript arbeiten, sofort vertraut.",
+    "autoRing": "low",
+    "detected": {
+      "repoCount": 1,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "coffee-demo"
+      ]
+    }
   },
   {
     "name": ".NET",
@@ -179,28 +351,119 @@
     "ring": "High",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": "Python ist eine universelle Programmiersprache, mit der sich Probleme und Aufgaben aus unterschiedlichsten Bereichen lösen lassen. Python setzt den Schwerpunkt auf Lesbarkeit und Einfachheit und verzichtet weitestgehend auf Klammern und das obligatorische Semikolon am Ende einer Zeile. Stattdessen ist penibel auf die korrekte Einrückung von Codezeilen und -blöcken zu achten."
+    "description": "Python ist eine universelle Programmiersprache, mit der sich Probleme und Aufgaben aus unterschiedlichsten Bereichen lösen lassen. Python setzt den Schwerpunkt auf Lesbarkeit und Einfachheit und verzichtet weitestgehend auf Klammern und das obligatorische Semikolon am Ende einer Zeile. Stattdessen ist penibel auf die korrekte Einrückung von Codezeilen und -blöcken zu achten.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 11,
+      "lastSeen": "2026-06-16",
+      "sourceRepos": [
+        "llm-comparison",
+        "dtvp-scraper",
+        "tender-parser",
+        "bid-flow-backend",
+        "ai-engineer-template",
+        "hubspot-to-odoo",
+        "nerdAI",
+        "claude-plugins",
+        "engineering-intelligence",
+        "nerdhunter",
+        "listenerd"
+      ]
+    }
   },
   {
     "name": "Typescript",
     "ring": "High",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": "TypeScript ist ein Superset von JavaScript, das JavaScript um optionale statische Typisierung und erweiterte Funktionen erweitert. Es wurde von Microsoft entwickelt und erstmals im Oktober 2012 veröffentlicht. Seit seiner Veröffentlichung im Jahr 2012 hat es sich in der Webentwicklergemeinschaft schnell durchgesetzt"
+    "description": "TypeScript ist ein Superset von JavaScript, das JavaScript um optionale statische Typisierung und erweiterte Funktionen erweitert. Es wurde von Microsoft entwickelt und erstmals im Oktober 2012 veröffentlicht. Seit seiner Veröffentlichung im Jahr 2012 hat es sich in der Webentwicklergemeinschaft schnell durchgesetzt",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 45,
+      "lastSeen": "2026-06-19",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "techradar-nerdware",
+        "townhall",
+        "hackathon",
+        "chat-room",
+        "pom-dekar-p",
+        "Skillerd",
+        "aws-user-group-multi-tenancy-and-ephemeral-environments",
+        "kata-typescript-boolean-expressions",
+        "angular-nestjs-template",
+        "hackbay2024",
+        "xit-sync",
+        "hackbay-demo",
+        "fantastic-garbanzo",
+        "yt-semantic-release",
+        "nw-semantic-release",
+        "clean-architecture-vs-vertical-sliced-architecture",
+        "coffee-demo",
+        "health-hackathon",
+        "coin-demo",
+        "fourdrop",
+        "hack-zollhof-2025",
+        "ipsen-botulinumtoxin-injektionsmuster",
+        "nerdAI",
+        "capacity-planner",
+        "stargate",
+        "skillard-excelled",
+        "claude-project-kickstart-example",
+        "ai-gtm",
+        "demo-mcp-nerdware",
+        "Nerdlabsfigma",
+        "nerdlabs-homepage",
+        "nerdware-homepage",
+        "engineering-intelligence",
+        "md-plattform-prototype",
+        "nerdware-order-app",
+        "nerdhunter",
+        "graphmind",
+        "nerdfinder",
+        "nerd-bites",
+        "vend",
+        "ki-cooking",
+        "skaling-ai-compass",
+        "NerdBase"
+      ]
+    }
   },
   {
     "name": "Go",
-    "ring": "Dev",
+    "ring": "high",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": "Go (auch Golang genannt - kurz für Go Language) ist eine Open-Source-Programmiersprache für allgemeine Zwecke. Go wurde von Google-Ingenieuren entwickelt, um zuverlässige und effiziente Software zu erstellen. Es ähnelt stark der Programmiersprache C, ist statisch typisiert und explizit."
+    "description": "Go (auch Golang genannt - kurz für Go Language) ist eine Open-Source-Programmiersprache für allgemeine Zwecke. Go wurde von Google-Ingenieuren entwickelt, um zuverlässige und effiziente Software zu erstellen. Es ähnelt stark der Programmiersprache C, ist statisch typisiert und explizit.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 5,
+      "lastSeen": "2026-06-19",
+      "sourceRepos": [
+        "townhall",
+        "nw-recruiting-metrics",
+        "hetzner-landing-zone",
+        "nerdfinder",
+        "NerdBase"
+      ]
+    }
   },
   {
     "name": "Java",
-    "ring": "High",
+    "ring": "dev",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": "ava ist eine Programmiersprache und Computing-Plattform, die 1995 von Sun Microsystems veröffentlicht wurde. Sie stellt mittlerweile eine Basis für den Großteil der digitalen Welt von heute bereit und dient als zuverlässige Plattform für viele Services und Anwendungen. Auch neue, innovative und zukunftsgerichtete Produkte und digitale Services basieren nach wie vor auf Java."
+    "description": "ava ist eine Programmiersprache und Computing-Plattform, die 1995 von Sun Microsystems veröffentlicht wurde. Sie stellt mittlerweile eine Basis für den Großteil der digitalen Welt von heute bereit und dient als zuverlässige Plattform für viele Services und Anwendungen. Auch neue, innovative und zukunftsgerichtete Produkte und digitale Services basieren nach wie vor auf Java.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "nerdware-cluster-playground-services",
+        "health-hackathon"
+      ]
+    }
   },
   {
     "name": "Spring",
@@ -235,7 +498,16 @@
     "ring": "Out",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": "PHP ist eine Skriptsprache mit einer an C und Perl angelehnten Syntax, die hauptsächlich zur Erstellung dynamischer Webseiten oder Webanwendungen verwendet wird."
+    "description": "PHP ist eine Skriptsprache mit einer an C und Perl angelehnten Syntax, die hauptsächlich zur Erstellung dynamischer Webseiten oder Webanwendungen verwendet wird.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-09",
+      "sourceRepos": [
+        "SchickBauspeziAPI",
+        "shopware6-plugin-reference"
+      ]
+    }
   },
   {
     "name": "GraalVM",
@@ -313,5 +585,531 @@
     "quadrant": "techniques",
     "isNew": "FALSE",
     "description": "Infrastructure as Code (IaC) ist die Fähigkeit, Ihre Computerinfrastruktur mithilfe von Code anstelle manueller Prozesse und Einstellungen bereitzustellen und zu unterstützen. Jede Anwendungsumgebung erfordert viele Infrastrukturkomponenten wie Betriebssysteme, Datenbankverbindungen und Speicher. "
+  },
+  {
+    "name": "NestJS",
+    "ring": "high",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "NestJS ist ein progressives Node.js-Framework für den Aufbau effizienter und skalierbarer serverseitiger Anwendungen, das stark von Angular inspiriert ist und TypeScript als primäre Sprache nutzt. Es bietet eine modulare Architektur mit Dependency Injection, dekorator-basierter Konfiguration und Unterstützung für verschiedene Transportschichten wie REST, GraphQL und WebSockets. In unseren Repositories wird NestJS sowohl als Backend in Kombination mit React und Angular als auch für eigenständige Dienste eingesetzt, etwa im Kontext von Clean Architecture, Semantic Release und wissensbasierten Anwendungen.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 10,
+      "lastSeen": "2026-06-19",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "angular-nestjs-template",
+        "fantastic-garbanzo",
+        "yt-semantic-release",
+        "nw-semantic-release",
+        "clean-architecture-vs-vertical-sliced-architecture",
+        "coffee-demo",
+        "graphmind",
+        "nerd-bites"
+      ]
+    }
+  },
+  {
+    "name": "Redux Toolkit",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Redux Toolkit ist die offizielle, empfohlene Methode zur Verwendung von Redux für State-Management in JavaScript-Anwendungen. Es vereinfacht die Redux-Entwicklung erheblich durch vorgefertigte Konfigurationen, reduzierte Boilerplate und integrierte Best Practices wie Immer für immutable Updates und createSlice für kompakte Reducer-Definitionen. Im Kontext der erkannten Repositories wird es sowohl in Full-Stack-Anwendungen mit React-Frontend als auch in Lernprojekten zur digitalen Entwicklung eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2023-11-07",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital"
+      ]
+    }
+  },
+  {
+    "name": "React",
+    "ring": "high",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "React ist eine von Meta entwickelte JavaScript-Bibliothek zur Erstellung von Benutzeroberflächen auf Basis wiederverwendbarer Komponenten. Sie nutzt ein virtuelles DOM für effizientes Rendering und ermöglicht durch ihren deklarativen Ansatz die Entwicklung komplexer, interaktiver Single-Page-Anwendungen. Mit 20 Repositories ist React die am weitesten verbreitete Frontend-Technologie in unserem Stack und wird sowohl für interne Tools als auch für kundenorientierte Anwendungen eingesetzt.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 20,
+      "lastSeen": "2026-06-19",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "techradar-nerdware",
+        "townhall",
+        "pom-dekar-p",
+        "aws-user-group-multi-tenancy-and-ephemeral-environments",
+        "coffee-demo",
+        "hack-zollhof-2025",
+        "capacity-planner",
+        "stargate",
+        "ai-gtm",
+        "md-plattform-prototype",
+        "nerdware-order-app",
+        "nerdhunter",
+        "graphmind",
+        "nerdfinder",
+        "nerd-bites",
+        "vend",
+        "ki-cooking",
+        "skaling-ai-compass"
+      ]
+    }
+  },
+  {
+    "name": "RxJS",
+    "ring": "high",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "RxJS (Reactive Extensions for JavaScript) ist eine Bibliothek für reaktive Programmierung, die auf Observables basiert und die Verarbeitung asynchroner Datenströme und Events ermöglicht. Sie bietet eine Vielzahl von Operatoren zum Filtern, Transformieren und Kombinieren von Datenströmen. RxJS ist ein zentraler Bestandteil des Angular-Frameworks und wird darüber hinaus in zahlreichen weiteren Projekten für komplexes Event-Handling und asynchrone Datenverarbeitung eingesetzt.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 25,
+      "lastSeen": "2026-06-19",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "townhall",
+        "hackathon",
+        "chat-room",
+        "Skillerd",
+        "angular-nestjs-template",
+        "serverless-example",
+        "hackbay2024",
+        "hackbay-demo",
+        "fantastic-garbanzo",
+        "yt-semantic-release",
+        "nw-semantic-release",
+        "clean-architecture-vs-vertical-sliced-architecture",
+        "coffee-demo",
+        "health-hackathon",
+        "coin-demo",
+        "fourdrop",
+        "ipsen-botulinumtoxin-injektionsmuster",
+        "nerdAI",
+        "skillard-excelled",
+        "claude-project-kickstart-example",
+        "graphmind",
+        "nerd-bites",
+        "NerdBase"
+      ]
+    }
+  },
+  {
+    "name": "ESLint",
+    "ring": "high",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "ESLint ist ein statisches Analysetool für JavaScript und TypeScript, das Code auf Fehler, stilistische Inkonsistenzen und problematische Muster untersucht. Es ermöglicht die Definition und Durchsetzung einheitlicher Code-Konventionen über konfigurierbare Regelsets und unterstützt durch ein umfangreiches Plugin-Ökosystem verschiedenste Frameworks und Coding-Standards. Als fester Bestandteil moderner Entwicklungs-Workflows lässt es sich nahtlos in CI/CD-Pipelines und Editoren integrieren, um die Codequalität kontinuierlich sicherzustellen.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 26,
+      "lastSeen": "2026-06-19",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "techradar-nerdware",
+        "townhall",
+        "chat-room",
+        "pom-dekar-p",
+        "Skillerd",
+        "aws-user-group-multi-tenancy-and-ephemeral-environments",
+        "angular-nestjs-template",
+        "hackbay2024",
+        "fantastic-garbanzo",
+        "yt-semantic-release",
+        "nw-semantic-release",
+        "clean-architecture-vs-vertical-sliced-architecture",
+        "coffee-demo",
+        "fourdrop",
+        "capacity-planner",
+        "nerd-upload",
+        "skillard-excelled",
+        "md-plattform-prototype",
+        "nerdware-order-app",
+        "graphmind",
+        "vend",
+        "ki-cooking",
+        "skaling-ai-compass",
+        "NerdBase"
+      ]
+    }
+  },
+  {
+    "name": "Jest",
+    "ring": "high",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "Jest ist ein von Meta entwickeltes JavaScript-Testing-Framework, das sich durch eine Zero-Configuration-Philosophie, integrierte Mocking-Funktionalitäten und Snapshot-Testing auszeichnet. Es unterstützt sowohl Unit- als auch Integrationstests und bietet parallele Testausführung für schnelle Feedback-Zyklen. Die breite Nutzung in 17 Repositories über verschiedene Technologie-Stacks hinweg – von React- und Angular-Frontends über NestJS-Backends bis hin zu Serverless-Projekten – unterstreicht seine Vielseitigkeit als Standard-Testlösung im JavaScript/TypeScript-Ökosystem.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 17,
+      "lastSeen": "2026-06-19",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "townhall",
+        "chat-room",
+        "Skillerd",
+        "kata-typescript-boolean-expressions",
+        "angular-nestjs-template",
+        "serverless-example",
+        "hackbay2024",
+        "fantastic-garbanzo",
+        "yt-semantic-release",
+        "nw-semantic-release",
+        "clean-architecture-vs-vertical-sliced-architecture",
+        "coffee-demo",
+        "skillard-excelled",
+        "graphmind",
+        "nerd-bites"
+      ]
+    }
+  },
+  {
+    "name": "Prettier",
+    "ring": "high",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "Prettier ist ein opinionated Code-Formatter, der eine konsistente Formatierung von Code in zahlreichen Sprachen wie JavaScript, TypeScript, HTML, CSS und weiteren erzwingt. Das Tool parst den Code und gibt ihn nach eigenen, einheitlichen Regeln neu formatiert aus, wodurch Diskussionen über Coding-Styles im Team entfallen. Prettier lässt sich nahtlos in gängige Editoren und CI/CD-Pipelines integrieren und wird in der Organisation breit über verschiedenste Projekttypen hinweg eingesetzt.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 20,
+      "lastSeen": "2026-06-19",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "techradar-nerdware",
+        "townhall",
+        "chat-room",
+        "Skillerd",
+        "angular-nestjs-template",
+        "hackbay2024",
+        "fantastic-garbanzo",
+        "yt-semantic-release",
+        "nw-semantic-release",
+        "clean-architecture-vs-vertical-sliced-architecture",
+        "coffee-demo",
+        "fourdrop",
+        "skillard-excelled",
+        "nerdware-order-app",
+        "graphmind",
+        "ki-cooking",
+        "skaling-ai-compass",
+        "NerdBase"
+      ]
+    }
+  },
+  {
+    "name": "Vite",
+    "ring": "high",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "Vite ist ein modernes Build-Tool und Entwicklungsserver für Webanwendungen, das auf native ES-Module im Browser setzt und dadurch extrem schnelle Startzeiten sowie Hot Module Replacement (HMR) bietet. Es wurde von Evan You (dem Schöpfer von Vue.js) entwickelt und unterstützt frameworks wie Vue, React, Svelte und weitere. Vite nutzt esbuild für das Pre-Bundling von Abhängigkeiten und Rollup für optimierte Produktions-Builds, was es zu einer performanten Alternative zu Webpack macht. Die breite Nutzung in 15 Repositories zeigt seine Etablierung als Standard-Build-Tool für moderne Frontend-Projekte.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 15,
+      "lastSeen": "2026-06-19",
+      "sourceRepos": [
+        "techradar-nerdware",
+        "coffee-demo",
+        "fourdrop",
+        "capacity-planner",
+        "nerd-upload",
+        "stargate",
+        "ai-gtm",
+        "Nerdlabsfigma",
+        "nerdlabs-homepage",
+        "nerdware-homepage",
+        "graphmind",
+        "nerd-bites",
+        "vend",
+        "ki-cooking",
+        "skaling-ai-compass"
+      ]
+    }
+  },
+  {
+    "name": "Playwright",
+    "ring": "high",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "Playwright ist ein von Microsoft entwickeltes Open-Source-Framework für End-to-End-Testing von Webanwendungen. Es ermöglicht automatisierte, browserübergreifende Tests in Chromium, Firefox und WebKit mit einer einheitlichen API. Playwright unterstützt mehrere Programmiersprachen, bietet Features wie Auto-Wait, Netzwerk-Interception und parallele Testausführung. Der breite Einsatz über verschiedene Projekte hinweg – von Homepages über Order-Apps bis hin zu KI-Anwendungen – zeigt seine Vielseitigkeit als zuverlässiges Testautomatisierungswerkzeug.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 6,
+      "lastSeen": "2026-06-19",
+      "sourceRepos": [
+        "techradar-nerdware",
+        "ai-gtm",
+        "nerdlabs-homepage",
+        "nerdware-homepage",
+        "nerdware-order-app",
+        "skaling-ai-compass"
+      ]
+    }
+  },
+  {
+    "name": "Zod",
+    "ring": "high",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Zod ist eine TypeScript-first Schema-Validierungsbibliothek, die es ermöglicht, Datenstrukturen deklarativ zu definieren und zur Laufzeit zu validieren. Sie bietet automatische TypeScript-Typinferenz aus den definierten Schemas, wodurch Redundanz zwischen Typ-Definitionen und Validierungslogik eliminiert wird. Zod wird häufig zur Validierung von API-Eingaben, Formulardaten, Umgebungsvariablen und Konfigurationsdateien eingesetzt und integriert sich nahtlos mit Frameworks wie React Hook Form, tRPC oder Next.js.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 14,
+      "lastSeen": "2026-06-19",
+      "sourceRepos": [
+        "techradar-nerdware",
+        "xit-sync",
+        "capacity-planner",
+        "stargate",
+        "ai-gtm",
+        "claude-plugins",
+        "demo-mcp-nerdware",
+        "md-plattform-prototype",
+        "nerdware-order-app",
+        "nerdhunter",
+        "graphmind",
+        "nerdfinder",
+        "nerd-bites",
+        "skaling-ai-compass"
+      ]
+    }
+  },
+  {
+    "name": "Vitest",
+    "ring": "high",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "Vitest ist ein schnelles Unit-Test-Framework für JavaScript und TypeScript, das nativ auf Vite aufbaut und dessen Konfiguration, Transformer und Plugin-Ökosystem nutzt. Es bietet eine Jest-kompatible API, unterstützt ESM, TypeScript und JSX out-of-the-box und zeichnet sich durch hohe Ausführungsgeschwindigkeit dank Hot Module Replacement und paralleler Testausführung aus. Die breite Nutzung in zahlreichen Repositories zeigt seine Etablierung als moderne Alternative zu Jest für Vite-basierte Projekte sowie für Backend- und Library-Tests.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 10,
+      "lastSeen": "2026-06-19",
+      "sourceRepos": [
+        "techradar-nerdware",
+        "coffee-demo",
+        "fourdrop",
+        "stargate",
+        "claude-project-kickstart-example",
+        "ai-gtm",
+        "nerdware-order-app",
+        "graphmind",
+        "nerdfinder",
+        "skaling-ai-compass"
+      ]
+    }
+  },
+  {
+    "name": "Tailwind CSS",
+    "ring": "high",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Tailwind CSS ist ein Utility-First-CSS-Framework, das vordefinierte Klassen direkt im HTML-Markup bereitstellt, um Benutzeroberflächen ohne das Schreiben von benutzerdefiniertem CSS zu gestalten. Es ermöglicht eine schnelle, konsistente UI-Entwicklung und lässt sich durch Konfiguration an individuelle Design-Systeme anpassen. Durch Tree-Shaking werden in der Produktion nur tatsächlich genutzte Styles ausgeliefert, was zu minimalen CSS-Dateigrößen führt. Die breite Nutzung in 29 Repositories zeigt seine Etablierung als Standard-Styling-Lösung für Web-Frontends in verschiedensten Projekttypen.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 29,
+      "lastSeen": "2026-06-19",
+      "sourceRepos": [
+        "townhall",
+        "pom-dekar-p",
+        "Skillerd",
+        "aws-user-group-multi-tenancy-and-ephemeral-environments",
+        "angular-nestjs-template",
+        "hackbay2024",
+        "fantastic-garbanzo",
+        "coffee-demo",
+        "health-hackathon",
+        "coin-demo",
+        "fourdrop",
+        "hack-zollhof-2025",
+        "ipsen-botulinumtoxin-injektionsmuster",
+        "nerdAI",
+        "capacity-planner",
+        "stargate",
+        "skillard-excelled",
+        "ai-gtm",
+        "Nerdlabsfigma",
+        "nerdlabs-homepage",
+        "md-plattform-prototype",
+        "nerdware-order-app",
+        "nerdhunter",
+        "graphmind",
+        "nerdfinder",
+        "nerd-bites",
+        "vend",
+        "ki-cooking",
+        "NerdBase"
+      ]
+    }
+  },
+  {
+    "name": "Ruby",
+    "ring": "low",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Ruby ist eine dynamische, objektorientierte Programmiersprache, die für ihre elegante Syntax und hohe Entwicklerproduktivität bekannt ist. Sie wird häufig in der Webentwicklung (insbesondere mit dem Framework Ruby on Rails), für Scripting und Automatisierung sowie im DevOps-Bereich eingesetzt. Im Kontext des nerdware-cluster wird Ruby vermutlich für Infrastruktur-Automatisierung oder Konfigurationsmanagement verwendet.",
+    "autoRing": "low",
+    "detected": {
+      "repoCount": 1,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "nerdware-cluster"
+      ]
+    }
+  },
+  {
+    "name": "Kubernetes",
+    "ring": "dev",
+    "quadrant": "platforms",
+    "isNew": true,
+    "description": "Kubernetes ist eine Open-Source-Plattform zur Container-Orchestrierung, die das automatisierte Deployment, die Skalierung und den Betrieb von containerisierten Anwendungen ermöglicht. Es abstrahiert die zugrunde liegende Infrastruktur und bietet Mechanismen für Service Discovery, Load Balancing, Self-Healing und deklaratives Konfigurationsmanagement. Der Einsatz in den erkannten Repositories reicht von Cluster-Infrastruktur-Setups über Operator-Entwicklung bis hin zu Anwendungsdeployments, was die zentrale Rolle von Kubernetes als Standard-Laufzeitplattform unterstreicht.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 4,
+      "lastSeen": "2026-06-19",
+      "sourceRepos": [
+        "nerdware-cluster-playground-services",
+        "hivemq-platform-operator-crds",
+        "hetzner-landing-zone",
+        "graphmind"
+      ]
+    }
+  },
+  {
+    "name": "JavaScript",
+    "ring": "high",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "JavaScript ist eine dynamische, interpretierte Programmiersprache, die ursprünglich für die clientseitige Webentwicklung konzipiert wurde und heute sowohl im Browser als auch serverseitig (z. B. mit Node.js) eingesetzt wird. Sie bildet zusammen mit HTML und CSS eine der Kerntechnologien des Webs und ermöglicht interaktive Benutzeroberflächen, API-Entwicklung sowie Automatisierungsprozesse. Im vorliegenden Tech-Radar ist JavaScript in 13 Repositories vertreten und deckt dabei ein breites Spektrum von Serverless-Anwendungen über CI/CD-Tooling bis hin zu Plugin-Entwicklung und Frontend-Projekten ab.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 13,
+      "lastSeen": "2026-06-18",
+      "sourceRepos": [
+        "cloudapi",
+        "LLM-who-the-f...-is-alice",
+        "serverless-example",
+        "yt-semantic-release",
+        "nw-semantic-release",
+        "production-ready-serverless",
+        "clean-architecture-vs-vertical-sliced-architecture",
+        "health-hackathon",
+        "ipsen-botulinumtoxin-injektionsmuster",
+        "nerd-upload",
+        "stargate",
+        "shopware6-plugin-reference",
+        "engineering-intelligence"
+      ]
+    }
+  },
+  {
+    "name": "Express",
+    "ring": "high",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Express ist ein minimalistisches und flexibles Web-Application-Framework für Node.js, das eine robuste Grundlage für Web- und API-Server bietet. Es stellt grundlegende Funktionen wie Routing, Middleware-Unterstützung und HTTP-Hilfsmethoden bereit, ohne dabei eine starre Architektur vorzuschreiben. In den erkannten Repositories wird Express sowohl für klassische Webanwendungen als auch als Backend für Cloud-native APIs und Microservices eingesetzt.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 6,
+      "lastSeen": "2026-06-15",
+      "sourceRepos": [
+        "cloudapi",
+        "aws-user-group-multi-tenancy-and-ephemeral-environments",
+        "coffee-demo",
+        "coin-demo",
+        "stargate",
+        "ai-gtm"
+      ]
+    }
+  },
+  {
+    "name": "Next.js",
+    "ring": "high",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Next.js ist ein auf React basierendes Full-Stack-Framework, das serverseitiges Rendering (SSR), statische Seitengenerierung (SSG) und API-Routen in einem einheitlichen Projekt vereint. Es bietet dateibasiertes Routing, automatisches Code-Splitting und optimierte Performance out of the box. In unseren Projekten wird Next.js sowohl für Prototypen und Plattform-Anwendungen als auch für produktionsreife Web-Applikationen eingesetzt, was seine Vielseitigkeit von Hackathon-Projekten bis hin zu Multi-Tenancy-Szenarien unterstreicht.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 7,
+      "lastSeen": "2026-06-18",
+      "sourceRepos": [
+        "aws-user-group-multi-tenancy-and-ephemeral-environments",
+        "hack-zollhof-2025",
+        "md-plattform-prototype",
+        "nerdware-order-app",
+        "nerdhunter",
+        "nerdfinder",
+        "skaling-ai-compass"
+      ]
+    }
+  },
+  {
+    "name": "Jupyter Notebook",
+    "ring": "low",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Jupyter Notebook ist eine interaktive, webbasierte Entwicklungsumgebung, die es ermöglicht, Code, Visualisierungen und erklärenden Text in einem einzigen Dokument zu kombinieren. Es unterstützt zahlreiche Programmiersprachen, wobei Python am weitesten verbreitet ist. Im Kontext des LLM-Workshops dient es als ideales Werkzeug für explorative Datenanalyse, das schrittweise Prototyping von KI-Modellen und die didaktische Aufbereitung von Machine-Learning-Workflows.",
+    "autoRing": "low",
+    "detected": {
+      "repoCount": 1,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "llm-workshop"
+      ]
+    }
+  },
+  {
+    "name": "FastAPI",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "FastAPI ist ein modernes, hochperformantes Python-Web-Framework zur Entwicklung von REST-APIs, das auf Standard-Python-Type-Hints basiert und automatisch eine interaktive API-Dokumentation (OpenAPI/Swagger) generiert. Es nutzt asynchrone Programmierung mit ASGI und erreicht dadurch eine Leistung vergleichbar mit Node.js oder Go. In den erkannten Repositories wird es als Backend-Framework für KI-gestützte Anwendungen und LLM-Integrationen eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "llm-workshop",
+        "nerdAI"
+      ]
+    }
+  },
+  {
+    "name": "Twig",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Twig ist eine moderne Template-Engine für PHP, die von SensioLabs entwickelt wurde und als Standard-Templating-Lösung in Symfony sowie Shopware 6 zum Einsatz kommt. Sie bietet eine übersichtliche, sandboxed Syntax zur Trennung von Logik und Darstellung, unterstützt Template-Vererbung, automatisches Output-Escaping und ist auf Performance durch Kompilierung zu nativem PHP-Code optimiert. Im vorliegenden Kontext wird Twig sowohl für die Theme-Entwicklung (SchickBauspeziTheme) als auch für die API- und Plugin-Ebene (SchickBauspeziAPI, shopware6-plugin-reference) zur Ausgabe von Frontend-Templates und E-Mail-Vorlagen eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 3,
+      "lastSeen": "2026-06-09",
+      "sourceRepos": [
+        "SchickBauspeziAPI",
+        "SchickBauspeziTheme",
+        "shopware6-plugin-reference"
+      ]
+    }
+  },
+  {
+    "name": "Vue.js",
+    "ring": "low",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Vue.js ist ein progressives JavaScript-Framework zur Entwicklung von Benutzeroberflächen und Single-Page-Applikationen. Es zeichnet sich durch eine niedrige Einstiegshürde, ein komponentenbasiertes Architekturmodell und ein reaktives Datenbindungssystem aus. Vue.js lässt sich sowohl inkrementell in bestehende Projekte integrieren als auch als vollständiges Framework mit offiziellem Routing und State-Management einsetzen. Im Kontext des Tech-Radars wird es für die Nerdware-Homepage verwendet.",
+    "autoRing": "low",
+    "detected": {
+      "repoCount": 1,
+      "lastSeen": "2026-04-14",
+      "sourceRepos": [
+        "nerdware-homepage"
+      ]
+    }
   }
 ]

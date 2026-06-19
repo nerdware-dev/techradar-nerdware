@@ -58,5 +58,7 @@ describe('parseRadar', () => {
 import realData from '../../data/tech-radar.json'
 it('parses the real tech-radar.json without throwing', () => {
   const radar = parseRadar(realData)
-  expect(radar.blips).toHaveLength(45)
+  // The scanner grows the radar over time; assert the curated baseline is never lost
+  // rather than an exact count.
+  expect(radar.blips.length).toBeGreaterThanOrEqual(45)
 })
