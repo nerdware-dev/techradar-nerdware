@@ -2,6 +2,7 @@ import { describe, it, expect, vi } from 'vitest'
 import { categorize } from './categorize'
 import type { LLMClient } from './llm/types'
 import type { Detection } from './types'
+import type { QuadrantId } from '../src/data/types'
 
 const det = (name: string, quadrantHint?: Detection['quadrantHint']): Detection => ({
   name,
@@ -11,7 +12,7 @@ const det = (name: string, quadrantHint?: Detection['quadrantHint']): Detection 
   quadrantHint,
 })
 
-const fakeLLM = (quadrant: any, confidence: number): LLMClient => ({
+const fakeLLM = (quadrant: QuadrantId, confidence: number): LLMClient => ({
   categorize: vi.fn().mockResolvedValue({ quadrant, confidence }),
   describe: vi.fn(),
 })
