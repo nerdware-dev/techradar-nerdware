@@ -1,0 +1,31 @@
+import type { QuadrantId } from '../../src/data/types'
+
+/** Maps a slugified canonical name to its quadrant. Unknowns fall back to AI. */
+export const QUADRANT_MAP: Record<string, QuadrantId> = {
+  react: 'languages-frameworks',
+  'next-js': 'languages-frameworks',
+  'vue-js': 'languages-frameworks',
+  express: 'languages-frameworks',
+  fastapi: 'languages-frameworks',
+  django: 'languages-frameworks',
+  flask: 'languages-frameworks',
+  spring: 'languages-frameworks',
+  laravel: 'languages-frameworks',
+  symfony: 'languages-frameworks',
+  typescript: 'languages-frameworks',
+  go: 'languages-frameworks',
+  python: 'languages-frameworks',
+  java: 'languages-frameworks',
+  php: 'languages-frameworks',
+  vite: 'tools',
+  vitest: 'tools',
+  playwright: 'tools',
+  prisma: 'tools',
+  docker: 'platforms',
+  terraform: 'platforms',
+  kubernetes: 'platforms',
+  'github-actions': 'platforms',
+  aws: 'platforms',
+  redis: 'platforms',
+  postgresql: 'platforms',
+}
