@@ -138,9 +138,17 @@ interface LLMClient {
 Two interchangeable implementations sit behind it, selected by config:
 
 - **`anthropic` (default, built now)** — `@anthropic-ai/sdk` calling the Anthropic Messages API directly (§7.1). Zero extra setup; used for local dev, tests, and the first real run.
-- **`gateway` (OpenAI-wire, wiring deferred)** — an OpenAI-compatible transport (the `openai` SDK) pointed at Nerdware's self-hosted LiteLLM proxy (`POST /v1/chat/completions`), authenticated with a gateway virtual key. Same `LLMClient` interface, so it's a drop-in addition.
+- **`forge` (OpenAI-wire)** — an OpenAI-compatible transport (the `openai` SDK) pointed at Nerdware's **Forge** gateway (`POST /v1/chat/completions`), authenticated with a technical-user key (`sk-…`). Same `LLMClient` interface, so it's a drop-in alternative selected by `LLM_PROVIDER=forge`.
 
-**Decision (2026-06-19):** the gateway is **OpenAI-compatible** (`/v1/chat/completions`), not Anthropic-wire. We build the `LLMClient` seam and the default Anthropic implementation **now**; the gateway transport is slotted in **later** (user will revisit). Its remaining details are deferred: env var names, whether the gateway is opt-in vs the only path, the virtual-key auth header, and which underlying model it routes to. Going OpenAI-wire means we forgo Anthropic-only schema-enforced structured outputs (acceptable — both calls are simple and validated client-side). Categorization and German-description quality assume the gateway ultimately routes to Claude-tier models (`claude-haiku-4-5` / `claude-opus-4-8`); routing elsewhere will shift results.
+**Decision (2026-06-19):** the gateway is **OpenAI-compatible** (`/v1/chat/completions`), not Anthropic-wire. Concrete details (confirmed against the live gateway):
+
+- **Base URL:** `https://forge.nerdware.ai/v1` (env `FORGE_BASE_URL`). The gateway is mounted at `/v1`; the `openai` SDK appends `/chat/completions`.
+- **Auth:** `Authorization: Bearer sk-…` (the `openai` SDK's default), key in env `FORGE_API_KEY`. The key lives in a gitignored `.env` locally and a GitHub Actions secret in CI — never committed. `.env.example` documents all vars.
+- **Provider selection:** `LLM_PROVIDER` = `anthropic` (default) or `forge`. Direct Anthropic stays the zero-setup default for local dev and tests.
+- **Model aliases differ per provider** (Forge's registry, all Bedrock-backed, has no `claude-opus-4-8`):
+  - categorization: `claude-haiku-4-5` (available on both).
+  - German descriptions: `claude-opus-4-8` on the `anthropic` path; **`claude-opus-4-6`** on `forge` (its best Opus). Config holds a model pair per provider.
+- Going OpenAI-wire means we forgo Anthropic-only schema-enforced structured outputs (acceptable — both calls are simple and validated client-side). Both Forge models are Claude-tier, so categorization and German-description quality match the spec's intent.
 
 ## 8. Outputs of one run
 
@@ -178,4 +186,4 @@ Pure, deterministic units are tested directly:
 - Exact Claude model IDs + prompts (via `claude-api` reference).
 - Final language-noise threshold and the full seed contents of `mappings/` (bootstrapped from the existing 45 entries + common ecosystem libs).
 - `@octokit/rest` vs shelling out to `gh api` — design assumes Octokit for robust pagination/rate-limit handling; revisit only if dependency footprint is a concern.
-- **LiteLLM gateway transport (OpenAI-wire) is deferred** — the `LLMClient` seam and the default Anthropic implementation are built now; the OpenAI-compatible gateway implementation, its env config, auth, and model routing are wired in a later pass (§7.2).
+- **Forge gateway (OpenAI-wire) is now in scope** — both the default Anthropic client and the Forge gateway client are built, selected by `LLM_PROVIDER` (§7.2). Base URL, auth, env vars, and per-provider model aliases are pinned.
