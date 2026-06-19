@@ -1,0 +1,38 @@
+import type { LLMClient, ModelPair } from './types'
+import { categorizePrompt, describePrompt, parseCategory } from './anthropicClient'
+
+/** Minimal shape of the OpenAI SDK we depend on (keeps tests SDK-free). */
+export interface OpenAILike {
+  chat: {
+    completions: {
+      create(args: unknown): Promise<{ choices: { message: { content: string | null } }[] }>
+    }
+  }
+}
+
+function firstContent(res: { choices: { message: { content: string | null } }[] }): string {
+  return res.choices[0]?.message?.content ?? ''
+}
+
+/** OpenAI-wire LLM client for the Forge gateway. Same prompts as the Anthropic
+ *  client so categorization/description behavior matches across providers. */
+export function createForgeClient(openai: OpenAILike, models: ModelPair): LLMClient {
+  return {
+    async categorize(name, context) {
+      const res = await openai.chat.completions.create({
+        model: models.categorize,
+        max_tokens: 256,
+        messages: [{ role: 'user', content: categorizePrompt(name, context) }],
+      })
+      return parseCategory(firstContent(res))
+    },
+    async describe(name, context) {
+      const res = await openai.chat.completions.create({
+        model: models.describe,
+        max_tokens: 400,
+        messages: [{ role: 'user', content: describePrompt(name, context) }],
+      })
+      return firstContent(res).trim()
+    },
+  }
+}
