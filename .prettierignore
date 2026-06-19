@@ -8,3 +8,4 @@ docs
 data
 public
 *.min.js
+.superpowers

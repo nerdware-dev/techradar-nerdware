@@ -27,3 +27,5 @@ cypress/
 .talismanrc
 
 .vscode/
+
+.superpowers/
