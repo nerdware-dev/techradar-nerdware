@@ -97,8 +97,12 @@ export async function runScan(
       if (t.verdict === 'child' && t.parent) {
         const parent = detections.find((d) => slugify(d.name) === slugify(t.parent!))
         if (parent) {
-          parent.repoCount += u.repoCount
-          parent.sourceRepos.push(...u.sourceRepos)
+          for (const repo of u.sourceRepos) {
+            if (!parent.sourceRepos.includes(repo)) {
+              parent.sourceRepos.push(repo)
+              parent.repoCount += 1
+            }
+          }
           if (u.lastSeen > parent.lastSeen) parent.lastSeen = u.lastSeen
         } else suppressed.push(u) // child whose parent was never detected is intentionally suppressed and cached as noise
       } else suppressed.push(u)

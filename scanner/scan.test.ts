@@ -122,4 +122,43 @@ describe('runScan', () => {
     // some-helper must be recorded as noise in the verdicts
     expect(result.verdicts['some-helper']).toMatchObject({ verdict: 'noise', source: 'llm' })
   })
+
+  it('does not double-count repoCount when child co-occurs with parent in the same repo', async () => {
+    // ONE repo (repo-a) whose package.json contains BOTH 'react' (seeded → radar) AND
+    // 'some-helper' (unknown → LLM returns child of React).
+    // After rollup React must still show repoCount === 1, sourceRepos === ['repo-a'] with no dupe.
+    const cache = {
+      react: {
+        verdict: 'radar' as const,
+        quadrant: 'languages-frameworks' as const,
+        source: 'seed' as const,
+        confidence: 1,
+        decidedAt: '2026-01-01',
+      },
+    }
+    const llmChild: LLMClient = {
+      describe: vi.fn().mockResolvedValue('desc'),
+      triage: vi.fn().mockResolvedValue({ verdict: 'child', parent: 'React', confidence: 0.9 }),
+    }
+    const ghSameRepo: GitHubClient = {
+      listRepos: vi
+        .fn()
+        .mockResolvedValue([{ name: 'repo-a', defaultBranch: 'main', pushedAt: '2026-06-18' }]),
+      getLanguages: vi.fn().mockResolvedValue({}),
+      listFiles: vi.fn().mockResolvedValue(['package.json']),
+      // repo-a package.json has both react AND some-helper
+      getFileContent: vi
+        .fn()
+        .mockResolvedValue(JSON.stringify({ dependencies: { react: '^19', 'some-helper': '^1' } })),
+    }
+    const result = await runScan(ghSameRepo, llmChild, [], cache, '2026-06-22')
+
+    const reactDetection = result.detections.find((d) => d.name === 'React')
+    expect(reactDetection).toBeTruthy()
+    // repo-a must appear exactly once — no double-count from the child rollup
+    expect(reactDetection!.repoCount).toBe(1)
+    expect(reactDetection!.sourceRepos).toEqual(['repo-a'])
+    // some-helper is noise
+    expect(result.verdicts['some-helper']).toMatchObject({ verdict: 'noise', source: 'llm' })
+  })
 })
