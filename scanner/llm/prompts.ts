@@ -34,7 +34,10 @@ export function triagePrompt(name: string, context: string): string {
 /** Parse triage JSON, clamping unknown verdicts to noise and unknown quadrants to tools. */
 export function parseTriage(text: string): TriageResult {
   try {
-    const p = JSON.parse(text) as {
+    const start = text.indexOf('{')
+    const end = text.lastIndexOf('}')
+    const json = start !== -1 && end > start ? text.slice(start, end + 1) : text
+    const p = JSON.parse(json) as {
       verdict?: string
       parent?: string
       quadrant?: string

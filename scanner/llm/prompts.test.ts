@@ -29,4 +29,13 @@ describe('parseTriage', () => {
     expect(r.verdict).toBe('child')
     expect(r).not.toHaveProperty('parent')
   })
+  it('parses fenced JSON (```json ... ```) the Forge model returns', () => {
+    const fenced =
+      '```json\n{"verdict":"radar","parent":null,"quadrant":"languages-frameworks","confidence":0.95}\n```'
+    expect(parseTriage(fenced)).toEqual({
+      verdict: 'radar',
+      quadrant: 'languages-frameworks',
+      confidence: 0.95,
+    })
+  })
 })
