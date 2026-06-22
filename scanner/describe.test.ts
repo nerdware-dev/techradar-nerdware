@@ -13,8 +13,8 @@ const det: Detection = {
 describe('draftDescription', () => {
   it('calls the LLM with the tech name and returns the German draft', async () => {
     const llm: LLMClient = {
-      categorize: vi.fn(),
       describe: vi.fn().mockResolvedValue('Grafana ist ...'),
+      triage: vi.fn(),
     }
     const result = await draftDescription(det, llm)
     expect(result).toBe('Grafana ist ...')

@@ -27,6 +27,46 @@ export interface Detection {
   /** Most recent pushedAt across sourceRepos (ISO date). */
   lastSeen: string
   quadrantHint?: QuadrantId
+  /** Resolved/triaged quadrant, authoritative; distinct from the detector quadrantHint. */
+  quadrant?: QuadrantId
+}
+
+/** What a token is, for radar purposes. */
+export type Verdict = 'radar' | 'child' | 'noise'
+/** A verdict the cache can store (child is resolved to its parent at scan time). */
+export type TerminalVerdict = 'radar' | 'noise'
+
+/** Result of the deterministic per-token resolver (Task 6). */
+export interface Resolved {
+  /** Canonical blip name, e.g. "Radix UI". */
+  canonical: string
+  /** 'unknown' = no deterministic verdict; must go to LLM triage. */
+  verdict: TerminalVerdict | 'unknown'
+  /** Present when verdict is 'radar' and the quadrant is known deterministically. */
+  quadrant?: QuadrantId
+}
+
+/** One entry in the persisted verdict cache (Task 4). */
+export interface VerdictEntry {
+  verdict: TerminalVerdict
+  quadrant?: QuadrantId
+  source: 'seed' | 'llm' | 'human'
+  confidence?: number
+  /** ISO date (YYYY-MM-DD) the verdict was decided. */
+  decidedAt?: string
+}
+
+/** The persisted verdict cache, keyed by slugified canonical name. */
+export type VerdictCache = Record<string, VerdictEntry>
+
+/** Result of LLM triage for one unknown tech (Task 7). */
+export interface TriageResult {
+  verdict: Verdict
+  /** Canonical parent name when verdict is 'child'. */
+  parent?: string
+  /** Present when verdict is 'radar'. */
+  quadrant?: QuadrantId
+  confidence: number
 }
 
 /** A radar entry as stored on disk, including additive provenance fields. */

@@ -31,8 +31,22 @@ async function main(): Promise<void> {
   const existingRaw = JSON.parse(
     await readFile(SCANNER_CONFIG.paths.radar, 'utf8'),
   ) as ScannerBlip[]
+  const verdictsPath = SCANNER_CONFIG.paths.verdicts
+  let cache: import('./types').VerdictCache = {}
+  if (existsSync(verdictsPath)) {
+    const rawVerdicts = await readFile(verdictsPath, 'utf8')
+    try {
+      cache = JSON.parse(rawVerdicts) as import('./types').VerdictCache
+    } catch (err) {
+      throw new Error(
+        `Refusing to scan: ${verdictsPath} is not valid JSON (fix or delete it): ${err instanceof Error ? err.message : String(err)}`,
+        { cause: err },
+      )
+    }
+  }
+  const today = new Date().toISOString().slice(0, 10)
   const log = (m: string) => process.stderr.write(m + '\n')
-  const result = await runScan(gh, llm, existingRaw, log)
+  const result = await runScan(gh, llm, existingRaw, cache, today, log)
 
   // Safety guardrail: candidate must parse, and no pinned/existing blip may vanish.
   parseRadar(result.candidate)
@@ -41,14 +55,24 @@ async function main(): Promise<void> {
   if (dropped.length)
     throw new Error(`Refusing to write: dropped ${dropped.map((b) => b.name).join(', ')}`)
 
-  const today = new Date().toISOString().slice(0, 10)
   await writeFile(SCANNER_CONFIG.paths.radar, JSON.stringify(result.candidate, null, 2) + '\n')
   await mkdir(SCANNER_CONFIG.paths.detectionsDir, { recursive: true })
   await writeFile(
     join(SCANNER_CONFIG.paths.detectionsDir, `${today}.json`),
-    JSON.stringify({ detections: result.detections, candidates: result.candidates }, null, 2) +
-      '\n',
+    JSON.stringify(
+      {
+        detections: result.detections,
+        belowThreshold: result.belowThreshold,
+        suppressed: result.suppressed,
+      },
+      null,
+      2,
+    ) + '\n',
   )
+  const sortedVerdicts = Object.fromEntries(
+    Object.entries(result.verdicts ?? {}).sort(([a], [b]) => a.localeCompare(b)),
+  )
+  await writeFile(verdictsPath, JSON.stringify(sortedVerdicts, null, 2) + '\n')
   process.stdout.write(result.report)
 }
 

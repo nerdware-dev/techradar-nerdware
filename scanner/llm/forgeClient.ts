@@ -1,5 +1,5 @@
 import type { LLMClient, ModelPair } from './types'
-import { categorizePrompt, describePrompt, parseCategory } from './prompts'
+import { describePrompt, triagePrompt, parseTriage } from './prompts'
 
 /** Minimal shape of the OpenAI SDK we depend on (keeps tests SDK-free). */
 export interface OpenAILike {
@@ -17,14 +17,6 @@ function firstContent(res: { choices: { message: { content: string | null } }[] 
 /** OpenAI-wire LLM client for the Forge gateway (the scanner's only LLM provider). */
 export function createForgeClient(openai: OpenAILike, models: ModelPair): LLMClient {
   return {
-    async categorize(name, context) {
-      const res = await openai.chat.completions.create({
-        model: models.categorize,
-        max_tokens: 256,
-        messages: [{ role: 'user', content: categorizePrompt(name, context) }],
-      })
-      return parseCategory(firstContent(res))
-    },
     async describe(name, context) {
       const res = await openai.chat.completions.create({
         model: models.describe,
@@ -32,6 +24,14 @@ export function createForgeClient(openai: OpenAILike, models: ModelPair): LLMCli
         messages: [{ role: 'user', content: describePrompt(name, context) }],
       })
       return firstContent(res).trim()
+    },
+    async triage(name, context) {
+      const res = await openai.chat.completions.create({
+        model: models.triage,
+        max_tokens: 256,
+        messages: [{ role: 'user', content: triagePrompt(name, context) }],
+      })
+      return parseTriage(firstContent(res))
     },
   }
 }

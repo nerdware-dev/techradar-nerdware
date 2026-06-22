@@ -10,11 +10,12 @@ const changes = {
 }
 
 describe('renderReport', () => {
-  const md = renderReport(changes, 30, 905)
+  const md = renderReport(changes, 30, 905, 42)
   it('summarizes counts in a headline', () => {
     expect(md).toMatch(/30 repos/)
     expect(md).toMatch(/\+1 added/)
-    expect(md).toMatch(/905 candidates/)
+    expect(md).toMatch(/905 suppressed/)
+    expect(md).toMatch(/42 below-threshold/)
   })
   it('lists ring moves with old and new ring', () => {
     expect(md).toMatch(/React.*low.*high/)

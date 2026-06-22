@@ -5,8 +5,8 @@ import { createLLMClient } from './createLLMClient'
 describe('createLLMClient', () => {
   it('builds a Forge client when FORGE_API_KEY is present', () => {
     const client = createLLMClient({ FORGE_API_KEY: 'sk-x' } as NodeJS.ProcessEnv)
-    expect(typeof client.categorize).toBe('function')
     expect(typeof client.describe).toBe('function')
+    expect(typeof client.triage).toBe('function')
   })
 
   it('throws when FORGE_API_KEY is missing', () => {

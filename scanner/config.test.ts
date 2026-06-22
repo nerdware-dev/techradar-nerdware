@@ -14,8 +14,8 @@ describe('SCANNER_CONFIG', () => {
     expect(SCANNER_CONFIG.paths.radar).toMatch(/data\/tech-radar\.json$/)
   })
 
-  it('uses Forge model aliases (haiku for categorize, opus-4-6 for describe)', () => {
-    expect(SCANNER_CONFIG.models.categorize).toBe('claude-haiku-4-5')
+  it('uses Forge model aliases (opus-4-6 for describe, haiku for triage)', () => {
     expect(SCANNER_CONFIG.models.describe).toBe('claude-opus-4-6')
+    expect(SCANNER_CONFIG.models.triage).toBe('claude-haiku-4-5')
   })
 })
