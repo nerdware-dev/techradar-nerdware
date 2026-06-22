@@ -52,8 +52,8 @@
     "description": "Docker ist eine Open-Source-Plattform, die Entwicklern die Erstellung, Bereitstellung, Ausführung, Aktualisierung und Verwaltung von Containern ermöglicht. Container sind standardisierte ausführbare Komponenten, die den Anwendungsquellcode mit den Betriebssystembibliotheken und den Abhängigkeiten kombinieren, die zur Ausführung des Codes in jeder beliebigen Umgebung erforderlich sind.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 38,
-      "lastSeen": "2026-06-19",
+      "repoCount": 39,
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -92,7 +92,8 @@
         "nerdfinder",
         "nerd-bites",
         "vend",
-        "NerdBase"
+        "NerdBase",
+        "fegime-opensearch-prototype"
       ]
     }
   },
@@ -105,7 +106,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 37,
-      "lastSeen": "2026-06-19",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "learning-digital",
         "techradar-nerdware",
@@ -355,7 +356,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 11,
-      "lastSeen": "2026-06-16",
+      "lastSeen": "2026-06-21",
       "sourceRepos": [
         "llm-comparison",
         "dtvp-scraper",
@@ -380,7 +381,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 45,
-      "lastSeen": "2026-06-19",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -494,22 +495,6 @@
     "description": "OpenTelemetry (OTel) ist ein Open-Source-Framework für Observability, mit dem Entwicklungsteams Telemetriedaten in einem einzigen, einheitlichen Format generieren, verarbeiten und übertragen können. Dieses Format wurde von der Cloud Native Computing Foundation (CNCF) entwickelt, um standardisierte Protokolle und Tools zum Erfassen und Weiterleiten von Metriken, Logs und Traces an Überwachungsplattformen bereitzustellen."
   },
   {
-    "name": "PHP",
-    "ring": "Out",
-    "quadrant": "languages & frameworks",
-    "isNew": "FALSE",
-    "description": "PHP ist eine Skriptsprache mit einer an C und Perl angelehnten Syntax, die hauptsächlich zur Erstellung dynamischer Webseiten oder Webanwendungen verwendet wird.",
-    "autoRing": "dev",
-    "detected": {
-      "repoCount": 2,
-      "lastSeen": "2026-06-09",
-      "sourceRepos": [
-        "SchickBauspeziAPI",
-        "shopware6-plugin-reference"
-      ]
-    }
-  },
-  {
     "name": "GraalVM",
     "ring": "Dev",
     "quadrant": "languages & frameworks",
@@ -595,7 +580,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 10,
-      "lastSeen": "2026-06-19",
+      "lastSeen": "2026-06-20",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -635,7 +620,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 20,
-      "lastSeen": "2026-06-19",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -669,7 +654,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 25,
-      "lastSeen": "2026-06-19",
+      "lastSeen": "2026-06-20",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -708,7 +693,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 26,
-      "lastSeen": "2026-06-19",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -748,7 +733,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 17,
-      "lastSeen": "2026-06-19",
+      "lastSeen": "2026-06-20",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -779,7 +764,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 20,
-      "lastSeen": "2026-06-19",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -813,7 +798,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 15,
-      "lastSeen": "2026-06-19",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "techradar-nerdware",
         "coffee-demo",
@@ -842,7 +827,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 6,
-      "lastSeen": "2026-06-19",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "techradar-nerdware",
         "ai-gtm",
@@ -862,7 +847,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 14,
-      "lastSeen": "2026-06-19",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "techradar-nerdware",
         "xit-sync",
@@ -890,7 +875,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 10,
-      "lastSeen": "2026-06-19",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "techradar-nerdware",
         "coffee-demo",
@@ -914,7 +899,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 29,
-      "lastSeen": "2026-06-19",
+      "lastSeen": "2026-06-20",
       "sourceRepos": [
         "townhall",
         "pom-dekar-p",
@@ -972,7 +957,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 4,
-      "lastSeen": "2026-06-19",
+      "lastSeen": "2026-06-20",
       "sourceRepos": [
         "nerdware-cluster-playground-services",
         "hivemq-platform-operator-crds",
@@ -989,8 +974,8 @@
     "description": "JavaScript ist eine dynamische, interpretierte Programmiersprache, die ursprünglich für die clientseitige Webentwicklung konzipiert wurde und heute sowohl im Browser als auch serverseitig (z. B. mit Node.js) eingesetzt wird. Sie bildet zusammen mit HTML und CSS eine der Kerntechnologien des Webs und ermöglicht interaktive Benutzeroberflächen, API-Entwicklung sowie Automatisierungsprozesse. Im vorliegenden Tech-Radar ist JavaScript in 13 Repositories vertreten und deckt dabei ein breites Spektrum von Serverless-Anwendungen über CI/CD-Tooling bis hin zu Plugin-Entwicklung und Frontend-Projekten ab.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 13,
-      "lastSeen": "2026-06-18",
+      "repoCount": 14,
+      "lastSeen": "2026-06-21",
       "sourceRepos": [
         "cloudapi",
         "LLM-who-the-f...-is-alice",
@@ -1004,7 +989,8 @@
         "nerd-upload",
         "stargate",
         "shopware6-plugin-reference",
-        "engineering-intelligence"
+        "engineering-intelligence",
+        "fegime-opensearch-prototype"
       ]
     }
   },
@@ -1016,15 +1002,16 @@
     "description": "Express ist ein minimalistisches und flexibles Web-Application-Framework für Node.js, das eine robuste Grundlage für Web- und API-Server bietet. Es stellt grundlegende Funktionen wie Routing, Middleware-Unterstützung und HTTP-Hilfsmethoden bereit, ohne dabei eine starre Architektur vorzuschreiben. In den erkannten Repositories wird Express sowohl für klassische Webanwendungen als auch als Backend für Cloud-native APIs und Microservices eingesetzt.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 6,
-      "lastSeen": "2026-06-15",
+      "repoCount": 7,
+      "lastSeen": "2026-06-21",
       "sourceRepos": [
         "cloudapi",
         "aws-user-group-multi-tenancy-and-ephemeral-environments",
         "coffee-demo",
         "coin-demo",
         "stargate",
-        "ai-gtm"
+        "ai-gtm",
+        "fegime-opensearch-prototype"
       ]
     }
   },
@@ -1109,6 +1096,22 @@
       "lastSeen": "2026-04-14",
       "sourceRepos": [
         "nerdware-homepage"
+      ]
+    }
+  },
+  {
+    "name": "PHP",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": false,
+    "description": "PHP ist eine weit verbreitete serverseitige Skriptsprache, die primär für die Webentwicklung eingesetzt wird. Sie bildet die technische Grundlage zahlreicher Content-Management-Systeme und E-Commerce-Plattformen, darunter Shopware 6. Im vorliegenden Kontext wird PHP sowohl für eine API-Implementierung (SchickBauspeziAPI) als auch für die Shopware-6-Plugin-Entwicklung verwendet. Die Sprache zeichnet sich durch ein großes Ökosystem, breite Hosting-Unterstützung und eine aktive Weiterentwicklung (aktuell PHP 8.x) aus.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-09",
+      "sourceRepos": [
+        "SchickBauspeziAPI",
+        "shopware6-plugin-reference"
       ]
     }
   }
