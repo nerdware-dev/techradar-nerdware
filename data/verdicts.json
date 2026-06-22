@@ -1,0 +1,177 @@
+{
+  "angular": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "seed"
+  },
+  "aws": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "seed"
+  },
+  "django": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "seed"
+  },
+  "docker": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "seed"
+  },
+  "eslint": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "seed"
+  },
+  "express": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "seed"
+  },
+  "fastapi": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "seed"
+  },
+  "flask": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "seed"
+  },
+  "github-actions": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "seed"
+  },
+  "go": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "seed"
+  },
+  "java": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "seed"
+  },
+  "jest": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "seed"
+  },
+  "kubernetes": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "seed"
+  },
+  "laravel": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "seed"
+  },
+  "nestjs": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "seed"
+  },
+  "next-js": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "seed"
+  },
+  "php": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "seed"
+  },
+  "playwright": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "seed"
+  },
+  "postgresql": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "seed"
+  },
+  "prettier": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "seed"
+  },
+  "prisma": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "seed"
+  },
+  "python": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "seed"
+  },
+  "react": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "seed"
+  },
+  "redis": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "seed"
+  },
+  "redux-toolkit": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "seed"
+  },
+  "rxjs": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "seed"
+  },
+  "spring": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "seed"
+  },
+  "symfony": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "seed"
+  },
+  "tailwind-css": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "seed"
+  },
+  "terraform": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "seed"
+  },
+  "typescript": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "seed"
+  },
+  "vite": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "seed"
+  },
+  "vitest": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "seed"
+  },
+  "vue-js": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "seed"
+  },
+  "zod": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "seed"
+  }
+}
