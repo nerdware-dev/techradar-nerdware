@@ -1,7 +1,12 @@
 import type { ChangeSet } from './merge'
 
 /** Render a human-readable Markdown summary of a scan's proposed changes. */
-export function renderReport(changes: ChangeSet, reposScanned: number, suppressed = 0): string {
+export function renderReport(
+  changes: ChangeSet,
+  reposScanned: number,
+  suppressed = 0,
+  belowThreshold = 0,
+): string {
   const lines: string[] = []
   lines.push(`# Tech Radar scan`)
   lines.push('')
@@ -11,6 +16,7 @@ export function renderReport(changes: ChangeSet, reposScanned: number, suppresse
       `**${changes.ringMoves.length} ring moves**, ` +
       `**${changes.undetected.length} undetected**, ` +
       `**${changes.needsReview.length} needs-review**, ` +
+      `**${belowThreshold} below-threshold**, ` +
       `**${suppressed} suppressed** (see data/detections/).`,
   )
 

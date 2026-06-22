@@ -59,8 +59,15 @@ async function main(): Promise<void> {
   await mkdir(SCANNER_CONFIG.paths.detectionsDir, { recursive: true })
   await writeFile(
     join(SCANNER_CONFIG.paths.detectionsDir, `${today}.json`),
-    JSON.stringify({ detections: result.detections, suppressed: result.suppressed }, null, 2) +
-      '\n',
+    JSON.stringify(
+      {
+        detections: result.detections,
+        belowThreshold: result.belowThreshold,
+        suppressed: result.suppressed,
+      },
+      null,
+      2,
+    ) + '\n',
   )
   const sortedVerdicts = Object.fromEntries(
     Object.entries(result.verdicts ?? {}).sort(([a], [b]) => a.localeCompare(b)),

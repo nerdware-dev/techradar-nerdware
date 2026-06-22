@@ -1,5 +1,6 @@
 import { slugify } from '../src/data/slug'
 import type { QuadrantId } from '../src/data/types'
+import { SCANNER_CONFIG } from './config'
 import type { GitHubClient } from './github'
 import type { LLMClient } from './llm/types'
 import type { Detection, RepoScan, ScannerBlip, DetectedToken, VerdictCache } from './types'
@@ -19,6 +20,8 @@ export interface ScanResult {
   candidate: ScannerBlip[]
   report: string
   detections: Detection[]
+  /** Radar-worthy techs detected in too few repos to auto-promote (review list). */
+  belowThreshold: Detection[]
   /** Noise, for the audit log (not published). */
   suppressed: Detection[]
   /** Verdict cache merged with this scan's LLM verdicts, for run.ts to persist. */
@@ -110,14 +113,33 @@ export async function runScan(
     }
   }
 
+  // Adoption floor: a NEW tech promotes to a blip only if seen in enough repos.
+  // Existing blips are always kept (never gated). Below-floor new techs go to the
+  // review list; their radar verdict stays cached, so they auto-promote later.
   const existingSlugs = new Set(existing.map((b) => slugify(b.name)))
-  const descriptions = new Map<string, string>()
+  const minRepos = SCANNER_CONFIG.promoteMinRepos
+  const promoted: Detection[] = []
+  const belowThreshold: Detection[] = []
   for (const d of detections) {
+    if (existingSlugs.has(slugify(d.name)) || d.repoCount >= minRepos) promoted.push(d)
+    else belowThreshold.push(d)
+  }
+  belowThreshold.sort((a, b) => b.repoCount - a.repoCount)
+
+  const descriptions = new Map<string, string>()
+  for (const d of promoted) {
     const slug = slugify(d.name)
     if (!existingSlugs.has(slug)) descriptions.set(slug, await draftDescription(d, llm))
   }
 
-  const { candidate, changes } = mergeRadar(existing, detections, categorized, descriptions)
-  const report = renderReport(changes, repos.length, suppressed.length)
-  return { candidate, report, detections, suppressed, verdicts: mergeVerdicts(cache, patch) }
+  const { candidate, changes } = mergeRadar(existing, promoted, categorized, descriptions)
+  const report = renderReport(changes, repos.length, suppressed.length, belowThreshold.length)
+  return {
+    candidate,
+    report,
+    detections: promoted,
+    belowThreshold,
+    suppressed,
+    verdicts: mergeVerdicts(cache, patch),
+  }
 }
