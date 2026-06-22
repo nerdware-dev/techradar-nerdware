@@ -1,13 +1,587 @@
 {
+  "accelerate": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "add": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "ai": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "ai-sdk-openai-compatible": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "ai-sdk-react": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "ajv": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "analogjs-vite-plugin-angular": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "analogjs-vitest-angular": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
   "angular": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
     "source": "seed"
   },
+  "angular-auth-oidc-client": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "angular-cli-ghpages": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "angular-devkit-build-angular": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "angular-devkit-core": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "angular-devkit-schematics": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "angular-eslint": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "angular-eslint-eslint-plugin": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "angular-eslint-eslint-plugin-template": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "angular-eslint-template-parser": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "angular-oauth2-oidc": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "angularx-qrcode": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "anthropic": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "anthropic-ai-sdk": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "api": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "auth0-angular-jwt": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
   "aws": {
     "verdict": "radar",
     "quadrant": "platforms",
     "source": "seed"
+  },
+  "aws-amplify": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "aws-amplify-ui-react": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "aws-amplify-ui-react-storage": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.7,
+    "decidedAt": "2026-06-22"
+  },
+  "aws-cdk-lib": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "aws-embedded-metrics": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.72,
+    "decidedAt": "2026-06-22"
+  },
+  "aws-iot-device-sdk": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "aws-lambda": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "aws-lambda-fastify": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.72,
+    "decidedAt": "2026-06-22"
+  },
+  "aws-lambda-powertools-idempotency": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "aws-lambda-powertools-logger": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "aws-lambda-powertools-tracer": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "aws-sdk-client-mock": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "aws4": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "awscred": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "axios": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "azure-arm-appservice": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "azure-arm-resources": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "azure-arm-storage": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "azure-functions": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "azure-functions-core-tools": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "azure-identity": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "badgateway-oauth2-client": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "bcrypt": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "bcryptjs": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "beautifulsoup4": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "better-auth": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "better-sqlite3": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "bin-check": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "biomejs-biome": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "bitsandbytes": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "body-parser": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "cache-manager": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "caniuse-lite": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "canvas-confetti": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "chalk": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "chance": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "chart-js": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "cheerio": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "chromadb": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "class-transformer": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "class-validator": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "class-variance-authority": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "client": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "clsx": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "cmdk": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "codemirror-lang-python": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "commander": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "commitlint": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "commitlint-cli": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "commitlint-config-conventional": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "constructs": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.9,
+    "decidedAt": "2026-06-22"
+  },
+  "converter-jackson": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "cookie-parser": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "cors": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "cross-spawn": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "cypress": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "cytoscape": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.72,
+    "decidedAt": "2026-06-22"
+  },
+  "cytoscape-cose-bilkent": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "cytoscape-fcose": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "cz-conventional-changelog": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "dacite": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "dagrejs-dagre": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.72,
+    "decidedAt": "2026-06-22"
+  },
+  "datasets": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "date-fns": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "dayjs": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "decimal-js-light": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "diff-match-patch-ts": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
   },
   "django": {
     "verdict": "radar",
@@ -19,35 +593,783 @@
     "quadrant": "platforms",
     "source": "seed"
   },
+  "docusaurus-core": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "docusaurus-module-type-aliases": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "docusaurus-preset-classic": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "docusaurus-theme-mermaid": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "docusaurus-tsconfig": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "docusaurus-types": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "dompurify": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "dotenv": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "dotenv-cli": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "dotenv-webpack": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "drizzle-kit": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "drizzle-orm": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "duckduckgo-search": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "dynamoose": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.72,
+    "decidedAt": "2026-06-22"
+  },
+  "echarts": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "echarts-for-react": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "electric-sql-pglite": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.72,
+    "decidedAt": "2026-06-22"
+  },
+  "embla-carousel-react": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "empty": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "env-var": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "esbuild": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
   "eslint": {
     "verdict": "radar",
     "quadrant": "tools",
     "source": "seed"
+  },
+  "eslint-compat": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "eslint-eslintrc": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "eslint-js": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "esphome": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "eventsource-parser": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "evergreen-ui": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "exceljs": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "execa": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "export-to-csv": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
   },
   "express": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
     "source": "seed"
   },
+  "express-async-handler": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "express-rate-limit": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "faiss-cpu": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "fast-check": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "fast-glob": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "fast-levenshtein": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "fast-xml-parser": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
   "fastapi": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
     "source": "seed"
+  },
+  "fastify": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "fastify-cookie": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "fastify-multipart": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "fastify-rate-limit": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "fastify-swagger": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "feedparser": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "file-reader": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "file-saver": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
   },
   "flask": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
     "source": "seed"
   },
+  "fontsource-inter": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "fontsource-judson": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "fontsource-kanit": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "fontsource-khand": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "fontsource-roboto": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "fuse-js": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "gensim": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.72,
+    "decidedAt": "2026-06-22"
+  },
   "github-actions": {
     "verdict": "radar",
     "quadrant": "platforms",
     "source": "seed"
   },
+  "github-com-a631807682-zerofield": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-andygrunwald-go-jira": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-aws-aws-lambda-go": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-awslabs-aws-lambda-go-api-proxy": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-gin-contrib-cors": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-glebarez-sqlite": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-go-playground-assert-v2": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-go-sql-driver-mysql": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-golang-jwt-jwt-v5": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-golang-migrate-migrate-v4": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-google-go-querystring": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-google-uuid": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-hetznercloud-hcloud-go-v2": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-hyperboloide-lk": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.9,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-joho-godotenv": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-kelseyhightower-envconfig": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-micahparks-keyfunc-v2": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-nerdware-dev-go-odoo-v17": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-nerdware-dev-townhall-budget-core": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-nerdware-dev-townhall-core": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.9,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-nerdware-dev-townhall-datahub-core": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-nerdware-dev-townhall-order-core": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-nerdware-dev-townhall-timetracking-core": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-pkasila-gorm-crypto": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-pkg-errors": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-protonmail-go-crypto": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-rickar-cal-v2": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-santhosh-tekuri-jsonschema-v6": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-sethvargo-go-password": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-sirupsen-logrus": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-stretchr-testify": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-swaggo-files": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-swaggo-gin-swagger": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-swaggo-swag": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "github-com-xuri-excelize-v2": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
   "go": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
     "source": "seed"
+  },
+  "google": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "google-cloud-firestore": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "google-genai": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "google-generativeai": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "gpt4all": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "gradio": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "graphmind-contracts": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "graphmind-ui": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "gray-matter": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "happy-dom": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "headlessui-react": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "health": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "helmet": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "heroicons-react": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "hnswlib-node": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.72,
+    "decidedAt": "2026-06-22"
+  },
+  "hono": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "hono-node-server": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "hookform-resolvers": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "htmlparser2": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "http-proxy-middleware": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "httpx": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "hubspot-api-client": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "humanize-duration": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "i18next": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "i18next-browser-languagedetector": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "immer": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "input-otp": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "inquirer-prompts": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "install": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "interactjs": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "ipywidgets": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "isbot": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "jackson-dataformat-xml": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "jasmine-core": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
   },
   "java": {
     "verdict": "radar",
@@ -59,80 +1381,1472 @@
     "quadrant": "tools",
     "source": "seed"
   },
+  "jest-environment-jsdom": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "jest-environment-node": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "jest-junit": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "jest-preset-angular": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "jest-util": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "jiti": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "joi": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "jose": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "jquery": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "js-cookie": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "jscodeshift": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "jsdom": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "jsonc-eslint-parser": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "jsonfile": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "jsonwebtoken": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "jspdf": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "jupyter-dash": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.72,
+    "decidedAt": "2026-06-22"
+  },
+  "jupyterlab": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.72,
+    "decidedAt": "2026-06-22"
+  },
+  "jwks-rsa": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "karma": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "karma-chrome-launcher": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "karma-coverage": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "karma-jasmine": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "karma-jasmine-html-reporter": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
   "kubernetes": {
     "verdict": "radar",
     "quadrant": "platforms",
     "source": "seed"
+  },
+  "langfuse": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "langgraph": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
   },
   "laravel": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
     "source": "seed"
   },
+  "lodash": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "lombok": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "lovable-tagger": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "lucide-react": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "luxon": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "mailer": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "mammoth": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "markdownify": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "marked": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "material-icons": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "matplotlib": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "mdx-js-react": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "middy-core": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "middy-ssm": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "mistralai": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "modal": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "modelcontextprotocol-sdk": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "modern-screenshot": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "mole-inc-bin-wrapper": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "motion": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "msw": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "mustache": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "mysql2": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "nanoid": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "nerdfinder-contracts": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.9,
+    "decidedAt": "2026-06-22"
+  },
+  "nerdfinder-core": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "nerdfinder-db": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "nerdhunter-core": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "nerdhunter-db": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "nerdhunter-llm": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "nerdware-date": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "nest-winston": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
   "nestjs": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
     "source": "seed"
+  },
+  "nestjs-dynamoose": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "netlify-vite-plugin-tanstack-start": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "next-auth": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "next-intl": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
   },
   "next-js": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
     "source": "seed"
   },
+  "next-themes": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "ng-packagr": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "ng-qrcode": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "ng-select-ng-select": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "ng2-charts": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "ngneat-helipopper": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "ngx-diff": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "ngx-echarts": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "ngx-spinner": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "ngx-toastr": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "ngx-translate-core": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "nock": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "node-cron": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "node-mocks-http": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "nodemailer": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "npmcli-package-json": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "ns3-nx-serverless": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "numpy": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "nx-go-nx-go": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "octokit-rest": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "oidc-client-ts": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "ollama": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "openai": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "openapi": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "openapitools-openapi-generator-cli": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "openpyxl": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "opensearch-project-opensearch": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "orval": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "orval-core": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "pandas": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "passport": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "passport-custom": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "passport-jwt": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "passport-local": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "passport-saml": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "pdf-lib": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "pdf-parse": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "pdfplumber": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "pg": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "pg-boss": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
   "php": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
     "source": "seed"
+  },
+  "pino": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "pino-pretty": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "pkg": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
   },
   "playwright": {
     "verdict": "radar",
     "quadrant": "tools",
     "source": "seed"
   },
+  "plotly": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "popperjs-core": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "postcss-import": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "postcss-preset-env": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "postcss-url": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
   "postgresql": {
     "verdict": "radar",
     "quadrant": "platforms",
     "source": "seed"
+  },
+  "postprocessing": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
   },
   "prettier": {
     "verdict": "radar",
     "quadrant": "tools",
     "source": "seed"
   },
+  "prettier-plugin-tailwindcss": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "primeicons": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "primeng": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "primereact": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "prism-react-renderer": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
   "prisma": {
     "verdict": "radar",
     "quadrant": "tools",
     "source": "seed"
+  },
+  "prisma-client": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "prometheus-client": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "psutil": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "psycopg2-binary": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "pydantic": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "pydub": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "pypdf": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "pysqlite3-binary": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
   },
   "python": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
     "source": "seed"
   },
+  "python-dotenv": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "python-multipart": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "pyyaml": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
   "react": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
     "source": "seed"
+  },
+  "react-accessible-accordion": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-beautiful-dnd": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-calendar-timeline": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-circular-progressbar": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-datepicker": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-day-picker": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-dnd": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-dnd-html5-backend": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-draggable": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-dropzone": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-force-graph-2d": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-hook-form": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "react-hot-toast": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-i18next": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "react-icons": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-infinite-scroll-hook": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-jwt": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-markdown": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-oidc-context": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "react-pdf-renderer": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-popper": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-redux": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "react-resizable-panels": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-responsive-masonry": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-router": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-router-dom": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-slick": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "react-test-renderer": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "recharts": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
   },
   "redis": {
     "verdict": "radar",
     "quadrant": "platforms",
     "source": "seed"
   },
+  "redux": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "redux-persist": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.72,
+    "decidedAt": "2026-06-22"
+  },
   "redux-toolkit": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
     "source": "seed"
+  },
+  "remark-gfm": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "remix-run-css-bundle": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "remix-run-dev": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "remix-run-eslint-config": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "remix-run-node": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "remix-run-react": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "remix-run-serve": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "requests": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
   },
   "rxjs": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
     "source": "seed"
   },
+  "sass": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "schematics-angular": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "scikit-learn": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "scipy": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "selenium": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "semantic-release": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "semantic-release-changelog": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "semantic-release-git": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "sentence-transformers": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "sentencepiece": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "server-only": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "serverless": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "serverless-deployment-bucket": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "serverless-dotenv-plugin": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "serverless-export-env": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "serverless-export-outputs": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "serverless-iam-roles-per-function": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "serverless-lambda-edge-pre-existing-cloudfront": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "serverless-offline": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "serverless-offline-sns": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "serverless-offline-ssm": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "serverless-plugin-extrinsic-functions": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "serverless-plugin-log-retention": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "serverless-plugin-resource-tagging": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "serverless-s3-local": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "serverless-webpack": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "service": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "setuptools": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "shopware-core": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "llm",
+    "confidence": 0.9,
+    "decidedAt": "2026-06-22"
+  },
+  "shopware-storefront": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "skaling-contracts": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "skaling-i18n": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "skaling-ui": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.9,
+    "decidedAt": "2026-06-22"
+  },
+  "slick-carousel": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "slowapi": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "socket-io": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "socket-io-client": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "sonner": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "sparticuz-chromium": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.72,
+    "decidedAt": "2026-06-22"
+  },
+  "speedtest-cli": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
   "spring": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
     "source": "seed"
+  },
+  "spring-boot-devtools": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "spring-boot-starter": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "spring-boot-starter-data-rest": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "spring-boot-starter-log4j2": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "spring-boot-starter-test": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "spring-boot-starter-web": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "sqlite3": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "storybook": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "supabase-supabase-js": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "superjson": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "supertest": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "swagger-jsdoc": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "swagger-ui-express": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "swc-node-register": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "swiper": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
   },
   "symfony": {
     "verdict": "radar",
@@ -144,34 +2858,469 @@
     "quadrant": "languages-frameworks",
     "source": "seed"
   },
+  "tailwind-merge": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "tailwindcss-animate": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "tailwindcss-forms": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "tailwindcss-postcss": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "tailwindcss-typography": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "tailwindcss-vite": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
   "terraform": {
     "verdict": "radar",
     "quadrant": "platforms",
     "source": "seed"
+  },
+  "testcontainers": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "testcontainers-postgresql": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "testing-library-dom": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "testing-library-jest-dom": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "testing-library-react": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "testing-library-react-hooks": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "testing-library-user-event": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "three": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "tiktoken": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "tiny-warning": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "tippy-js": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "tiptap-markdown": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "torch": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "tqdm": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "transformers": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "ts-jest": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "tsconfig-paths": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "turbo": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "tw-animate-css": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "typeorm": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "typeorm-naming-strategies": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
   },
   "typescript": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
     "source": "seed"
   },
+  "typescript-eslint": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "typescript-eslint-eslint-plugin": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "typescript-eslint-parser": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "typescript-eslint-utils": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "uiw-codemirror-theme-vscode": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "uiw-react-codemirror": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "undici": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "unstructured": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.72,
+    "decidedAt": "2026-06-22"
+  },
+  "use-timer": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "uuid": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "uvicorn": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "uvicorn-standard": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.72,
+    "decidedAt": "2026-06-22"
+  },
+  "vaul": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
   "vite": {
     "verdict": "radar",
     "quadrant": "tools",
     "source": "seed"
+  },
+  "vite-tsconfig-paths": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "vitejs-plugin-react": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "vitejs-plugin-react-swc": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "vitejs-plugin-vue": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
   },
   "vitest": {
     "verdict": "radar",
     "quadrant": "tools",
     "source": "seed"
   },
+  "vitest-coverage-v8": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "vitest-ui": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "vlucas-phpdotenv": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "vscode-test-cli": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "vscode-test-electron": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "vue-i18n": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
   "vue-js": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
     "source": "seed"
   },
+  "vue-router": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.9,
+    "decidedAt": "2026-06-22"
+  },
+  "vue-tsc": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "vue-tsconfig": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "web-vitals": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "webdriver-manager": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "webpack": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-06-22"
+  },
+  "webpack-cli": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "winston": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-06-22"
+  },
+  "winston-daily-rotate-file": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "x": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "xhtml2pdf": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "xlsx": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "xlsx2html": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
+  },
+  "xmlbuilder2": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "xmldom": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "xmldom-xmldom": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "xyflow-react": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "yarn": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
   "zod": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
     "source": "seed"
+  },
+  "zod-to-json-schema": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-06-22"
+  },
+  "zustand": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-06-22"
   }
 }
