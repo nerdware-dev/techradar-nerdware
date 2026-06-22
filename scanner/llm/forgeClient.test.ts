@@ -2,26 +2,9 @@ import { describe, it, expect, vi } from 'vitest'
 import { createForgeClient } from './forgeClient'
 
 const chatResponse = (content: string) => ({ choices: [{ message: { content } }] })
-const models = { categorize: 'claude-haiku-4-5', describe: 'claude-opus-4-6', triage: 'claude-haiku-4-5' }
+const models = { describe: 'claude-opus-4-6', triage: 'claude-haiku-4-5' }
 
 describe('createForgeClient', () => {
-  it('parses a quadrant + confidence object from an OpenAI-shaped response', async () => {
-    const openai = {
-      chat: {
-        completions: {
-          create: vi
-            .fn()
-            .mockResolvedValue(chatResponse('{"quadrant":"platforms","confidence":0.8}')),
-        },
-      },
-    }
-    const client = createForgeClient(openai, models)
-    expect(await client.categorize('Redis', 'ctx')).toEqual({
-      quadrant: 'platforms',
-      confidence: 0.8,
-    })
-  })
-
   it('sends the configured forge model alias for describe', async () => {
     const create = vi.fn().mockResolvedValue(chatResponse('Redis ist ein In-Memory-Store.'))
     const openai = { chat: { completions: { create } } }

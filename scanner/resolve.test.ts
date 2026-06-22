@@ -3,7 +3,11 @@ import { resolve } from './resolve'
 import type { DetectedToken, VerdictCache } from './types'
 
 const dep = (raw: string): DetectedToken => ({ raw, kind: 'dependency' })
-const lang = (raw: string): DetectedToken => ({ raw, kind: 'language', quadrantHint: 'languages-frameworks' })
+const lang = (raw: string): DetectedToken => ({
+  raw,
+  kind: 'language',
+  quadrantHint: 'languages-frameworks',
+})
 const cache: VerdictCache = {
   react: { verdict: 'radar', quadrant: 'languages-frameworks', source: 'seed' },
   axios: { verdict: 'noise', source: 'human' },
@@ -16,16 +20,23 @@ describe('resolve', () => {
   })
   it('collapses a family member to its parent verdict', () => {
     expect(resolve(dep('@radix-ui/react-tabs'), cache)).toEqual({
-      canonical: 'Radix UI', verdict: 'radar', quadrant: 'languages-frameworks',
+      canonical: 'Radix UI',
+      verdict: 'radar',
+      quadrant: 'languages-frameworks',
     })
-    expect(resolve(dep('golang.org/x/sys'), cache)).toEqual({ canonical: 'golang.org/x', verdict: 'noise' })
+    expect(resolve(dep('golang.org/x/sys'), cache)).toEqual({
+      canonical: 'golang.org/x',
+      verdict: 'noise',
+    })
   })
   it('marks plumbing as noise', () => {
     expect(resolve(dep('eslint-plugin-react'), cache)?.verdict).toBe('noise')
   })
   it('uses the cache for a known canonical dep', () => {
     expect(resolve(dep('react-dom'), cache)).toEqual({
-      canonical: 'React', verdict: 'radar', quadrant: 'languages-frameworks',
+      canonical: 'React',
+      verdict: 'radar',
+      quadrant: 'languages-frameworks',
     })
     expect(resolve(dep('axios'), cache)?.verdict).toBe('noise')
   })
@@ -34,7 +45,9 @@ describe('resolve', () => {
   })
   it('always treats a language/tool token as radar', () => {
     expect(resolve(lang('Vue'), cache)).toEqual({
-      canonical: 'Vue.js', verdict: 'radar', quadrant: 'languages-frameworks',
+      canonical: 'Vue.js',
+      verdict: 'radar',
+      quadrant: 'languages-frameworks',
     })
   })
 })

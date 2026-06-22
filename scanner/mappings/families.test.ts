@@ -19,7 +19,10 @@ describe('collapseFamily', () => {
     })
   })
   it('marks golang.org/x/* as noise', () => {
-    expect(collapseFamily('golang.org/x/sys')).toEqual({ canonical: 'golang.org/x', verdict: 'noise' })
+    expect(collapseFamily('golang.org/x/sys')).toEqual({
+      canonical: 'golang.org/x',
+      verdict: 'noise',
+    })
   })
   it('returns null for a token that matches no family', () => {
     expect(collapseFamily('langchain')).toBeNull()

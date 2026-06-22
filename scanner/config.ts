@@ -4,7 +4,11 @@ export const SCANNER_CONFIG = {
   languageNoiseRatio: 0.05,
   ringThresholds: { high: 5, dev: 2 },
   /** Forge model aliases (its registry tops out at opus-4-6). */
-  models: { categorize: 'claude-haiku-4-5', describe: 'claude-opus-4-6', triage: 'claude-haiku-4-5' },
+  models: { describe: 'claude-opus-4-6', triage: 'claude-haiku-4-5' },
   forgeBaseUrl: 'https://forge.nerdware.ai/v1',
-  paths: { radar: 'data/tech-radar.json', detectionsDir: 'data/detections', verdicts: 'data/verdicts.json' },
+  paths: {
+    radar: 'data/tech-radar.json',
+    detectionsDir: 'data/detections',
+    verdicts: 'data/verdicts.json',
+  },
 } as const

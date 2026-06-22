@@ -40,6 +40,7 @@ async function main(): Promise<void> {
     } catch (err) {
       throw new Error(
         `Refusing to scan: ${verdictsPath} is not valid JSON (fix or delete it): ${err instanceof Error ? err.message : String(err)}`,
+        { cause: err },
       )
     }
   }

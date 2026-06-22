@@ -6,17 +6,25 @@ const cache: VerdictCache = {
   react: { verdict: 'radar', quadrant: 'languages-frameworks', source: 'seed' },
 }
 const scans: RepoScan[] = [
-  { repo: 'a', pushedAt: '2026-06-17', tokens: [
-    { raw: 'react', kind: 'dependency' },
-    { raw: '@radix-ui/react-tabs', kind: 'dependency' },
-    { raw: 'TypeScript', kind: 'language', quadrantHint: 'languages-frameworks' },
-  ]},
-  { repo: 'b', pushedAt: '2026-06-15', tokens: [
-    { raw: 'react-dom', kind: 'dependency' },
-    { raw: '@radix-ui/react-dialog', kind: 'dependency' },
-    { raw: 'tslib', kind: 'dependency' },
-    { raw: 'langchain', kind: 'dependency' },
-  ]},
+  {
+    repo: 'a',
+    pushedAt: '2026-06-17',
+    tokens: [
+      { raw: 'react', kind: 'dependency' },
+      { raw: '@radix-ui/react-tabs', kind: 'dependency' },
+      { raw: 'TypeScript', kind: 'language', quadrantHint: 'languages-frameworks' },
+    ],
+  },
+  {
+    repo: 'b',
+    pushedAt: '2026-06-15',
+    tokens: [
+      { raw: 'react-dom', kind: 'dependency' },
+      { raw: '@radix-ui/react-dialog', kind: 'dependency' },
+      { raw: 'tslib', kind: 'dependency' },
+      { raw: 'langchain', kind: 'dependency' },
+    ],
+  },
 ]
 
 describe('aggregate', () => {

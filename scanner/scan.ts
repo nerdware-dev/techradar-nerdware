@@ -64,7 +64,9 @@ export async function runScan(
   }
 
   const { detections, unknowns, suppressed } = aggregate(scans, cache)
-  log(`Detected ${detections.length} radar techs + ${unknowns.length} unknown, ${suppressed.length} suppressed. Triaging…`)
+  log(
+    `Detected ${detections.length} radar techs + ${unknowns.length} unknown, ${suppressed.length} suppressed. Triaging…`,
+  )
 
   const categorized = new Map<string, { quadrant: QuadrantId; needsReview: boolean }>()
   for (const d of detections) {
@@ -80,8 +82,17 @@ export async function runScan(
       const resolvedQuadrant = t.quadrant ?? 'tools'
       u.quadrant = resolvedQuadrant
       detections.push(u)
-      categorized.set(slug, { quadrant: resolvedQuadrant, needsReview: t.confidence < CONFIDENCE_THRESHOLD })
-      patch[slug] = { verdict: 'radar', quadrant: resolvedQuadrant, source: 'llm', confidence: t.confidence, decidedAt: today }
+      categorized.set(slug, {
+        quadrant: resolvedQuadrant,
+        needsReview: t.confidence < CONFIDENCE_THRESHOLD,
+      })
+      patch[slug] = {
+        verdict: 'radar',
+        quadrant: resolvedQuadrant,
+        source: 'llm',
+        confidence: t.confidence,
+        decidedAt: today,
+      }
     } else {
       if (t.verdict === 'child' && t.parent) {
         const parent = detections.find((d) => slugify(d.name) === slugify(t.parent!))

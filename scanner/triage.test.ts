@@ -3,10 +3,18 @@ import { triageAll } from './triage'
 import type { Detection } from './types'
 import type { LLMClient } from './llm/types'
 
-const det = (name: string): Detection => ({ name, repoCount: 2, sourceRepos: ['a', 'b'], lastSeen: '2026-06-22' })
+const det = (name: string): Detection => ({
+  name,
+  repoCount: 2,
+  sourceRepos: ['a', 'b'],
+  lastSeen: '2026-06-22',
+})
 
-const fakeLLM = (result: { verdict: string; quadrant?: string; confidence: number }): LLMClient => ({
-  categorize: vi.fn(),
+const fakeLLM = (result: {
+  verdict: string
+  quadrant?: string
+  confidence: number
+}): LLMClient => ({
   describe: vi.fn(),
   triage: vi.fn().mockResolvedValue(result),
 })

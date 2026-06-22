@@ -15,7 +15,6 @@ const gh: GitHubClient = {
 
 // Default LLM promotes unknowns to radar (e.g. React from package.json)
 const llm: LLMClient = {
-  categorize: vi.fn().mockResolvedValue({ quadrant: 'languages-frameworks', confidence: 0.9 }),
   describe: vi.fn().mockResolvedValue('Beschreibung.'),
   triage: vi
     .fn()
@@ -51,7 +50,6 @@ describe('runScan', () => {
 
   it('returns suppressed (not candidates) in result shape', async () => {
     const llmNoise: LLMClient = {
-      categorize: vi.fn(),
       describe: vi.fn().mockResolvedValue('desc'),
       triage: vi.fn().mockResolvedValue({ verdict: 'noise', confidence: 0.9 }),
     }
@@ -64,7 +62,6 @@ describe('runScan', () => {
   it('auto-promotes a triaged radar unknown into a new blip and records its verdict', async () => {
     // gh fake returns one repo whose package.json has "langchain"
     const llmTriage: LLMClient = {
-      categorize: vi.fn(),
       describe: vi.fn().mockResolvedValue('desc'),
       triage: vi
         .fn()
@@ -88,9 +85,16 @@ describe('runScan', () => {
   it('rolls up a child unknown into its parent detection and records child as noise', async () => {
     // Repo A: detects 'react' (seeded cache → direct radar hit) via package.json
     // Repo B: detects 'some-helper' (unknown) which LLM resolves as child of React
-    const cache = { react: { verdict: 'radar' as const, quadrant: 'languages-frameworks' as const, source: 'seed' as const, confidence: 1, decidedAt: '2026-01-01' } }
+    const cache = {
+      react: {
+        verdict: 'radar' as const,
+        quadrant: 'languages-frameworks' as const,
+        source: 'seed' as const,
+        confidence: 1,
+        decidedAt: '2026-01-01',
+      },
+    }
     const llmChild: LLMClient = {
-      categorize: vi.fn(),
       describe: vi.fn().mockResolvedValue('desc'),
       // Only 'some-helper' reaches triage; it resolves as child of React
       triage: vi.fn().mockResolvedValue({ verdict: 'child', parent: 'React', confidence: 0.9 }),
@@ -102,8 +106,9 @@ describe('runScan', () => {
       ]),
       getLanguages: vi.fn().mockResolvedValue({}),
       listFiles: vi.fn().mockResolvedValue(['package.json']),
-      getFileContent: vi.fn()
-        .mockResolvedValueOnce(JSON.stringify({ dependencies: { react: '^19' } }))   // repo-a
+      getFileContent: vi
+        .fn()
+        .mockResolvedValueOnce(JSON.stringify({ dependencies: { react: '^19' } })) // repo-a
         .mockResolvedValueOnce(JSON.stringify({ dependencies: { 'some-helper': '^1' } })), // repo-b
     }
     const result = await runScan(ghChild, llmChild, [], cache, '2026-06-22')

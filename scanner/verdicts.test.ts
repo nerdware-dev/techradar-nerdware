@@ -19,23 +19,36 @@ describe('lookupVerdict', () => {
 describe('mergeVerdicts', () => {
   it('adds new llm verdicts', () => {
     const next = mergeVerdicts(cache, {
-      langchain: { verdict: 'radar', quadrant: 'languages-frameworks', source: 'llm', confidence: 0.9 },
+      langchain: {
+        verdict: 'radar',
+        quadrant: 'languages-frameworks',
+        source: 'llm',
+        confidence: 0.9,
+      },
     })
     expect(next.langchain.source).toBe('llm')
   })
   it('never overwrites a human entry with an llm patch', () => {
-    const next = mergeVerdicts(cache, { axios: { verdict: 'radar', source: 'llm', confidence: 0.8 } })
+    const next = mergeVerdicts(cache, {
+      axios: { verdict: 'radar', source: 'llm', confidence: 0.8 },
+    })
     expect(next.axios).toEqual({ verdict: 'noise', source: 'human' })
   })
   it('does not mutate the input cache', () => {
-    const input = { react: { verdict: 'radar', quadrant: 'languages-frameworks', source: 'seed' } } as const satisfies VerdictCache
+    const input = {
+      react: { verdict: 'radar', quadrant: 'languages-frameworks', source: 'seed' },
+    } as const satisfies VerdictCache
     const before = structuredClone(input)
     mergeVerdicts(input, { axios: { verdict: 'noise', source: 'llm', confidence: 0.8 } })
     expect(input).toEqual(before)
   })
   it('overwrites a non-human (seed/llm) existing entry with the patch', () => {
-    const input = { react: { verdict: 'radar', quadrant: 'languages-frameworks', source: 'seed' } } as const satisfies VerdictCache
-    const next = mergeVerdicts(input as never, { react: { verdict: 'noise', source: 'llm', confidence: 0.6 } })
+    const input = {
+      react: { verdict: 'radar', quadrant: 'languages-frameworks', source: 'seed' },
+    } as const satisfies VerdictCache
+    const next = mergeVerdicts(input as never, {
+      react: { verdict: 'noise', source: 'llm', confidence: 0.6 },
+    })
     expect(next.react).toEqual({ verdict: 'noise', source: 'llm', confidence: 0.6 })
   })
 })

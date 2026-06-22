@@ -12,7 +12,11 @@ export interface Aggregated {
 
 /** Collapse per-repo tokens into per-canonical records, split by verdict. */
 export function aggregate(scans: RepoScan[], cache: VerdictCache): Aggregated {
-  const buckets = { radar: new Map<string, Detection>(), unknown: new Map<string, Detection>(), noise: new Map<string, Detection>() }
+  const buckets = {
+    radar: new Map<string, Detection>(),
+    unknown: new Map<string, Detection>(),
+    noise: new Map<string, Detection>(),
+  }
 
   for (const scan of scans) {
     const seenInRepo = new Set<string>()
@@ -20,7 +24,12 @@ export function aggregate(scans: RepoScan[], cache: VerdictCache): Aggregated {
       const r = resolve(token, cache)
       if (!r || seenInRepo.has(r.canonical)) continue
       seenInRepo.add(r.canonical)
-      const bucket = r.verdict === 'radar' ? buckets.radar : r.verdict === 'noise' ? buckets.noise : buckets.unknown
+      const bucket =
+        r.verdict === 'radar'
+          ? buckets.radar
+          : r.verdict === 'noise'
+            ? buckets.noise
+            : buckets.unknown
       const existing = bucket.get(r.canonical)
       if (existing) {
         existing.repoCount += 1

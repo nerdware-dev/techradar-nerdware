@@ -4,18 +4,24 @@ import { parseTriage } from './prompts'
 describe('parseTriage', () => {
   it('parses a radar verdict with quadrant and confidence', () => {
     expect(parseTriage('{"verdict":"radar","quadrant":"tools","confidence":0.9}')).toEqual({
-      verdict: 'radar', quadrant: 'tools', confidence: 0.9,
+      verdict: 'radar',
+      quadrant: 'tools',
+      confidence: 0.9,
     })
   })
   it('clamps an unknown quadrant to tools', () => {
-    expect(parseTriage('{"verdict":"radar","quadrant":"bogus","confidence":0.8}').quadrant).toBe('tools')
+    expect(parseTriage('{"verdict":"radar","quadrant":"bogus","confidence":0.8}').quadrant).toBe(
+      'tools',
+    )
   })
   it('falls back to noise on malformed JSON', () => {
     expect(parseTriage('not json')).toEqual({ verdict: 'noise', confidence: 0 })
   })
   it('returns parent for a child verdict', () => {
     expect(parseTriage('{"verdict":"child","parent":"LangChain","confidence":0.7}')).toEqual({
-      verdict: 'child', parent: 'LangChain', confidence: 0.7,
+      verdict: 'child',
+      parent: 'LangChain',
+      confidence: 0.7,
     })
   })
   it('omits parent when absent from a child verdict', () => {

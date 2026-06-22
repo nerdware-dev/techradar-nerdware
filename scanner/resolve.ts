@@ -7,7 +7,10 @@ import { lookupVerdict } from './verdicts'
 import type { DetectedToken, Resolved, VerdictCache } from './types'
 
 function titleCase(slug: string): string {
-  return slug.split('-').map((p) => p.charAt(0).toUpperCase() + p.slice(1)).join(' ')
+  return slug
+    .split('-')
+    .map((p) => p.charAt(0).toUpperCase() + p.slice(1))
+    .join(' ')
 }
 
 /** Stage the relevance decision cheapest-first. Returns null for hard-drops. */
@@ -24,7 +27,8 @@ export function resolve(token: DetectedToken, cache: VerdictCache): Resolved | n
   if (token.raw.toLowerCase().startsWith('@types/')) return null
 
   const family = collapseFamily(token.raw)
-  if (family) return { canonical: family.canonical, verdict: family.verdict, quadrant: family.quadrant }
+  if (family)
+    return { canonical: family.canonical, verdict: family.verdict, quadrant: family.quadrant }
 
   if (isPlumbing(token.raw)) return { canonical: titleCase(slug), verdict: 'noise' }
 
