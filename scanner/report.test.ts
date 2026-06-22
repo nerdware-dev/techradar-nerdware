@@ -14,7 +14,7 @@ describe('renderReport', () => {
   it('summarizes counts in a headline', () => {
     expect(md).toMatch(/30 repos/)
     expect(md).toMatch(/\+1 added/)
-    expect(md).toMatch(/905 candidates/)
+    expect(md).toMatch(/905 suppressed/)
   })
   it('lists ring moves with old and new ring', () => {
     expect(md).toMatch(/React.*low.*high/)
