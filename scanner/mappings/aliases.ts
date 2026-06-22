@@ -25,6 +25,8 @@ export const ALIASES: Record<string, string> = {
   vite: 'Vite',
   vitest: 'Vitest',
   playwright: 'Playwright',
+  'playwright-core': 'Playwright',
+  'playwright-test': 'Playwright',
   prisma: 'Prisma',
   redis: 'Redis',
   postgresql: 'PostgreSQL',

@@ -33,8 +33,17 @@ export const FAMILIES: Family[] = [
   { prefix: '@nestjs/', canonical: 'NestJS', verdict: 'radar', quadrant: LF },
   { prefix: '@aws-sdk/', canonical: 'AWS', verdict: 'radar', quadrant: PLAT },
   { prefix: '@reduxjs/', canonical: 'Redux Toolkit', verdict: 'radar', quadrant: LF },
+  { prefix: '@ngrx/', canonical: 'NgRx', verdict: 'radar', quadrant: LF },
+  { prefix: '@pulumi/', canonical: 'Pulumi', verdict: 'radar', quadrant: PLAT },
+  { prefix: '@dnd-kit/', canonical: 'dnd kit', verdict: 'radar', quadrant: LF },
+  { prefix: '@fullcalendar/', canonical: 'FullCalendar', verdict: 'radar', quadrant: LF },
+  { prefix: '@playwright/', canonical: 'Playwright', verdict: 'radar', quadrant: TOOLS },
+  // Python/pip ecosystem prefixes (match base package and sub-packages like langchain-core)
+  { prefix: 'langchain', canonical: 'LangChain', verdict: 'radar', quadrant: LF },
+  { prefix: 'llama-index', canonical: 'LlamaIndex', verdict: 'radar', quadrant: LF },
+  { prefix: 'smolagents', canonical: 'Smolagents', verdict: 'radar', quadrant: LF },
   // Go module-path families (most-specific first)
-  { prefix: 'github.com/aws/aws-sdk-go-v2/', canonical: 'AWS', verdict: 'radar', quadrant: PLAT },
+  { prefix: 'github.com/aws/aws-sdk-go-v2', canonical: 'AWS', verdict: 'radar', quadrant: PLAT },
   { prefix: 'github.com/jackc/pgx', canonical: 'pgx', verdict: 'radar', quadrant: TOOLS },
   { prefix: 'github.com/gin-gonic/gin', canonical: 'Gin', verdict: 'radar', quadrant: LF },
   { prefix: 'github.com/prometheus/', canonical: 'Prometheus', verdict: 'radar', quadrant: PLAT },

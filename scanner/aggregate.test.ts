@@ -22,7 +22,7 @@ const scans: RepoScan[] = [
       { raw: 'react-dom', kind: 'dependency' },
       { raw: '@radix-ui/react-dialog', kind: 'dependency' },
       { raw: 'tslib', kind: 'dependency' },
-      { raw: 'langchain', kind: 'dependency' },
+      { raw: 'some-new-lib', kind: 'dependency' },
     ],
   },
 ]
@@ -39,7 +39,7 @@ describe('aggregate', () => {
   })
   it('routes plumbing to suppressed and unknown deps to unknowns', () => {
     const { unknowns, suppressed } = aggregate(scans, cache)
-    expect(unknowns.find((d) => d.name === 'Langchain')).toBeTruthy()
+    expect(unknowns.find((d) => d.name === 'Some New Lib')).toBeTruthy()
     expect(suppressed.find((d) => d.name === 'Tslib')).toBeTruthy()
   })
   it('keeps a language token as a radar detection', () => {

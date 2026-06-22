@@ -60,14 +60,14 @@ describe('runScan', () => {
   })
 
   it('auto-promotes a triaged radar unknown into a new blip and records its verdict', async () => {
-    // gh fake returns one repo whose package.json has "langchain"
+    // gh fake returns one repo whose package.json has "some-new-lib" (unrecognised dep → LLM triage)
     const llmTriage: LLMClient = {
       describe: vi.fn().mockResolvedValue('desc'),
       triage: vi
         .fn()
         .mockResolvedValue({ verdict: 'radar', quadrant: 'languages-frameworks', confidence: 0.9 }),
     }
-    const ghLangchain: GitHubClient = {
+    const ghUnknown: GitHubClient = {
       listRepos: vi
         .fn()
         .mockResolvedValue([{ name: 'graphmind', defaultBranch: 'main', pushedAt: '2026-06-18' }]),
@@ -75,11 +75,11 @@ describe('runScan', () => {
       listFiles: vi.fn().mockResolvedValue(['package.json']),
       getFileContent: vi
         .fn()
-        .mockResolvedValue(JSON.stringify({ dependencies: { langchain: '^0.1' } })),
+        .mockResolvedValue(JSON.stringify({ dependencies: { 'some-new-lib': '^0.1' } })),
     }
-    const result = await runScan(ghLangchain, llmTriage, [], {}, '2026-06-22')
-    expect(result.candidate.find((b) => b.name === 'Langchain')).toBeTruthy()
-    expect(result.verdicts.langchain).toMatchObject({ verdict: 'radar', source: 'llm' })
+    const result = await runScan(ghUnknown, llmTriage, [], {}, '2026-06-22')
+    expect(result.candidate.find((b) => b.name === 'Some New Lib')).toBeTruthy()
+    expect(result.verdicts['some-new-lib']).toMatchObject({ verdict: 'radar', source: 'llm' })
   })
 
   it('rolls up a child unknown into its parent detection and records child as noise', async () => {

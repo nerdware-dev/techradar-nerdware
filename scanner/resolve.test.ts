@@ -41,7 +41,10 @@ describe('resolve', () => {
     expect(resolve(dep('axios'), cache)?.verdict).toBe('noise')
   })
   it('returns unknown for an unrecognized direct dep', () => {
-    expect(resolve(dep('langchain'), cache)).toEqual({ canonical: 'Langchain', verdict: 'unknown' })
+    expect(resolve(dep('some-new-lib'), cache)).toEqual({
+      canonical: 'Some New Lib',
+      verdict: 'unknown',
+    })
   })
   it('always treats a language/tool token as radar', () => {
     expect(resolve(lang('Vue'), cache)).toEqual({
