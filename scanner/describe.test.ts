@@ -15,6 +15,7 @@ describe('draftDescription', () => {
     const llm: LLMClient = {
       categorize: vi.fn(),
       describe: vi.fn().mockResolvedValue('Grafana ist ...'),
+      triage: vi.fn(),
     }
     const result = await draftDescription(det, llm)
     expect(result).toBe('Grafana ist ...')

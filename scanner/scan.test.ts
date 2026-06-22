@@ -15,6 +15,7 @@ const gh: GitHubClient = {
 const llm: LLMClient = {
   categorize: vi.fn().mockResolvedValue({ quadrant: 'tools', confidence: 0.9 }),
   describe: vi.fn().mockResolvedValue('Beschreibung.'),
+  triage: vi.fn(),
 }
 
 describe('runScan', () => {

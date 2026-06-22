@@ -15,6 +15,7 @@ const det = (name: string, quadrantHint?: Detection['quadrantHint']): Detection 
 const fakeLLM = (quadrant: QuadrantId, confidence: number): LLMClient => ({
   categorize: vi.fn().mockResolvedValue({ quadrant, confidence }),
   describe: vi.fn(),
+  triage: vi.fn(),
 })
 
 describe('categorize', () => {

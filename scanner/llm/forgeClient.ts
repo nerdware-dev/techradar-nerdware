@@ -1,5 +1,5 @@
 import type { LLMClient, ModelPair } from './types'
-import { categorizePrompt, describePrompt, parseCategory } from './prompts'
+import { categorizePrompt, describePrompt, parseCategory, triagePrompt, parseTriage } from './prompts'
 
 /** Minimal shape of the OpenAI SDK we depend on (keeps tests SDK-free). */
 export interface OpenAILike {
@@ -32,6 +32,14 @@ export function createForgeClient(openai: OpenAILike, models: ModelPair): LLMCli
         messages: [{ role: 'user', content: describePrompt(name, context) }],
       })
       return firstContent(res).trim()
+    },
+    async triage(name, context) {
+      const res = await openai.chat.completions.create({
+        model: models.triage,
+        max_tokens: 256,
+        messages: [{ role: 'user', content: triagePrompt(name, context) }],
+      })
+      return parseTriage(firstContent(res))
     },
   }
 }

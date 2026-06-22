@@ -2,7 +2,7 @@ import { describe, it, expect, vi } from 'vitest'
 import { createForgeClient } from './forgeClient'
 
 const chatResponse = (content: string) => ({ choices: [{ message: { content } }] })
-const models = { categorize: 'claude-haiku-4-5', describe: 'claude-opus-4-6' }
+const models = { categorize: 'claude-haiku-4-5', describe: 'claude-opus-4-6', triage: 'claude-haiku-4-5' }
 
 describe('createForgeClient', () => {
   it('parses a quadrant + confidence object from an OpenAI-shaped response', async () => {
@@ -41,5 +41,16 @@ describe('createForgeClient', () => {
     }
     const client = createForgeClient(openai, models)
     expect(await client.describe('X', 'ctx')).toBe('')
+  })
+
+  it('sends the configured triage model alias and returns parseTriage output', async () => {
+    const create = vi
+      .fn()
+      .mockResolvedValue(chatResponse('{"verdict":"radar","quadrant":"tools","confidence":0.9}'))
+    const openai = { chat: { completions: { create } } }
+    const client = createForgeClient(openai, models)
+    const result = await client.triage('LangChain', 'ctx')
+    expect(result).toEqual({ verdict: 'radar', quadrant: 'tools', confidence: 0.9 })
+    expect(create).toHaveBeenCalledWith(expect.objectContaining({ model: 'claude-haiku-4-5' }))
   })
 })
