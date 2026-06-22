@@ -18,11 +18,20 @@ export function describePrompt(name: string, context: string): string {
 /** Build the relevance-triage prompt with the architecture-stance rubric. */
 export function triagePrompt(name: string, context: string): string {
   return (
-    `You curate a tech radar. A radar tracks technologies a team deliberately CHOOSES ` +
-    `and has an opinion on — frameworks, ORMs, databases, platforms, state management, ` +
-    `auth, testing frameworks, AI/ML SDKs, significant libraries. It does NOT track ` +
-    `transitive dependencies, build/lint plumbing, polyfills, type stubs, or micro-utilities ` +
-    `(date formatting, classname helpers, UUID generation).\n` +
+    `You curate a SELECTIVE tech radar — it lists ONLY technologies a team takes a deliberate ` +
+    `architectural POSITION on (the kind worth a team-wide adopt/trial/assess/hold opinion). ` +
+    `Keep the bar high.\n` +
+    `TRACK (radar): languages & frameworks, meta-frameworks, ORMs / query builders, databases ` +
+    `and their drivers/clients, state management (including form-state libraries), auth / ` +
+    `identity, API / RPC layers, testing / E2E / mocking tooling, AI/ML SDKs & libraries, ` +
+    `infrastructure-as-code, messaging / streaming, observability, charting / data-visualization ` +
+    `and 3D/graphics libraries, and significant build / dev tooling.\n` +
+    `DO NOT track (noise): transitive dependencies; build/lint/format plumbing; polyfills; type ` +
+    `stubs; micro-utilities (date/number formatting, classname helpers, UUID, deep-clone, env ` +
+    `loading); individual UI-component / widget libraries (date pickers, carousels, ` +
+    `drag-and-drop kits, modals/dialogs, toasts, command palettes, accordions, tooltips, ` +
+    `masonry, spinners, skeleton loaders); and icon packs. These are implementation details, ` +
+    `not architectural positions.\n` +
     `Classify the dependency "${name}". ${context}\n` +
     `Allowed quadrants: ${DETECTABLE.join(', ')}.\n` +
     `Reply with ONLY JSON: {"verdict":"radar"|"child"|"noise","parent":<name|null>,` +
