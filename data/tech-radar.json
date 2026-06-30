@@ -14,8 +14,8 @@
     "description": "Amazon Web Services, auch als AWS bekannt, ist eine vom gleichnamigen Unternehmen angebotene Plattform für Cloud-Computing.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 17,
-      "lastSeen": "2026-06-17",
+      "repoCount": 18,
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -33,7 +33,8 @@
         "hack-zollhof-2025",
         "ai-gtm",
         "nerdware-order-app",
-        "nerdfinder"
+        "nerdfinder",
+        "NerdBase"
       ]
     }
   },
@@ -178,7 +179,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-17",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "nerdware-order-app",
         "nerd-bites"
@@ -293,7 +294,25 @@
     "ring": "High",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": "Ein NX-Monorepo ist eine weit verbreitete Architektur für moderne Webentwicklungsprojekte. Es bietet eine einfachere Wartbarkeit und Skalierbarkeit, indem es eine einheitliche Struktur und Werkzeuge für alle Projekte innerhalb des Monorepos bereitstellt."
+    "description": "Ein NX-Monorepo ist eine weit verbreitete Architektur für moderne Webentwicklungsprojekte. Es bietet eine einfachere Wartbarkeit und Skalierbarkeit, indem es eine einheitliche Struktur und Werkzeuge für alle Projekte innerhalb des Monorepos bereitstellt.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 11,
+      "lastSeen": "2026-06-22",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "townhall",
+        "chat-room",
+        "Skillerd",
+        "angular-nestjs-template",
+        "hackbay2024",
+        "coffee-demo",
+        "fourdrop",
+        "skillard-excelled",
+        "graphmind"
+      ]
+    }
   },
   {
     "name": "Angular",
@@ -356,7 +375,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 11,
-      "lastSeen": "2026-06-21",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "llm-comparison",
         "dtvp-scraper",
@@ -381,7 +400,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 45,
-      "lastSeen": "2026-06-21",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -495,22 +514,6 @@
     "description": "OpenTelemetry (OTel) ist ein Open-Source-Framework für Observability, mit dem Entwicklungsteams Telemetriedaten in einem einzigen, einheitlichen Format generieren, verarbeiten und übertragen können. Dieses Format wurde von der Cloud Native Computing Foundation (CNCF) entwickelt, um standardisierte Protokolle und Tools zum Erfassen und Weiterleiten von Metriken, Logs und Traces an Überwachungsplattformen bereitzustellen."
   },
   {
-    "name": "PHP",
-    "ring": "Out",
-    "quadrant": "languages & frameworks",
-    "isNew": "FALSE",
-    "description": "PHP ist eine Skriptsprache mit einer an C und Perl angelehnten Syntax, die hauptsächlich zur Erstellung dynamischer Webseiten oder Webanwendungen verwendet wird.",
-    "autoRing": "dev",
-    "detected": {
-      "repoCount": 2,
-      "lastSeen": "2026-06-09",
-      "sourceRepos": [
-        "SchickBauspeziAPI",
-        "shopware6-plugin-reference"
-      ]
-    }
-  },
-  {
     "name": "GraalVM",
     "ring": "Dev",
     "quadrant": "languages & frameworks",
@@ -596,7 +599,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 10,
-      "lastSeen": "2026-06-20",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -636,7 +639,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 20,
-      "lastSeen": "2026-06-20",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -670,7 +673,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 25,
-      "lastSeen": "2026-06-20",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -709,7 +712,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 26,
-      "lastSeen": "2026-06-20",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -749,7 +752,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 17,
-      "lastSeen": "2026-06-20",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -780,7 +783,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 20,
-      "lastSeen": "2026-06-20",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -814,7 +817,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 15,
-      "lastSeen": "2026-06-20",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "techradar-nerdware",
         "coffee-demo",
@@ -842,10 +845,12 @@
     "description": "Playwright ist ein von Microsoft entwickeltes Open-Source-Framework für End-to-End-Testing von Webanwendungen. Es ermöglicht automatisierte, browserübergreifende Tests in Chromium, Firefox und WebKit mit einer einheitlichen API. Playwright unterstützt mehrere Programmiersprachen, bietet Features wie Auto-Wait, Netzwerk-Interception und parallele Testausführung. Der breite Einsatz über verschiedene Projekte hinweg – von Homepages über Order-Apps bis hin zu KI-Anwendungen – zeigt seine Vielseitigkeit als zuverlässiges Testautomatisierungswerkzeug.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 6,
-      "lastSeen": "2026-06-19",
+      "repoCount": 8,
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "techradar-nerdware",
+        "townhall",
+        "fourdrop",
         "ai-gtm",
         "nerdlabs-homepage",
         "nerdware-homepage",
@@ -863,7 +868,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 14,
-      "lastSeen": "2026-06-20",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "techradar-nerdware",
         "xit-sync",
@@ -891,7 +896,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 10,
-      "lastSeen": "2026-06-20",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "techradar-nerdware",
         "coffee-demo",
@@ -915,7 +920,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 29,
-      "lastSeen": "2026-06-20",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "townhall",
         "pom-dekar-p",
@@ -973,7 +978,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 4,
-      "lastSeen": "2026-06-20",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "nerdware-cluster-playground-services",
         "hivemq-platform-operator-crds",
@@ -991,7 +996,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 14,
-      "lastSeen": "2026-06-21",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "cloudapi",
         "LLM-who-the-f...-is-alice",
@@ -1040,7 +1045,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 7,
-      "lastSeen": "2026-06-18",
+      "lastSeen": "2026-06-22",
       "sourceRepos": [
         "aws-user-group-multi-tenancy-and-ephemeral-environments",
         "hack-zollhof-2025",
@@ -1112,6 +1117,1130 @@
       "lastSeen": "2026-04-14",
       "sourceRepos": [
         "nerdware-homepage"
+      ]
+    }
+  },
+  {
+    "name": "PHP",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": false,
+    "description": "PHP ist eine weit verbreitete serverseitige Skriptsprache, die primär für die Webentwicklung eingesetzt wird. Sie bildet die technische Grundlage zahlreicher Content-Management-Systeme und E-Commerce-Plattformen, darunter Shopware 6. Im vorliegenden Kontext wird PHP sowohl für eine API-Implementierung (SchickBauspeziAPI) als auch für die Shopware-6-Plugin-Entwicklung verwendet. Die Sprache zeichnet sich durch ein großes Ökosystem, breite Hosting-Unterstützung und eine aktive Weiterentwicklung (aktuell PHP 8.x) aus.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-09",
+      "sourceRepos": [
+        "SchickBauspeziAPI",
+        "shopware6-plugin-reference"
+      ]
+    }
+  },
+  {
+    "name": "FullCalendar",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "FullCalendar ist eine JavaScript-Bibliothek zur Darstellung interaktiver Kalender in Webanwendungen. Sie unterstützt verschiedene Ansichten wie Monats-, Wochen- und Tagesansicht sowie Drag-and-Drop-Funktionalität für Ereignisse. Die Bibliothek ist framework-agnostisch einsetzbar und bietet offizielle Integrationen für React, Vue und Angular. Im vorliegenden Kontext wird sie sowohl in einer React-basierten Fullstack-Vorlage als auch in einem Lernplattform-Projekt zur Terminverwaltung eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2023-11-07",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital"
+      ]
+    }
+  },
+  {
+    "name": "Aws Lambda",
+    "ring": "dev",
+    "quadrant": "platforms",
+    "isNew": true,
+    "description": "AWS Lambda ist ein serverloser Compute-Dienst von Amazon Web Services, der Code in Reaktion auf Ereignisse ausführt, ohne dass Server bereitgestellt oder verwaltet werden müssen. Die Abrechnung erfolgt nutzungsbasiert auf Millisekunden-Ebene, wodurch Kosten nur bei tatsächlicher Ausführung anfallen. Im vorliegenden Kontext wird Lambda sowohl für Backend-Funktionen in Webanwendungen (React/NestJS) als auch im Bereich digitaler Lernplattformen eingesetzt, was die Vielseitigkeit des Dienstes für unterschiedliche Anwendungsfälle unterstreicht.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2023-11-07",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital"
+      ]
+    }
+  },
+  {
+    "name": "Aws Lambda Fastify",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "AWS Lambda Fastify ist ein Adapter, der das Fastify-Webframework für den Einsatz in AWS Lambda-Funktionen kompatibel macht. Er übersetzt API-Gateway- oder Application-Load-Balancer-Events in Fastify-kompatible Requests und ermöglicht so die Nutzung des performanten Fastify-Ökosystems in serverlosen Umgebungen. In Kombination mit NestJS dient er häufig als HTTP-Adapter, um NestJS-Anwendungen effizient als Lambda-Funktionen zu deployen.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2023-11-07",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital"
+      ]
+    }
+  },
+  {
+    "name": "Mysql2",
+    "ring": "dev",
+    "quadrant": "platforms",
+    "isNew": true,
+    "description": "MySQL2 ist ein leistungsstarker Node.js-Client für MySQL-Datenbanken, der als schnellere und modernere Alternative zum ursprünglichen mysql-Paket entwickelt wurde. Er unterstützt Prepared Statements, Non-Blocking-Queries, Streaming sowie Promises und ist vollständig kompatibel mit der mysql-API. In den erkannten Projekten wird MySQL2 typischerweise als Datenbank-Treiber in Kombination mit ORMs wie TypeORM oder Sequelize in NestJS- und Node.js-Anwendungen eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2023-11-07",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital"
+      ]
+    }
+  },
+  {
+    "name": "Passport",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Passport ist eine flexible Authentifizierungs-Middleware für Node.js, die über ein modulares System von sogenannten Strategien verschiedenste Anmeldeverfahren unterstützt – darunter lokale Authentifizierung mit Benutzername und Passwort, OAuth, JWT und zahlreiche weitere Provider. Die Bibliothek integriert sich nahtlos in Express- und NestJS-basierte Anwendungen und abstrahiert die Komplexität unterschiedlicher Authentifizierungsprotokolle hinter einer einheitlichen API. Mit über 500 verfügbaren Strategien ist Passport der De-facto-Standard für Authentifizierung im Node.js-Ökosystem.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 4,
+      "lastSeen": "2026-06-22",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "coffee-demo",
+        "graphmind"
+      ]
+    }
+  },
+  {
+    "name": "Passport Jwt",
+    "ring": "dev",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "Passport JWT ist eine Authentifizierungsstrategie für das Node.js-Framework Passport, die JSON Web Tokens (JWT) zur Absicherung von API-Endpunkten verwendet. Sie extrahiert und validiert JWTs aus eingehenden Requests, typischerweise aus dem Authorization-Header, und ermöglicht so eine zustandslose Authentifizierung ohne serverseitige Sessions. Die Strategie wird häufig in NestJS- und Express-basierten Backend-Anwendungen eingesetzt, um geschützte Routen zu implementieren und Benutzeridentitäten zu verifizieren.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 3,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "coffee-demo"
+      ]
+    }
+  },
+  {
+    "name": "Passport Local",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Passport Local ist eine Authentifizierungsstrategie für das Node.js-Framework Passport.js, die eine klassische Anmeldung mittels Benutzername und Passwort ermöglicht. Sie validiert Zugangsdaten gegen eine lokale Datenbank und lässt sich als Middleware in Express- oder NestJS-Anwendungen integrieren. Die Strategie eignet sich besonders für Projekte, die eine eigene Benutzerverwaltung ohne externe Identity-Provider implementieren möchten.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2023-11-07",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital"
+      ]
+    }
+  },
+  {
+    "name": "Passport Saml",
+    "ring": "dev",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "Passport SAML ist eine Authentifizierungsstrategie für das Node.js-Framework Passport.js, die das Security Assertion Markup Language (SAML 2.0) Protokoll implementiert. Sie ermöglicht die Integration von Single Sign-On (SSO) mit Identity Providern wie Active Directory Federation Services (ADFS), Okta oder Keycloak in Node.js-Anwendungen. Die Bibliothek übernimmt dabei den Austausch und die Validierung von SAML-Assertions zwischen Service Provider und Identity Provider und eignet sich besonders für Unternehmensumgebungen mit bestehender SSO-Infrastruktur.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2023-11-07",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital"
+      ]
+    }
+  },
+  {
+    "name": "React Redux",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "React Redux ist die offizielle Anbindung von Redux an React und ermöglicht ein zentralisiertes, vorhersagbares State-Management in React-Anwendungen. Die Bibliothek stellt Hooks wie `useSelector` und `useDispatch` sowie den `Provider`-Komponenten bereit, um den globalen Store effizient mit der Komponentenhierarchie zu verbinden. Im vorliegenden Kontext wird sie sowohl in einem Full-Stack-Template (React + NestJS) als auch in einem Lernprojekt eingesetzt, was auf ihre Relevanz als Standard-Lösung für komplexere Zustandsverwaltung hindeutet.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2023-11-07",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital"
+      ]
+    }
+  },
+  {
+    "name": "React Router Dom",
+    "ring": "high",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "React Router Dom ist die Standard-Bibliothek für clientseitiges Routing in React-Anwendungen. Sie ermöglicht deklarative Navigation zwischen verschiedenen Ansichten, URL-basiertes Rendering von Komponenten sowie verschachtelte Routen und dynamische Pfadparameter. Die breite Nutzung in acht Repositories – von Demos über Homepages bis hin zu komplexen Planungstools – zeigt ihre Rolle als grundlegender Baustein für Single-Page-Applications im gesamten React-Ökosystem des Unternehmens.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 8,
+      "lastSeen": "2026-06-22",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "coffee-demo",
+        "capacity-planner",
+        "Nerdlabsfigma",
+        "nerdlabs-homepage",
+        "graphmind",
+        "nerd-bites"
+      ]
+    }
+  },
+  {
+    "name": "Redux",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Redux ist eine Bibliothek für vorhersagbares State-Management in JavaScript-Anwendungen, die auf dem Prinzip eines zentralen, unveränderlichen Stores basiert. Zustandsänderungen werden ausschließlich über Actions und reine Reducer-Funktionen durchgeführt, was Nachvollziehbarkeit und Testbarkeit erhöht. Im Projektkontext wird Redux in Kombination mit React eingesetzt, sowohl in produktionsnahen Templates als auch in Lernprojekten, was auf eine etablierte Rolle im Frontend-Stack hindeutet.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2023-11-07",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital"
+      ]
+    }
+  },
+  {
+    "name": "Redux Persist",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Redux Persist ist eine Bibliothek, die den Redux-Store automatisch in einem persistenten Speicher (z. B. LocalStorage oder AsyncStorage) sichert und beim Neustart der Anwendung wiederherstellt. Sie ermöglicht es, den Anwendungszustand über Seitenaktualisierungen oder App-Neustarts hinweg beizubehalten, ohne manuellen Serialisierungsaufwand. Die Bibliothek bietet Konfigurationsmöglichkeiten wie Whitelisting/Blacklisting einzelner Reducer sowie benutzerdefinierte Transformationen der gespeicherten Daten. Im vorliegenden Kontext wird sie sowohl in einem React-NestJS-Template als auch in einem Lernprojekt eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2023-11-07",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital"
+      ]
+    }
+  },
+  {
+    "name": "Sqlite3",
+    "ring": "dev",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "SQLite3 ist eine serverlose, dateibasierte relationale Datenbank-Engine, die als eingebettete Bibliothek direkt in Anwendungen integriert wird. Sie benötigt keine separate Installation oder Konfiguration eines Datenbankservers und eignet sich besonders für lokale Datenspeicherung, Prototyping und Anwendungen mit moderatem Datenaufkommen. In den erkannten Projekten wird SQLite3 vermutlich als leichtgewichtige Entwicklungsdatenbank oder für lokale Persistenz in Lern- und Template-Projekten eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2023-11-07",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital"
+      ]
+    }
+  },
+  {
+    "name": "Typeorm",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "TypeORM ist ein Object-Relational Mapper für TypeScript und JavaScript, der sowohl Active-Record- als auch Data-Mapper-Patterns unterstützt. Es ermöglicht die datenbankagnostische Arbeit mit relationalen Datenbanken wie PostgreSQL, MySQL und SQLite durch dekoratorbasierte Entity-Definitionen und ein leistungsfähiges Migrationssystem. Im vorliegenden Kontext wird TypeORM in Kombination mit NestJS als Standard-Persistenzschicht in mehreren Template-Projekten eingesetzt, was auf eine etablierte Rolle im Backend-Stack hindeutet.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 3,
+      "lastSeen": "2025-01-03",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "angular-nestjs-template"
+      ]
+    }
+  },
+  {
+    "name": "Testing Library React",
+    "ring": "high",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "Testing Library React ist eine leichtgewichtige Testbibliothek für React-Komponenten, die Tests aus der Perspektive des Nutzers ermöglicht, indem sie auf DOM-Elemente über zugängliche Rollen, Labels und Texte zugreift statt auf Implementierungsdetails. Sie fördert damit robustere Tests, die weniger anfällig für Refactorings sind, und hat sich als De-facto-Standard für das Testen von React-Anwendungen etabliert. Die Bibliothek baut auf dem DOM Testing Library-Kern auf und integriert sich nahtlos mit Test-Runnern wie Jest oder Vitest.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 9,
+      "lastSeen": "2026-06-22",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "techradar-nerdware",
+        "coffee-demo",
+        "stargate",
+        "ai-gtm",
+        "nerdware-order-app",
+        "graphmind",
+        "skaling-ai-compass"
+      ]
+    }
+  },
+  {
+    "name": "Cypress",
+    "ring": "high",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "Cypress ist ein modernes End-to-End-Testing-Framework für Webanwendungen, das Tests direkt im Browser ausführt und dadurch schnelles, zuverlässiges Testen von Benutzerinteraktionen ermöglicht. Es bietet eine intuitive API, automatisches Warten auf DOM-Elemente, Time-Travel-Debugging und einen interaktiven Test-Runner mit visueller Darstellung der Testausführung. Der Einsatz in verschiedenen Projekten mit unterschiedlichen Frontend-Frameworks (React, Angular) zeigt die framework-agnostische Einsetzbarkeit als standardisierte E2E-Testlösung.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 6,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "chat-room",
+        "angular-nestjs-template",
+        "hackbay2024",
+        "coffee-demo"
+      ]
+    }
+  },
+  {
+    "name": "Serverless",
+    "ring": "dev",
+    "quadrant": "platforms",
+    "isNew": true,
+    "description": "Serverless ist ein Cloud-Ausführungsmodell, bei dem der Cloud-Anbieter die Serverinfrastruktur vollständig verwaltet und Ressourcen automatisch bei Bedarf bereitstellt. Entwickler deployen einzelne Funktionen oder Anwendungen, ohne sich um Provisionierung, Skalierung oder Wartung von Servern kümmern zu müssen. Die Abrechnung erfolgt nutzungsbasiert nach tatsächlichem Verbrauch, was besonders bei variablen Lastprofilen kosteneffizient ist. Im vorliegenden Kontext wird Serverless sowohl als dediziertes Architekturmuster (serverless-example) als auch als Deployment-Strategie für Web-Anwendungen und Backend-Services eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 4,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "townhall",
+        "serverless-example"
+      ]
+    }
+  },
+  {
+    "name": "Emotion",
+    "ring": "high",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Emotion ist eine performante CSS-in-JS-Bibliothek, die es ermöglicht, Styles direkt in JavaScript zu schreiben – sowohl als Tagged Template Literals als auch als Objekt-Syntax. Sie bietet Framework-agnostische Nutzung über das `@emotion/css`-Paket sowie eine optimierte React-Integration mit `@emotion/react` und `@emotion/styled`. Emotion unterstützt automatisches Vendor-Prefixing, serverseitiges Rendering und ermöglicht durch kompositionsfähige Styles eine flexible, komponentenbasierte Gestaltung von Benutzeroberflächen.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 5,
+      "lastSeen": "2026-05-22",
+      "sourceRepos": [
+        "learning-digital",
+        "pom-dekar-p",
+        "Nerdlabsfigma",
+        "nerdlabs-homepage",
+        "ki-cooking"
+      ]
+    }
+  },
+  {
+    "name": "MUI",
+    "ring": "high",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "MUI (Material UI) ist eine umfangreiche React-Komponentenbibliothek, die Googles Material Design implementiert und vorgefertigte, anpassbare UI-Komponenten wie Buttons, Formulare, Navigation und Layouts bereitstellt. Sie ermöglicht eine konsistente Gestaltung von Benutzeroberflächen und beschleunigt die Frontend-Entwicklung durch ein ausgereiftes Theming-System und responsive Komponenten. Die Bibliothek wird in mehreren Projekten eingesetzt, von Lernplattformen über Unternehmenswebsites bis hin zu KI-gestützten Anwendungen, was ihre Vielseitigkeit unterstreicht.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 5,
+      "lastSeen": "2026-05-22",
+      "sourceRepos": [
+        "learning-digital",
+        "pom-dekar-p",
+        "Nerdlabsfigma",
+        "nerdlabs-homepage",
+        "ki-cooking"
+      ]
+    }
+  },
+  {
+    "name": "Openai",
+    "ring": "dev",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "OpenAI ist ein führendes KI-Forschungsunternehmen, das leistungsstarke Large Language Models (LLMs) wie GPT-4 sowie APIs für Text-, Bild- und Code-Generierung bereitstellt. Die OpenAI-API ermöglicht Entwicklern die Integration von KI-Funktionalitäten in eigene Anwendungen, etwa für Chatbots, Content-Erstellung oder intelligente Assistenten. Im vorliegenden Kontext wird die Technologie sowohl in Workshop-Umgebungen zur LLM-Exploration als auch in produktiven Anwendungen wie Order-Apps und Go-to-Market-Lösungen eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 4,
+      "lastSeen": "2026-06-22",
+      "sourceRepos": [
+        "techradar-nerdware",
+        "llm-workshop",
+        "ai-gtm",
+        "nerdware-order-app"
+      ]
+    }
+  },
+  {
+    "name": "Gin",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Gin ist ein leichtgewichtiges, performantes HTTP-Web-Framework für die Programmiersprache Go. Es bietet eine an Martini angelehnte API mit deutlich höherer Geschwindigkeit durch die Verwendung eines HTTP-Routers auf Basis von Radix-Trees. Gin stellt Funktionen wie Routing, Middleware-Unterstützung, JSON-Validierung und Fehlerbehandlung bereit und eignet sich besonders für die Entwicklung von REST-APIs und Microservices. Im Tech-Radar wird es in vier Repositories für Backend-Dienste eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 4,
+      "lastSeen": "2026-06-19",
+      "sourceRepos": [
+        "townhall",
+        "chat-room",
+        "nw-recruiting-metrics",
+        "NerdBase"
+      ]
+    }
+  },
+  {
+    "name": "GORM",
+    "ring": "dev",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "GORM ist eine vollständige ORM-Bibliothek (Object-Relational Mapping) für die Programmiersprache Go. Sie bietet eine entwicklerfreundliche API für Datenbankoperationen wie CRUD, Migrationen, Assoziationen und Abfragen und unterstützt gängige Datenbanken wie PostgreSQL, MySQL, SQLite und SQL Server. GORM vereinfacht die Datenbankinteraktion in Go-Anwendungen durch automatisches Mapping von Structs auf Datenbanktabellen und bietet Features wie Auto-Migration, Hooks und Preloading von Relationen.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "townhall",
+        "nw-recruiting-metrics"
+      ]
+    }
+  },
+  {
+    "name": "Echarts",
+    "ring": "dev",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "ECharts ist eine von Apache entwickelte Open-Source-Bibliothek zur Datenvisualisierung in JavaScript. Sie ermöglicht die Erstellung interaktiver und hochgradig anpassbarer Diagramme wie Linien-, Balken-, Kreis- und Streudiagramme sowie komplexerer Visualisierungen wie Heatmaps und geografischer Karten. Die Bibliothek zeichnet sich durch hohe Performance auch bei großen Datenmengen, Canvas- und SVG-Rendering sowie umfangreiche Animationsmöglichkeiten aus.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "townhall",
+        "coffee-demo"
+      ]
+    }
+  },
+  {
+    "name": "Ngx Echarts",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Ngx Echarts ist eine Angular-Wrapper-Bibliothek für Apache ECharts, die eine nahtlose Integration der leistungsstarken Visualisierungsbibliothek in Angular-Anwendungen ermöglicht. Sie stellt Angular-Direktiven bereit, mit denen sich komplexe, interaktive Diagramme und Charts deklarativ in Templates einbinden lassen. Die Bibliothek unterstützt den vollen Funktionsumfang von ECharts, einschließlich diverser Diagrammtypen, Animationen und responsivem Verhalten. Sie wird in den Projekten Townhall und Fourdrop für die Datenvisualisierung eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-15",
+      "sourceRepos": [
+        "townhall",
+        "fourdrop"
+      ]
+    }
+  },
+  {
+    "name": "Jasmine Core",
+    "ring": "high",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 7,
+      "lastSeen": "2026-06-18",
+      "sourceRepos": [
+        "hackathon",
+        "hackbay-demo",
+        "fantastic-garbanzo",
+        "health-hackathon",
+        "coin-demo",
+        "ipsen-botulinumtoxin-injektionsmuster",
+        "nerdAI"
+      ]
+    }
+  },
+  {
+    "name": "Karma Jasmine",
+    "ring": "high",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 7,
+      "lastSeen": "2026-06-18",
+      "sourceRepos": [
+        "hackathon",
+        "hackbay-demo",
+        "fantastic-garbanzo",
+        "health-hackathon",
+        "coin-demo",
+        "ipsen-botulinumtoxin-injektionsmuster",
+        "nerdAI"
+      ]
+    }
+  },
+  {
+    "name": "Spring Boot Starter Web",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Spring Boot Starter Web ist ein Abhängigkeitspaket des Spring-Boot-Frameworks, das alle notwendigen Komponenten für die Entwicklung von Web-Applikationen und RESTful Services bündelt. Es enthält unter anderem einen eingebetteten Tomcat-Server, Spring MVC sowie Jackson für die JSON-Serialisierung und ermöglicht damit einen schnellen Projektstart ohne manuelle Konfiguration. In den erkannten Repositories wird es sowohl für Microservices in einer Cluster-Umgebung als auch für eine Hackathon-Anwendung im Gesundheitsbereich eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "nerdware-cluster-playground-services",
+        "health-hackathon"
+      ]
+    }
+  },
+  {
+    "name": "Auth0 Angular Jwt",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Auth0 Angular JWT ist eine Bibliothek, die die Integration von JSON Web Tokens (JWT) in Angular-Anwendungen vereinfacht. Sie stellt einen HTTP-Interceptor bereit, der automatisch JWT-Tokens an ausgehende HTTP-Requests anhängt, sowie Hilfsfunktionen zur Token-Verwaltung und -Validierung. Die Bibliothek wird typischerweise in Kombination mit Auth0 als Identity Provider eingesetzt, kann aber auch mit anderen JWT-basierten Authentifizierungslösungen verwendet werden. In den erkannten Repositories dient sie zur Absicherung der Kommunikation zwischen Angular-Frontend und Backend-APIs.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-03-20",
+      "sourceRepos": [
+        "Skillerd",
+        "skillard-excelled"
+      ]
+    }
+  },
+  {
+    "name": "Openapitools Openapi Generator Cli",
+    "ring": "dev",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "OpenAPI Generator CLI ist ein Kommandozeilenwerkzeug aus dem OpenAPITools-Projekt, das aus OpenAPI-Spezifikationen (ehemals Swagger) automatisch Client-SDKs, Server-Stubs und API-Dokumentation in zahlreichen Programmiersprachen generiert. Es ermöglicht eine konsistente, vertragbasierte Entwicklung zwischen Frontend und Backend, indem API-Änderungen automatisch in typisierten Code übersetzt werden. Im vorliegenden Kontext wird es in mehreren Skill-Management- und Hackathon-Projekten eingesetzt, was auf einen API-First-Ansatz in der Entwicklung hindeutet.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 3,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "Skillerd",
+        "hackbay2024",
+        "skillard-excelled"
+      ]
+    }
+  },
+  {
+    "name": "LangChain",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "LangChain ist ein Open-Source-Framework zur Entwicklung von Anwendungen, die auf Large Language Models (LLMs) basieren. Es bietet Abstraktionen und Werkzeuge für Prompt-Management, Verkettung von LLM-Aufrufen (Chains), Anbindung externer Datenquellen (Retrieval-Augmented Generation) sowie die Implementierung von KI-Agenten. Im vorliegenden Kontext wird es sowohl für experimentelle LLM-Projekte als auch für produktive Backend-Systeme eingesetzt, was auf eine breite Anwendbarkeit von Prototyping bis zur Integration in Geschäftslogik hindeutet.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 3,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "LLM-who-the-f...-is-alice",
+        "llm-workshop",
+        "bid-flow-backend"
+      ]
+    }
+  },
+  {
+    "name": "NgRx",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "NgRx ist eine State-Management-Bibliothek für Angular-Anwendungen, die auf dem Redux-Pattern basiert und reaktive Programmierung mit RxJS nutzt. Sie bietet ein zentralisiertes, vorhersagbares State-Management durch den Einsatz von Actions, Reducern, Selektoren und Effects zur Handhabung von Seiteneffekten. In den erkannten Repositories wird NgRx sowohl in einer Projektvorlage (angular-nestjs-template) als auch in einer Demo-Anwendung (coin-demo) eingesetzt, was auf eine standardisierte Architekturentscheidung für Angular-Frontends hindeutet.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2025-04-28",
+      "sourceRepos": [
+        "angular-nestjs-template",
+        "coin-demo"
+      ]
+    }
+  },
+  {
+    "name": "Sentry",
+    "ring": "dev",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "Sentry ist eine Plattform zur Echtzeit-Überwachung von Anwendungsfehlern und Performance-Problemen. Sie erfasst automatisch Exceptions, Stack Traces und Kontextinformationen aus produktiven Systemen und ermöglicht so eine schnelle Fehlerdiagnose. Sentry unterstützt zahlreiche Programmiersprachen und Frameworks und lässt sich über SDKs in Frontend- sowie Backend-Anwendungen integrieren. Der Einsatz in sowohl Template-Projekten als auch produktiven Diensten zeigt die breite Anwendbarkeit als Standard-Tooling für Error-Tracking und Observability.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 3,
+      "lastSeen": "2026-06-15",
+      "sourceRepos": [
+        "angular-nestjs-template",
+        "stargate",
+        "ai-gtm"
+      ]
+    }
+  },
+  {
+    "name": "Pg",
+    "ring": "high",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "PostgreSQL (Pg) ist ein leistungsstarkes, quelloffenes relationales Datenbankmanagementsystem, das für seine Zuverlässigkeit, Erweiterbarkeit und SQL-Konformität bekannt ist. Es unterstützt komplexe Datentypen, ACID-konforme Transaktionen sowie fortgeschrittene Funktionen wie JSON-Verarbeitung und Volltextsuche. Der breite Einsatz in sieben Repositories – von Template-Projekten über KI-Anwendungen bis hin zu Microservices – unterstreicht seine Vielseitigkeit als bevorzugte Datenbanklösung für unterschiedlichste Anwendungsszenarien.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 7,
+      "lastSeen": "2026-06-22",
+      "sourceRepos": [
+        "angular-nestjs-template",
+        "coin-demo",
+        "stargate",
+        "ai-gtm",
+        "nerdware-order-app",
+        "nerdfinder",
+        "skaling-ai-compass"
+      ]
+    }
+  },
+  {
+    "name": "Supertest",
+    "ring": "high",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "Supertest ist eine HTTP-Assertions-Bibliothek für Node.js, die auf SuperAgent aufbaut und das Testen von HTTP-Endpunkten vereinfacht. Sie ermöglicht das Senden von HTTP-Requests gegen Express-, NestJS- oder andere Node.js-Server und das Überprüfen von Statuscodes, Headern und Response-Bodies direkt in Integrationstests. Supertest wird typischerweise in Kombination mit Test-Frameworks wie Jest oder Mocha eingesetzt und eignet sich besonders für End-to-End-Tests von REST-APIs, ohne einen laufenden Server manuell starten zu müssen.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 7,
+      "lastSeen": "2026-06-15",
+      "sourceRepos": [
+        "angular-nestjs-template",
+        "fantastic-garbanzo",
+        "yt-semantic-release",
+        "nw-semantic-release",
+        "clean-architecture-vs-vertical-sliced-architecture",
+        "ai-gtm",
+        "nerd-bites"
+      ]
+    }
+  },
+  {
+    "name": "Winston",
+    "ring": "dev",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "Winston ist eine vielseitige Logging-Bibliothek für Node.js, die mehrere Transportwege (Konsole, Dateien, externe Dienste) und konfigurierbare Log-Level unterstützt. Sie ermöglicht strukturiertes Logging im JSON-Format und lässt sich flexibel an unterschiedliche Umgebungen anpassen. In den erkannten Repositories wird Winston vermutlich als zentrale Logging-Lösung in NestJS-basierten Backend-Anwendungen eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2025-01-03",
+      "sourceRepos": [
+        "angular-nestjs-template",
+        "fantastic-garbanzo"
+      ]
+    }
+  },
+  {
+    "name": "Anthropic Ai Sdk",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Das Anthropic AI SDK ist eine offizielle Client-Bibliothek zur Integration der Claude-Sprachmodelle von Anthropic in eigene Anwendungen. Es bietet eine typisierte API für Text-Generierung, Chat-Completions und weitere KI-Funktionen und ist für mehrere Programmiersprachen (u. a. Python, TypeScript) verfügbar. Der Einsatz in unterschiedlichen Kontexten – von Demo-Anwendungen über GTM-Prozesse bis hin zu Bestell-Apps – zeigt die Vielseitigkeit des SDKs als Baustein für KI-gestützte Features in verschiedenen Domänen.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 3,
+      "lastSeen": "2026-06-22",
+      "sourceRepos": [
+        "coffee-demo",
+        "ai-gtm",
+        "nerdware-order-app"
+      ]
+    }
+  },
+  {
+    "name": "TanStack",
+    "ring": "high",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "TanStack ist eine Sammlung von Framework-agnostischen Open-Source-Bibliotheken für moderne Webentwicklung, darunter TanStack Query (ehemals React Query) für serverseitiges State-Management und Daten-Caching, TanStack Router für typsicheres Routing sowie TanStack Table für performante Tabellenkomponenten. Die Bibliotheken zeichnen sich durch starke TypeScript-Unterstützung, minimale Bundle-Größen und eine deklarative API aus. Im vorliegenden Kontext wird TanStack in verschiedenartigen Projekten eingesetzt – von Demo-Anwendungen über Kapazitätsplanung bis hin zu KI-gestützten und E-Commerce-Applikationen – was die breite Einsetzbarkeit und Reife des Ökosystems unterstreicht.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 5,
+      "lastSeen": "2026-06-22",
+      "sourceRepos": [
+        "coffee-demo",
+        "capacity-planner",
+        "stargate",
+        "ai-gtm",
+        "nerdware-order-app"
+      ]
+    }
+  },
+  {
+    "name": "Aws Amplify",
+    "ring": "dev",
+    "quadrant": "platforms",
+    "isNew": true,
+    "description": "AWS Amplify ist eine Entwicklungsplattform von Amazon Web Services, die das Erstellen, Bereitstellen und Hosten von Full-Stack-Webanwendungen und mobilen Apps vereinfacht. Sie bietet integrierte CI/CD-Pipelines, ein Git-basiertes Deployment-Modell sowie Backend-Services wie Authentifizierung, APIs und Storage ohne aufwendige Infrastrukturkonfiguration. Im vorliegenden Kontext wird Amplify für das Hosting und Deployment von Frontend-Anwendungen wie einer Demo-Applikation und einem Upload-Service genutzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "coffee-demo",
+        "nerd-upload"
+      ]
+    }
+  },
+  {
+    "name": "Zustand",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Zustand ist eine leichtgewichtige State-Management-Bibliothek für React-Anwendungen, die sich durch eine minimalistische API und geringen Boilerplate-Code auszeichnet. Im Gegensatz zu Redux verzichtet Zustand auf Provider-Komponenten und ermöglicht die Erstellung von Stores mit einfachen Hook-basierten Zugriffen. Die Bibliothek eignet sich besonders für kleine bis mittelgroße Projekte und Prototypen, bei denen ein unkompliziertes, performantes State-Management gewünscht ist. Der Einsatz in mehreren Prototyping- und Demo-Projekten bestätigt ihre Stärke im Bereich schneller Entwicklungszyklen.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 3,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "coffee-demo",
+        "hack-zollhof-2025",
+        "md-plattform-prototype"
+      ]
+    }
+  },
+  {
+    "name": "Chart Js",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Chart.js ist eine leichtgewichtige, Open-Source-JavaScript-Bibliothek zur Erstellung interaktiver Diagramme und Visualisierungen im Browser mittels HTML5 Canvas. Sie unterstützt zahlreiche Diagrammtypen wie Linien-, Balken-, Kreis- und Radardiagramme und bietet eine einfache API mit umfangreichen Anpassungsmöglichkeiten. In den erkannten Projekten wird sie zur visuellen Aufbereitung von Gesundheits- und Finanzdaten eingesetzt, was ihre Vielseitigkeit bei der Darstellung unterschiedlicher Datendomänen unterstreicht.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "health-hackathon",
+        "coin-demo"
+      ]
+    }
+  },
+  {
+    "name": "Requests",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Requests ist eine weit verbreitete Python-Bibliothek für HTTP-Kommunikation, die eine intuitive und benutzerfreundliche API für das Senden von HTTP-Anfragen bereitstellt. Sie abstrahiert die Komplexität von urllib3 und bietet komfortable Funktionen für GET, POST und andere HTTP-Methoden, Session-Management, Authentifizierung sowie den Umgang mit Headern und Cookies. Im vorliegenden Kontext wird sie sowohl für Web-Scraping, API-Aufrufe an LLM-Dienste als auch für die Interaktion mit externen Services eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 3,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "llm-workshop",
+        "dtvp-scraper",
+        "hack-zollhof-2025"
+      ]
+    }
+  },
+  {
+    "name": "Chromadb",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "ChromaDB ist eine Open-Source-Vektordatenbank, die speziell für KI-Anwendungen entwickelt wurde und das Speichern, Indexieren sowie Abfragen von Embeddings ermöglicht. Sie wird häufig in Retrieval-Augmented-Generation-Pipelines (RAG) eingesetzt, um semantische Suche über Dokumente und andere unstrukturierte Daten zu realisieren. ChromaDB zeichnet sich durch eine einfache API, geringe Einstiegshürden und die Möglichkeit aus, sowohl eingebettet (in-process) als auch als eigenständiger Server betrieben zu werden. Im vorliegenden Kontext wird sie in LLM-basierten Projekten zur Wissensaufbereitung und kontextgestützten Textgenerierung genutzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 3,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "llm-workshop",
+        "bid-flow-backend",
+        "nerdAI"
+      ]
+    }
+  },
+  {
+    "name": "Pydantic",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Pydantic ist eine Python-Bibliothek zur Datenvalidierung und -serialisierung, die auf Python Type Hints basiert. Sie ermöglicht die Definition von Datenmodellen als Klassen, deren Felder zur Laufzeit automatisch validiert und in die korrekten Typen konvertiert werden. Pydantic wird häufig in Kombination mit FastAPI sowie bei der strukturierten Verarbeitung von LLM-Ausgaben eingesetzt, wie der Einsatz in den Projekten llm-workshop und nerdAI zeigt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "llm-workshop",
+        "nerdAI"
+      ]
+    }
+  },
+  {
+    "name": "Google Genai",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Google GenAI ist die offizielle Python-Client-Bibliothek für den Zugriff auf Googles generative KI-Modelle, insbesondere die Gemini-Modellfamilie. Sie ermöglicht die Integration von Funktionen wie Textgenerierung, multimodalem Verstehen und strukturierter Ausgabe in Anwendungen über eine einheitliche API. Die Bibliothek unterstützt sowohl den Zugriff über Google AI Studio als auch über Vertex AI und wird in den identifizierten Projekten für Anwendungsfälle von Hackathon-Prototypen bis hin zu produktionsnahen Applikationen eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 3,
+      "lastSeen": "2026-06-22",
+      "sourceRepos": [
+        "hack-zollhof-2025",
+        "ai-gtm",
+        "nerdware-order-app"
+      ]
+    }
+  },
+  {
+    "name": "Supabase Supabase Js",
+    "ring": "dev",
+    "quadrant": "platforms",
+    "isNew": true,
+    "description": "Supabase JS ist die offizielle JavaScript/TypeScript-Client-Bibliothek für die Interaktion mit Supabase, einer Open-Source-Alternative zu Firebase. Sie bietet Funktionen für Authentifizierung, Datenbankabfragen (PostgreSQL), Echtzeit-Subscriptions und Dateispeicherung über eine einheitliche API. Die Bibliothek wird in den erkannten Projekten für unterschiedliche Anwendungsfälle eingesetzt – von medizinischen Fachanwendungen über Kapazitätsplanung bis hin zu wissensbasierten Graph-Anwendungen – was ihre Vielseitigkeit als Backend-Lösung unterstreicht.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 3,
+      "lastSeen": "2026-06-22",
+      "sourceRepos": [
+        "ipsen-botulinumtoxin-injektionsmuster",
+        "capacity-planner",
+        "graphmind"
+      ]
+    }
+  },
+  {
+    "name": "Shopware Core",
+    "ring": "dev",
+    "quadrant": "platforms",
+    "isNew": true,
+    "description": "Shopware Core ist das zentrale Framework der E-Commerce-Plattform Shopware 6, das die grundlegende Geschäftslogik, Datenstrukturen und API-Schichten bereitstellt. Es bildet die Basis für den Betrieb eines Online-Shops und stellt Erweiterungspunkte für Plugins, Themes und individuelle Integrationen zur Verfügung. Die Architektur basiert auf Symfony und bietet eine modulare Struktur mit Bereichen wie Checkout, Content, System und Framework. Im vorliegenden Kontext dient es als Fundament für shopspezifische Anpassungen, ein individuelles Theme sowie Plugin-Entwicklung.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 3,
+      "lastSeen": "2026-06-09",
+      "sourceRepos": [
+        "SchickBauspeziAPI",
+        "SchickBauspeziTheme",
+        "shopware6-plugin-reference"
+      ]
+    }
+  },
+  {
+    "name": "Radix UI",
+    "ring": "high",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Radix UI ist eine Open-Source-Komponentenbibliothek für React, die ungestylte, barrierefreie UI-Primitives bereitstellt. Die Komponenten bieten vollständige WAI-ARIA-Konformität und lassen sich flexibel mit beliebigen Styling-Lösungen wie Tailwind CSS kombinieren. Radix UI wird in fünf Projekten eingesetzt und dient als Grundlage für zugängliche, anpassbare Benutzeroberflächen, ohne ein festes visuelles Design vorzugeben.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 5,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "capacity-planner",
+        "Nerdlabsfigma",
+        "nerdlabs-homepage",
+        "vend",
+        "ki-cooking"
+      ]
+    }
+  },
+  {
+    "name": "React Hook Form",
+    "ring": "high",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "React Hook Form ist eine performante Bibliothek zur Formularverarbeitung in React, die auf unkontrollierten Komponenten und Refs basiert, um unnötige Re-Renders zu minimieren. Sie bietet eine schlanke API für Validierung, Fehlermanagement und die Integration mit UI-Komponentenbibliotheken. Der Einsatz in sieben Repositories – von Prototypen über Planungstools bis hin zu Produktanwendungen – zeigt ihre breite Eignung für unterschiedliche Formularkomplexitäten im Frontend-Stack.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 7,
+      "lastSeen": "2026-06-22",
+      "sourceRepos": [
+        "capacity-planner",
+        "Nerdlabsfigma",
+        "nerdlabs-homepage",
+        "md-plattform-prototype",
+        "graphmind",
+        "vend",
+        "ki-cooking"
+      ]
+    }
+  },
+  {
+    "name": "Recharts",
+    "ring": "high",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "Recharts ist eine auf React basierende Charting-Bibliothek, die deklarative Komponenten zur Erstellung von Diagrammen und Datenvisualisierungen bereitstellt. Sie baut auf D3.js auf und bietet eine Vielzahl vorgefertigter Diagrammtypen wie Linien-, Balken-, Kreis- und Flächendiagramme, die sich nahtlos in React-Anwendungen integrieren lassen. Die Bibliothek wird in zahlreichen internen Projekten eingesetzt – von Dashboards und Planungstools bis hin zu Prototypen und Produktanwendungen – und hat sich als Standard für Datenvisualisierung im React-Ökosystem etabliert.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 8,
+      "lastSeen": "2026-06-22",
+      "sourceRepos": [
+        "capacity-planner",
+        "Nerdlabsfigma",
+        "nerdlabs-homepage",
+        "md-plattform-prototype",
+        "nerdware-order-app",
+        "vend",
+        "ki-cooking",
+        "skaling-ai-compass"
+      ]
+    }
+  },
+  {
+    "name": "tRPC",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "tRPC ist ein Framework zur Erstellung typsicherer APIs in TypeScript-Anwendungen, das End-to-End-Typsicherheit zwischen Client und Server ohne Codegenerierung oder Schema-Definitionen ermöglicht. Es nutzt TypeScript-Inferenz, um Typen direkt vom Server zum Client zu übertragen, wodurch API-Verträge zur Compile-Zeit validiert werden. tRPC eignet sich besonders für Full-Stack-TypeScript-Projekte und reduziert den Overhead klassischer REST- oder GraphQL-Ansätze bei gleichzeitig hoher Entwicklerproduktivität durch Autovervollständigung und Refactoring-Sicherheit.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-15",
+      "sourceRepos": [
+        "stargate",
+        "ai-gtm"
+      ]
+    }
+  },
+  {
+    "name": "Netlify Vite Plugin Tanstack Start",
+    "ring": "dev",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "Das Netlify Vite Plugin für TanStack Start ermöglicht das nahtlose Deployment von TanStack Start-Anwendungen auf der Netlify-Plattform. Es integriert sich als Vite-Plugin in den Build-Prozess und konfiguriert automatisch serverlose Funktionen, Routing und Edge-Rendering für die Netlify-Infrastruktur. TanStack Start ist ein Full-Stack-Framework auf Basis von TanStack Router, das serverseitiges Rendering und typsichere APIs bietet. Der Einsatz in den Projekten Stargate und AI-GTM deutet auf eine Standardisierung moderner React-Full-Stack-Architekturen mit serverlosen Deployment-Strategien hin.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-15",
+      "sourceRepos": [
+        "stargate",
+        "ai-gtm"
+      ]
+    }
+  },
+  {
+    "name": "Modelcontextprotocol Sdk",
+    "ring": "dev",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "Das Model Context Protocol (MCP) SDK ist eine Bibliothek zur Implementierung des von Anthropic entwickelten offenen Protokolls, das die standardisierte Kommunikation zwischen KI-Modellen und externen Datenquellen, Tools sowie Systemen ermöglicht. Es stellt Client- und Server-Komponenten bereit, mit denen Anwendungen kontextuelle Informationen strukturiert an Large Language Models übergeben können. Das SDK vereinfacht die Entwicklung von Plugins und Integrationen, die KI-Assistenten den Zugriff auf externe Dienste über eine einheitliche Schnittstelle erlauben.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-05-08",
+      "sourceRepos": [
+        "claude-plugins",
+        "demo-mcp-nerdware"
+      ]
+    }
+  },
+  {
+    "name": "React Router",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "React Router ist die Standard-Bibliothek für clientseitiges Routing in React-Anwendungen. Sie ermöglicht deklaratives, komponentenbasiertes Routing mit Funktionen wie verschachtelten Routen, dynamischen URL-Parametern und programmatischer Navigation. In der aktuellen Version (v6+) bietet sie eine vereinfachte API mit Hooks-basiertem Zugriff auf Routing-Informationen sowie Unterstützung für Data Loading und Actions. Die Bibliothek wird in vier Projekten eingesetzt, was sie zu einem etablierten Bestandteil des Frontend-Stacks macht.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 4,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "Nerdlabsfigma",
+        "nerdlabs-homepage",
+        "vend",
+        "ki-cooking"
+      ]
+    }
+  },
+  {
+    "name": "dnd kit",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "dnd kit ist eine moderne, leichtgewichtige Drag-and-Drop-Bibliothek für React, die als Nachfolger von react-beautiful-dnd konzipiert wurde. Sie bietet eine hook-basierte API mit hoher Flexibilität, Barrierefreiheit und Unterstützung für verschiedene Eingabemethoden wie Maus, Touch und Tastatur. Im Kontext der erkannten Repositories wird sie für sortierbare Listen (z. B. Bestellpositionen) sowie für interaktive visuelle Strukturen wie Mindmaps eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-22",
+      "sourceRepos": [
+        "nerdware-order-app",
+        "graphmind"
+      ]
+    }
+  },
+  {
+    "name": "Prisma Client",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Prisma Client ist ein auto-generierter, typsicherer Datenbank-Client für Node.js und TypeScript, der als Teil des Prisma-ORM-Ökosystems fungiert. Er wird aus dem Prisma-Schema generiert und ermöglicht typsichere Datenbankabfragen mit Autovervollständigung, ohne manuelles Schreiben von SQL. Der Client unterstützt verschiedene Datenbanken wie PostgreSQL, MySQL und SQLite und vereinfacht CRUD-Operationen sowie komplexe Abfragen durch eine intuitive API. In den erkannten Projekten wird er vermutlich als zentrale Datenzugriffsschicht für Backend-Services eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-22",
+      "sourceRepos": [
+        "nerdware-order-app",
+        "nerd-bites"
+      ]
+    }
+  },
+  {
+    "name": "Tiptap",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Tiptap ist ein headless Rich-Text-Editor-Framework für das Web, das auf ProseMirror aufbaut und eine moderne, erweiterbare API bietet. Es lässt sich framework-agnostisch einsetzen, bietet jedoch dedizierte Integrationen für Vue.js, React und weitere Frameworks. Durch seinen modularen Aufbau können Funktionen wie Markdown-Support, kollaboratives Editieren oder benutzerdefinierte Erweiterungen flexibel hinzugefügt werden. Der Einsatz in einer Bestell-App und einem Mindmapping-Tool zeigt seine Vielseitigkeit für unterschiedliche Anwendungsfälle mit strukturierter Textbearbeitung.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-22",
+      "sourceRepos": [
+        "nerdware-order-app",
+        "graphmind"
+      ]
+    }
+  },
+  {
+    "name": "Jose",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "JOSE (Javascript Object Signing and Encryption) ist ein Framework-Standard, der JSON Web Tokens (JWT), JSON Web Signatures (JWS), JSON Web Encryption (JWE) und JSON Web Keys (JWK) umfasst. Es ermöglicht die sichere Übertragung von Claims und Daten zwischen Parteien durch standardisierte Signatur- und Verschlüsselungsmechanismen. In den Projekten nerdware-order-app und graphmind wird JOSE vermutlich für Authentifizierung, Autorisierung oder den sicheren Datenaustausch eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-22",
+      "sourceRepos": [
+        "nerdware-order-app",
+        "graphmind"
+      ]
+    }
+  },
+  {
+    "name": "Testcontainers Postgresql",
+    "ring": "dev",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "Testcontainers PostgreSQL ermöglicht das Starten einer echten PostgreSQL-Datenbank als Docker-Container direkt aus Integrationstests heraus. Dadurch können datenbankabhängige Tests gegen eine reale Datenbankinstanz ausgeführt werden, ohne auf externe Infrastruktur oder In-Memory-Ersatzlösungen angewiesen zu sein. Die Bibliothek übernimmt das Lifecycle-Management des Containers, einschließlich automatischem Start und Aufräumen nach Testabschluss. Der Einsatz in den Projekten nerdware-order-app und skaling-ai-compass zeigt die Relevanz für zuverlässige Integrationstests mit PostgreSQL.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-22",
+      "sourceRepos": [
+        "nerdware-order-app",
+        "skaling-ai-compass"
+      ]
+    }
+  },
+  {
+    "name": "Testcontainers",
+    "ring": "dev",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "Testcontainers ist eine Bibliothek, die leichtgewichtige, wegwerfbare Docker-Container für Integrationstests bereitstellt. Sie ermöglicht es, reale Abhängigkeiten wie Datenbanken, Message Broker oder andere Services in Tests zu verwenden, anstatt auf Mocks oder In-Memory-Alternativen zurückzugreifen. Die Bibliothek ist für mehrere Programmiersprachen verfügbar und integriert sich nahtlos in gängige Test-Frameworks. Der Einsatz in drei verschiedenen Repositories zeigt, dass Testcontainers als bewährter Standard für zuverlässige Integrationstests etabliert ist.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 3,
+      "lastSeen": "2026-06-22",
+      "sourceRepos": [
+        "nerdware-order-app",
+        "nerdfinder",
+        "skaling-ai-compass"
+      ]
+    }
+  },
+  {
+    "name": "pgx",
+    "ring": "dev",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "pgx ist ein moderner PostgreSQL-Treiber für Go, der als performante Alternative zum klassischen lib/pq-Treiber entwickelt wurde. Er bietet native Unterstützung für das PostgreSQL-Wire-Protokoll, Verbindungspooling, Batch-Abfragen und umfangreiche Typunterstützung einschließlich benutzerdefinierter Typen. pgx zeichnet sich durch bessere Performance, ein idiomatischeres Go-API und Features wie automatisches Prepared-Statement-Caching aus. Im Kontext des Tech-Radars wird pgx in Infrastruktur- und Datenbank-Projekten wie der Hetzner Landing Zone und NerdBase eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-19",
+      "sourceRepos": [
+        "hetzner-landing-zone",
+        "NerdBase"
+      ]
+    }
+  },
+  {
+    "name": "Hono Node Server",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Hono Node Server ist der Node.js-Adapter für das Hono-Web-Framework, der es ermöglicht, Hono-Anwendungen auf einem klassischen Node.js-HTTP-Server auszuführen. Er stellt die Brücke zwischen Honos plattformunabhängiger API und der Node.js-Runtime dar, sodass Entwickler von Honos leichtgewichtigem, an Web-Standards orientiertem Ansatz profitieren können, ohne auf eine Edge-Runtime angewiesen zu sein. In den Projekten nerdhunter und nerdfinder wird er als Backend-Server-Lösung eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-12",
+      "sourceRepos": [
+        "nerdhunter",
+        "nerdfinder"
+      ]
+    }
+  },
+  {
+    "name": "Hono",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Hono ist ein ultraleichtes, schnelles Web-Framework für JavaScript und TypeScript, das auf Web-Standards wie der Fetch API basiert. Es läuft auf verschiedenen Laufzeitumgebungen wie Cloudflare Workers, Deno, Bun und Node.js und eignet sich besonders für den Aufbau von APIs und Edge-Computing-Anwendungen. Durch seine minimale Größe und hohe Performance stellt es eine moderne Alternative zu Express.js dar.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-12",
+      "sourceRepos": [
+        "nerdhunter",
+        "nerdfinder"
+      ]
+    }
+  },
+  {
+    "name": "Drizzle Orm",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Drizzle ORM ist ein leichtgewichtiges, TypeScript-natives ORM für SQL-Datenbanken wie PostgreSQL, MySQL und SQLite. Es zeichnet sich durch einen typsicheren Query-Builder aus, der nah an SQL bleibt, sowie durch minimalen Overhead zur Laufzeit. Das mitgelieferte Tool Drizzle Kit ermöglicht deklaratives Schema-Management und automatische Migration-Generierung. Im Kontext der erkannten Repositories wird es als moderne, performante Alternative zu schwergewichtigeren ORMs wie Prisma eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 3,
+      "lastSeen": "2026-06-18",
+      "sourceRepos": [
+        "nerdhunter",
+        "nerdfinder",
+        "skaling-ai-compass"
+      ]
+    }
+  },
+  {
+    "name": "Three",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Three (Three.js) ist eine JavaScript-Bibliothek zur Erstellung und Darstellung von 3D-Grafiken im Webbrowser auf Basis von WebGL. Sie abstrahiert die Komplexität der WebGL-API und bietet eine zugängliche Schnittstelle für Szenen, Kameras, Materialien, Lichtquellen und Geometrien. Die Bibliothek wird häufig für interaktive 3D-Visualisierungen, Datenvisualisierungen und kreative Web-Experimente eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-06-22",
+      "sourceRepos": [
+        "graphmind",
+        "nerd-bites"
       ]
     }
   }

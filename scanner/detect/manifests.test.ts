@@ -37,4 +37,44 @@ describe('detectManifest', () => {
   it('does not throw on malformed JSON', () => {
     expect(detectManifest('package.json', '{ not json')).toEqual([])
   })
+  it('drops // indirect requires from go.mod, keeping only direct deps', () => {
+    const mod = [
+      'module x',
+      '',
+      'require (',
+      '\tgithub.com/gin-gonic/gin v1.9.1',
+      '\tgithub.com/modern-go/reflect2 v1.0.2 // indirect',
+      ')',
+      '',
+      'require github.com/stretchr/testify v1.8.0',
+    ].join('\n')
+    const raws = detectManifest('go.mod', mod).map((t) => t.raw)
+    expect(raws).toContain('github.com/gin-gonic/gin')
+    expect(raws).toContain('github.com/stretchr/testify')
+    expect(raws).not.toContain('github.com/modern-go/reflect2')
+  })
+  it('ignores pom.xml artifactIds inside plugin, parent and dependencyManagement', () => {
+    const xml = [
+      '<project>',
+      '  <parent><artifactId>spring-boot-starter-parent</artifactId></parent>',
+      '  <dependencyManagement><dependencies><dependency>',
+      '    <artifactId>libraries-bom</artifactId>',
+      '  </dependency></dependencies></dependencyManagement>',
+      '  <dependencies><dependency><artifactId>spring-boot-starter-web</artifactId></dependency></dependencies>',
+      '  <build><plugins><plugin><artifactId>spring-boot-maven-plugin</artifactId></plugin></plugins></build>',
+      '</project>',
+    ].join('\n')
+    const raws = detectManifest('pom.xml', xml).map((t) => t.raw)
+    expect(raws).toEqual(['spring-boot-starter-web'])
+  })
+  it('excludes reporting plugins, keeping real dependencies', () => {
+    const xml = [
+      '<project>',
+      '  <dependencies><dependency><artifactId>guava</artifactId></dependency></dependencies>',
+      '  <reporting><plugins><plugin><artifactId>maven-site-plugin</artifactId></plugin></plugins></reporting>',
+      '</project>',
+    ].join('\n')
+    const raws = detectManifest('pom.xml', xml).map((t) => t.raw)
+    expect(raws).toEqual(['guava'])
+  })
 })

@@ -33,11 +33,21 @@ function fromRequirementsTxt(content: string): string[] {
 }
 
 function fromGoMod(content: string): string[] {
-  return [...content.matchAll(/^\s*([\w.\-/]+\.[\w.\-/]+)\s+v\d/gm)].map((m) => m[1])
+  return [...content.matchAll(/^\s*(?:require\s+)?([\w.\-/]+\.[\w.\-/]+)\s+v\d\S*(.*)$/gm)]
+    .filter((m) => !/\/\/\s*indirect/.test(m[2]))
+    .map((m) => m[1])
 }
 
+/** Extract only the `<dependencies>` artifactIds, skipping `<dependencyManagement>`,
+ *  `<parent>`, and ALL `<plugins>` blocks (BOMs and parent POMs define dependency versions,
+ *  while ALL plugins — in `<build>`, `<build><pluginManagement>`, `<reporting>`, or
+ *  `<profiles>` — are build/reporting tooling, not application dependencies). */
 function fromPomXml(content: string): string[] {
-  return [...content.matchAll(/<artifactId>([^<]+)<\/artifactId>/g)].map((m) => m[1].trim())
+  const stripped = content
+    .replace(/<dependencyManagement>[\s\S]*?<\/dependencyManagement>/g, '')
+    .replace(/<parent>[\s\S]*?<\/parent>/g, '')
+    .replace(/<plugins>[\s\S]*?<\/plugins>/g, '')
+  return [...stripped.matchAll(/<artifactId>([^<]+)<\/artifactId>/g)].map((m) => m[1].trim())
 }
 
 /** Parse a manifest file into dependency tokens. Unknown files yield []. */

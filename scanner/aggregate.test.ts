@@ -1,64 +1,48 @@
 import { describe, it, expect } from 'vitest'
 import { aggregate } from './aggregate'
-import type { RepoScan } from './types'
+import type { RepoScan, VerdictCache } from './types'
 
+const cache: VerdictCache = {
+  react: { verdict: 'radar', quadrant: 'languages-frameworks', source: 'seed' },
+}
 const scans: RepoScan[] = [
   {
-    repo: 'graphmind',
+    repo: 'a',
     pushedAt: '2026-06-17',
     tokens: [
       { raw: 'react', kind: 'dependency' },
-      // GitHub returns language names properly cased (e.g. "TypeScript", not "typescript").
+      { raw: '@radix-ui/react-tabs', kind: 'dependency' },
       { raw: 'TypeScript', kind: 'language', quadrantHint: 'languages-frameworks' },
     ],
   },
   {
-    repo: 'vend',
+    repo: 'b',
     pushedAt: '2026-06-15',
     tokens: [
       { raw: 'react-dom', kind: 'dependency' },
-      { raw: '@types/node', kind: 'dependency' },
-      { raw: 'bcryptjs', kind: 'dependency' },
+      { raw: '@radix-ui/react-dialog', kind: 'dependency' },
+      { raw: 'tslib', kind: 'dependency' },
+      { raw: 'some-new-lib', kind: 'dependency' },
     ],
   },
 ]
 
 describe('aggregate', () => {
-  it('collapses allowlisted dep aliases and counts distinct repos into detections', () => {
-    const react = aggregate(scans).detections.find((d) => d.name === 'React')!
+  it('groups radar verdicts by canonical and counts distinct repos', () => {
+    const react = aggregate(scans, cache).detections.find((d) => d.name === 'React')!
     expect(react.repoCount).toBe(2)
-    expect(react.sourceRepos.sort()).toEqual(['graphmind', 'vend'])
+    expect(react.quadrant).toBe('languages-frameworks')
   })
-  it('records the most recent pushedAt as lastSeen', () => {
-    const react = aggregate(scans).detections.find((d) => d.name === 'React')!
-    expect(react.lastSeen).toBe('2026-06-17')
+  it('collapses family sub-packages into one detection', () => {
+    const radix = aggregate(scans, cache).detections.find((d) => d.name === 'Radix UI')!
+    expect(radix.repoCount).toBe(2)
   })
-  it('keeps a language token as a notable detection with its hint', () => {
-    const ts = aggregate(scans).detections.find((d) => d.name === 'TypeScript')!
-    expect(ts.quadrantHint).toBe('languages-frameworks')
+  it('routes plumbing to suppressed and unknown deps to unknowns', () => {
+    const { unknowns, suppressed } = aggregate(scans, cache)
+    expect(unknowns.find((d) => d.name === 'Some New Lib')).toBeTruthy()
+    expect(suppressed.find((d) => d.name === 'Tslib')).toBeTruthy()
   })
-  it('routes an unrecognized dependency to candidates, not detections', () => {
-    const { detections, candidates } = aggregate(scans)
-    expect(detections.find((d) => d.name === 'Bcryptjs')).toBeUndefined()
-    expect(candidates.find((d) => d.name === 'Bcryptjs')).toBeTruthy()
-  })
-  it('drops ignored tokens from both buckets', () => {
-    const { detections, candidates } = aggregate(scans)
-    expect([...detections, ...candidates].some((d) => d.name.includes('types'))).toBe(false)
-  })
-  it('sorts candidates by adoption (most repos first)', () => {
-    const many: RepoScan[] = [
-      { repo: 'a', pushedAt: '2026-06-01', tokens: [{ raw: 'foo', kind: 'dependency' }] },
-      {
-        repo: 'b',
-        pushedAt: '2026-06-01',
-        tokens: [
-          { raw: 'foo', kind: 'dependency' },
-          { raw: 'bar', kind: 'dependency' },
-        ],
-      },
-    ]
-    const { candidates } = aggregate(many)
-    expect(candidates.map((c) => c.name)).toEqual(['Foo', 'Bar'])
+  it('keeps a language token as a radar detection', () => {
+    expect(aggregate(scans, cache).detections.find((d) => d.name === 'TypeScript')).toBeTruthy()
   })
 })

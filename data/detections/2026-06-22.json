@@ -50,8 +50,8 @@
         "skaling-ai-compass",
         "NerdBase"
       ],
-      "lastSeen": "2026-06-21",
-      "quadrantHint": "languages-frameworks"
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
     },
     {
       "name": "Docker",
@@ -98,7 +98,17 @@
         "fegime-opensearch-prototype"
       ],
       "lastSeen": "2026-06-22",
-      "quadrantHint": "platforms"
+      "quadrant": "platforms"
+    },
+    {
+      "name": "FullCalendar",
+      "repoCount": 2,
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital"
+      ],
+      "lastSeen": "2023-11-07",
+      "quadrant": "languages-frameworks"
     },
     {
       "name": "NestJS",
@@ -115,7 +125,8 @@
         "graphmind",
         "nerd-bites"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
     },
     {
       "name": "Redux Toolkit",
@@ -124,11 +135,32 @@
         "react-nestjs-template",
         "learning-digital"
       ],
-      "lastSeen": "2023-11-07"
+      "lastSeen": "2023-11-07",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Aws Lambda",
+      "repoCount": 2,
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital"
+      ],
+      "lastSeen": "2023-11-07",
+      "quadrant": "platforms"
+    },
+    {
+      "name": "Aws Lambda Fastify",
+      "repoCount": 2,
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital"
+      ],
+      "lastSeen": "2023-11-07",
+      "quadrant": "languages-frameworks"
     },
     {
       "name": "AWS",
-      "repoCount": 17,
+      "repoCount": 18,
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -146,9 +178,64 @@
         "hack-zollhof-2025",
         "ai-gtm",
         "nerdware-order-app",
-        "nerdfinder"
+        "nerdfinder",
+        "NerdBase"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22",
+      "quadrant": "platforms"
+    },
+    {
+      "name": "Mysql2",
+      "repoCount": 2,
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital"
+      ],
+      "lastSeen": "2023-11-07",
+      "quadrant": "platforms"
+    },
+    {
+      "name": "Passport",
+      "repoCount": 4,
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "coffee-demo",
+        "graphmind"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Passport Jwt",
+      "repoCount": 3,
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "coffee-demo"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Passport Local",
+      "repoCount": 2,
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital"
+      ],
+      "lastSeen": "2023-11-07",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Passport Saml",
+      "repoCount": 2,
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital"
+      ],
+      "lastSeen": "2023-11-07",
+      "quadrant": "tools"
     },
     {
       "name": "React",
@@ -175,7 +262,54 @@
         "ki-cooking",
         "skaling-ai-compass"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "React Redux",
+      "repoCount": 2,
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital"
+      ],
+      "lastSeen": "2023-11-07",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "React Router Dom",
+      "repoCount": 8,
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "coffee-demo",
+        "capacity-planner",
+        "Nerdlabsfigma",
+        "nerdlabs-homepage",
+        "graphmind",
+        "nerd-bites"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Redux",
+      "repoCount": 2,
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital"
+      ],
+      "lastSeen": "2023-11-07",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Redux Persist",
+      "repoCount": 2,
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital"
+      ],
+      "lastSeen": "2023-11-07",
+      "quadrant": "languages-frameworks"
     },
     {
       "name": "RxJS",
@@ -207,7 +341,79 @@
         "nerd-bites",
         "NerdBase"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Sqlite3",
+      "repoCount": 2,
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital"
+      ],
+      "lastSeen": "2023-11-07",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Typeorm",
+      "repoCount": 3,
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "angular-nestjs-template"
+      ],
+      "lastSeen": "2025-01-03",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Nx",
+      "repoCount": 11,
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "townhall",
+        "chat-room",
+        "Skillerd",
+        "angular-nestjs-template",
+        "hackbay2024",
+        "coffee-demo",
+        "fourdrop",
+        "skillard-excelled",
+        "graphmind"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Testing Library React",
+      "repoCount": 9,
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "techradar-nerdware",
+        "coffee-demo",
+        "stargate",
+        "ai-gtm",
+        "nerdware-order-app",
+        "graphmind",
+        "skaling-ai-compass"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Cypress",
+      "repoCount": 6,
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "chat-room",
+        "angular-nestjs-template",
+        "hackbay2024",
+        "coffee-demo"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "tools"
     },
     {
       "name": "ESLint",
@@ -240,7 +446,8 @@
         "skaling-ai-compass",
         "NerdBase"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22",
+      "quadrant": "tools"
     },
     {
       "name": "Jest",
@@ -264,7 +471,8 @@
         "graphmind",
         "nerd-bites"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22",
+      "quadrant": "tools"
     },
     {
       "name": "Prettier",
@@ -291,7 +499,20 @@
         "skaling-ai-compass",
         "NerdBase"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Serverless",
+      "repoCount": 4,
+      "sourceRepos": [
+        "react-nestjs-template",
+        "learning-digital",
+        "townhall",
+        "serverless-example"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "platforms"
     },
     {
       "name": "GitHub Actions",
@@ -336,7 +557,33 @@
         "NerdBase"
       ],
       "lastSeen": "2026-06-22",
-      "quadrantHint": "platforms"
+      "quadrant": "platforms"
+    },
+    {
+      "name": "Emotion",
+      "repoCount": 5,
+      "sourceRepos": [
+        "learning-digital",
+        "pom-dekar-p",
+        "Nerdlabsfigma",
+        "nerdlabs-homepage",
+        "ki-cooking"
+      ],
+      "lastSeen": "2026-05-22",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "MUI",
+      "repoCount": 5,
+      "sourceRepos": [
+        "learning-digital",
+        "pom-dekar-p",
+        "Nerdlabsfigma",
+        "nerdlabs-homepage",
+        "ki-cooking"
+      ],
+      "lastSeen": "2026-05-22",
+      "quadrant": "languages-frameworks"
     },
     {
       "name": "Terraform",
@@ -356,7 +603,7 @@
         "hetzner-landing-zone"
       ],
       "lastSeen": "2026-06-15",
-      "quadrantHint": "platforms"
+      "quadrant": "platforms"
     },
     {
       "name": "Vite",
@@ -378,22 +625,24 @@
         "ki-cooking",
         "skaling-ai-compass"
       ],
-      "lastSeen": "2026-06-20",
-      "quadrantHint": "tools"
+      "lastSeen": "2026-06-22",
+      "quadrant": "tools"
     },
     {
       "name": "Playwright",
-      "repoCount": 6,
+      "repoCount": 8,
       "sourceRepos": [
         "techradar-nerdware",
+        "townhall",
+        "fourdrop",
         "ai-gtm",
         "nerdlabs-homepage",
         "nerdware-homepage",
         "nerdware-order-app",
         "skaling-ai-compass"
       ],
-      "lastSeen": "2026-06-19",
-      "quadrantHint": "tools"
+      "lastSeen": "2026-06-22",
+      "quadrant": "tools"
     },
     {
       "name": "Zod",
@@ -414,7 +663,20 @@
         "nerd-bites",
         "skaling-ai-compass"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Openai",
+      "repoCount": 4,
+      "sourceRepos": [
+        "techradar-nerdware",
+        "llm-workshop",
+        "ai-gtm",
+        "nerdware-order-app"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "tools"
     },
     {
       "name": "Vitest",
@@ -431,7 +693,8 @@
         "nerdfinder",
         "skaling-ai-compass"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22",
+      "quadrant": "tools"
     },
     {
       "name": "Go",
@@ -444,7 +707,29 @@
         "NerdBase"
       ],
       "lastSeen": "2026-06-19",
-      "quadrantHint": "languages-frameworks"
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Gin",
+      "repoCount": 4,
+      "sourceRepos": [
+        "townhall",
+        "chat-room",
+        "nw-recruiting-metrics",
+        "NerdBase"
+      ],
+      "lastSeen": "2026-06-19",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "GORM",
+      "repoCount": 2,
+      "sourceRepos": [
+        "townhall",
+        "nw-recruiting-metrics"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "tools"
     },
     {
       "name": "Angular",
@@ -467,7 +752,28 @@
         "claude-project-kickstart-example",
         "NerdBase"
       ],
-      "lastSeen": "2026-06-19"
+      "lastSeen": "2026-06-19",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Echarts",
+      "repoCount": 2,
+      "sourceRepos": [
+        "townhall",
+        "coffee-demo"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Ngx Echarts",
+      "repoCount": 2,
+      "sourceRepos": [
+        "townhall",
+        "fourdrop"
+      ],
+      "lastSeen": "2026-06-15",
+      "quadrant": "languages-frameworks"
     },
     {
       "name": "Tailwind CSS",
@@ -503,7 +809,8 @@
         "ki-cooking",
         "NerdBase"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
     },
     {
       "name": "C#",
@@ -516,7 +823,37 @@
         "skillard-excelled"
       ],
       "lastSeen": "2026-06-05",
-      "quadrantHint": "languages-frameworks"
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Jasmine Core",
+      "repoCount": 7,
+      "sourceRepos": [
+        "hackathon",
+        "hackbay-demo",
+        "fantastic-garbanzo",
+        "health-hackathon",
+        "coin-demo",
+        "ipsen-botulinumtoxin-injektionsmuster",
+        "nerdAI"
+      ],
+      "lastSeen": "2026-06-18",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Karma Jasmine",
+      "repoCount": 7,
+      "sourceRepos": [
+        "hackathon",
+        "hackbay-demo",
+        "fantastic-garbanzo",
+        "health-hackathon",
+        "coin-demo",
+        "ipsen-botulinumtoxin-injektionsmuster",
+        "nerdAI"
+      ],
+      "lastSeen": "2026-06-18",
+      "quadrant": "tools"
     },
     {
       "name": "Ruby",
@@ -525,7 +862,7 @@
         "nerdware-cluster"
       ],
       "lastSeen": "2026-06-05",
-      "quadrantHint": "languages-frameworks"
+      "quadrant": "languages-frameworks"
     },
     {
       "name": "Java",
@@ -535,7 +872,7 @@
         "health-hackathon"
       ],
       "lastSeen": "2026-06-05",
-      "quadrantHint": "languages-frameworks"
+      "quadrant": "languages-frameworks"
     },
     {
       "name": "Kubernetes",
@@ -546,8 +883,18 @@
         "hetzner-landing-zone",
         "graphmind"
       ],
-      "lastSeen": "2026-06-20",
-      "quadrantHint": "platforms"
+      "lastSeen": "2026-06-22",
+      "quadrant": "platforms"
+    },
+    {
+      "name": "Spring Boot Starter Web",
+      "repoCount": 2,
+      "sourceRepos": [
+        "nerdware-cluster-playground-services",
+        "health-hackathon"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
     },
     {
       "name": "JavaScript",
@@ -568,8 +915,8 @@
         "engineering-intelligence",
         "fegime-opensearch-prototype"
       ],
-      "lastSeen": "2026-06-21",
-      "quadrantHint": "languages-frameworks"
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
     },
     {
       "name": "Express",
@@ -583,7 +930,40 @@
         "ai-gtm",
         "fegime-opensearch-prototype"
       ],
-      "lastSeen": "2026-06-21"
+      "lastSeen": "2026-06-21",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Auth0 Angular Jwt",
+      "repoCount": 2,
+      "sourceRepos": [
+        "Skillerd",
+        "skillard-excelled"
+      ],
+      "lastSeen": "2026-03-20",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Openapitools Openapi Generator Cli",
+      "repoCount": 3,
+      "sourceRepos": [
+        "Skillerd",
+        "hackbay2024",
+        "skillard-excelled"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "tools"
+    },
+    {
+      "name": "LangChain",
+      "repoCount": 3,
+      "sourceRepos": [
+        "LLM-who-the-f...-is-alice",
+        "llm-workshop",
+        "bid-flow-backend"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
     },
     {
       "name": "Next.js",
@@ -597,7 +977,69 @@
         "nerdfinder",
         "skaling-ai-compass"
       ],
-      "lastSeen": "2026-06-18"
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "NgRx",
+      "repoCount": 2,
+      "sourceRepos": [
+        "angular-nestjs-template",
+        "coin-demo"
+      ],
+      "lastSeen": "2025-04-28",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Sentry",
+      "repoCount": 3,
+      "sourceRepos": [
+        "angular-nestjs-template",
+        "stargate",
+        "ai-gtm"
+      ],
+      "lastSeen": "2026-06-15",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Pg",
+      "repoCount": 7,
+      "sourceRepos": [
+        "angular-nestjs-template",
+        "coin-demo",
+        "stargate",
+        "ai-gtm",
+        "nerdware-order-app",
+        "nerdfinder",
+        "skaling-ai-compass"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Supertest",
+      "repoCount": 7,
+      "sourceRepos": [
+        "angular-nestjs-template",
+        "fantastic-garbanzo",
+        "yt-semantic-release",
+        "nw-semantic-release",
+        "clean-architecture-vs-vertical-sliced-architecture",
+        "ai-gtm",
+        "nerd-bites"
+      ],
+      "lastSeen": "2026-06-15",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Winston",
+      "repoCount": 2,
+      "sourceRepos": [
+        "angular-nestjs-template",
+        "fantastic-garbanzo"
+      ],
+      "lastSeen": "2025-01-03",
+      "quadrant": "tools"
     },
     {
       "name": "C++",
@@ -606,7 +1048,62 @@
         "coffee-demo"
       ],
       "lastSeen": "2026-06-05",
-      "quadrantHint": "languages-frameworks"
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Anthropic Ai Sdk",
+      "repoCount": 3,
+      "sourceRepos": [
+        "coffee-demo",
+        "ai-gtm",
+        "nerdware-order-app"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "TanStack",
+      "repoCount": 5,
+      "sourceRepos": [
+        "coffee-demo",
+        "capacity-planner",
+        "stargate",
+        "ai-gtm",
+        "nerdware-order-app"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Aws Amplify",
+      "repoCount": 2,
+      "sourceRepos": [
+        "coffee-demo",
+        "nerd-upload"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "platforms"
+    },
+    {
+      "name": "Zustand",
+      "repoCount": 3,
+      "sourceRepos": [
+        "coffee-demo",
+        "hack-zollhof-2025",
+        "md-plattform-prototype"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Chart Js",
+      "repoCount": 2,
+      "sourceRepos": [
+        "health-hackathon",
+        "coin-demo"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
     },
     {
       "name": "Python",
@@ -624,8 +1121,8 @@
         "nerdhunter",
         "listenerd"
       ],
-      "lastSeen": "2026-06-21",
-      "quadrantHint": "languages-frameworks"
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
     },
     {
       "name": "Jupyter Notebook",
@@ -634,7 +1131,29 @@
         "llm-workshop"
       ],
       "lastSeen": "2026-06-05",
-      "quadrantHint": "languages-frameworks"
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Requests",
+      "repoCount": 3,
+      "sourceRepos": [
+        "llm-workshop",
+        "dtvp-scraper",
+        "hack-zollhof-2025"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Chromadb",
+      "repoCount": 3,
+      "sourceRepos": [
+        "llm-workshop",
+        "bid-flow-backend",
+        "nerdAI"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
     },
     {
       "name": "FastAPI",
@@ -643,7 +1162,40 @@
         "llm-workshop",
         "nerdAI"
       ],
-      "lastSeen": "2026-06-05"
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Pydantic",
+      "repoCount": 2,
+      "sourceRepos": [
+        "llm-workshop",
+        "nerdAI"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Google Genai",
+      "repoCount": 3,
+      "sourceRepos": [
+        "hack-zollhof-2025",
+        "ai-gtm",
+        "nerdware-order-app"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Supabase Supabase Js",
+      "repoCount": 3,
+      "sourceRepos": [
+        "ipsen-botulinumtoxin-injektionsmuster",
+        "capacity-planner",
+        "graphmind"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "platforms"
     },
     {
       "name": "PHP",
@@ -653,7 +1205,7 @@
         "shopware6-plugin-reference"
       ],
       "lastSeen": "2026-06-09",
-      "quadrantHint": "languages-frameworks"
+      "quadrant": "languages-frameworks"
     },
     {
       "name": "Twig",
@@ -664,7 +1216,104 @@
         "shopware6-plugin-reference"
       ],
       "lastSeen": "2026-06-09",
-      "quadrantHint": "languages-frameworks"
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Shopware Core",
+      "repoCount": 3,
+      "sourceRepos": [
+        "SchickBauspeziAPI",
+        "SchickBauspeziTheme",
+        "shopware6-plugin-reference"
+      ],
+      "lastSeen": "2026-06-09",
+      "quadrant": "platforms"
+    },
+    {
+      "name": "Radix UI",
+      "repoCount": 5,
+      "sourceRepos": [
+        "capacity-planner",
+        "Nerdlabsfigma",
+        "nerdlabs-homepage",
+        "vend",
+        "ki-cooking"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "React Hook Form",
+      "repoCount": 7,
+      "sourceRepos": [
+        "capacity-planner",
+        "Nerdlabsfigma",
+        "nerdlabs-homepage",
+        "md-plattform-prototype",
+        "graphmind",
+        "vend",
+        "ki-cooking"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Recharts",
+      "repoCount": 8,
+      "sourceRepos": [
+        "capacity-planner",
+        "Nerdlabsfigma",
+        "nerdlabs-homepage",
+        "md-plattform-prototype",
+        "nerdware-order-app",
+        "vend",
+        "ki-cooking",
+        "skaling-ai-compass"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "tools"
+    },
+    {
+      "name": "tRPC",
+      "repoCount": 2,
+      "sourceRepos": [
+        "stargate",
+        "ai-gtm"
+      ],
+      "lastSeen": "2026-06-15",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Netlify Vite Plugin Tanstack Start",
+      "repoCount": 2,
+      "sourceRepos": [
+        "stargate",
+        "ai-gtm"
+      ],
+      "lastSeen": "2026-06-15",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Modelcontextprotocol Sdk",
+      "repoCount": 2,
+      "sourceRepos": [
+        "claude-plugins",
+        "demo-mcp-nerdware"
+      ],
+      "lastSeen": "2026-05-08",
+      "quadrant": "tools"
+    },
+    {
+      "name": "React Router",
+      "repoCount": 4,
+      "sourceRepos": [
+        "Nerdlabsfigma",
+        "nerdlabs-homepage",
+        "vend",
+        "ki-cooking"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
     },
     {
       "name": "Vue.js",
@@ -673,7 +1322,47 @@
         "nerdware-homepage"
       ],
       "lastSeen": "2026-04-14",
-      "quadrantHint": "languages-frameworks"
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "dnd kit",
+      "repoCount": 2,
+      "sourceRepos": [
+        "nerdware-order-app",
+        "graphmind"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Prisma Client",
+      "repoCount": 2,
+      "sourceRepos": [
+        "nerdware-order-app",
+        "nerd-bites"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Tiptap",
+      "repoCount": 2,
+      "sourceRepos": [
+        "nerdware-order-app",
+        "graphmind"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Jose",
+      "repoCount": 2,
+      "sourceRepos": [
+        "nerdware-order-app",
+        "graphmind"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
     },
     {
       "name": "Prisma",
@@ -682,10 +1371,922 @@
         "nerdware-order-app",
         "nerd-bites"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Testcontainers Postgresql",
+      "repoCount": 2,
+      "sourceRepos": [
+        "nerdware-order-app",
+        "skaling-ai-compass"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Testcontainers",
+      "repoCount": 3,
+      "sourceRepos": [
+        "nerdware-order-app",
+        "nerdfinder",
+        "skaling-ai-compass"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "tools"
+    },
+    {
+      "name": "pgx",
+      "repoCount": 2,
+      "sourceRepos": [
+        "hetzner-landing-zone",
+        "NerdBase"
+      ],
+      "lastSeen": "2026-06-19",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Hono Node Server",
+      "repoCount": 2,
+      "sourceRepos": [
+        "nerdhunter",
+        "nerdfinder"
+      ],
+      "lastSeen": "2026-06-12",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Hono",
+      "repoCount": 2,
+      "sourceRepos": [
+        "nerdhunter",
+        "nerdfinder"
+      ],
+      "lastSeen": "2026-06-12",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Drizzle Orm",
+      "repoCount": 3,
+      "sourceRepos": [
+        "nerdhunter",
+        "nerdfinder",
+        "skaling-ai-compass"
+      ],
+      "lastSeen": "2026-06-18",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Three",
+      "repoCount": 2,
+      "sourceRepos": [
+        "graphmind",
+        "nerd-bites"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
     }
   ],
-  "candidates": [
+  "belowThreshold": [
+    {
+      "name": "Serverless Lambda Edge Pre Existing Cloudfront",
+      "repoCount": 1,
+      "sourceRepos": [
+        "learning-digital"
+      ],
+      "lastSeen": "2023-11-07",
+      "quadrant": "platforms"
+    },
+    {
+      "name": "Github Com Aws Aws Lambda Go",
+      "repoCount": 1,
+      "sourceRepos": [
+        "townhall"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Mdx Js React",
+      "repoCount": 1,
+      "sourceRepos": [
+        "townhall"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Github Com Awslabs Aws Lambda Go Api Proxy",
+      "repoCount": 1,
+      "sourceRepos": [
+        "townhall"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Github Com Glebarez Sqlite",
+      "repoCount": 1,
+      "sourceRepos": [
+        "townhall"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Github Com Go Sql Driver Mysql",
+      "repoCount": 1,
+      "sourceRepos": [
+        "townhall"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Sparticuz Chromium",
+      "repoCount": 1,
+      "sourceRepos": [
+        "townhall"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Angular Oauth2 Oidc",
+      "repoCount": 1,
+      "sourceRepos": [
+        "townhall"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Spring Boot Starter",
+      "repoCount": 1,
+      "sourceRepos": [
+        "nerdware-cluster-playground-services"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Remix Run Node",
+      "repoCount": 1,
+      "sourceRepos": [
+        "pom-dekar-p"
+      ],
+      "lastSeen": "2024-03-21",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Remix Run React",
+      "repoCount": 1,
+      "sourceRepos": [
+        "pom-dekar-p"
+      ],
+      "lastSeen": "2024-03-21",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Azure Functions",
+      "repoCount": 1,
+      "sourceRepos": [
+        "cloudapi"
+      ],
+      "lastSeen": "2024-01-31",
+      "quadrant": "platforms"
+    },
+    {
+      "name": "Azure Arm Appservice",
+      "repoCount": 1,
+      "sourceRepos": [
+        "cloudapi"
+      ],
+      "lastSeen": "2024-01-31",
+      "quadrant": "platforms"
+    },
+    {
+      "name": "Azure Arm Resources",
+      "repoCount": 1,
+      "sourceRepos": [
+        "cloudapi"
+      ],
+      "lastSeen": "2024-01-31",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Azure Arm Storage",
+      "repoCount": 1,
+      "sourceRepos": [
+        "cloudapi"
+      ],
+      "lastSeen": "2024-01-31",
+      "quadrant": "platforms"
+    },
+    {
+      "name": "Azure Identity",
+      "repoCount": 1,
+      "sourceRepos": [
+        "cloudapi"
+      ],
+      "lastSeen": "2024-01-31",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Azure Functions Core Tools",
+      "repoCount": 1,
+      "sourceRepos": [
+        "cloudapi"
+      ],
+      "lastSeen": "2024-01-31",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Hnswlib Node",
+      "repoCount": 1,
+      "sourceRepos": [
+        "LLM-who-the-f...-is-alice"
+      ],
+      "lastSeen": "2024-03-04",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "MikroORM",
+      "repoCount": 1,
+      "sourceRepos": [
+        "angular-nestjs-template"
+      ],
+      "lastSeen": "2025-01-03",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Aws Lambda Powertools Idempotency",
+      "repoCount": 1,
+      "sourceRepos": [
+        "serverless-example"
+      ],
+      "lastSeen": "2024-05-24",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Aws Lambda Powertools Logger",
+      "repoCount": 1,
+      "sourceRepos": [
+        "serverless-example"
+      ],
+      "lastSeen": "2024-05-24",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Aws Lambda Powertools Tracer",
+      "repoCount": 1,
+      "sourceRepos": [
+        "serverless-example"
+      ],
+      "lastSeen": "2024-05-24",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Middy Core",
+      "repoCount": 1,
+      "sourceRepos": [
+        "serverless-example"
+      ],
+      "lastSeen": "2024-05-24",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Webpack",
+      "repoCount": 1,
+      "sourceRepos": [
+        "hackbay2024"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Dynamoose",
+      "repoCount": 1,
+      "sourceRepos": [
+        "fantastic-garbanzo"
+      ],
+      "lastSeen": "2024-10-31",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Nestjs Dynamoose",
+      "repoCount": 1,
+      "sourceRepos": [
+        "fantastic-garbanzo"
+      ],
+      "lastSeen": "2024-10-31",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Orval Core",
+      "repoCount": 1,
+      "sourceRepos": [
+        "coffee-demo"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Aws Iot Device Sdk",
+      "repoCount": 1,
+      "sourceRepos": [
+        "coffee-demo"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "platforms"
+    },
+    {
+      "name": "Oidc Client Ts",
+      "repoCount": 1,
+      "sourceRepos": [
+        "coffee-demo"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "React Oidc Context",
+      "repoCount": 1,
+      "sourceRepos": [
+        "coffee-demo"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Socket Io",
+      "repoCount": 1,
+      "sourceRepos": [
+        "coffee-demo"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Socket Io Client",
+      "repoCount": 1,
+      "sourceRepos": [
+        "coffee-demo"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Orval",
+      "repoCount": 1,
+      "sourceRepos": [
+        "coffee-demo"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Esphome",
+      "repoCount": 1,
+      "sourceRepos": [
+        "coffee-demo"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "platforms"
+    },
+    {
+      "name": "Google Cloud Firestore",
+      "repoCount": 1,
+      "sourceRepos": [
+        "health-hackathon"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "platforms"
+    },
+    {
+      "name": "Jupyterlab",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Numpy",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Pandas",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Scipy",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Scikit Learn",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Matplotlib",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Gensim",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Torch",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Transformers",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Faiss Cpu",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Google Generativeai",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Anthropic",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Unstructured",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Plotly",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Jupyter Dash",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Ollama",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Bitsandbytes",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Sentence Transformers",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Gpt4all",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Uvicorn",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Psycopg2 Binary",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Langgraph",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Langfuse",
+      "repoCount": 1,
+      "sourceRepos": [
+        "llm-workshop"
+      ],
+      "lastSeen": "2026-06-05",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Angular Auth Oidc Client",
+      "repoCount": 1,
+      "sourceRepos": [
+        "coin-demo"
+      ],
+      "lastSeen": "2025-04-28",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Pulumi",
+      "repoCount": 1,
+      "sourceRepos": [
+        "coin-demo"
+      ],
+      "lastSeen": "2025-04-28",
+      "quadrant": "platforms"
+    },
+    {
+      "name": "Openapi",
+      "repoCount": 1,
+      "sourceRepos": [
+        "fourdrop"
+      ],
+      "lastSeen": "2026-06-15",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Analogjs Vite Plugin Angular",
+      "repoCount": 1,
+      "sourceRepos": [
+        "fourdrop"
+      ],
+      "lastSeen": "2026-06-15",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Analogjs Vitest Angular",
+      "repoCount": 1,
+      "sourceRepos": [
+        "fourdrop"
+      ],
+      "lastSeen": "2026-06-15",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Prometheus Client",
+      "repoCount": 1,
+      "sourceRepos": [
+        "dtvp-scraper"
+      ],
+      "lastSeen": "2026-05-08",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Selenium",
+      "repoCount": 1,
+      "sourceRepos": [
+        "dtvp-scraper"
+      ],
+      "lastSeen": "2026-05-08",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Aws Embedded Metrics",
+      "repoCount": 1,
+      "sourceRepos": [
+        "dtvp-scraper"
+      ],
+      "lastSeen": "2026-05-08",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Mistralai",
+      "repoCount": 1,
+      "sourceRepos": [
+        "hack-zollhof-2025"
+      ],
+      "lastSeen": "2025-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Smolagents",
+      "repoCount": 1,
+      "sourceRepos": [
+        "hack-zollhof-2025"
+      ],
+      "lastSeen": "2025-06-05",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "LlamaIndex",
+      "repoCount": 1,
+      "sourceRepos": [
+        "nerdAI"
+      ],
+      "lastSeen": "2025-10-23",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Uvicorn Standard",
+      "repoCount": 1,
+      "sourceRepos": [
+        "nerdAI"
+      ],
+      "lastSeen": "2025-10-23",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Aws Amplify Ui React Storage",
+      "repoCount": 1,
+      "sourceRepos": [
+        "nerd-upload"
+      ],
+      "lastSeen": "2025-12-10",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Badgateway Oauth2 Client",
+      "repoCount": 1,
+      "sourceRepos": [
+        "claude-plugins"
+      ],
+      "lastSeen": "2026-05-08",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Vue Router",
+      "repoCount": 1,
+      "sourceRepos": [
+        "nerdware-homepage"
+      ],
+      "lastSeen": "2026-04-14",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Aws Cdk Lib",
+      "repoCount": 1,
+      "sourceRepos": [
+        "engineering-intelligence"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Ai Sdk Openai Compatible",
+      "repoCount": 1,
+      "sourceRepos": [
+        "md-plattform-prototype"
+      ],
+      "lastSeen": "2026-04-14",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Ai Sdk React",
+      "repoCount": 1,
+      "sourceRepos": [
+        "md-plattform-prototype"
+      ],
+      "lastSeen": "2026-04-14",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Cytoscape",
+      "repoCount": 1,
+      "sourceRepos": [
+        "nerdware-order-app"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Next Auth",
+      "repoCount": 1,
+      "sourceRepos": [
+        "nerdware-order-app"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Pg Boss",
+      "repoCount": 1,
+      "sourceRepos": [
+        "nerdware-order-app"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Pino",
+      "repoCount": 1,
+      "sourceRepos": [
+        "nerdware-order-app"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Msw",
+      "repoCount": 1,
+      "sourceRepos": [
+        "nerdware-order-app"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Prometheus",
+      "repoCount": 1,
+      "sourceRepos": [
+        "hetzner-landing-zone"
+      ],
+      "lastSeen": "2026-06-11",
+      "quadrant": "platforms"
+    },
+    {
+      "name": "Github Com Hetznercloud Hcloud Go V2",
+      "repoCount": 1,
+      "sourceRepos": [
+        "hetzner-landing-zone"
+      ],
+      "lastSeen": "2026-06-11",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Better Sqlite3",
+      "repoCount": 1,
+      "sourceRepos": [
+        "nerdhunter"
+      ],
+      "lastSeen": "2026-05-07",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Dagrejs Dagre",
+      "repoCount": 1,
+      "sourceRepos": [
+        "graphmind"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Passport Custom",
+      "repoCount": 1,
+      "sourceRepos": [
+        "graphmind"
+      ],
+      "lastSeen": "2026-06-22",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Electric Sql Pglite",
+      "repoCount": 1,
+      "sourceRepos": [
+        "nerdfinder"
+      ],
+      "lastSeen": "2026-06-12",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Better Auth",
+      "repoCount": 1,
+      "sourceRepos": [
+        "skaling-ai-compass"
+      ],
+      "lastSeen": "2026-06-18",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Fastify",
+      "repoCount": 1,
+      "sourceRepos": [
+        "skaling-ai-compass"
+      ],
+      "lastSeen": "2026-06-18",
+      "quadrant": "languages-frameworks"
+    },
+    {
+      "name": "Turbo",
+      "repoCount": 1,
+      "sourceRepos": [
+        "skaling-ai-compass"
+      ],
+      "lastSeen": "2026-06-18",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Storybook",
+      "repoCount": 1,
+      "sourceRepos": [
+        "skaling-ai-compass"
+      ],
+      "lastSeen": "2026-06-18",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Github Com Golang Migrate Migrate V4",
+      "repoCount": 1,
+      "sourceRepos": [
+        "NerdBase"
+      ],
+      "lastSeen": "2026-06-19",
+      "quadrant": "tools"
+    },
+    {
+      "name": "Opensearch Project Opensearch",
+      "repoCount": 1,
+      "sourceRepos": [
+        "fegime-opensearch-prototype"
+      ],
+      "lastSeen": "2026-06-21",
+      "quadrant": "platforms"
+    }
+  ],
+  "suppressed": [
     {
       "name": "Tslib",
       "repoCount": 20,
@@ -711,7 +2312,7 @@
         "graphmind",
         "NerdBase"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Postcss",
@@ -737,7 +2338,7 @@
         "nerd-bites",
         "NerdBase"
       ],
-      "lastSeen": "2026-06-19"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Ts Node",
@@ -762,7 +2363,7 @@
         "skillard-excelled",
         "graphmind"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Ts Jest",
@@ -785,7 +2386,7 @@
         "graphmind",
         "nerd-bites"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Vitejs Plugin React",
@@ -806,7 +2407,7 @@
         "ki-cooking",
         "skaling-ai-compass"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Zone Js",
@@ -867,7 +2468,7 @@
         "nerdware-order-app",
         "nerd-bites"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Typescript Eslint Eslint Plugin",
@@ -941,7 +2542,7 @@
         "graphmind",
         "nerd-bites"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Eslint Js",
@@ -958,7 +2559,7 @@
         "skaling-ai-compass",
         "NerdBase"
       ],
-      "lastSeen": "2026-06-19"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Typescript Eslint",
@@ -975,7 +2576,7 @@
         "skaling-ai-compass",
         "NerdBase"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Lucide React",
@@ -992,23 +2593,7 @@
         "vend",
         "ki-cooking"
       ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Testing Library React",
-      "repoCount": 9,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "techradar-nerdware",
-        "coffee-demo",
-        "stargate",
-        "ai-gtm",
-        "nerdware-order-app",
-        "graphmind",
-        "skaling-ai-compass"
-      ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Eslint Plugin React Hooks",
@@ -1024,7 +2609,7 @@
         "vend",
         "ki-cooking"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Clsx",
@@ -1043,54 +2628,6 @@
       "lastSeen": "2026-06-15"
     },
     {
-      "name": "Nx Eslint",
-      "repoCount": 9,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "Skillerd",
-        "angular-nestjs-template",
-        "hackbay2024",
-        "coffee-demo",
-        "fourdrop",
-        "skillard-excelled",
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Nx Js",
-      "repoCount": 9,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "Skillerd",
-        "angular-nestjs-template",
-        "hackbay2024",
-        "coffee-demo",
-        "fourdrop",
-        "skillard-excelled",
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Nx",
-      "repoCount": 9,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "Skillerd",
-        "angular-nestjs-template",
-        "hackbay2024",
-        "coffee-demo",
-        "fourdrop",
-        "skillard-excelled",
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
       "name": "Date Fns",
       "repoCount": 8,
       "sourceRepos": [
@@ -1106,21 +2643,6 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "React Router Dom",
-      "repoCount": 8,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "coffee-demo",
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "graphmind",
-        "nerd-bites"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
       "name": "Jsdom",
       "repoCount": 8,
       "sourceRepos": [
@@ -1133,7 +2655,7 @@
         "graphmind",
         "skaling-ai-compass"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Tsx",
@@ -1148,37 +2670,7 @@
         "nerdfinder",
         "skaling-ai-compass"
       ],
-      "lastSeen": "2026-06-21"
-    },
-    {
-      "name": "Nx Eslint Plugin",
-      "repoCount": 8,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "Skillerd",
-        "angular-nestjs-template",
-        "hackbay2024",
-        "coffee-demo",
-        "fourdrop",
-        "skillard-excelled"
-      ],
-      "lastSeen": "2026-06-15"
-    },
-    {
-      "name": "Nx Jest",
-      "repoCount": 8,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "Skillerd",
-        "angular-nestjs-template",
-        "hackbay2024",
-        "coffee-demo",
-        "skillard-excelled",
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Axios",
@@ -1194,21 +2686,6 @@
         "stargate"
       ],
       "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Recharts",
-      "repoCount": 8,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "md-plattform-prototype",
-        "nerdware-order-app",
-        "vend",
-        "ki-cooking",
-        "skaling-ai-compass"
-      ],
-      "lastSeen": "2026-06-18"
     },
     {
       "name": "Tailwind Merge",
@@ -1238,7 +2715,7 @@
         "vend",
         "ki-cooking"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Class Validator",
@@ -1253,34 +2730,6 @@
         "nerd-bites"
       ],
       "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Playwright Test",
-      "repoCount": 7,
-      "sourceRepos": [
-        "techradar-nerdware",
-        "fourdrop",
-        "ai-gtm",
-        "nerdlabs-homepage",
-        "nerdware-homepage",
-        "nerdware-order-app",
-        "skaling-ai-compass"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Nx Angular",
-      "repoCount": 7,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "Skillerd",
-        "angular-nestjs-template",
-        "hackbay2024",
-        "fourdrop",
-        "skillard-excelled"
-      ],
-      "lastSeen": "2026-06-15"
     },
     {
       "name": "Angular Devkit Core",
@@ -1311,34 +2760,6 @@
       "lastSeen": "2026-06-15"
     },
     {
-      "name": "Nx Web",
-      "repoCount": 7,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "angular-nestjs-template",
-        "hackbay2024",
-        "coffee-demo",
-        "fourdrop",
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Nx Workspace",
-      "repoCount": 7,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "Skillerd",
-        "angular-nestjs-template",
-        "hackbay2024",
-        "coffee-demo",
-        "skillard-excelled"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
       "name": "Schematics Angular",
       "repoCount": 7,
       "sourceRepos": [
@@ -1351,20 +2772,6 @@
         "skillard-excelled"
       ],
       "lastSeen": "2026-06-15"
-    },
-    {
-      "name": "Jasmine Core",
-      "repoCount": 7,
-      "sourceRepos": [
-        "hackathon",
-        "hackbay-demo",
-        "fantastic-garbanzo",
-        "health-hackathon",
-        "coin-demo",
-        "ipsen-botulinumtoxin-injektionsmuster",
-        "nerdAI"
-      ],
-      "lastSeen": "2026-06-18"
     },
     {
       "name": "Karma",
@@ -1409,20 +2816,6 @@
       "lastSeen": "2026-06-18"
     },
     {
-      "name": "Karma Jasmine",
-      "repoCount": 7,
-      "sourceRepos": [
-        "hackathon",
-        "hackbay-demo",
-        "fantastic-garbanzo",
-        "health-hackathon",
-        "coin-demo",
-        "ipsen-botulinumtoxin-injektionsmuster",
-        "nerdAI"
-      ],
-      "lastSeen": "2026-06-18"
-    },
-    {
       "name": "Karma Jasmine Html Reporter",
       "repoCount": 7,
       "sourceRepos": [
@@ -1448,7 +2841,7 @@
         "skillard-excelled",
         "graphmind"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Swc Core",
@@ -1462,7 +2855,7 @@
         "skillard-excelled",
         "graphmind"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Swc Helpers",
@@ -1476,35 +2869,7 @@
         "skillard-excelled",
         "graphmind"
       ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Pg",
-      "repoCount": 7,
-      "sourceRepos": [
-        "angular-nestjs-template",
-        "coin-demo",
-        "stargate",
-        "ai-gtm",
-        "nerdware-order-app",
-        "nerdfinder",
-        "skaling-ai-compass"
-      ],
-      "lastSeen": "2026-06-18"
-    },
-    {
-      "name": "Supertest",
-      "repoCount": 7,
-      "sourceRepos": [
-        "angular-nestjs-template",
-        "fantastic-garbanzo",
-        "yt-semantic-release",
-        "nw-semantic-release",
-        "clean-architecture-vs-vertical-sliced-architecture",
-        "ai-gtm",
-        "nerd-bites"
-      ],
-      "lastSeen": "2026-06-15"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Tailwindcss Postcss",
@@ -1535,20 +2900,6 @@
       "lastSeen": "2026-06-15"
     },
     {
-      "name": "React Hook Form",
-      "repoCount": 7,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "md-plattform-prototype",
-        "graphmind",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
       "name": "Class Transformer",
       "repoCount": 6,
       "sourceRepos": [
@@ -1558,19 +2909,6 @@
         "clean-architecture-vs-vertical-sliced-architecture",
         "coffee-demo",
         "nerd-bites"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Cypress",
-      "repoCount": 6,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "chat-room",
-        "angular-nestjs-template",
-        "hackbay2024",
-        "coffee-demo"
       ],
       "lastSeen": "2026-06-05"
     },
@@ -1586,32 +2924,6 @@
         "coffee-demo"
       ],
       "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Golang Org X Sys",
-      "repoCount": 6,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "hetzner-landing-zone",
-        "nerdfinder",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Golang Org X Text",
-      "repoCount": 6,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "hetzner-landing-zone",
-        "nerdfinder",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
     },
     {
       "name": "Ngx Toastr",
@@ -1740,7 +3052,7 @@
         "nerdware-order-app",
         "nerdfinder"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Nanoid",
@@ -1752,43 +3064,7 @@
         "nerdhunter",
         "nerdfinder"
       ],
-      "lastSeen": "2026-06-17"
-    },
-    {
-      "name": "Emotion React",
-      "repoCount": 5,
-      "sourceRepos": [
-        "learning-digital",
-        "pom-dekar-p",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-05-22"
-    },
-    {
-      "name": "Emotion Styled",
-      "repoCount": 5,
-      "sourceRepos": [
-        "learning-digital",
-        "pom-dekar-p",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-05-22"
-    },
-    {
-      "name": "Mui Material",
-      "repoCount": 5,
-      "sourceRepos": [
-        "learning-digital",
-        "pom-dekar-p",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-05-22"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Vitest Coverage V8",
@@ -1800,31 +3076,7 @@
         "nerdware-order-app",
         "graphmind"
       ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Golang Org X Net",
-      "repoCount": 5,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "hetzner-landing-zone",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Google Golang Org Protobuf",
-      "repoCount": 5,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "hetzner-landing-zone",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Commitlint Cli",
@@ -1848,7 +3100,7 @@
         "nerd-bites",
         "ki-cooking"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Tsconfig Paths",
@@ -1884,331 +3136,7 @@
         "graphmind",
         "nerdfinder"
       ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Tanstack React Query",
-      "repoCount": 5,
-      "sourceRepos": [
-        "coffee-demo",
-        "capacity-planner",
-        "stargate",
-        "ai-gtm",
-        "nerdware-order-app"
-      ],
-      "lastSeen": "2026-06-17"
-    },
-    {
-      "name": "Radix Ui React Accordion",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Alert Dialog",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Aspect Ratio",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Avatar",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Checkbox",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Collapsible",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Context Menu",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Dialog",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Dropdown Menu",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Hover Card",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Label",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Menubar",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Navigation Menu",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Popover",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Progress",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Radio Group",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Scroll Area",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Select",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Separator",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Slider",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Slot",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Switch",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Tabs",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Toggle",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Toggle Group",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Radix Ui React Tooltip",
-      "repoCount": 5,
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Cmdk",
@@ -2295,17 +3223,6 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Passport",
-      "repoCount": 4,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "coffee-demo",
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
       "name": "Eslint Plugin Jsx A11y",
       "repoCount": 4,
       "sourceRepos": [
@@ -2328,17 +3245,6 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Serverless",
-      "repoCount": 4,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "townhall",
-        "serverless-example"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
       "name": "Testing Library User Event",
       "repoCount": 4,
       "sourceRepos": [
@@ -2347,7 +3253,7 @@
         "graphmind",
         "skaling-ai-compass"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Eslint Plugin React Refresh",
@@ -2358,260 +3264,7 @@
         "nerd-upload",
         "vend"
       ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Openai",
-      "repoCount": 4,
-      "sourceRepos": [
-        "techradar-nerdware",
-        "llm-workshop",
-        "ai-gtm",
-        "nerdware-order-app"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Bytedance Sonic",
-      "repoCount": 4,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Gabriel Vasile Mimetype",
-      "repoCount": 4,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Gin Contrib Sse",
-      "repoCount": 4,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Gin Gonic Gin",
-      "repoCount": 4,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Go Playground Locales",
-      "repoCount": 4,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Go Playground Universal Translator",
-      "repoCount": 4,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Go Playground Validator V10",
-      "repoCount": 4,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Goccy Go Json",
-      "repoCount": 4,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Json Iterator Go",
-      "repoCount": 4,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Klauspost Cpuid V2",
-      "repoCount": 4,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Leodido Go Urn",
-      "repoCount": 4,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Mattn Go Isatty",
-      "repoCount": 4,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Modern Go Concurrent",
-      "repoCount": 4,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Modern Go Reflect2",
-      "repoCount": 4,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Pelletier Go Toml V2",
-      "repoCount": 4,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Twitchyliquid64 Golang Asm",
-      "repoCount": 4,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Ugorji Go Codec",
-      "repoCount": 4,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Golang Org X Arch",
-      "repoCount": 4,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Golang Org X Crypto",
-      "repoCount": 4,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Golang Org X Sync",
-      "repoCount": 4,
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics",
-        "hetzner-landing-zone",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Nx Cypress",
-      "repoCount": 4,
-      "sourceRepos": [
-        "chat-room",
-        "angular-nestjs-template",
-        "hackbay2024",
-        "coffee-demo"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Nx Webpack",
-      "repoCount": 4,
-      "sourceRepos": [
-        "chat-room",
-        "angular-nestjs-template",
-        "coffee-demo",
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Jsonc Eslint Parser",
@@ -2644,7 +3297,7 @@
         "coffee-demo",
         "graphmind"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Eslint Plugin Prettier",
@@ -2677,7 +3330,7 @@
         "graphmind",
         "ki-cooking"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "React I18next",
@@ -2688,7 +3341,7 @@
         "graphmind",
         "ki-cooking"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Vitest Ui",
@@ -2699,7 +3352,7 @@
         "nerdware-order-app",
         "graphmind"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Pypdf",
@@ -2735,17 +3388,6 @@
       "lastSeen": "2026-05-22"
     },
     {
-      "name": "React Router",
-      "repoCount": 4,
-      "sourceRepos": [
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
       "name": "Cookie Parser",
       "repoCount": 3,
       "sourceRepos": [
@@ -2766,16 +3408,6 @@
       "lastSeen": "2024-05-24"
     },
     {
-      "name": "Passport Jwt",
-      "repoCount": 3,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "coffee-demo"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
       "name": "Pino Pretty",
       "repoCount": 3,
       "sourceRepos": [
@@ -2783,7 +3415,7 @@
         "learning-digital",
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "React Icons",
@@ -2794,16 +3426,6 @@
         "coffee-demo"
       ],
       "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Typeorm",
-      "repoCount": 3,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "angular-nestjs-template"
-      ],
-      "lastSeen": "2025-01-03"
     },
     {
       "name": "Eslint Plugin Import",
@@ -2853,97 +3475,17 @@
         "nerdware-order-app",
         "skaling-ai-compass"
       ],
-      "lastSeen": "2026-06-19"
+      "lastSeen": "2026-06-22"
     },
     {
-      "name": "Github Com Bytedance Sonic Loader",
+      "name": "golang.org/x",
       "repoCount": 3,
       "sourceRepos": [
         "townhall",
         "nw-recruiting-metrics",
-        "NerdBase"
+        "nerdfinder"
       ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Cloudwego Base64x",
-      "repoCount": 3,
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Goccy Go Yaml",
-      "repoCount": 3,
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Jinzhu Inflection",
-      "repoCount": 3,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Jinzhu Now",
-      "repoCount": 3,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Quic Go Qpack",
-      "repoCount": 3,
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Quic Go Quic Go",
-      "repoCount": 3,
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Gorm Io Gorm",
-      "repoCount": 3,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Gopkg In Yaml V3",
-      "repoCount": 3,
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-06-05"
+      "lastSeen": "2026-06-12"
     },
     {
       "name": "Immer",
@@ -2966,36 +3508,6 @@
       "lastSeen": "2026-06-15"
     },
     {
-      "name": "Openapitools Openapi Generator Cli",
-      "repoCount": 3,
-      "sourceRepos": [
-        "Skillerd",
-        "hackbay2024",
-        "skillard-excelled"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Langchain Openai",
-      "repoCount": 3,
-      "sourceRepos": [
-        "LLM-who-the-f...-is-alice",
-        "llm-workshop",
-        "bid-flow-backend"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Langchain",
-      "repoCount": 3,
-      "sourceRepos": [
-        "LLM-who-the-f...-is-alice",
-        "llm-workshop",
-        "bid-flow-backend"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
       "name": "Cors",
       "repoCount": 3,
       "sourceRepos": [
@@ -3013,27 +3525,7 @@
         "md-plattform-prototype",
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
-    },
-    {
-      "name": "Nx Nest",
-      "repoCount": 3,
-      "sourceRepos": [
-        "angular-nestjs-template",
-        "coffee-demo",
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Nx Node",
-      "repoCount": 3,
-      "sourceRepos": [
-        "angular-nestjs-template",
-        "coffee-demo",
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Jest Environment Node",
@@ -3043,7 +3535,7 @@
         "coffee-demo",
         "graphmind"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Lint Staged",
@@ -3053,17 +3545,7 @@
         "nerdware-order-app",
         "ki-cooking"
       ],
-      "lastSeen": "2026-06-17"
-    },
-    {
-      "name": "Anthropic Ai Sdk",
-      "repoCount": 3,
-      "sourceRepos": [
-        "coffee-demo",
-        "ai-gtm",
-        "nerdware-order-app"
-      ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "I18next Browser Languagedetector",
@@ -3086,26 +3568,6 @@
       "lastSeen": "2026-06-15"
     },
     {
-      "name": "Zustand",
-      "repoCount": 3,
-      "sourceRepos": [
-        "coffee-demo",
-        "hack-zollhof-2025",
-        "md-plattform-prototype"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Nx Vite",
-      "repoCount": 3,
-      "sourceRepos": [
-        "coffee-demo",
-        "fourdrop",
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
       "name": "Python Dotenv",
       "repoCount": 3,
       "sourceRepos": [
@@ -3116,46 +3578,6 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Requests",
-      "repoCount": 3,
-      "sourceRepos": [
-        "llm-workshop",
-        "dtvp-scraper",
-        "hack-zollhof-2025"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Chromadb",
-      "repoCount": 3,
-      "sourceRepos": [
-        "llm-workshop",
-        "bid-flow-backend",
-        "nerdAI"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Google Genai",
-      "repoCount": 3,
-      "sourceRepos": [
-        "hack-zollhof-2025",
-        "ai-gtm",
-        "nerdware-order-app"
-      ],
-      "lastSeen": "2026-06-17"
-    },
-    {
-      "name": "Supabase Supabase Js",
-      "repoCount": 3,
-      "sourceRepos": [
-        "ipsen-botulinumtoxin-injektionsmuster",
-        "capacity-planner",
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
       "name": "Tailwindcss Typography",
       "repoCount": 3,
       "sourceRepos": [
@@ -3163,17 +3585,7 @@
         "capacity-planner",
         "graphmind"
       ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Shopware Core",
-      "repoCount": 3,
-      "sourceRepos": [
-        "SchickBauspeziAPI",
-        "SchickBauspeziTheme",
-        "shopware6-plugin-reference"
-      ],
-      "lastSeen": "2026-06-09"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Hookform Resolvers",
@@ -3183,57 +3595,7 @@
         "md-plattform-prototype",
         "graphmind"
       ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Github Com Jackc Pgpassfile",
-      "repoCount": 3,
-      "sourceRepos": [
-        "nw-recruiting-metrics",
-        "hetzner-landing-zone",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Jackc Pgservicefile",
-      "repoCount": 3,
-      "sourceRepos": [
-        "nw-recruiting-metrics",
-        "hetzner-landing-zone",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Jackc Pgx V5",
-      "repoCount": 3,
-      "sourceRepos": [
-        "nw-recruiting-metrics",
-        "hetzner-landing-zone",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Jackc Puddle V2",
-      "repoCount": 3,
-      "sourceRepos": [
-        "nw-recruiting-metrics",
-        "hetzner-landing-zone",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Mui Icons Material",
-      "repoCount": 3,
-      "sourceRepos": [
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "ki-cooking"
-      ],
-      "lastSeen": "2026-05-22"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Popperjs Core",
@@ -3296,26 +3658,6 @@
       "lastSeen": "2026-05-22"
     },
     {
-      "name": "Testcontainers",
-      "repoCount": 3,
-      "sourceRepos": [
-        "nerdware-order-app",
-        "nerdfinder",
-        "skaling-ai-compass"
-      ],
-      "lastSeen": "2026-06-18"
-    },
-    {
-      "name": "Drizzle Orm",
-      "repoCount": 3,
-      "sourceRepos": [
-        "nerdhunter",
-        "nerdfinder",
-        "skaling-ai-compass"
-      ],
-      "lastSeen": "2026-06-18"
-    },
-    {
       "name": "Drizzle Kit",
       "repoCount": 3,
       "sourceRepos": [
@@ -3344,61 +3686,7 @@
       "lastSeen": "2023-11-07"
     },
     {
-      "name": "Fullcalendar Daygrid",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
-      "name": "Fullcalendar List",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
-      "name": "Fullcalendar React",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
-      "name": "Fullcalendar Timegrid",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
       "name": "Add",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
-      "name": "Aws Lambda",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
-      "name": "Aws Lambda Fastify",
       "repoCount": 2,
       "sourceRepos": [
         "react-nestjs-template",
@@ -3488,34 +3776,7 @@
       "lastSeen": "2023-11-07"
     },
     {
-      "name": "Mysql2",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
       "name": "Node Mocks Http",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
-      "name": "Passport Local",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
-      "name": "Passport Saml",
       "repoCount": 2,
       "sourceRepos": [
         "react-nestjs-template",
@@ -3542,33 +3803,6 @@
       "lastSeen": "2023-11-07"
     },
     {
-      "name": "React Redux",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
-      "name": "Redux",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
-      "name": "Redux Persist",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
       "name": "Regenerator Runtime",
       "repoCount": 2,
       "sourceRepos": [
@@ -3579,15 +3813,6 @@
     },
     {
       "name": "Serverless Offline Sns",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
-      "name": "Sqlite3",
       "repoCount": 2,
       "sourceRepos": [
         "react-nestjs-template",
@@ -3615,105 +3840,6 @@
     },
     {
       "name": "Use Timer",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
-      "name": "Nrwl Cli",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
-      "name": "Nrwl Cypress",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
-      "name": "Nrwl Eslint Plugin Nx",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
-      "name": "Nrwl Jest",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
-      "name": "Nrwl Linter",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
-      "name": "Nrwl Nest",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
-      "name": "Nrwl Node",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
-      "name": "Nrwl React",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
-      "name": "Nrwl Tao",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
-      "name": "Nrwl Web",
-      "repoCount": 2,
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
-      "name": "Nrwl Workspace",
       "repoCount": 2,
       "sourceRepos": [
         "react-nestjs-template",
@@ -3800,271 +3926,10 @@
         "techradar-nerdware",
         "ai-gtm"
       ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Aws Aws Sdk Go V2",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Aws Aws Sdk Go V2 Aws Protocol Eventstream",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Aws Aws Sdk Go V2 Config",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Aws Aws Sdk Go V2 Credentials",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Aws Aws Sdk Go V2 Feature Ec2 Imds",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Aws Aws Sdk Go V2 Internal Configsources",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Aws Aws Sdk Go V2 Internal Endpoints V2",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Aws Aws Sdk Go V2 Internal V4a",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Aws Aws Sdk Go V2 Service Internal Accept Encoding",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Aws Aws Sdk Go V2 Service Internal Checksum",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Aws Aws Sdk Go V2 Service Internal Presigned Url",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Aws Aws Sdk Go V2 Service Internal S3shared",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Aws Aws Sdk Go V2 Service S3",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Aws Aws Sdk Go V2 Service Signin",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Aws Aws Sdk Go V2 Service Sso",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Aws Aws Sdk Go V2 Service Ssooidc",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Aws Aws Sdk Go V2 Service Sts",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Aws Smithy Go",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Bytedance Gopkg",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Gin Contrib Cors",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Go Sql Driver Mysql",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "chat-room"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Mattn Go Sqlite3",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "chat-room"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Go Mongodb Org Mongo Driver V2",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Gorm Io Driver Mysql",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "chat-room"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Gorm Io Driver Sqlite",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "chat-room"
-      ],
-      "lastSeen": "2026-06-05"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Github Com Stretchr Testify",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Golang Org X Oauth2",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Davecgh Go Spew",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Google Uuid",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Pmezard Go Difflib",
       "repoCount": 2,
       "sourceRepos": [
         "townhall",
@@ -4091,124 +3956,7 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Github Com Swaggo Swag",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Kylebanks Depth",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Puerkitobio Purell",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Puerkitobio Urlesc",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Go Openapi Jsonpointer",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Go Openapi Jsonreference",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Go Openapi Spec",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Go Openapi Swag",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Josharian Intern",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Mailru Easyjson",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Golang Org X Mod",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Golang Org X Tools",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Gopkg In Yaml V2",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Aws Aws Sdk Go V2 Internal Ini",
+      "name": "Github Com Google Uuid",
       "repoCount": 2,
       "sourceRepos": [
         "townhall",
@@ -4217,13 +3965,13 @@
       "lastSeen": "2026-06-19"
     },
     {
-      "name": "Github Com Rogpeppe Go Internal",
+      "name": "Github Com Gin Contrib Cors",
       "repoCount": 2,
       "sourceRepos": [
         "townhall",
-        "nw-recruiting-metrics"
+        "NerdBase"
       ],
-      "lastSeen": "2026-06-05"
+      "lastSeen": "2026-06-19"
     },
     {
       "name": "Ngneat Helipopper",
@@ -4235,40 +3983,13 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Echarts",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "coffee-demo"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Ngx Echarts",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "fourdrop"
-      ],
-      "lastSeen": "2026-06-15"
-    },
-    {
       "name": "Eslint Eslintrc",
       "repoCount": 2,
       "sourceRepos": [
         "townhall",
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
-    },
-    {
-      "name": "Nx Devkit",
-      "repoCount": 2,
-      "sourceRepos": [
-        "townhall",
-        "fourdrop"
-      ],
-      "lastSeen": "2026-06-15"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Jest Util",
@@ -4277,25 +3998,7 @@
         "townhall",
         "graphmind"
       ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Spring Boot Starter Parent",
-      "repoCount": 2,
-      "sourceRepos": [
-        "nerdware-cluster-playground-services",
-        "health-hackathon"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Spring Boot Starter Web",
-      "repoCount": 2,
-      "sourceRepos": [
-        "nerdware-cluster-playground-services",
-        "health-hackathon"
-      ],
-      "lastSeen": "2026-06-05"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Lombok",
@@ -4308,15 +4011,6 @@
     },
     {
       "name": "Spring Boot Starter Test",
-      "repoCount": 2,
-      "sourceRepos": [
-        "nerdware-cluster-playground-services",
-        "health-hackathon"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Spring Boot Maven Plugin",
       "repoCount": 2,
       "sourceRepos": [
         "nerdware-cluster-playground-services",
@@ -4340,16 +4034,7 @@
         "pom-dekar-p",
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
-    },
-    {
-      "name": "Auth0 Angular Jwt",
-      "repoCount": 2,
-      "sourceRepos": [
-        "Skillerd",
-        "skillard-excelled"
-      ],
-      "lastSeen": "2026-03-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Nodemon",
@@ -4389,15 +4074,6 @@
     },
     {
       "name": "Nest Winston",
-      "repoCount": 2,
-      "sourceRepos": [
-        "angular-nestjs-template",
-        "fantastic-garbanzo"
-      ],
-      "lastSeen": "2025-01-03"
-    },
-    {
-      "name": "Winston",
       "repoCount": 2,
       "sourceRepos": [
         "angular-nestjs-template",
@@ -4496,15 +4172,6 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Aws Amplify",
-      "repoCount": 2,
-      "sourceRepos": [
-        "coffee-demo",
-        "nerd-upload"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
       "name": "Jsonwebtoken",
       "repoCount": 2,
       "sourceRepos": [
@@ -4532,25 +4199,7 @@
       "lastSeen": "2026-06-15"
     },
     {
-      "name": "Chart Js",
-      "repoCount": 2,
-      "sourceRepos": [
-        "health-hackathon",
-        "coin-demo"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
       "name": "Tiktoken",
-      "repoCount": 2,
-      "sourceRepos": [
-        "llm-workshop",
-        "bid-flow-backend"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Langchain Chroma",
       "repoCount": 2,
       "sourceRepos": [
         "llm-workshop",
@@ -4573,24 +4222,6 @@
       "sourceRepos": [
         "llm-workshop",
         "dtvp-scraper"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Pydantic",
-      "repoCount": 2,
-      "sourceRepos": [
-        "llm-workshop",
-        "nerdAI"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Langchain Community",
-      "repoCount": 2,
-      "sourceRepos": [
-        "llm-workshop",
-        "bid-flow-backend"
       ],
       "lastSeen": "2026-06-05"
     },
@@ -4628,7 +4259,7 @@
         "fourdrop",
         "graphmind"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Mammoth",
@@ -4664,109 +4295,10 @@
         "nerdAI",
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
-    },
-    {
-      "name": "Trpc Server",
-      "repoCount": 2,
-      "sourceRepos": [
-        "stargate",
-        "ai-gtm"
-      ],
-      "lastSeen": "2026-06-15"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Superjson",
-      "repoCount": 2,
-      "sourceRepos": [
-        "stargate",
-        "ai-gtm"
-      ],
-      "lastSeen": "2026-06-15"
-    },
-    {
-      "name": "Sentry Tanstackstart React",
-      "repoCount": 2,
-      "sourceRepos": [
-        "stargate",
-        "ai-gtm"
-      ],
-      "lastSeen": "2026-06-15"
-    },
-    {
-      "name": "Tanstack React Devtools",
-      "repoCount": 2,
-      "sourceRepos": [
-        "stargate",
-        "ai-gtm"
-      ],
-      "lastSeen": "2026-06-15"
-    },
-    {
-      "name": "Tanstack React Query Devtools",
-      "repoCount": 2,
-      "sourceRepos": [
-        "stargate",
-        "ai-gtm"
-      ],
-      "lastSeen": "2026-06-15"
-    },
-    {
-      "name": "Tanstack React Router",
-      "repoCount": 2,
-      "sourceRepos": [
-        "stargate",
-        "ai-gtm"
-      ],
-      "lastSeen": "2026-06-15"
-    },
-    {
-      "name": "Tanstack React Router Devtools",
-      "repoCount": 2,
-      "sourceRepos": [
-        "stargate",
-        "ai-gtm"
-      ],
-      "lastSeen": "2026-06-15"
-    },
-    {
-      "name": "Tanstack React Router Ssr Query",
-      "repoCount": 2,
-      "sourceRepos": [
-        "stargate",
-        "ai-gtm"
-      ],
-      "lastSeen": "2026-06-15"
-    },
-    {
-      "name": "Tanstack React Start",
-      "repoCount": 2,
-      "sourceRepos": [
-        "stargate",
-        "ai-gtm"
-      ],
-      "lastSeen": "2026-06-15"
-    },
-    {
-      "name": "Tanstack Router Plugin",
-      "repoCount": 2,
-      "sourceRepos": [
-        "stargate",
-        "ai-gtm"
-      ],
-      "lastSeen": "2026-06-15"
-    },
-    {
-      "name": "Trpc Client",
-      "repoCount": 2,
-      "sourceRepos": [
-        "stargate",
-        "ai-gtm"
-      ],
-      "lastSeen": "2026-06-15"
-    },
-    {
-      "name": "Trpc Tanstack React Query",
       "repoCount": 2,
       "sourceRepos": [
         "stargate",
@@ -4802,24 +4334,6 @@
       "lastSeen": "2026-06-15"
     },
     {
-      "name": "Netlify Vite Plugin Tanstack Start",
-      "repoCount": 2,
-      "sourceRepos": [
-        "stargate",
-        "ai-gtm"
-      ],
-      "lastSeen": "2026-06-15"
-    },
-    {
-      "name": "Tanstack Devtools Vite",
-      "repoCount": 2,
-      "sourceRepos": [
-        "stargate",
-        "ai-gtm"
-      ],
-      "lastSeen": "2026-06-15"
-    },
-    {
       "name": "Testing Library Dom",
       "repoCount": 2,
       "sourceRepos": [
@@ -4847,121 +4361,13 @@
       "lastSeen": "2026-06-21"
     },
     {
-      "name": "Modelcontextprotocol Sdk",
-      "repoCount": 2,
-      "sourceRepos": [
-        "claude-plugins",
-        "demo-mcp-nerdware"
-      ],
-      "lastSeen": "2026-05-08"
-    },
-    {
-      "name": "Dnd Kit Core",
-      "repoCount": 2,
-      "sourceRepos": [
-        "nerdware-order-app",
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Dnd Kit Sortable",
-      "repoCount": 2,
-      "sourceRepos": [
-        "nerdware-order-app",
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Prisma Client",
-      "repoCount": 2,
-      "sourceRepos": [
-        "nerdware-order-app",
-        "nerd-bites"
-      ],
-      "lastSeen": "2026-06-17"
-    },
-    {
-      "name": "Tiptap Extension Table",
-      "repoCount": 2,
-      "sourceRepos": [
-        "nerdware-order-app",
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Tiptap Extension Table Cell",
-      "repoCount": 2,
-      "sourceRepos": [
-        "nerdware-order-app",
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Tiptap Extension Table Header",
-      "repoCount": 2,
-      "sourceRepos": [
-        "nerdware-order-app",
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Tiptap Extension Table Row",
-      "repoCount": 2,
-      "sourceRepos": [
-        "nerdware-order-app",
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Tiptap Pm",
-      "repoCount": 2,
-      "sourceRepos": [
-        "nerdware-order-app",
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Tiptap React",
-      "repoCount": 2,
-      "sourceRepos": [
-        "nerdware-order-app",
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Tiptap Starter Kit",
-      "repoCount": 2,
-      "sourceRepos": [
-        "nerdware-order-app",
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Jose",
-      "repoCount": 2,
-      "sourceRepos": [
-        "nerdware-order-app",
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
       "name": "Next Intl",
       "repoCount": 2,
       "sourceRepos": [
         "nerdware-order-app",
         "skaling-ai-compass"
       ],
-      "lastSeen": "2026-06-18"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Node Cron",
@@ -4970,7 +4376,7 @@
         "nerdware-order-app",
         "nerdfinder"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Pdf Lib",
@@ -4979,16 +4385,7 @@
         "nerdware-order-app",
         "skaling-ai-compass"
       ],
-      "lastSeen": "2026-06-18"
-    },
-    {
-      "name": "Testcontainers Postgresql",
-      "repoCount": 2,
-      "sourceRepos": [
-        "nerdware-order-app",
-        "skaling-ai-compass"
-      ],
-      "lastSeen": "2026-06-18"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Prettier Plugin Tailwindcss",
@@ -4997,25 +4394,7 @@
         "nerdware-order-app",
         "ki-cooking"
       ],
-      "lastSeen": "2026-06-17"
-    },
-    {
-      "name": "Hono Node Server",
-      "repoCount": 2,
-      "sourceRepos": [
-        "nerdhunter",
-        "nerdfinder"
-      ],
-      "lastSeen": "2026-06-12"
-    },
-    {
-      "name": "Hono",
-      "repoCount": 2,
-      "sourceRepos": [
-        "nerdhunter",
-        "nerdfinder"
-      ],
-      "lastSeen": "2026-06-12"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Gray Matter",
@@ -5025,33 +4404,6 @@
         "nerdfinder"
       ],
       "lastSeen": "2026-06-12"
-    },
-    {
-      "name": "Three",
-      "repoCount": 2,
-      "sourceRepos": [
-        "graphmind",
-        "nerd-bites"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Storybook",
-      "repoCount": 2,
-      "sourceRepos": [
-        "graphmind",
-        "skaling-ai-compass"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Storybook React Vite",
-      "repoCount": 2,
-      "sourceRepos": [
-        "graphmind",
-        "skaling-ai-compass"
-      ],
-      "lastSeen": "2026-06-20"
     },
     {
       "name": "Nodemailer",
@@ -5101,14 +4453,6 @@
         "react-nestjs-template"
       ],
       "lastSeen": "2023-04-20"
-    },
-    {
-      "name": "Mui X Date Pickers",
-      "repoCount": 1,
-      "sourceRepos": [
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
     },
     {
       "name": "Xmldom Xmldom",
@@ -5207,14 +4551,6 @@
       "lastSeen": "2023-11-07"
     },
     {
-      "name": "Serverless Lambda Edge Pre Existing Cloudfront",
-      "repoCount": 1,
-      "sourceRepos": [
-        "learning-digital"
-      ],
-      "lastSeen": "2023-11-07"
-    },
-    {
       "name": "Serverless Offline Ssm",
       "repoCount": 1,
       "sourceRepos": [
@@ -5236,7 +4572,7 @@
       "sourceRepos": [
         "techradar-nerdware"
       ],
-      "lastSeen": "2026-06-19"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Sass",
@@ -5244,15 +4580,7 @@
       "sourceRepos": [
         "techradar-nerdware"
       ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Aws Aws Lambda Go",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Github Com Golang Jwt Jwt V5",
@@ -5272,110 +4600,6 @@
     },
     {
       "name": "Github Com Sirupsen Logrus",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Filippo Io Edwards25519",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Micahparks Keyfunc V2",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com A631807682 Zerofield",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Aws Aws Sdk Go V2 Service Sqs",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Awslabs Aws Lambda Go Api Proxy",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Hyperboloide Lk",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Pkasila Gorm Crypto",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Richardlehane Mscfb",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Richardlehane Msoleps",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Tiendc Go Deepcopy",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Xuri Efp",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Xuri Excelize V2",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Xuri Nfp",
       "repoCount": 1,
       "sourceRepos": [
         "townhall"
@@ -5407,103 +4631,7 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Github Com Protonmail Go Crypto",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Andygrunwald Go Jira",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Kolo Xmlrpc",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Nerdware Dev Go Odoo V17",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Rickar Cal V2",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Aws Aws Sdk Go V2 Service Eventbridge",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Cloudflare Circl",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Fatih Structs",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Golang Jwt Jwt V4",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Google Go Querystring",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Pkg Errors",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Trivago Tgo",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Sethvargo Go Password",
+      "name": "Github Com Swaggo Swag",
       "repoCount": 1,
       "sourceRepos": [
         "townhall"
@@ -5528,14 +4656,6 @@
     },
     {
       "name": "Docusaurus Theme Mermaid",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Mdx Js React",
       "repoCount": 1,
       "sourceRepos": [
         "townhall"
@@ -5575,23 +4695,15 @@
       "lastSeen": "2026-06-05"
     },
     {
+      "name": "Github Com Hyperboloide Lk",
+      "repoCount": 1,
+      "sourceRepos": [
+        "townhall"
+      ],
+      "lastSeen": "2026-06-05"
+    },
+    {
       "name": "Github Com Nerdware Dev Townhall Order Core",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Aws Aws Sdk Go V2 Service Cloudwatch",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Jmespath Go Jmespath",
       "repoCount": 1,
       "sourceRepos": [
         "townhall"
@@ -5607,7 +4719,7 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Github Com Glebarez Sqlite",
+      "name": "Github Com Pkasila Gorm Crypto",
       "repoCount": 1,
       "sourceRepos": [
         "townhall"
@@ -5615,7 +4727,7 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Golang Org X Exp",
+      "name": "Github Com A631807682 Zerofield",
       "repoCount": 1,
       "sourceRepos": [
         "townhall"
@@ -5623,7 +4735,7 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Github Com Dustin Go Humanize",
+      "name": "Github Com Andygrunwald Go Jira",
       "repoCount": 1,
       "sourceRepos": [
         "townhall"
@@ -5631,7 +4743,7 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Github Com Glebarez Go Sqlite",
+      "name": "Github Com Rickar Cal V2",
       "repoCount": 1,
       "sourceRepos": [
         "townhall"
@@ -5639,7 +4751,7 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Github Com Ncruces Go Strftime",
+      "name": "Github Com Sethvargo Go Password",
       "repoCount": 1,
       "sourceRepos": [
         "townhall"
@@ -5647,7 +4759,7 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Github Com Remyoudompheng Bigfft",
+      "name": "Github Com Micahparks Keyfunc V2",
       "repoCount": 1,
       "sourceRepos": [
         "townhall"
@@ -5655,7 +4767,7 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Modernc Org Libc",
+      "name": "Github Com Protonmail Go Crypto",
       "repoCount": 1,
       "sourceRepos": [
         "townhall"
@@ -5663,7 +4775,7 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Modernc Org Mathutil",
+      "name": "Github Com Google Go Querystring",
       "repoCount": 1,
       "sourceRepos": [
         "townhall"
@@ -5671,7 +4783,7 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Modernc Org Memory",
+      "name": "Github Com Nerdware Dev Go Odoo V17",
       "repoCount": 1,
       "sourceRepos": [
         "townhall"
@@ -5679,7 +4791,15 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Modernc Org Sqlite",
+      "name": "Github Com Pkg Errors",
+      "repoCount": 1,
+      "sourceRepos": [
+        "townhall"
+      ],
+      "lastSeen": "2026-06-05"
+    },
+    {
+      "name": "Github Com Xuri Excelize V2",
       "repoCount": 1,
       "sourceRepos": [
         "townhall"
@@ -5711,23 +4831,7 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Sparticuz Chromium",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
       "name": "Tailwindcss Forms",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Angular Oauth2 Oidc",
       "repoCount": 1,
       "sourceRepos": [
         "townhall"
@@ -5744,14 +4848,6 @@
     },
     {
       "name": "Ngx Spinner",
-      "repoCount": 1,
-      "sourceRepos": [
-        "townhall"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Playwright Core",
       "repoCount": 1,
       "sourceRepos": [
         "townhall"
@@ -5815,14 +4911,6 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Spring Boot Starter",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nerdware-cluster-playground-services"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
       "name": "Spring Boot Devtools",
       "repoCount": 1,
       "sourceRepos": [
@@ -5837,14 +4925,6 @@
         "nerdware-cluster-playground-services"
       ],
       "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Github Com Chenzhuoyu Base64x",
-      "repoCount": 1,
-      "sourceRepos": [
-        "chat-room"
-      ],
-      "lastSeen": "2024-01-05"
     },
     {
       "name": "Nx Go Nx Go",
@@ -5903,22 +4983,6 @@
       "lastSeen": "2024-03-21"
     },
     {
-      "name": "Remix Run Node",
-      "repoCount": 1,
-      "sourceRepos": [
-        "pom-dekar-p"
-      ],
-      "lastSeen": "2024-03-21"
-    },
-    {
-      "name": "Remix Run React",
-      "repoCount": 1,
-      "sourceRepos": [
-        "pom-dekar-p"
-      ],
-      "lastSeen": "2024-03-21"
-    },
-    {
       "name": "Remix Run Serve",
       "repoCount": 1,
       "sourceRepos": [
@@ -5959,54 +5023,6 @@
       "lastSeen": "2024-03-21"
     },
     {
-      "name": "Azure Functions",
-      "repoCount": 1,
-      "sourceRepos": [
-        "cloudapi"
-      ],
-      "lastSeen": "2024-01-31"
-    },
-    {
-      "name": "Azure Arm Appservice",
-      "repoCount": 1,
-      "sourceRepos": [
-        "cloudapi"
-      ],
-      "lastSeen": "2024-01-31"
-    },
-    {
-      "name": "Azure Arm Resources",
-      "repoCount": 1,
-      "sourceRepos": [
-        "cloudapi"
-      ],
-      "lastSeen": "2024-01-31"
-    },
-    {
-      "name": "Azure Arm Storage",
-      "repoCount": 1,
-      "sourceRepos": [
-        "cloudapi"
-      ],
-      "lastSeen": "2024-01-31"
-    },
-    {
-      "name": "Azure Identity",
-      "repoCount": 1,
-      "sourceRepos": [
-        "cloudapi"
-      ],
-      "lastSeen": "2024-01-31"
-    },
-    {
-      "name": "Azure Functions Core Tools",
-      "repoCount": 1,
-      "sourceRepos": [
-        "cloudapi"
-      ],
-      "lastSeen": "2024-01-31"
-    },
-    {
       "name": "Express Async Handler",
       "repoCount": 1,
       "sourceRepos": [
@@ -6015,135 +5031,7 @@
       "lastSeen": "2024-01-31"
     },
     {
-      "name": "Hnswlib Node",
-      "repoCount": 1,
-      "sourceRepos": [
-        "LLM-who-the-f...-is-alice"
-      ],
-      "lastSeen": "2024-03-04"
-    },
-    {
-      "name": "Mikro Orm Core",
-      "repoCount": 1,
-      "sourceRepos": [
-        "angular-nestjs-template"
-      ],
-      "lastSeen": "2025-01-03"
-    },
-    {
-      "name": "Mikro Orm Entity Generator",
-      "repoCount": 1,
-      "sourceRepos": [
-        "angular-nestjs-template"
-      ],
-      "lastSeen": "2025-01-03"
-    },
-    {
-      "name": "Mikro Orm Migrations",
-      "repoCount": 1,
-      "sourceRepos": [
-        "angular-nestjs-template"
-      ],
-      "lastSeen": "2025-01-03"
-    },
-    {
-      "name": "Mikro Orm Nestjs",
-      "repoCount": 1,
-      "sourceRepos": [
-        "angular-nestjs-template"
-      ],
-      "lastSeen": "2025-01-03"
-    },
-    {
-      "name": "Mikro Orm Postgresql",
-      "repoCount": 1,
-      "sourceRepos": [
-        "angular-nestjs-template"
-      ],
-      "lastSeen": "2025-01-03"
-    },
-    {
-      "name": "Mikro Orm Reflection",
-      "repoCount": 1,
-      "sourceRepos": [
-        "angular-nestjs-template"
-      ],
-      "lastSeen": "2025-01-03"
-    },
-    {
-      "name": "Ngrx Component Store",
-      "repoCount": 1,
-      "sourceRepos": [
-        "angular-nestjs-template"
-      ],
-      "lastSeen": "2025-01-03"
-    },
-    {
-      "name": "Ngrx Effects",
-      "repoCount": 1,
-      "sourceRepos": [
-        "angular-nestjs-template"
-      ],
-      "lastSeen": "2025-01-03"
-    },
-    {
-      "name": "Ngrx Store",
-      "repoCount": 1,
-      "sourceRepos": [
-        "angular-nestjs-template"
-      ],
-      "lastSeen": "2025-01-03"
-    },
-    {
       "name": "Npmcli Package Json",
-      "repoCount": 1,
-      "sourceRepos": [
-        "angular-nestjs-template"
-      ],
-      "lastSeen": "2025-01-03"
-    },
-    {
-      "name": "Nrwl Angular",
-      "repoCount": 1,
-      "sourceRepos": [
-        "angular-nestjs-template"
-      ],
-      "lastSeen": "2025-01-03"
-    },
-    {
-      "name": "Sentry Cli",
-      "repoCount": 1,
-      "sourceRepos": [
-        "angular-nestjs-template"
-      ],
-      "lastSeen": "2025-01-03"
-    },
-    {
-      "name": "Sentry Nestjs",
-      "repoCount": 1,
-      "sourceRepos": [
-        "angular-nestjs-template"
-      ],
-      "lastSeen": "2025-01-03"
-    },
-    {
-      "name": "Mikro Orm Cli",
-      "repoCount": 1,
-      "sourceRepos": [
-        "angular-nestjs-template"
-      ],
-      "lastSeen": "2025-01-03"
-    },
-    {
-      "name": "Sentry Node",
-      "repoCount": 1,
-      "sourceRepos": [
-        "angular-nestjs-template"
-      ],
-      "lastSeen": "2025-01-03"
-    },
-    {
-      "name": "Sentry Profiling Node",
       "repoCount": 1,
       "sourceRepos": [
         "angular-nestjs-template"
@@ -6181,46 +5069,6 @@
         "angular-nestjs-template"
       ],
       "lastSeen": "2025-01-03"
-    },
-    {
-      "name": "Sentry",
-      "repoCount": 1,
-      "sourceRepos": [
-        "angular-nestjs-template"
-      ],
-      "lastSeen": "2025-01-03"
-    },
-    {
-      "name": "Aws Lambda Powertools Idempotency",
-      "repoCount": 1,
-      "sourceRepos": [
-        "serverless-example"
-      ],
-      "lastSeen": "2024-05-24"
-    },
-    {
-      "name": "Aws Lambda Powertools Logger",
-      "repoCount": 1,
-      "sourceRepos": [
-        "serverless-example"
-      ],
-      "lastSeen": "2024-05-24"
-    },
-    {
-      "name": "Aws Lambda Powertools Tracer",
-      "repoCount": 1,
-      "sourceRepos": [
-        "serverless-example"
-      ],
-      "lastSeen": "2024-05-24"
-    },
-    {
-      "name": "Middy Core",
-      "repoCount": 1,
-      "sourceRepos": [
-        "serverless-example"
-      ],
-      "lastSeen": "2024-05-24"
     },
     {
       "name": "Middy Ssm",
@@ -6311,14 +5159,6 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Webpack",
-      "repoCount": 1,
-      "sourceRepos": [
-        "hackbay2024"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
       "name": "Inquirer Prompts",
       "repoCount": 1,
       "sourceRepos": [
@@ -6367,31 +5207,7 @@
       "lastSeen": "2024-10-31"
     },
     {
-      "name": "Dynamoose",
-      "repoCount": 1,
-      "sourceRepos": [
-        "fantastic-garbanzo"
-      ],
-      "lastSeen": "2024-10-31"
-    },
-    {
-      "name": "Nestjs Dynamoose",
-      "repoCount": 1,
-      "sourceRepos": [
-        "fantastic-garbanzo"
-      ],
-      "lastSeen": "2024-10-31"
-    },
-    {
       "name": "Mole Inc Bin Wrapper",
-      "repoCount": 1,
-      "sourceRepos": [
-        "coffee-demo"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Orval Core",
       "repoCount": 1,
       "sourceRepos": [
         "coffee-demo"
@@ -6408,14 +5224,6 @@
     },
     {
       "name": "Ajv",
-      "repoCount": 1,
-      "sourceRepos": [
-        "coffee-demo"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Aws Iot Device Sdk",
       "repoCount": 1,
       "sourceRepos": [
         "coffee-demo"
@@ -6495,38 +5303,6 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Oidc Client Ts",
-      "repoCount": 1,
-      "sourceRepos": [
-        "coffee-demo"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "React Oidc Context",
-      "repoCount": 1,
-      "sourceRepos": [
-        "coffee-demo"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Socket Io",
-      "repoCount": 1,
-      "sourceRepos": [
-        "coffee-demo"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Socket Io Client",
-      "repoCount": 1,
-      "sourceRepos": [
-        "coffee-demo"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
       "name": "Swagger Ui Express",
       "repoCount": 1,
       "sourceRepos": [
@@ -6536,14 +5312,6 @@
     },
     {
       "name": "Uuid",
-      "repoCount": 1,
-      "sourceRepos": [
-        "coffee-demo"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Nx React",
       "repoCount": 1,
       "sourceRepos": [
         "coffee-demo"
@@ -6567,23 +5335,7 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Orval",
-      "repoCount": 1,
-      "sourceRepos": [
-        "coffee-demo"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
       "name": "Body Parser",
-      "repoCount": 1,
-      "sourceRepos": [
-        "coffee-demo"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Esphome",
       "repoCount": 1,
       "sourceRepos": [
         "coffee-demo"
@@ -6599,23 +5351,7 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Libraries Bom",
-      "repoCount": 1,
-      "sourceRepos": [
-        "health-hackathon"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
       "name": "Spring Boot Starter Data Rest",
-      "repoCount": 1,
-      "sourceRepos": [
-        "health-hackathon"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Google Cloud Firestore",
       "repoCount": 1,
       "sourceRepos": [
         "health-hackathon"
@@ -6663,79 +5399,7 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Jupyterlab",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
       "name": "Ipywidgets",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Numpy",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Pandas",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Scipy",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Scikit Learn",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Matplotlib",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Gensim",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Torch",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Transformers",
       "repoCount": 1,
       "sourceRepos": [
         "llm-workshop"
@@ -6759,30 +5423,6 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Faiss Cpu",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Langchain Experimental",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Langchain Docarray",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
       "name": "Datasets",
       "repoCount": 1,
       "sourceRepos": [
@@ -6792,46 +5432,6 @@
     },
     {
       "name": "Sentencepiece",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Google Generativeai",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Anthropic",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Unstructured",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Plotly",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Jupyter Dash",
       "repoCount": 1,
       "sourceRepos": [
         "llm-workshop"
@@ -6855,23 +5455,7 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Ollama",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
       "name": "Accelerate",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Bitsandbytes",
       "repoCount": 1,
       "sourceRepos": [
         "llm-workshop"
@@ -6903,14 +5487,6 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Sentence Transformers",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
       "name": "Feedparser",
       "repoCount": 1,
       "sourceRepos": [
@@ -6919,111 +5495,7 @@
       "lastSeen": "2026-06-05"
     },
     {
-      "name": "Gpt4all",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Uvicorn",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Psycopg2 Binary",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Langchain Core",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Langgraph",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Langfuse",
-      "repoCount": 1,
-      "sourceRepos": [
-        "llm-workshop"
-      ],
-      "lastSeen": "2026-06-05"
-    },
-    {
-      "name": "Ngrx Operators",
-      "repoCount": 1,
-      "sourceRepos": [
-        "coin-demo"
-      ],
-      "lastSeen": "2025-04-28"
-    },
-    {
-      "name": "Ngrx Signals",
-      "repoCount": 1,
-      "sourceRepos": [
-        "coin-demo"
-      ],
-      "lastSeen": "2025-04-28"
-    },
-    {
-      "name": "Angular Auth Oidc Client",
-      "repoCount": 1,
-      "sourceRepos": [
-        "coin-demo"
-      ],
-      "lastSeen": "2025-04-28"
-    },
-    {
       "name": "Tippy Js",
-      "repoCount": 1,
-      "sourceRepos": [
-        "coin-demo"
-      ],
-      "lastSeen": "2025-04-28"
-    },
-    {
-      "name": "Pulumi Aws",
-      "repoCount": 1,
-      "sourceRepos": [
-        "coin-demo"
-      ],
-      "lastSeen": "2025-04-28"
-    },
-    {
-      "name": "Pulumi Awsx",
-      "repoCount": 1,
-      "sourceRepos": [
-        "coin-demo"
-      ],
-      "lastSeen": "2025-04-28"
-    },
-    {
-      "name": "Pulumi Pulumi",
-      "repoCount": 1,
-      "sourceRepos": [
-        "coin-demo"
-      ],
-      "lastSeen": "2025-04-28"
-    },
-    {
-      "name": "Pulumi Random",
       "repoCount": 1,
       "sourceRepos": [
         "coin-demo"
@@ -7063,14 +5535,6 @@
       "lastSeen": "2026-06-15"
     },
     {
-      "name": "Openapi",
-      "repoCount": 1,
-      "sourceRepos": [
-        "fourdrop"
-      ],
-      "lastSeen": "2026-06-15"
-    },
-    {
       "name": "Swagger Jsdoc",
       "repoCount": 1,
       "sourceRepos": [
@@ -7088,38 +5552,6 @@
     },
     {
       "name": "X",
-      "repoCount": 1,
-      "sourceRepos": [
-        "fourdrop"
-      ],
-      "lastSeen": "2026-06-15"
-    },
-    {
-      "name": "Analogjs Vite Plugin Angular",
-      "repoCount": 1,
-      "sourceRepos": [
-        "fourdrop"
-      ],
-      "lastSeen": "2026-06-15"
-    },
-    {
-      "name": "Analogjs Vitest Angular",
-      "repoCount": 1,
-      "sourceRepos": [
-        "fourdrop"
-      ],
-      "lastSeen": "2026-06-15"
-    },
-    {
-      "name": "Nx Esbuild",
-      "repoCount": 1,
-      "sourceRepos": [
-        "fourdrop"
-      ],
-      "lastSeen": "2026-06-15"
-    },
-    {
-      "name": "Nx Playwright",
       "repoCount": 1,
       "sourceRepos": [
         "fourdrop"
@@ -7151,31 +5583,7 @@
       "lastSeen": "2026-05-08"
     },
     {
-      "name": "Prometheus Client",
-      "repoCount": 1,
-      "sourceRepos": [
-        "dtvp-scraper"
-      ],
-      "lastSeen": "2026-05-08"
-    },
-    {
-      "name": "Selenium",
-      "repoCount": 1,
-      "sourceRepos": [
-        "dtvp-scraper"
-      ],
-      "lastSeen": "2026-05-08"
-    },
-    {
       "name": "Webdriver Manager",
-      "repoCount": 1,
-      "sourceRepos": [
-        "dtvp-scraper"
-      ],
-      "lastSeen": "2026-05-08"
-    },
-    {
-      "name": "Aws Embedded Metrics",
       "repoCount": 1,
       "sourceRepos": [
         "dtvp-scraper"
@@ -7199,55 +5607,7 @@
       "lastSeen": "2026-04-08"
     },
     {
-      "name": "Langchain Aws",
-      "repoCount": 1,
-      "sourceRepos": [
-        "bid-flow-backend"
-      ],
-      "lastSeen": "2026-04-08"
-    },
-    {
-      "name": "Langchain Mistralai",
-      "repoCount": 1,
-      "sourceRepos": [
-        "bid-flow-backend"
-      ],
-      "lastSeen": "2026-04-08"
-    },
-    {
       "name": "Dacite",
-      "repoCount": 1,
-      "sourceRepos": [
-        "hack-zollhof-2025"
-      ],
-      "lastSeen": "2025-06-05"
-    },
-    {
-      "name": "Mistralai",
-      "repoCount": 1,
-      "sourceRepos": [
-        "hack-zollhof-2025"
-      ],
-      "lastSeen": "2025-06-05"
-    },
-    {
-      "name": "Smolagents",
-      "repoCount": 1,
-      "sourceRepos": [
-        "hack-zollhof-2025"
-      ],
-      "lastSeen": "2025-06-05"
-    },
-    {
-      "name": "Smolagents Openai",
-      "repoCount": 1,
-      "sourceRepos": [
-        "hack-zollhof-2025"
-      ],
-      "lastSeen": "2025-06-05"
-    },
-    {
-      "name": "Smolagents Litellm",
       "repoCount": 1,
       "sourceRepos": [
         "hack-zollhof-2025"
@@ -7277,78 +5637,6 @@
         "hack-zollhof-2025"
       ],
       "lastSeen": "2025-06-05"
-    },
-    {
-      "name": "Llama Index",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nerdAI"
-      ],
-      "lastSeen": "2025-10-23"
-    },
-    {
-      "name": "Llama Index Vector Stores Chroma",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nerdAI"
-      ],
-      "lastSeen": "2025-10-23"
-    },
-    {
-      "name": "Llama Index Llms Ollama",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nerdAI"
-      ],
-      "lastSeen": "2025-10-23"
-    },
-    {
-      "name": "Llama Index Embeddings Ollama",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nerdAI"
-      ],
-      "lastSeen": "2025-10-23"
-    },
-    {
-      "name": "Llama Index Llms Mistralai",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nerdAI"
-      ],
-      "lastSeen": "2025-10-23"
-    },
-    {
-      "name": "Llama Index Embeddings Mistralai",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nerdAI"
-      ],
-      "lastSeen": "2025-10-23"
-    },
-    {
-      "name": "Llama Index Llms Azure Openai",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nerdAI"
-      ],
-      "lastSeen": "2025-10-23"
-    },
-    {
-      "name": "Llama Index Embeddings Azure Openai",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nerdAI"
-      ],
-      "lastSeen": "2025-10-23"
-    },
-    {
-      "name": "Uvicorn Standard",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nerdAI"
-      ],
-      "lastSeen": "2025-10-23"
     },
     {
       "name": "Slowapi",
@@ -7407,14 +5695,6 @@
       "lastSeen": "2026-06-08"
     },
     {
-      "name": "Radix Ui React Toast",
-      "repoCount": 1,
-      "sourceRepos": [
-        "capacity-planner"
-      ],
-      "lastSeen": "2025-12-05"
-    },
-    {
       "name": "Tailwindcss Animate",
       "repoCount": 1,
       "sourceRepos": [
@@ -7437,94 +5717,6 @@
         "capacity-planner"
       ],
       "lastSeen": "2025-12-05"
-    },
-    {
-      "name": "Aws Amplify Ui React Storage",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nerd-upload"
-      ],
-      "lastSeen": "2025-12-10"
-    },
-    {
-      "name": "Gorm Io Driver Postgres",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-01-09"
-    },
-    {
-      "name": "Github Com Go Openapi Swag Conv",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-01-09"
-    },
-    {
-      "name": "Github Com Go Openapi Swag Jsonname",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-01-09"
-    },
-    {
-      "name": "Github Com Go Openapi Swag Jsonutils",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-01-09"
-    },
-    {
-      "name": "Github Com Go Openapi Swag Loading",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-01-09"
-    },
-    {
-      "name": "Github Com Go Openapi Swag Stringutils",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-01-09"
-    },
-    {
-      "name": "Github Com Go Openapi Swag Typeutils",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-01-09"
-    },
-    {
-      "name": "Github Com Go Openapi Swag Yamlutils",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-01-09"
-    },
-    {
-      "name": "Go Uber Org Mock",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-01-09"
-    },
-    {
-      "name": "Go Yaml In Yaml V3",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nw-recruiting-metrics"
-      ],
-      "lastSeen": "2026-01-09"
     },
     {
       "name": "Helmet",
@@ -7567,23 +5759,7 @@
       "lastSeen": "2026-06-15"
     },
     {
-      "name": "Badgateway Oauth2 Client",
-      "repoCount": 1,
-      "sourceRepos": [
-        "claude-plugins"
-      ],
-      "lastSeen": "2026-05-08"
-    },
-    {
       "name": "Vue I18n",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nerdware-homepage"
-      ],
-      "lastSeen": "2026-04-14"
-    },
-    {
-      "name": "Vue Router",
       "repoCount": 1,
       "sourceRepos": [
         "nerdware-homepage"
@@ -7615,36 +5791,12 @@
       "lastSeen": "2026-04-14"
     },
     {
-      "name": "Aws Cdk Lib",
-      "repoCount": 1,
-      "sourceRepos": [
-        "engineering-intelligence"
-      ],
-      "lastSeen": "2026-06-21"
-    },
-    {
       "name": "Constructs",
       "repoCount": 1,
       "sourceRepos": [
         "engineering-intelligence"
       ],
-      "lastSeen": "2026-06-21"
-    },
-    {
-      "name": "Ai Sdk Openai Compatible",
-      "repoCount": 1,
-      "sourceRepos": [
-        "md-plattform-prototype"
-      ],
-      "lastSeen": "2026-04-14"
-    },
-    {
-      "name": "Ai Sdk React",
-      "repoCount": 1,
-      "sourceRepos": [
-        "md-plattform-prototype"
-      ],
-      "lastSeen": "2026-04-14"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Ai",
@@ -7655,20 +5807,12 @@
       "lastSeen": "2026-04-14"
     },
     {
-      "name": "Dnd Kit Utilities",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nerdware-order-app"
-      ],
-      "lastSeen": "2026-06-17"
-    },
-    {
       "name": "Hubspot Api Client",
       "repoCount": 1,
       "sourceRepos": [
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "React Pdf Renderer",
@@ -7676,15 +5820,7 @@
       "sourceRepos": [
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
-    },
-    {
-      "name": "Cytoscape",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nerdware-order-app"
-      ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Cytoscape Cose Bilkent",
@@ -7692,7 +5828,7 @@
       "sourceRepos": [
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Cytoscape Fcose",
@@ -7700,7 +5836,7 @@
       "sourceRepos": [
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Decimal Js Light",
@@ -7708,7 +5844,7 @@
       "sourceRepos": [
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Eventsource Parser",
@@ -7716,7 +5852,7 @@
       "sourceRepos": [
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Fuse Js",
@@ -7724,7 +5860,7 @@
       "sourceRepos": [
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Htmlparser2",
@@ -7732,31 +5868,7 @@
       "sourceRepos": [
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
-    },
-    {
-      "name": "Next Auth",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nerdware-order-app"
-      ],
-      "lastSeen": "2026-06-17"
-    },
-    {
-      "name": "Pg Boss",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nerdware-order-app"
-      ],
-      "lastSeen": "2026-06-17"
-    },
-    {
-      "name": "Pino",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nerdware-order-app"
-      ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "React Dropzone",
@@ -7764,7 +5876,7 @@
       "sourceRepos": [
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Server Only",
@@ -7772,7 +5884,7 @@
       "sourceRepos": [
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Aws Sdk Client Mock",
@@ -7780,7 +5892,7 @@
       "sourceRepos": [
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Eslint Plugin Boundaries",
@@ -7788,7 +5900,7 @@
       "sourceRepos": [
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Fast Check",
@@ -7796,7 +5908,7 @@
       "sourceRepos": [
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Fast Glob",
@@ -7804,7 +5916,7 @@
       "sourceRepos": [
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Happy Dom",
@@ -7812,7 +5924,7 @@
       "sourceRepos": [
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Jscodeshift",
@@ -7820,15 +5932,7 @@
       "sourceRepos": [
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
-    },
-    {
-      "name": "Msw",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nerdware-order-app"
-      ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Nock",
@@ -7836,7 +5940,7 @@
       "sourceRepos": [
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Pdf Parse",
@@ -7844,7 +5948,7 @@
       "sourceRepos": [
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Undici",
@@ -7852,87 +5956,7 @@
       "sourceRepos": [
         "nerdware-order-app"
       ],
-      "lastSeen": "2026-06-17"
-    },
-    {
-      "name": "Github Com Prometheus Client Golang",
-      "repoCount": 1,
-      "sourceRepos": [
-        "hetzner-landing-zone"
-      ],
-      "lastSeen": "2026-06-11"
-    },
-    {
-      "name": "Github Com Beorn7 Perks",
-      "repoCount": 1,
-      "sourceRepos": [
-        "hetzner-landing-zone"
-      ],
-      "lastSeen": "2026-06-11"
-    },
-    {
-      "name": "Github Com Cespare Xxhash V2",
-      "repoCount": 1,
-      "sourceRepos": [
-        "hetzner-landing-zone"
-      ],
-      "lastSeen": "2026-06-11"
-    },
-    {
-      "name": "Github Com Kr Text",
-      "repoCount": 1,
-      "sourceRepos": [
-        "hetzner-landing-zone"
-      ],
-      "lastSeen": "2026-06-11"
-    },
-    {
-      "name": "Github Com Munnerz Goautoneg",
-      "repoCount": 1,
-      "sourceRepos": [
-        "hetzner-landing-zone"
-      ],
-      "lastSeen": "2026-06-11"
-    },
-    {
-      "name": "Github Com Prometheus Client Model",
-      "repoCount": 1,
-      "sourceRepos": [
-        "hetzner-landing-zone"
-      ],
-      "lastSeen": "2026-06-11"
-    },
-    {
-      "name": "Github Com Prometheus Common",
-      "repoCount": 1,
-      "sourceRepos": [
-        "hetzner-landing-zone"
-      ],
-      "lastSeen": "2026-06-11"
-    },
-    {
-      "name": "Github Com Prometheus Procfs",
-      "repoCount": 1,
-      "sourceRepos": [
-        "hetzner-landing-zone"
-      ],
-      "lastSeen": "2026-06-11"
-    },
-    {
-      "name": "Go Yaml In Yaml V2",
-      "repoCount": 1,
-      "sourceRepos": [
-        "hetzner-landing-zone"
-      ],
-      "lastSeen": "2026-06-11"
-    },
-    {
-      "name": "Github Com Hetznercloud Hcloud Go V2",
-      "repoCount": 1,
-      "sourceRepos": [
-        "hetzner-landing-zone"
-      ],
-      "lastSeen": "2026-06-11"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Nerdhunter Core",
@@ -7959,14 +5983,6 @@
       "lastSeen": "2026-05-07"
     },
     {
-      "name": "Better Sqlite3",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nerdhunter"
-      ],
-      "lastSeen": "2026-05-07"
-    },
-    {
       "name": "Zod To Json Schema",
       "repoCount": 1,
       "sourceRepos": [
@@ -7975,52 +5991,12 @@
       "lastSeen": "2026-05-07"
     },
     {
-      "name": "Dagrejs Dagre",
-      "repoCount": 1,
-      "sourceRepos": [
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
       "name": "Graphmind Ui",
       "repoCount": 1,
       "sourceRepos": [
         "graphmind"
       ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Tiptap Extension Link",
-      "repoCount": 1,
-      "sourceRepos": [
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Tiptap Extension Placeholder",
-      "repoCount": 1,
-      "sourceRepos": [
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Tiptap Extension Task Item",
-      "repoCount": 1,
-      "sourceRepos": [
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Tiptap Extension Task List",
-      "repoCount": 1,
-      "sourceRepos": [
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Modern Screenshot",
@@ -8028,15 +6004,7 @@
       "sourceRepos": [
         "graphmind"
       ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Passport Custom",
-      "repoCount": 1,
-      "sourceRepos": [
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "React Force Graph 2d",
@@ -8044,7 +6012,7 @@
       "sourceRepos": [
         "graphmind"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Tiptap Markdown",
@@ -8052,23 +6020,15 @@
       "sourceRepos": [
         "graphmind"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
-      "name": "Nx Storybook",
+      "name": "Storybook",
       "repoCount": 1,
       "sourceRepos": [
         "graphmind"
       ],
-      "lastSeen": "2026-06-20"
-    },
-    {
-      "name": "Nx Vitest",
-      "repoCount": 1,
-      "sourceRepos": [
-        "graphmind"
-      ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Graphmind Contracts",
@@ -8076,18 +6036,10 @@
       "sourceRepos": [
         "graphmind"
       ],
-      "lastSeen": "2026-06-20"
+      "lastSeen": "2026-06-22"
     },
     {
       "name": "Github Com Santhosh Tekuri Jsonschema V6",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nerdfinder"
-      ],
-      "lastSeen": "2026-06-12"
-    },
-    {
-      "name": "Golang Org X Term",
       "repoCount": 1,
       "sourceRepos": [
         "nerdfinder"
@@ -8112,14 +6064,6 @@
     },
     {
       "name": "Nerdfinder Db",
-      "repoCount": 1,
-      "sourceRepos": [
-        "nerdfinder"
-      ],
-      "lastSeen": "2026-06-12"
-    },
-    {
-      "name": "Electric Sql Pglite",
       "repoCount": 1,
       "sourceRepos": [
         "nerdfinder"
@@ -8199,22 +6143,6 @@
       "lastSeen": "2026-06-18"
     },
     {
-      "name": "Better Auth",
-      "repoCount": 1,
-      "sourceRepos": [
-        "skaling-ai-compass"
-      ],
-      "lastSeen": "2026-06-18"
-    },
-    {
-      "name": "Fastify",
-      "repoCount": 1,
-      "sourceRepos": [
-        "skaling-ai-compass"
-      ],
-      "lastSeen": "2026-06-18"
-    },
-    {
       "name": "Fastify Rate Limit",
       "repoCount": 1,
       "sourceRepos": [
@@ -8223,44 +6151,12 @@
       "lastSeen": "2026-06-18"
     },
     {
-      "name": "Turbo",
-      "repoCount": 1,
-      "sourceRepos": [
-        "skaling-ai-compass"
-      ],
-      "lastSeen": "2026-06-18"
-    },
-    {
-      "name": "Github Com Golang Migrate Migrate V4",
-      "repoCount": 1,
-      "sourceRepos": [
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
       "name": "Github Com Kelseyhightower Envconfig",
       "repoCount": 1,
       "sourceRepos": [
         "NerdBase"
       ],
       "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Github Com Jackc Pgerrcode",
-      "repoCount": 1,
-      "sourceRepos": [
-        "NerdBase"
-      ],
-      "lastSeen": "2026-06-19"
-    },
-    {
-      "name": "Opensearch Project Opensearch",
-      "repoCount": 1,
-      "sourceRepos": [
-        "fegime-opensearch-prototype"
-      ],
-      "lastSeen": "2026-06-21"
     }
   ]
 }

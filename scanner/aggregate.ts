@@ -1,40 +1,48 @@
-import { classify } from './classify'
-import type { Detection, RepoScan } from './types'
+import { resolve } from './resolve'
+import type { Detection, RepoScan, VerdictCache } from './types'
 
 export interface Aggregated {
-  /** Radar-worthy techs (allowlisted deps, languages, tooling). */
+  /** Radar-worthy techs (deterministic/cached), each with a resolved quadrant. */
   detections: Detection[]
-  /** Unrecognized dependencies, sorted by adoption — a review list, not published. */
-  candidates: Detection[]
+  /** Cache-miss deps awaiting LLM triage. */
+  unknowns: Detection[]
+  /** Noise (transitive/plumbing/family-noise), sorted by adoption — audit only. */
+  suppressed: Detection[]
 }
 
-/** Collapse per-repo tokens into per-tech records, split into radar detections
- *  (notable) and review candidates (unrecognized deps). Deduped by canonical name. */
-export function aggregate(scans: RepoScan[]): Aggregated {
-  const notable = new Map<string, Detection>()
-  const candidates = new Map<string, Detection>()
+/** Collapse per-repo tokens into per-canonical records, split by verdict. */
+export function aggregate(scans: RepoScan[], cache: VerdictCache): Aggregated {
+  const buckets = {
+    radar: new Map<string, Detection>(),
+    unknown: new Map<string, Detection>(),
+    noise: new Map<string, Detection>(),
+  }
 
   for (const scan of scans) {
-    // A repo counts once per tech even if it lists the tech in several tokens.
     const seenInRepo = new Set<string>()
     for (const token of scan.tokens) {
-      const c = classify(token)
-      if (!c || seenInRepo.has(c.name)) continue
-      seenInRepo.add(c.name)
-      const bucket = c.notable ? notable : candidates
-      const existing = bucket.get(c.name)
+      const r = resolve(token, cache)
+      if (!r || seenInRepo.has(r.canonical)) continue
+      seenInRepo.add(r.canonical)
+      const bucket =
+        r.verdict === 'radar'
+          ? buckets.radar
+          : r.verdict === 'noise'
+            ? buckets.noise
+            : buckets.unknown
+      const existing = bucket.get(r.canonical)
       if (existing) {
         existing.repoCount += 1
         existing.sourceRepos.push(scan.repo)
         if (scan.pushedAt > existing.lastSeen) existing.lastSeen = scan.pushedAt
-        if (!existing.quadrantHint && token.quadrantHint) existing.quadrantHint = token.quadrantHint
+        if (!existing.quadrant && r.quadrant) existing.quadrant = r.quadrant
       } else {
-        bucket.set(c.name, {
-          name: c.name,
+        bucket.set(r.canonical, {
+          name: r.canonical,
           repoCount: 1,
           sourceRepos: [scan.repo],
           lastSeen: scan.pushedAt,
-          quadrantHint: token.quadrantHint,
+          quadrant: r.quadrant,
         })
       }
     }
@@ -42,7 +50,8 @@ export function aggregate(scans: RepoScan[]): Aggregated {
 
   const byAdoption = (a: Detection, b: Detection) => b.repoCount - a.repoCount
   return {
-    detections: [...notable.values()],
-    candidates: [...candidates.values()].sort(byAdoption),
+    detections: [...buckets.radar.values()],
+    unknowns: [...buckets.unknown.values()].sort(byAdoption),
+    suppressed: [...buckets.noise.values()].sort(byAdoption),
   }
 }
