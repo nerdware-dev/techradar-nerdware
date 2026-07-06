@@ -14,8 +14,8 @@
     "description": "Amazon Web Services, auch als AWS bekannt, ist eine vom gleichnamigen Unternehmen angebotene Plattform für Cloud-Computing.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 18,
-      "lastSeen": "2026-06-26",
+      "repoCount": 19,
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -34,7 +34,8 @@
         "ai-gtm",
         "nerdware-order-app",
         "nerdfinder",
-        "NerdBase"
+        "NerdBase",
+        "bayiko-cockpit"
       ]
     }
   },
@@ -54,7 +55,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 41,
-      "lastSeen": "2026-06-29",
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -108,8 +109,8 @@
     "description": "GitHub Actions ist eine Plattform für Continuous Integration und Continuous Delivery (CI/CD), mit der du deine Build-, Test- und Bereitstellungspipeline automatisieren kannst. Man kann Workflows erstellen, mit denen man alle Pull Requests für das Repository erstellen und testen sowie gemergte Pull Requests für die Produktion bereitstellen kann.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 38,
-      "lastSeen": "2026-06-29",
+      "repoCount": 39,
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "learning-digital",
         "techradar-nerdware",
@@ -148,7 +149,8 @@
         "nerdfinder",
         "skaling-ai-compass",
         "NerdBase",
-        "bayiko-cockpit"
+        "bayiko-cockpit",
+        "bfz-moodle-plugin"
       ]
     }
   },
@@ -182,7 +184,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-26",
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "nerdware-order-app",
         "nerd-bites"
@@ -205,7 +207,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 13,
-      "lastSeen": "2026-06-25",
+      "lastSeen": "2026-07-02",
       "sourceRepos": [
         "terraform-nerdware",
         "townhall",
@@ -302,7 +304,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 11,
-      "lastSeen": "2026-06-24",
+      "lastSeen": "2026-07-05",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -379,7 +381,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 11,
-      "lastSeen": "2026-06-29",
+      "lastSeen": "2026-07-05",
       "sourceRepos": [
         "llm-comparison",
         "dtvp-scraper",
@@ -403,8 +405,8 @@
     "description": "TypeScript ist ein Superset von JavaScript, das JavaScript um optionale statische Typisierung und erweiterte Funktionen erweitert. Es wurde von Microsoft entwickelt und erstmals im Oktober 2012 veröffentlicht. Seit seiner Veröffentlichung im Jahr 2012 hat es sich in der Webentwicklergemeinschaft schnell durchgesetzt",
     "autoRing": "high",
     "detected": {
-      "repoCount": 46,
-      "lastSeen": "2026-06-28",
+      "repoCount": 48,
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -438,6 +440,7 @@
         "ai-gtm",
         "demo-mcp-nerdware",
         "Nerdlabsfigma",
+        "penzilla",
         "nerdlabs-homepage",
         "nerdware-homepage",
         "engineering-intelligence",
@@ -451,7 +454,8 @@
         "ki-cooking",
         "skaling-ai-compass",
         "NerdBase",
-        "bayiko-cockpit"
+        "bayiko-cockpit",
+        "se-gs-berlin-material-prototype"
       ]
     }
   },
@@ -464,7 +468,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 5,
-      "lastSeen": "2026-06-23",
+      "lastSeen": "2026-07-02",
       "sourceRepos": [
         "townhall",
         "nw-recruiting-metrics",
@@ -604,7 +608,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 11,
-      "lastSeen": "2026-06-26",
+      "lastSeen": "2026-07-05",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -628,11 +632,12 @@
     "description": "Redux Toolkit ist die offizielle, empfohlene Methode zur Verwendung von Redux für State-Management in JavaScript-Anwendungen. Es vereinfacht die Redux-Entwicklung erheblich durch vorgefertigte Konfigurationen, reduzierte Boilerplate und integrierte Best Practices wie Immer für immutable Updates und createSlice für kompakte Reducer-Definitionen. Im Kontext der erkannten Repositories wird es sowohl in Full-Stack-Anwendungen mit React-Frontend als auch in Lernprojekten zur digitalen Entwicklung eingesetzt.",
     "autoRing": "dev",
     "detected": {
-      "repoCount": 2,
-      "lastSeen": "2023-11-07",
+      "repoCount": 3,
+      "lastSeen": "2026-07-03",
       "sourceRepos": [
         "react-nestjs-template",
-        "learning-digital"
+        "learning-digital",
+        "se-gs-berlin-material-prototype"
       ]
     }
   },
@@ -644,8 +649,8 @@
     "description": "React ist eine von Meta entwickelte JavaScript-Bibliothek zur Erstellung von Benutzeroberflächen auf Basis wiederverwendbarer Komponenten. Sie nutzt ein virtuelles DOM für effizientes Rendering und ermöglicht durch ihren deklarativen Ansatz die Entwicklung komplexer, interaktiver Single-Page-Anwendungen. Mit 20 Repositories ist React die am weitesten verbreitete Frontend-Technologie in unserem Stack und wird sowohl für interne Tools als auch für kundenorientierte Anwendungen eingesetzt.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 21,
-      "lastSeen": "2026-06-26",
+      "repoCount": 23,
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -658,6 +663,7 @@
         "capacity-planner",
         "stargate",
         "ai-gtm",
+        "penzilla",
         "md-plattform-prototype",
         "nerdware-order-app",
         "nerdhunter",
@@ -667,7 +673,8 @@
         "vend",
         "ki-cooking",
         "skaling-ai-compass",
-        "bayiko-cockpit"
+        "bayiko-cockpit",
+        "se-gs-berlin-material-prototype"
       ]
     }
   },
@@ -680,7 +687,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 26,
-      "lastSeen": "2026-06-26",
+      "lastSeen": "2026-07-05",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -719,8 +726,8 @@
     "description": "ESLint ist ein statisches Analysetool für JavaScript und TypeScript, das Code auf Fehler, stilistische Inkonsistenzen und problematische Muster untersucht. Es ermöglicht die Definition und Durchsetzung einheitlicher Code-Konventionen über konfigurierbare Regelsets und unterstützt durch ein umfangreiches Plugin-Ökosystem verschiedenste Frameworks und Coding-Standards. Als fester Bestandteil moderner Entwicklungs-Workflows lässt es sich nahtlos in CI/CD-Pipelines und Editoren integrieren, um die Codequalität kontinuierlich sicherzustellen.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 27,
-      "lastSeen": "2026-06-26",
+      "repoCount": 29,
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -741,6 +748,7 @@
         "capacity-planner",
         "nerd-upload",
         "skillard-excelled",
+        "penzilla",
         "md-plattform-prototype",
         "nerdware-order-app",
         "graphmind",
@@ -748,7 +756,8 @@
         "ki-cooking",
         "skaling-ai-compass",
         "NerdBase",
-        "bayiko-cockpit"
+        "bayiko-cockpit",
+        "se-gs-berlin-material-prototype"
       ]
     }
   },
@@ -761,7 +770,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 17,
-      "lastSeen": "2026-06-24",
+      "lastSeen": "2026-07-05",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -791,8 +800,8 @@
     "description": "Prettier ist ein opinionated Code-Formatter, der eine konsistente Formatierung von Code in zahlreichen Sprachen wie JavaScript, TypeScript, HTML, CSS und weiteren erzwingt. Das Tool parst den Code und gibt ihn nach eigenen, einheitlichen Regeln neu formatiert aus, wodurch Diskussionen über Coding-Styles im Team entfallen. Prettier lässt sich nahtlos in gängige Editoren und CI/CD-Pipelines integrieren und wird in der Organisation breit über verschiedenste Projekttypen hinweg eingesetzt.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 21,
-      "lastSeen": "2026-06-26",
+      "repoCount": 22,
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -814,7 +823,8 @@
         "ki-cooking",
         "skaling-ai-compass",
         "NerdBase",
-        "bayiko-cockpit"
+        "bayiko-cockpit",
+        "se-gs-berlin-material-prototype"
       ]
     }
   },
@@ -826,8 +836,8 @@
     "description": "Vite ist ein modernes Build-Tool und Entwicklungsserver für Webanwendungen, das auf native ES-Module im Browser setzt und dadurch extrem schnelle Startzeiten sowie Hot Module Replacement (HMR) bietet. Es wurde von Evan You (dem Schöpfer von Vue.js) entwickelt und unterstützt frameworks wie Vue, React, Svelte und weitere. Vite nutzt esbuild für das Pre-Bundling von Abhängigkeiten und Rollup für optimierte Produktions-Builds, was es zu einer performanten Alternative zu Webpack macht. Die breite Nutzung in 15 Repositories zeigt seine Etablierung als Standard-Build-Tool für moderne Frontend-Projekte.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 16,
-      "lastSeen": "2026-06-26",
+      "repoCount": 17,
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "techradar-nerdware",
         "coffee-demo",
@@ -837,6 +847,7 @@
         "stargate",
         "ai-gtm",
         "Nerdlabsfigma",
+        "penzilla",
         "nerdlabs-homepage",
         "nerdware-homepage",
         "graphmind",
@@ -857,7 +868,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 9,
-      "lastSeen": "2026-06-26",
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "techradar-nerdware",
         "townhall",
@@ -880,7 +891,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 15,
-      "lastSeen": "2026-06-29",
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "techradar-nerdware",
         "xit-sync",
@@ -909,7 +920,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 11,
-      "lastSeen": "2026-06-26",
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "techradar-nerdware",
         "coffee-demo",
@@ -933,8 +944,8 @@
     "description": "Tailwind CSS ist ein Utility-First-CSS-Framework, das vordefinierte Klassen direkt im HTML-Markup bereitstellt, um Benutzeroberflächen ohne das Schreiben von benutzerdefiniertem CSS zu gestalten. Es ermöglicht eine schnelle, konsistente UI-Entwicklung und lässt sich durch Konfiguration an individuelle Design-Systeme anpassen. Durch Tree-Shaking werden in der Produktion nur tatsächlich genutzte Styles ausgeliefert, was zu minimalen CSS-Dateigrößen führt. Die breite Nutzung in 29 Repositories zeigt seine Etablierung als Standard-Styling-Lösung für Web-Frontends in verschiedensten Projekttypen.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 30,
-      "lastSeen": "2026-06-26",
+      "repoCount": 31,
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "townhall",
         "pom-dekar-p",
@@ -965,7 +976,8 @@
         "vend",
         "ki-cooking",
         "NerdBase",
-        "bayiko-cockpit"
+        "bayiko-cockpit",
+        "se-gs-berlin-material-prototype"
       ]
     }
   },
@@ -993,7 +1005,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 4,
-      "lastSeen": "2026-06-24",
+      "lastSeen": "2026-07-05",
       "sourceRepos": [
         "nerdware-cluster-playground-services",
         "hivemq-platform-operator-crds",
@@ -1010,8 +1022,8 @@
     "description": "JavaScript ist eine dynamische, interpretierte Programmiersprache, die ursprünglich für die clientseitige Webentwicklung konzipiert wurde und heute sowohl im Browser als auch serverseitig (z. B. mit Node.js) eingesetzt wird. Sie bildet zusammen mit HTML und CSS eine der Kerntechnologien des Webs und ermöglicht interaktive Benutzeroberflächen, API-Entwicklung sowie Automatisierungsprozesse. Im vorliegenden Tech-Radar ist JavaScript in 13 Repositories vertreten und deckt dabei ein breites Spektrum von Serverless-Anwendungen über CI/CD-Tooling bis hin zu Plugin-Entwicklung und Frontend-Projekten ab.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 14,
-      "lastSeen": "2026-06-28",
+      "repoCount": 16,
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "cloudapi",
         "LLM-who-the-f...-is-alice",
@@ -1024,8 +1036,10 @@
         "ipsen-botulinumtoxin-injektionsmuster",
         "nerd-upload",
         "stargate",
+        "penzilla",
         "shopware6-plugin-reference",
         "engineering-intelligence",
+        "nerdware-order-app",
         "fegime-opensearch-prototype"
       ]
     }
@@ -1038,8 +1052,8 @@
     "description": "Express ist ein minimalistisches und flexibles Web-Application-Framework für Node.js, das eine robuste Grundlage für Web- und API-Server bietet. Es stellt grundlegende Funktionen wie Routing, Middleware-Unterstützung und HTTP-Hilfsmethoden bereit, ohne dabei eine starre Architektur vorzuschreiben. In den erkannten Repositories wird Express sowohl für klassische Webanwendungen als auch als Backend für Cloud-native APIs und Microservices eingesetzt.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 7,
-      "lastSeen": "2026-06-23",
+      "repoCount": 8,
+      "lastSeen": "2026-07-03",
       "sourceRepos": [
         "cloudapi",
         "aws-user-group-multi-tenancy-and-ephemeral-environments",
@@ -1047,7 +1061,8 @@
         "coin-demo",
         "stargate",
         "ai-gtm",
-        "fegime-opensearch-prototype"
+        "fegime-opensearch-prototype",
+        "bayiko-cockpit"
       ]
     }
   },
@@ -1059,8 +1074,8 @@
     "description": "Next.js ist ein auf React basierendes Full-Stack-Framework, das serverseitiges Rendering (SSR), statische Seitengenerierung (SSG) und API-Routen in einem einheitlichen Projekt vereint. Es bietet dateibasiertes Routing, automatisches Code-Splitting und optimierte Performance out of the box. In unseren Projekten wird Next.js sowohl für Prototypen und Plattform-Anwendungen als auch für produktionsreife Web-Applikationen eingesetzt, was seine Vielseitigkeit von Hackathon-Projekten bis hin zu Multi-Tenancy-Szenarien unterstreicht.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 7,
-      "lastSeen": "2026-06-26",
+      "repoCount": 8,
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "aws-user-group-multi-tenancy-and-ephemeral-environments",
         "hack-zollhof-2025",
@@ -1068,7 +1083,8 @@
         "nerdware-order-app",
         "nerdhunter",
         "nerdfinder",
-        "skaling-ai-compass"
+        "skaling-ai-compass",
+        "se-gs-berlin-material-prototype"
       ]
     }
   },
@@ -1144,7 +1160,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-06-25",
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "SchickBauspeziAPI",
         "shopware6-plugin-reference",
@@ -1225,7 +1241,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 4,
-      "lastSeen": "2026-06-24",
+      "lastSeen": "2026-07-05",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -1291,11 +1307,12 @@
     "description": "React Redux ist die offizielle Anbindung von Redux an React und ermöglicht ein zentralisiertes, vorhersagbares State-Management in React-Anwendungen. Die Bibliothek stellt Hooks wie `useSelector` und `useDispatch` sowie den `Provider`-Komponenten bereit, um den globalen Store effizient mit der Komponentenhierarchie zu verbinden. Im vorliegenden Kontext wird sie sowohl in einem Full-Stack-Template (React + NestJS) als auch in einem Lernprojekt eingesetzt, was auf ihre Relevanz als Standard-Lösung für komplexere Zustandsverwaltung hindeutet.",
     "autoRing": "dev",
     "detected": {
-      "repoCount": 2,
-      "lastSeen": "2023-11-07",
+      "repoCount": 3,
+      "lastSeen": "2026-07-03",
       "sourceRepos": [
         "react-nestjs-template",
-        "learning-digital"
+        "learning-digital",
+        "se-gs-berlin-material-prototype"
       ]
     }
   },
@@ -1308,7 +1325,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 8,
-      "lastSeen": "2026-06-24",
+      "lastSeen": "2026-07-05",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -1395,7 +1412,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 9,
-      "lastSeen": "2026-06-26",
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -1494,7 +1511,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 4,
-      "lastSeen": "2026-06-26",
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "techradar-nerdware",
         "llm-workshop",
@@ -1702,7 +1719,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-06-23",
+      "lastSeen": "2026-07-01",
       "sourceRepos": [
         "angular-nestjs-template",
         "stargate",
@@ -1719,7 +1736,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 8,
-      "lastSeen": "2026-06-26",
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "angular-nestjs-template",
         "coin-demo",
@@ -1741,7 +1758,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 7,
-      "lastSeen": "2026-06-23",
+      "lastSeen": "2026-07-01",
       "sourceRepos": [
         "angular-nestjs-template",
         "fantastic-garbanzo",
@@ -1778,7 +1795,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-06-26",
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "coffee-demo",
         "ai-gtm",
@@ -1795,7 +1812,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 6,
-      "lastSeen": "2026-06-26",
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "coffee-demo",
         "capacity-planner",
@@ -1914,7 +1931,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-06-26",
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "hack-zollhof-2025",
         "ai-gtm",
@@ -1931,7 +1948,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-06-24",
+      "lastSeen": "2026-07-05",
       "sourceRepos": [
         "ipsen-botulinumtoxin-injektionsmuster",
         "capacity-planner",
@@ -1984,7 +2001,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 8,
-      "lastSeen": "2026-06-26",
+      "lastSeen": "2026-07-05",
       "sourceRepos": [
         "capacity-planner",
         "Nerdlabsfigma",
@@ -2006,7 +2023,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 8,
-      "lastSeen": "2026-06-26",
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "capacity-planner",
         "Nerdlabsfigma",
@@ -2028,7 +2045,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-23",
+      "lastSeen": "2026-07-01",
       "sourceRepos": [
         "stargate",
         "ai-gtm"
@@ -2044,7 +2061,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-23",
+      "lastSeen": "2026-07-01",
       "sourceRepos": [
         "stargate",
         "ai-gtm"
@@ -2060,7 +2077,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-29",
+      "lastSeen": "2026-07-02",
       "sourceRepos": [
         "claude-plugins",
         "demo-mcp-nerdware"
@@ -2094,7 +2111,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-26",
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "nerdware-order-app",
         "graphmind"
@@ -2110,7 +2127,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-26",
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "nerdware-order-app",
         "nerd-bites"
@@ -2126,7 +2143,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-26",
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "nerdware-order-app",
         "graphmind"
@@ -2142,7 +2159,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-26",
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "nerdware-order-app",
         "graphmind"
@@ -2158,7 +2175,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-26",
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "nerdware-order-app",
         "skaling-ai-compass"
@@ -2174,7 +2191,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-06-26",
+      "lastSeen": "2026-07-06",
       "sourceRepos": [
         "nerdware-order-app",
         "nerdfinder",
@@ -2191,7 +2208,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-23",
+      "lastSeen": "2026-07-02",
       "sourceRepos": [
         "hetzner-landing-zone",
         "NerdBase"
@@ -2256,7 +2273,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-24",
+      "lastSeen": "2026-07-05",
       "sourceRepos": [
         "graphmind",
         "nerd-bites"
@@ -2272,7 +2289,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-28",
+      "lastSeen": "2026-07-05",
       "sourceRepos": [
         "engineering-intelligence",
         "bayiko-cockpit"
@@ -2288,7 +2305,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-26",
+      "lastSeen": "2026-07-03",
       "sourceRepos": [
         "skaling-ai-compass",
         "bayiko-cockpit"

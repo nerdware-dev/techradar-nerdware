@@ -37,6 +37,13 @@
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
+  "amazon-cognito-identity-js": {
+    "verdict": "radar",
+    "quadrant": "platforms",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-07-06"
+  },
   "analogjs-vite-plugin-angular": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
@@ -891,6 +898,12 @@
     "source": "llm",
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
+  },
+  "fflate": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-06"
   },
   "file-reader": {
     "verdict": "noise",
@@ -2385,6 +2398,12 @@
     "source": "llm",
     "confidence": 0.75,
     "decidedAt": "2026-06-22"
+  },
+  "react-pdf": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-06"
   },
   "react-pdf-renderer": {
     "verdict": "noise",
