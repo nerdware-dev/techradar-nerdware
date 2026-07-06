@@ -41,7 +41,7 @@
   },
   {
     "name": "Azure",
-    "ring": "low",
+    "ring": "High",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "description": "Die Azure-Cloudplattform besteht aus mehr als 200 Produkten und Clouddiensten und wurde dafür konzipiert, Sie bei der Entwicklung neuer Lösungen zu unterstützen. So können Sie aktuelle Herausforderungen bewältigen und den Weg für die Zukunft ebnen. Sie können Anwendungen in mehreren Clouds, lokal oder am Edge entwickeln, ausführen und verwalten.",
@@ -52,7 +52,8 @@
         "cloudapi"
       ]
     },
-    "autoRing": "low"
+    "autoRing": "low",
+    "ringOverride": "high"
   },
   {
     "name": "Docker",
@@ -178,7 +179,7 @@
   },
   {
     "name": "WIZ",
-    "ring": "Dev",
+    "ring": "out",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "description": "WIZ ist ein weiterer Anwärter in der reifenden Cloud-Sicherheitsplattform-Landschaft, der seinen Benutzern ermöglicht, Sicherheitsrisiken und -bedrohungen in einer Plattform zu verhindern, zu erkennen und darauf zu reagieren. Wiz kann Fehlkonfigurationen, Schwachstellen und durchgesickerte Geheimnisse sowohl in Artefakten, die noch nicht in Live-Umgebungen bereitgestellt wurden (Containerbilder, Infrastrukturcode), als auch in Live-Workloads (Container, VMs und Cloud-Dienste) erkennen und darauf hinweisen. Es kontextualisiert auch Erkenntnisse auf die spezifische Cloud-Landschaft des Kunden, um Reaktionsteams ein besseres Verständnis des Problems zu ermöglichen und Abhilfemaßnahmen zu priorisieren."
@@ -201,7 +202,7 @@
   },
   {
     "name": "Dynatrace",
-    "ring": "Low",
+    "ring": "out",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": "Dynatrace überwacht die gesamte Infrastruktur, unabhängig von Standort und Technologie. Sowohl Server, Netzwerk, Virtualisierungen als auch Microservices und Container werden automatisch überwacht. Dabei spielt es keine Rolle, ob sich diese in einer Private-, Public- oder Hybrid-Cloud-Lösung befinden."
@@ -252,14 +253,14 @@
   },
   {
     "name": "Terratest",
-    "ring": "Dev",
+    "ring": "out",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": "Terratest ist eine Golang-Bibliothek, die das Schreiben automatisierter Tests für Infrastrukturcode erleichtert. Ein Testlauf erstellt echte Infrastrukturkomponenten (wie Server, Firewalls oder Load Balancer), setzt Anwendungen auf ihnen ein und validiert das erwartete Verhalten mit Terratest. Am Ende des Tests kann Terratest die Apps undeployen und Ressourcen aufräumen. Dies macht es weitgehend nützlich für End-to-End-Tests Ihrer Infrastruktur in einer realen Umgebung."
   },
   {
     "name": "Crossplane",
-    "ring": "Low",
+    "ring": "out",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": "Crossplane ist ein plattformübergreifendes Kontrollsystem (Control-Plane), das das Management von Cloud-Ressourcen vereinfachen und automatisieren soll. Das Tool ermöglicht es, verschiedene Cloud-Provider und lokale Ressourcen, z. B. Kubernetes-Cluster, als einheitliche Infrastruktur zu verwalten. Das Hauptproblem, das Crossplane löst, ist die Herausforderung, verschiedene Cloud-Provider und lokale Ressourcen zu integrieren und zu automatisieren. In einer zunehmend hybriden Cloud-Umgebung ist es schwierig, die Komplexität und Heterogenität der Cloud-Infrastruktur zu managen. Crossplane stellt eine einheitliche API und einheitliche Tools zur Verfügung, um verschiedene Cloud-Provider und lokale Ressourcen effizient zu verwalten."
