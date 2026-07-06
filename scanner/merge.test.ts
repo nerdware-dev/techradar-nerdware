@@ -132,3 +132,48 @@ describe('mergeRadar', () => {
     expect(c.find((b) => b.name === 'React')!.ring).toBe('dev')
   })
 })
+
+describe('mergeRadar — derived detections', () => {
+  const existingD: ScannerBlip[] = [
+    {
+      name: 'Cloud Networking',
+      ring: 'high',
+      quadrant: 'platforms',
+      isNew: 'FALSE',
+      description: 'Net.',
+    },
+  ]
+  it('records detected data + changes.derived but no ring move, for an existing abstract blip', () => {
+    const detections: Detection[] = [
+      {
+        name: 'Cloud Networking',
+        repoCount: 9,
+        sourceRepos: ['a'],
+        lastSeen: '2026-07-01',
+        derived: true,
+      },
+    ]
+    const { candidate, changes } = mergeRadar(existingD, detections, new Map(), new Map())
+    const cn = candidate.find((b) => b.name === 'Cloud Networking')!
+    expect(cn.detected?.repoCount).toBe(9)
+    expect(cn.autoRing).toBeUndefined()
+    expect(cn.ring).toBe('high')
+    expect(changes.ringMoves).toHaveLength(0)
+    expect(changes.derived).toContain('Cloud Networking')
+    expect(changes.undetected).not.toContain('Cloud Networking')
+  })
+  it('never creates a new blip from a derived detection', () => {
+    const detections: Detection[] = [
+      {
+        name: 'Message Queues',
+        repoCount: 3,
+        sourceRepos: ['a'],
+        lastSeen: '2026-07-01',
+        derived: true,
+      },
+    ]
+    const { candidate, changes } = mergeRadar([], detections, new Map(), new Map())
+    expect(candidate).toHaveLength(0)
+    expect(changes.added).toHaveLength(0)
+  })
+})

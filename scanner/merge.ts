@@ -11,6 +11,8 @@ export interface ChangeSet {
   /** Existing entries deliberately retired (ring "out") that were detected again —
    *  kept at "out", surfaced so a human can promote them intentionally. */
   reactivated: string[]
+  /** Existing abstract blips marked detected via derivation (no ring move). */
+  derived: string[]
 }
 
 /** Combine machine detections with the existing radar, preserving all human-owned
@@ -28,6 +30,7 @@ export function mergeRadar(
     undetected: [],
     needsReview: [],
     reactivated: [],
+    derived: [],
   }
   const detectionBySlug = new Map(detections.map((d) => [slugify(d.name), d]))
   const candidate: ScannerBlip[] = []
@@ -38,27 +41,32 @@ export function mergeRadar(
     const detection = detectionBySlug.get(slug)
     const next: ScannerBlip = { ...blip }
     if (detection) {
-      const ar = autoRing(detection.repoCount)
-      next.autoRing = ar
       next.detected = {
         repoCount: detection.repoCount,
         lastSeen: detection.lastSeen,
         sourceRepos: detection.sourceRepos,
       }
-      // Existing entries store rings in display casing ("High"); normalize before
-      // comparing so unchanged rings don't register as phantom moves.
-      const currentRing = slugify(blip.ring) as RingId
-      if (currentRing === 'out' && !next.ringOverride) {
-        // A bare "out" is a deliberate retirement: don't auto-promote on detection.
-        // Keep it out (detection data still recorded above) and flag for a human.
-        changes.reactivated.push(blip.name)
+      if (detection.derived) {
+        // Implied abstract blip: record evidence only — never move its manual ring.
+        changes.derived.push(blip.name)
       } else {
-        const effectiveRing = next.ringOverride ?? ar
-        if (effectiveRing !== currentRing) {
-          changes.ringMoves.push({ name: blip.name, from: currentRing, to: effectiveRing })
-          next.ring = effectiveRing
+        const ar = autoRing(detection.repoCount)
+        next.autoRing = ar
+        // Existing entries store rings in display casing ("High"); normalize before
+        // comparing so unchanged rings don't register as phantom moves.
+        const currentRing = slugify(blip.ring) as RingId
+        if (currentRing === 'out' && !next.ringOverride) {
+          // A bare "out" is a deliberate retirement: don't auto-promote on detection.
+          // Keep it out (detection data still recorded above) and flag for a human.
+          changes.reactivated.push(blip.name)
+        } else {
+          const effectiveRing = next.ringOverride ?? ar
+          if (effectiveRing !== currentRing) {
+            changes.ringMoves.push({ name: blip.name, from: currentRing, to: effectiveRing })
+            next.ring = effectiveRing
+          }
+          // else: leave next.ring at its original value to avoid casing churn in the JSON.
         }
-        // else: leave next.ring at its original value to avoid casing churn in the JSON.
       }
     } else {
       changes.undetected.push(blip.name)
@@ -69,6 +77,7 @@ export function mergeRadar(
   // 2. Add newly-detected techs not already present.
   const existingSlugs = new Set(existing.map((b) => slugify(b.name)))
   for (const detection of detections) {
+    if (detection.derived) continue
     const slug = slugify(detection.name)
     if (existingSlugs.has(slug)) continue
     const cat = categorized.get(slug)
