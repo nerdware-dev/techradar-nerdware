@@ -33,6 +33,14 @@ const RULES: Rule[] = [
     quadrant: 'tools',
     match: (p) => /^playwright\.config\.(t|j)s$/.test(base(p)),
   },
+  { name: 'Maven', quadrant: 'tools', match: (p) => base(p) === 'pom.xml' },
+  {
+    name: '.NET',
+    quadrant: 'languages-frameworks',
+    match: (p) =>
+      /\.(cs|fs)proj$/.test(base(p)) || base(p) === 'global.json' || base(p).endsWith('.sln'),
+  },
+  { name: 'Terragrunt', quadrant: 'tools', match: (p) => base(p) === 'terragrunt.hcl' },
 ]
 
 /** Detect tools and easy platforms from the set of file paths in a repo. */

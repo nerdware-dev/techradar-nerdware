@@ -44,4 +44,9 @@ describe('collapseFamily', () => {
     expect(collapseFamily('github.com/aws/aws-sdk-go-v2')?.canonical).toBe('AWS')
     expect(collapseFamily('github.com/aws/aws-sdk-go-v2/service/s3')?.canonical).toBe('AWS')
   })
+  it('collapses cloud + observability families', () => {
+    expect(collapseFamily('@azure/identity')?.canonical).toBe('Azure')
+    expect(collapseFamily('@opentelemetry/api')?.canonical).toBe('Opentelemetry')
+    expect(collapseFamily('go.opentelemetry.io/otel')?.canonical).toBe('Opentelemetry')
+  })
 })

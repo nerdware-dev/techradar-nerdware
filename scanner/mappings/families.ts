@@ -38,6 +38,9 @@ export const FAMILIES: Family[] = [
   { prefix: '@dnd-kit/', canonical: 'dnd kit', verdict: 'radar', quadrant: LF },
   { prefix: '@fullcalendar/', canonical: 'FullCalendar', verdict: 'radar', quadrant: LF },
   { prefix: '@playwright/', canonical: 'Playwright', verdict: 'radar', quadrant: TOOLS },
+  { prefix: '@azure/', canonical: 'Azure', verdict: 'radar', quadrant: PLAT },
+  { prefix: '@opentelemetry/', canonical: 'Opentelemetry', verdict: 'radar', quadrant: TOOLS },
+  { prefix: 'go.opentelemetry.io/', canonical: 'Opentelemetry', verdict: 'radar', quadrant: TOOLS },
   // Python/pip ecosystem prefixes (match base package and sub-packages like langchain-core)
   { prefix: 'langchain', canonical: 'LangChain', verdict: 'radar', quadrant: LF },
   { prefix: 'llama-index', canonical: 'LlamaIndex', verdict: 'radar', quadrant: LF },

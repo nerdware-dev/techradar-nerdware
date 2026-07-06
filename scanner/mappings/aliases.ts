@@ -44,4 +44,11 @@ export const ALIASES: Record<string, string> = {
   jest: 'Jest',
   rxjs: 'RxJS',
   zod: 'Zod',
+  kafkajs: 'Apache Kafka',
+  'confluent-kafka': 'Apache Kafka',
+  'kafka-python': 'Apache Kafka',
+  'kafka-clients': 'Apache Kafka',
+  'node-rdkafka': 'Apache Kafka',
+  azure: 'Azure',
+  opentelemetry: 'Opentelemetry',
 }

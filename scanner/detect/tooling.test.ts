@@ -18,6 +18,12 @@ describe('detectTooling', () => {
     const tokens = detectTooling(['a/Dockerfile', 'b/Dockerfile'])
     expect(tokens.filter((t) => t.raw === 'Docker')).toHaveLength(1)
   })
+  it('detects Maven, .NET and Terragrunt from project files', () => {
+    expect(detectTooling(['pom.xml']).map((t) => t.raw)).toContain('Maven')
+    expect(detectTooling(['src/App.csproj']).map((t) => t.raw)).toContain('.NET')
+    expect(detectTooling(['Solution.sln']).map((t) => t.raw)).toContain('.NET')
+    expect(detectTooling(['infra/terragrunt.hcl']).map((t) => t.raw)).toContain('Terragrunt')
+  })
   it('returns nothing when no known tool files are present', () => {
     expect(detectTooling(['src/index.ts'])).toEqual([])
   })
