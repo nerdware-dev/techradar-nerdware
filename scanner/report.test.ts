@@ -7,6 +7,7 @@ const changes = {
   undetected: ['AWS'],
   needsReview: ['Grafana'],
   reactivated: ['PHP'],
+  derived: [],
 }
 
 describe('renderReport', () => {
@@ -30,5 +31,20 @@ describe('renderReport', () => {
   it('lists reactivated (currently-Out) entries', () => {
     expect(md).toMatch(/Detected again/i)
     expect(md).toMatch(/PHP/)
+  })
+  it('lists derived entries under their own heading', () => {
+    const withDerived = renderReport(
+      {
+        added: [],
+        ringMoves: [],
+        undetected: [],
+        needsReview: [],
+        reactivated: [],
+        derived: ['Cloud Networking'],
+      },
+      10,
+    )
+    expect(withDerived).toMatch(/Implied/i)
+    expect(withDerived).toContain('Cloud Networking')
   })
 })

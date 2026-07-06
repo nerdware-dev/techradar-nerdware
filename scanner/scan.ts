@@ -12,6 +12,7 @@ import { triageAll } from './triage'
 import { mergeVerdicts } from './verdicts'
 import { draftDescription } from './describe'
 import { mergeRadar } from './merge'
+import { deriveImplied } from './derive'
 import { renderReport } from './report'
 
 const CONFIDENCE_THRESHOLD = 0.7
@@ -132,12 +133,13 @@ export async function runScan(
     if (!existingSlugs.has(slug)) descriptions.set(slug, await draftDescription(d, llm))
   }
 
-  const { candidate, changes } = mergeRadar(existing, promoted, categorized, descriptions)
+  const withDerived = deriveImplied(promoted)
+  const { candidate, changes } = mergeRadar(existing, withDerived, categorized, descriptions)
   const report = renderReport(changes, repos.length, suppressed.length, belowThreshold.length)
   return {
     candidate,
     report,
-    detections: promoted,
+    detections: withDerived,
     belowThreshold,
     suppressed,
     verdicts: mergeVerdicts(cache, patch),

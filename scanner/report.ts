@@ -15,6 +15,7 @@ export function renderReport(
       `**+${changes.added.length} added**, ` +
       `**${changes.ringMoves.length} ring moves**, ` +
       `**${changes.undetected.length} undetected**, ` +
+      `**${changes.derived.length} derived**, ` +
       `**${changes.needsReview.length} needs-review**, ` +
       `**${belowThreshold} below-threshold**, ` +
       `**${suppressed} suppressed** (see data/detections/).`,
@@ -35,6 +36,13 @@ export function renderReport(
       '',
       '## Detected again — currently Out (confirm before promoting)',
       ...changes.reactivated.map((n) => `- ${n}`),
+    )
+  }
+  if (changes.derived.length) {
+    lines.push(
+      '',
+      '## Implied (derived from detected tech)',
+      ...changes.derived.map((n) => `- ${n}`),
     )
   }
   if (changes.needsReview.length) {
