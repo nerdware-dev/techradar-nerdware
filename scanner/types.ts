@@ -29,6 +29,8 @@ export interface Detection {
   quadrantHint?: QuadrantId
   /** Resolved/triaged quadrant, authoritative; distinct from the detector quadrantHint. */
   quadrant?: QuadrantId
+  /** True when this detection was inferred from another tech, not found directly. */
+  derived?: boolean
 }
 
 /** What a token is, for radar purposes. */
