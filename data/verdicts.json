@@ -1249,6 +1249,13 @@
     "confidence": 0.85,
     "decidedAt": "2026-06-22"
   },
+  "h2": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-07-13"
+  },
   "happy-dom": {
     "verdict": "noise",
     "source": "llm",
@@ -1347,6 +1354,12 @@
     "source": "llm",
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
+  },
+  "ideematec-ui": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-13"
   },
   "immer": {
     "verdict": "noise",
@@ -2134,6 +2147,12 @@
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
+  "portal": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-13"
+  },
   "postcss-import": {
     "verdict": "noise",
     "source": "llm",
@@ -2817,6 +2836,19 @@
     "confidence": 0.92,
     "decidedAt": "2026-06-22"
   },
+  "spring-boot-starter-data-jpa": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-07-13"
+  },
+  "spring-boot-starter-data-jpa-test": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-13"
+  },
   "spring-boot-starter-data-rest": {
     "verdict": "noise",
     "source": "llm",
@@ -2829,11 +2861,36 @@
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
+  "spring-boot-starter-security": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-07-13"
+  },
+  "spring-boot-starter-security-test": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-13"
+  },
   "spring-boot-starter-test": {
     "verdict": "noise",
     "source": "llm",
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
+  },
+  "spring-boot-starter-validation": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-13"
+  },
+  "spring-boot-starter-validation-test": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-13"
   },
   "spring-boot-starter-web": {
     "verdict": "radar",
@@ -2841,6 +2898,19 @@
     "source": "llm",
     "confidence": 0.92,
     "decidedAt": "2026-06-22"
+  },
+  "spring-boot-starter-webmvc": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-07-13"
+  },
+  "spring-boot-starter-webmvc-test": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-13"
   },
   "sqlite3": {
     "verdict": "radar",
