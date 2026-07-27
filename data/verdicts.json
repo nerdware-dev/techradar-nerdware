@@ -17,6 +17,12 @@
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
+  "ai-forge-shared": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-07-27"
+  },
   "ai-sdk-openai-compatible": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
@@ -406,6 +412,42 @@
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
+  "caparo-b1-identity": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-07-27"
+  },
+  "caparo-b2-termin-engine": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-27"
+  },
+  "caparo-b3-payment": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-27"
+  },
+  "caparo-contracts": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-07-27"
+  },
+  "caparo-infra": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-07-27"
+  },
+  "caparo-ui": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-07-27"
+  },
   "chalk": {
     "verdict": "noise",
     "source": "llm",
@@ -503,6 +545,24 @@
     "source": "llm",
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
+  },
+  "compass-contracts": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-07-27"
+  },
+  "compass-i18n": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-27"
+  },
+  "compass-ui": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-27"
   },
   "constructs": {
     "verdict": "noise",
@@ -1249,6 +1309,13 @@
     "confidence": 0.85,
     "decidedAt": "2026-06-22"
   },
+  "h2": {
+    "verdict": "radar",
+    "quadrant": "tools",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-07-27"
+  },
   "happy-dom": {
     "verdict": "noise",
     "source": "llm",
@@ -1347,6 +1414,12 @@
     "source": "llm",
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
+  },
+  "ideematec-ui": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-27"
   },
   "immer": {
     "verdict": "noise",
@@ -1672,6 +1745,12 @@
     "confidence": 0.75,
     "decidedAt": "2026-06-22"
   },
+  "microsoft-api-extractor": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-27"
+  },
   "middy-core": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
@@ -1956,6 +2035,12 @@
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
+  "officeparser": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-27"
+  },
   "oidc-client-ts": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
@@ -2017,6 +2102,12 @@
     "source": "llm",
     "confidence": 0.75,
     "decidedAt": "2026-06-22"
+  },
+  "oxlint": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-27"
   },
   "pandas": {
     "verdict": "radar",
@@ -2133,6 +2224,12 @@
     "source": "llm",
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
+  },
+  "portal": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-27"
   },
   "postcss-import": {
     "verdict": "noise",
@@ -2804,6 +2901,13 @@
     "quadrant": "languages-frameworks",
     "source": "seed"
   },
+  "spring-ai-starter-model-openai": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-07-27"
+  },
   "spring-boot-devtools": {
     "verdict": "noise",
     "source": "llm",
@@ -2817,6 +2921,19 @@
     "confidence": 0.92,
     "decidedAt": "2026-06-22"
   },
+  "spring-boot-starter-data-jpa": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-07-27"
+  },
+  "spring-boot-starter-data-jpa-test": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-27"
+  },
   "spring-boot-starter-data-rest": {
     "verdict": "noise",
     "source": "llm",
@@ -2829,11 +2946,36 @@
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
+  "spring-boot-starter-security": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-07-27"
+  },
+  "spring-boot-starter-security-test": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-27"
+  },
   "spring-boot-starter-test": {
     "verdict": "noise",
     "source": "llm",
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
+  },
+  "spring-boot-starter-validation": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-27"
+  },
+  "spring-boot-starter-validation-test": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-27"
   },
   "spring-boot-starter-web": {
     "verdict": "radar",
@@ -2841,6 +2983,19 @@
     "source": "llm",
     "confidence": 0.92,
     "decidedAt": "2026-06-22"
+  },
+  "spring-boot-starter-webmvc": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-07-27"
+  },
+  "spring-boot-starter-webmvc-test": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-27"
   },
   "sqlite3": {
     "verdict": "radar",
@@ -3025,6 +3180,19 @@
     "source": "llm",
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
+  },
+  "tldraw": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.72,
+    "decidedAt": "2026-07-27"
+  },
+  "tldraw-sync": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.9,
+    "decidedAt": "2026-07-27"
   },
   "torch": {
     "verdict": "radar",
@@ -3366,6 +3534,12 @@
     "source": "llm",
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
+  },
+  "zoom-videosdk": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-07-27"
   },
   "zustand": {
     "verdict": "radar",
