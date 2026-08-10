@@ -15,7 +15,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 19,
-      "lastSeen": "2026-07-06",
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -63,8 +63,8 @@
     "description": "Docker ist eine Open-Source-Plattform, die Entwicklern die Erstellung, Bereitstellung, Ausführung, Aktualisierung und Verwaltung von Containern ermöglicht. Container sind standardisierte ausführbare Komponenten, die den Anwendungsquellcode mit den Betriebssystembibliotheken und den Abhängigkeiten kombinieren, die zur Ausführung des Codes in jeder beliebigen Umgebung erforderlich sind.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 41,
-      "lastSeen": "2026-07-06",
+      "repoCount": 47,
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -106,7 +106,13 @@
         "NerdBase",
         "fegime-opensearch-prototype",
         "bayiko-cockpit",
-        "bfz-moodle-plugin"
+        "bfz-moodle-plugin",
+        "se-gs-berlin-material-prototype",
+        "enterprise-evolution",
+        "caparo",
+        "nerdware-oidc-provider",
+        "medizinischer-dienst",
+        "dmtech-playground"
       ]
     }
   },
@@ -118,8 +124,8 @@
     "description": "GitHub Actions ist eine Plattform für Continuous Integration und Continuous Delivery (CI/CD), mit der du deine Build-, Test- und Bereitstellungspipeline automatisieren kannst. Man kann Workflows erstellen, mit denen man alle Pull Requests für das Repository erstellen und testen sowie gemergte Pull Requests für die Produktion bereitstellen kann.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 39,
-      "lastSeen": "2026-07-06",
+      "repoCount": 42,
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "learning-digital",
         "techradar-nerdware",
@@ -159,7 +165,10 @@
         "skaling-ai-compass",
         "NerdBase",
         "bayiko-cockpit",
-        "bfz-moodle-plugin"
+        "bfz-moodle-plugin",
+        "se-gs-berlin-material-prototype",
+        "enterprise-evolution",
+        "nerdware-oidc-provider"
       ]
     }
   },
@@ -193,7 +202,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-07-06",
+      "lastSeen": "2026-08-06",
       "sourceRepos": [
         "nerdware-order-app",
         "nerd-bites"
@@ -215,8 +224,8 @@
     "description": "Terraform ist ein quelloffenes „Infrastructure as Code“-Tool, das von HashiCorp entwickelt wurde. Terraform ist ein deklaratives Codierungstool, das es Entwicklern ermöglicht, mithilfe einer übergeordneten Konfigurationssprache namens HCL (HashiCorp Configuration Language) den gewünschten „Endzustand“ einer Cloud- oder lokalen Infrastruktur für die Ausführung einer Anwendung zu beschreiben. Es generiert dann einen Plan für das Erreichen dieses Endstatus und führt den Plan zur Bereitstellung der Infrastruktur aus.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 13,
-      "lastSeen": "2026-07-02",
+      "repoCount": 14,
+      "lastSeen": "2026-08-07",
       "sourceRepos": [
         "terraform-nerdware",
         "townhall",
@@ -230,7 +239,8 @@
         "stargate",
         "ai-gtm",
         "hetzner-landing-zone",
-        "scaleway-ai-cluster"
+        "scaleway-ai-cluster",
+        "enterprise-evolution"
       ]
     }
   },
@@ -293,11 +303,13 @@
     "isNew": "FALSE",
     "description": "Maven ist ein Build-Tool der Apache Software Foundation für die Projektverwaltung. Entwickler können damit Java-Projekte automatisieren. Maven ist ein Teil der Apache Software Foundation und wird von dieser gehostet. Das Tool ist aus einem Teil des Jakarta-Projekts hervorgegangen.",
     "detected": {
-      "repoCount": 2,
-      "lastSeen": "2026-06-05",
+      "repoCount": 4,
+      "lastSeen": "2026-08-07",
       "sourceRepos": [
         "nerdware-cluster-playground-services",
-        "health-hackathon"
+        "health-hackathon",
+        "se-gs-berlin-material-prototype",
+        "nerdware-oidc-provider"
       ]
     },
     "autoRing": "dev"
@@ -331,8 +343,8 @@
     "description": "Ein NX-Monorepo ist eine weit verbreitete Architektur für moderne Webentwicklungsprojekte. Es bietet eine einfachere Wartbarkeit und Skalierbarkeit, indem es eine einheitliche Struktur und Werkzeuge für alle Projekte innerhalb des Monorepos bereitstellt.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 11,
-      "lastSeen": "2026-07-05",
+      "repoCount": 12,
+      "lastSeen": "2026-08-07",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -344,7 +356,8 @@
         "coffee-demo",
         "fourdrop",
         "skillard-excelled",
-        "graphmind"
+        "graphmind",
+        "caparo"
       ]
     }
   },
@@ -356,8 +369,8 @@
     "description": "Angular ist die nächste Version des OpenSource Frameworks AngularJS. Die Code-Basis wurde komplett neu geschrieben und nutzt nun als Basis die Sprache TypeScript. Grundidee und Konzepte des Frameworks sind jedoch identisch geblieben was eine Migration oder sogar einen hybriden Einsatz der Versionen ermöglicht. Der Fokus des Projektes hat sich von der Entwicklung eines Frameworks auf die Entwicklung einer ganzen Plattform für WebAnwendungen erweitert. Aktuell arbeiten über 30 MitarbeiterInnen fest an dem Projekt und werden von hunderten Entwicklern aus der OpenSource-Community unterstützt. Durch die Einführung von Werkzeugen wie dem Kommandozeilenwerkzeug Angular-CLI können Projekte jetzt noch schneller erstellt und in Produktion überführt werden.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 16,
-      "lastSeen": "2026-06-24",
+      "repoCount": 18,
+      "lastSeen": "2026-08-07",
       "sourceRepos": [
         "townhall",
         "hackathon",
@@ -372,9 +385,11 @@
         "fourdrop",
         "ipsen-botulinumtoxin-injektionsmuster",
         "nerdAI",
+        "coding-challenge",
         "skillard-excelled",
         "claude-project-kickstart-example",
-        "NerdBase"
+        "NerdBase",
+        "dmtech-playground"
       ]
     }
   },
@@ -420,8 +435,8 @@
     "description": "Python ist eine universelle Programmiersprache, mit der sich Probleme und Aufgaben aus unterschiedlichsten Bereichen lösen lassen. Python setzt den Schwerpunkt auf Lesbarkeit und Einfachheit und verzichtet weitestgehend auf Klammern und das obligatorische Semikolon am Ende einer Zeile. Stattdessen ist penibel auf die korrekte Einrückung von Codezeilen und -blöcken zu achten.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 11,
-      "lastSeen": "2026-07-05",
+      "repoCount": 13,
+      "lastSeen": "2026-08-09",
       "sourceRepos": [
         "llm-comparison",
         "dtvp-scraper",
@@ -433,7 +448,9 @@
         "claude-plugins",
         "engineering-intelligence",
         "nerdhunter",
-        "listenerd"
+        "listenerd",
+        "siemens-energy-etec",
+        "medizinischer-dienst"
       ]
     }
   },
@@ -445,8 +462,8 @@
     "description": "TypeScript ist ein Superset von JavaScript, das JavaScript um optionale statische Typisierung und erweiterte Funktionen erweitert. Es wurde von Microsoft entwickelt und erstmals im Oktober 2012 veröffentlicht. Seit seiner Veröffentlichung im Jahr 2012 hat es sich in der Webentwicklergemeinschaft schnell durchgesetzt",
     "autoRing": "high",
     "detected": {
-      "repoCount": 48,
-      "lastSeen": "2026-07-06",
+      "repoCount": 56,
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -474,6 +491,7 @@
         "ipsen-botulinumtoxin-injektionsmuster",
         "nerdAI",
         "capacity-planner",
+        "coding-challenge",
         "stargate",
         "skillard-excelled",
         "claude-project-kickstart-example",
@@ -495,7 +513,14 @@
         "skaling-ai-compass",
         "NerdBase",
         "bayiko-cockpit",
-        "se-gs-berlin-material-prototype"
+        "ideematec_offer_system",
+        "se-gs-berlin-material-prototype",
+        "enterprise-evolution",
+        "playground-tldraw",
+        "caparo",
+        "playground-excalidraw",
+        "nerdware-oidc-provider",
+        "dmtech-playground"
       ]
     }
   },
@@ -508,7 +533,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 5,
-      "lastSeen": "2026-07-02",
+      "lastSeen": "2026-08-07",
       "sourceRepos": [
         "townhall",
         "nw-recruiting-metrics",
@@ -526,11 +551,13 @@
     "description": "ava ist eine Programmiersprache und Computing-Plattform, die 1995 von Sun Microsystems veröffentlicht wurde. Sie stellt mittlerweile eine Basis für den Großteil der digitalen Welt von heute bereit und dient als zuverlässige Plattform für viele Services und Anwendungen. Auch neue, innovative und zukunftsgerichtete Produkte und digitale Services basieren nach wie vor auf Java.",
     "autoRing": "dev",
     "detected": {
-      "repoCount": 2,
-      "lastSeen": "2026-06-05",
+      "repoCount": 4,
+      "lastSeen": "2026-08-07",
       "sourceRepos": [
         "nerdware-cluster-playground-services",
-        "health-hackathon"
+        "health-hackathon",
+        "se-gs-berlin-material-prototype",
+        "nerdware-oidc-provider"
       ]
     }
   },
@@ -583,8 +610,8 @@
     "isNew": "FALSE",
     "description": "Ziel von CI/CD, kurz für Continuous Integration und Continuous Delivery/Deployment, ist die Optimierung und Beschleunigung des Softwareentwicklungs-Lifecycle. Continuous Integration (CI) bezieht sich auf die Praktik, Codeänderungen automatisch und regelmäßig in ein gemeinsames Quellcode-Repository zu integrieren. Continuous Delivery und/oder Continuous Deployment (CD) ist ein zweiteiliger Prozess, der die Integration, das Testen und die Bereitstellung der Codeänderungen umfasst. Continuous Delivery beinhaltet kein automatisches Produktiv-Deployment, während beim Continuous Deployment Update-Releases automatisch in die Produktivumgebung übergeben werden.",
     "detected": {
-      "repoCount": 39,
-      "lastSeen": "2026-07-06",
+      "repoCount": 42,
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "learning-digital",
         "techradar-nerdware",
@@ -624,7 +651,10 @@
         "skaling-ai-compass",
         "NerdBase",
         "bayiko-cockpit",
-        "bfz-moodle-plugin"
+        "bfz-moodle-plugin",
+        "se-gs-berlin-material-prototype",
+        "enterprise-evolution",
+        "nerdware-oidc-provider"
       ]
     }
   },
@@ -678,7 +708,7 @@
     "description": "Cloud-Networking bezieht sich auf die Gestaltung, Implementierung und Verwaltung von Netzwerkressourcen und -diensten in der Cloud. Es umfasst verschiedene Aspekte der Netzwerkkommunikation und -infrastruktur, die es Organisationen ermöglichen, ihre IT-Ressourcen in Cloud-Umgebungen effizient zu nutzen und zu verwalten.",
     "detected": {
       "repoCount": 19,
-      "lastSeen": "2026-07-06",
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -709,8 +739,8 @@
     "isNew": "FALSE",
     "description": "Infrastructure as Code (IaC) ist die Fähigkeit, Ihre Computerinfrastruktur mithilfe von Code anstelle manueller Prozesse und Einstellungen bereitzustellen und zu unterstützen. Jede Anwendungsumgebung erfordert viele Infrastrukturkomponenten wie Betriebssysteme, Datenbankverbindungen und Speicher. ",
     "detected": {
-      "repoCount": 13,
-      "lastSeen": "2026-07-02",
+      "repoCount": 14,
+      "lastSeen": "2026-08-07",
       "sourceRepos": [
         "terraform-nerdware",
         "townhall",
@@ -724,7 +754,8 @@
         "stargate",
         "ai-gtm",
         "hetzner-landing-zone",
-        "scaleway-ai-cluster"
+        "scaleway-ai-cluster",
+        "enterprise-evolution"
       ]
     }
   },
@@ -736,8 +767,8 @@
     "description": "NestJS ist ein progressives Node.js-Framework für den Aufbau effizienter und skalierbarer serverseitiger Anwendungen, das stark von Angular inspiriert ist und TypeScript als primäre Sprache nutzt. Es bietet eine modulare Architektur mit Dependency Injection, dekorator-basierter Konfiguration und Unterstützung für verschiedene Transportschichten wie REST, GraphQL und WebSockets. In unseren Repositories wird NestJS sowohl als Backend in Kombination mit React und Angular als auch für eigenständige Dienste eingesetzt, etwa im Kontext von Clean Architecture, Semantic Release und wissensbasierten Anwendungen.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 11,
-      "lastSeen": "2026-07-05",
+      "repoCount": 13,
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -747,9 +778,11 @@
         "nw-semantic-release",
         "clean-architecture-vs-vertical-sliced-architecture",
         "coffee-demo",
+        "coding-challenge",
         "graphmind",
         "nerd-bites",
-        "bayiko-cockpit"
+        "bayiko-cockpit",
+        "caparo"
       ]
     }
   },
@@ -762,7 +795,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-07-03",
+      "lastSeen": "2026-07-21",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -778,8 +811,8 @@
     "description": "React ist eine von Meta entwickelte JavaScript-Bibliothek zur Erstellung von Benutzeroberflächen auf Basis wiederverwendbarer Komponenten. Sie nutzt ein virtuelles DOM für effizientes Rendering und ermöglicht durch ihren deklarativen Ansatz die Entwicklung komplexer, interaktiver Single-Page-Anwendungen. Mit 20 Repositories ist React die am weitesten verbreitete Frontend-Technologie in unserem Stack und wird sowohl für interne Tools als auch für kundenorientierte Anwendungen eingesetzt.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 23,
-      "lastSeen": "2026-07-06",
+      "repoCount": 30,
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -790,6 +823,7 @@
         "coffee-demo",
         "hack-zollhof-2025",
         "capacity-planner",
+        "coding-challenge",
         "stargate",
         "ai-gtm",
         "penzilla",
@@ -803,7 +837,13 @@
         "ki-cooking",
         "skaling-ai-compass",
         "bayiko-cockpit",
-        "se-gs-berlin-material-prototype"
+        "ideematec_offer_system",
+        "se-gs-berlin-material-prototype",
+        "enterprise-evolution",
+        "playground-tldraw",
+        "caparo",
+        "playground-excalidraw",
+        "nerdware-oidc-provider"
       ]
     }
   },
@@ -815,8 +855,8 @@
     "description": "RxJS (Reactive Extensions for JavaScript) ist eine Bibliothek für reaktive Programmierung, die auf Observables basiert und die Verarbeitung asynchroner Datenströme und Events ermöglicht. Sie bietet eine Vielzahl von Operatoren zum Filtern, Transformieren und Kombinieren von Datenströmen. RxJS ist ein zentraler Bestandteil des Angular-Frameworks und wird darüber hinaus in zahlreichen weiteren Projekten für komplexes Event-Handling und asynchrone Datenverarbeitung eingesetzt.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 26,
-      "lastSeen": "2026-07-05",
+      "repoCount": 29,
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -838,12 +878,15 @@
         "fourdrop",
         "ipsen-botulinumtoxin-injektionsmuster",
         "nerdAI",
+        "coding-challenge",
         "skillard-excelled",
         "claude-project-kickstart-example",
         "graphmind",
         "nerd-bites",
         "NerdBase",
-        "bayiko-cockpit"
+        "bayiko-cockpit",
+        "caparo",
+        "dmtech-playground"
       ]
     }
   },
@@ -855,8 +898,8 @@
     "description": "ESLint ist ein statisches Analysetool für JavaScript und TypeScript, das Code auf Fehler, stilistische Inkonsistenzen und problematische Muster untersucht. Es ermöglicht die Definition und Durchsetzung einheitlicher Code-Konventionen über konfigurierbare Regelsets und unterstützt durch ein umfangreiches Plugin-Ökosystem verschiedenste Frameworks und Coding-Standards. Als fester Bestandteil moderner Entwicklungs-Workflows lässt es sich nahtlos in CI/CD-Pipelines und Editoren integrieren, um die Codequalität kontinuierlich sicherzustellen.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 29,
-      "lastSeen": "2026-07-06",
+      "repoCount": 30,
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -876,6 +919,7 @@
         "fourdrop",
         "capacity-planner",
         "nerd-upload",
+        "coding-challenge",
         "skillard-excelled",
         "penzilla",
         "md-plattform-prototype",
@@ -898,8 +942,8 @@
     "description": "Jest ist ein von Meta entwickeltes JavaScript-Testing-Framework, das sich durch eine Zero-Configuration-Philosophie, integrierte Mocking-Funktionalitäten und Snapshot-Testing auszeichnet. Es unterstützt sowohl Unit- als auch Integrationstests und bietet parallele Testausführung für schnelle Feedback-Zyklen. Die breite Nutzung in 17 Repositories über verschiedene Technologie-Stacks hinweg – von React- und Angular-Frontends über NestJS-Backends bis hin zu Serverless-Projekten – unterstreicht seine Vielseitigkeit als Standard-Testlösung im JavaScript/TypeScript-Ökosystem.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 17,
-      "lastSeen": "2026-07-05",
+      "repoCount": 18,
+      "lastSeen": "2026-08-07",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -915,6 +959,7 @@
         "nw-semantic-release",
         "clean-architecture-vs-vertical-sliced-architecture",
         "coffee-demo",
+        "coding-challenge",
         "skillard-excelled",
         "graphmind",
         "nerd-bites"
@@ -929,8 +974,8 @@
     "description": "Prettier ist ein opinionated Code-Formatter, der eine konsistente Formatierung von Code in zahlreichen Sprachen wie JavaScript, TypeScript, HTML, CSS und weiteren erzwingt. Das Tool parst den Code und gibt ihn nach eigenen, einheitlichen Regeln neu formatiert aus, wodurch Diskussionen über Coding-Styles im Team entfallen. Prettier lässt sich nahtlos in gängige Editoren und CI/CD-Pipelines integrieren und wird in der Organisation breit über verschiedenste Projekttypen hinweg eingesetzt.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 22,
-      "lastSeen": "2026-07-06",
+      "repoCount": 24,
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -946,6 +991,7 @@
         "clean-architecture-vs-vertical-sliced-architecture",
         "coffee-demo",
         "fourdrop",
+        "coding-challenge",
         "skillard-excelled",
         "nerdware-order-app",
         "graphmind",
@@ -953,7 +999,8 @@
         "skaling-ai-compass",
         "NerdBase",
         "bayiko-cockpit",
-        "se-gs-berlin-material-prototype"
+        "se-gs-berlin-material-prototype",
+        "dmtech-playground"
       ]
     }
   },
@@ -965,14 +1012,15 @@
     "description": "Vite ist ein modernes Build-Tool und Entwicklungsserver für Webanwendungen, das auf native ES-Module im Browser setzt und dadurch extrem schnelle Startzeiten sowie Hot Module Replacement (HMR) bietet. Es wurde von Evan You (dem Schöpfer von Vue.js) entwickelt und unterstützt frameworks wie Vue, React, Svelte und weitere. Vite nutzt esbuild für das Pre-Bundling von Abhängigkeiten und Rollup für optimierte Produktions-Builds, was es zu einer performanten Alternative zu Webpack macht. Die breite Nutzung in 15 Repositories zeigt seine Etablierung als Standard-Build-Tool für moderne Frontend-Projekte.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 17,
-      "lastSeen": "2026-07-06",
+      "repoCount": 22,
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "techradar-nerdware",
         "coffee-demo",
         "fourdrop",
         "capacity-planner",
         "nerd-upload",
+        "coding-challenge",
         "stargate",
         "ai-gtm",
         "Nerdlabsfigma",
@@ -984,7 +1032,11 @@
         "vend",
         "ki-cooking",
         "skaling-ai-compass",
-        "bayiko-cockpit"
+        "bayiko-cockpit",
+        "ideematec_offer_system",
+        "playground-tldraw",
+        "caparo",
+        "playground-excalidraw"
       ]
     }
   },
@@ -996,8 +1048,8 @@
     "description": "Playwright ist ein von Microsoft entwickeltes Open-Source-Framework für End-to-End-Testing von Webanwendungen. Es ermöglicht automatisierte, browserübergreifende Tests in Chromium, Firefox und WebKit mit einer einheitlichen API. Playwright unterstützt mehrere Programmiersprachen, bietet Features wie Auto-Wait, Netzwerk-Interception und parallele Testausführung. Der breite Einsatz über verschiedene Projekte hinweg – von Homepages über Order-Apps bis hin zu KI-Anwendungen – zeigt seine Vielseitigkeit als zuverlässiges Testautomatisierungswerkzeug.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 9,
-      "lastSeen": "2026-07-06",
+      "repoCount": 11,
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "techradar-nerdware",
         "townhall",
@@ -1007,7 +1059,9 @@
         "nerdware-homepage",
         "nerdware-order-app",
         "skaling-ai-compass",
-        "bayiko-cockpit"
+        "bayiko-cockpit",
+        "ideematec_offer_system",
+        "caparo"
       ]
     }
   },
@@ -1020,7 +1074,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 15,
-      "lastSeen": "2026-07-06",
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "techradar-nerdware",
         "xit-sync",
@@ -1048,8 +1102,8 @@
     "description": "Vitest ist ein schnelles Unit-Test-Framework für JavaScript und TypeScript, das nativ auf Vite aufbaut und dessen Konfiguration, Transformer und Plugin-Ökosystem nutzt. Es bietet eine Jest-kompatible API, unterstützt ESM, TypeScript und JSX out-of-the-box und zeichnet sich durch hohe Ausführungsgeschwindigkeit dank Hot Module Replacement und paralleler Testausführung aus. Die breite Nutzung in zahlreichen Repositories zeigt seine Etablierung als moderne Alternative zu Jest für Vite-basierte Projekte sowie für Backend- und Library-Tests.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 11,
-      "lastSeen": "2026-07-06",
+      "repoCount": 14,
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "techradar-nerdware",
         "coffee-demo",
@@ -1061,7 +1115,10 @@
         "graphmind",
         "nerdfinder",
         "skaling-ai-compass",
-        "bayiko-cockpit"
+        "bayiko-cockpit",
+        "ideematec_offer_system",
+        "caparo",
+        "dmtech-playground"
       ]
     }
   },
@@ -1073,8 +1130,8 @@
     "description": "Tailwind CSS ist ein Utility-First-CSS-Framework, das vordefinierte Klassen direkt im HTML-Markup bereitstellt, um Benutzeroberflächen ohne das Schreiben von benutzerdefiniertem CSS zu gestalten. Es ermöglicht eine schnelle, konsistente UI-Entwicklung und lässt sich durch Konfiguration an individuelle Design-Systeme anpassen. Durch Tree-Shaking werden in der Produktion nur tatsächlich genutzte Styles ausgeliefert, was zu minimalen CSS-Dateigrößen führt. Die breite Nutzung in 29 Repositories zeigt seine Etablierung als Standard-Styling-Lösung für Web-Frontends in verschiedensten Projekttypen.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 31,
-      "lastSeen": "2026-07-06",
+      "repoCount": 35,
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "townhall",
         "pom-dekar-p",
@@ -1106,7 +1163,11 @@
         "ki-cooking",
         "NerdBase",
         "bayiko-cockpit",
-        "se-gs-berlin-material-prototype"
+        "ideematec_offer_system",
+        "se-gs-berlin-material-prototype",
+        "enterprise-evolution",
+        "caparo",
+        "nerdware-oidc-provider"
       ]
     }
   },
@@ -1127,19 +1188,20 @@
   },
   {
     "name": "Kubernetes",
-    "ring": "dev",
+    "ring": "high",
     "quadrant": "platforms",
     "isNew": true,
     "description": "Kubernetes ist eine Open-Source-Plattform zur Container-Orchestrierung, die das automatisierte Deployment, die Skalierung und den Betrieb von containerisierten Anwendungen ermöglicht. Es abstrahiert die zugrunde liegende Infrastruktur und bietet Mechanismen für Service Discovery, Load Balancing, Self-Healing und deklaratives Konfigurationsmanagement. Der Einsatz in den erkannten Repositories reicht von Cluster-Infrastruktur-Setups über Operator-Entwicklung bis hin zu Anwendungsdeployments, was die zentrale Rolle von Kubernetes als Standard-Laufzeitplattform unterstreicht.",
-    "autoRing": "dev",
+    "autoRing": "high",
     "detected": {
-      "repoCount": 4,
-      "lastSeen": "2026-07-05",
+      "repoCount": 5,
+      "lastSeen": "2026-08-07",
       "sourceRepos": [
         "nerdware-cluster-playground-services",
         "hivemq-platform-operator-crds",
         "hetzner-landing-zone",
-        "graphmind"
+        "graphmind",
+        "scaleway-ai-cluster"
       ]
     }
   },
@@ -1151,8 +1213,8 @@
     "description": "JavaScript ist eine dynamische, interpretierte Programmiersprache, die ursprünglich für die clientseitige Webentwicklung konzipiert wurde und heute sowohl im Browser als auch serverseitig (z. B. mit Node.js) eingesetzt wird. Sie bildet zusammen mit HTML und CSS eine der Kerntechnologien des Webs und ermöglicht interaktive Benutzeroberflächen, API-Entwicklung sowie Automatisierungsprozesse. Im vorliegenden Tech-Radar ist JavaScript in 13 Repositories vertreten und deckt dabei ein breites Spektrum von Serverless-Anwendungen über CI/CD-Tooling bis hin zu Plugin-Entwicklung und Frontend-Projekten ab.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 16,
-      "lastSeen": "2026-07-06",
+      "repoCount": 20,
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "cloudapi",
         "LLM-who-the-f...-is-alice",
@@ -1169,7 +1231,11 @@
         "shopware6-plugin-reference",
         "engineering-intelligence",
         "nerdware-order-app",
-        "fegime-opensearch-prototype"
+        "fegime-opensearch-prototype",
+        "bayiko-cockpit",
+        "playground-tldraw",
+        "caparo",
+        "playground-excalidraw"
       ]
     }
   },
@@ -1182,7 +1248,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 8,
-      "lastSeen": "2026-07-03",
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "cloudapi",
         "aws-user-group-multi-tenancy-and-ephemeral-environments",
@@ -1203,8 +1269,8 @@
     "description": "Next.js ist ein auf React basierendes Full-Stack-Framework, das serverseitiges Rendering (SSR), statische Seitengenerierung (SSG) und API-Routen in einem einheitlichen Projekt vereint. Es bietet dateibasiertes Routing, automatisches Code-Splitting und optimierte Performance out of the box. In unseren Projekten wird Next.js sowohl für Prototypen und Plattform-Anwendungen als auch für produktionsreife Web-Applikationen eingesetzt, was seine Vielseitigkeit von Hackathon-Projekten bis hin zu Multi-Tenancy-Szenarien unterstreicht.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 8,
-      "lastSeen": "2026-07-06",
+      "repoCount": 10,
+      "lastSeen": "2026-08-07",
       "sourceRepos": [
         "aws-user-group-multi-tenancy-and-ephemeral-environments",
         "hack-zollhof-2025",
@@ -1213,7 +1279,9 @@
         "nerdhunter",
         "nerdfinder",
         "skaling-ai-compass",
-        "se-gs-berlin-material-prototype"
+        "se-gs-berlin-material-prototype",
+        "enterprise-evolution",
+        "nerdware-oidc-provider"
       ]
     }
   },
@@ -1240,11 +1308,12 @@
     "description": "FastAPI ist ein modernes, hochperformantes Python-Web-Framework zur Entwicklung von REST-APIs, das auf Standard-Python-Type-Hints basiert und automatisch eine interaktive API-Dokumentation (OpenAPI/Swagger) generiert. Es nutzt asynchrone Programmierung mit ASGI und erreicht dadurch eine Leistung vergleichbar mit Node.js oder Go. In den erkannten Repositories wird es als Backend-Framework für KI-gestützte Anwendungen und LLM-Integrationen eingesetzt.",
     "autoRing": "dev",
     "detected": {
-      "repoCount": 2,
-      "lastSeen": "2026-06-05",
+      "repoCount": 3,
+      "lastSeen": "2026-08-05",
       "sourceRepos": [
         "llm-workshop",
-        "nerdAI"
+        "nerdAI",
+        "medizinischer-dienst"
       ]
     }
   },
@@ -1257,7 +1326,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-06-09",
+      "lastSeen": "2026-07-28",
       "sourceRepos": [
         "SchickBauspeziAPI",
         "SchickBauspeziTheme",
@@ -1274,7 +1343,7 @@
     "autoRing": "low",
     "detected": {
       "repoCount": 1,
-      "lastSeen": "2026-04-14",
+      "lastSeen": "2026-08-03",
       "sourceRepos": [
         "nerdware-homepage"
       ]
@@ -1289,7 +1358,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-07-06",
+      "lastSeen": "2026-08-07",
       "sourceRepos": [
         "SchickBauspeziAPI",
         "shopware6-plugin-reference",
@@ -1437,7 +1506,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-07-03",
+      "lastSeen": "2026-07-21",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -1453,8 +1522,8 @@
     "description": "React Router Dom ist die Standard-Bibliothek für clientseitiges Routing in React-Anwendungen. Sie ermöglicht deklarative Navigation zwischen verschiedenen Ansichten, URL-basiertes Rendering von Komponenten sowie verschachtelte Routen und dynamische Pfadparameter. Die breite Nutzung in acht Repositories – von Demos über Homepages bis hin zu komplexen Planungstools – zeigt ihre Rolle als grundlegender Baustein für Single-Page-Applications im gesamten React-Ökosystem des Unternehmens.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 8,
-      "lastSeen": "2026-07-05",
+      "repoCount": 9,
+      "lastSeen": "2026-07-08",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -1463,7 +1532,8 @@
         "Nerdlabsfigma",
         "nerdlabs-homepage",
         "graphmind",
-        "nerd-bites"
+        "nerd-bites",
+        "ideematec_offer_system"
       ]
     }
   },
@@ -1523,12 +1593,13 @@
     "description": "TypeORM ist ein Object-Relational Mapper für TypeScript und JavaScript, der sowohl Active-Record- als auch Data-Mapper-Patterns unterstützt. Es ermöglicht die datenbankagnostische Arbeit mit relationalen Datenbanken wie PostgreSQL, MySQL und SQLite durch dekoratorbasierte Entity-Definitionen und ein leistungsfähiges Migrationssystem. Im vorliegenden Kontext wird TypeORM in Kombination mit NestJS als Standard-Persistenzschicht in mehreren Template-Projekten eingesetzt, was auf eine etablierte Rolle im Backend-Stack hindeutet.",
     "autoRing": "dev",
     "detected": {
-      "repoCount": 3,
-      "lastSeen": "2025-01-03",
+      "repoCount": 4,
+      "lastSeen": "2026-07-27",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
-        "angular-nestjs-template"
+        "angular-nestjs-template",
+        "caparo"
       ]
     }
   },
@@ -1540,8 +1611,8 @@
     "description": "Testing Library React ist eine leichtgewichtige Testbibliothek für React-Komponenten, die Tests aus der Perspektive des Nutzers ermöglicht, indem sie auf DOM-Elemente über zugängliche Rollen, Labels und Texte zugreift statt auf Implementierungsdetails. Sie fördert damit robustere Tests, die weniger anfällig für Refactorings sind, und hat sich als De-facto-Standard für das Testen von React-Anwendungen etabliert. Die Bibliothek baut auf dem DOM Testing Library-Kern auf und integriert sich nahtlos mit Test-Runnern wie Jest oder Vitest.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 9,
-      "lastSeen": "2026-07-06",
+      "repoCount": 11,
+      "lastSeen": "2026-08-06",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -1551,7 +1622,9 @@
         "ai-gtm",
         "nerdware-order-app",
         "graphmind",
-        "skaling-ai-compass"
+        "skaling-ai-compass",
+        "ideematec_offer_system",
+        "caparo"
       ]
     }
   },
@@ -1584,7 +1657,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 4,
-      "lastSeen": "2026-06-05",
+      "lastSeen": "2026-08-07",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -1640,7 +1713,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 4,
-      "lastSeen": "2026-07-06",
+      "lastSeen": "2026-08-06",
       "sourceRepos": [
         "techradar-nerdware",
         "llm-workshop",
@@ -1658,7 +1731,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 4,
-      "lastSeen": "2026-06-23",
+      "lastSeen": "2026-08-07",
       "sourceRepos": [
         "townhall",
         "chat-room",
@@ -1676,7 +1749,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-05",
+      "lastSeen": "2026-08-07",
       "sourceRepos": [
         "townhall",
         "nw-recruiting-metrics"
@@ -1692,7 +1765,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-05",
+      "lastSeen": "2026-08-07",
       "sourceRepos": [
         "townhall",
         "coffee-demo"
@@ -1708,7 +1781,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-15",
+      "lastSeen": "2026-08-07",
       "sourceRepos": [
         "townhall",
         "fourdrop"
@@ -1723,8 +1796,8 @@
     "description": "",
     "autoRing": "high",
     "detected": {
-      "repoCount": 7,
-      "lastSeen": "2026-06-24",
+      "repoCount": 8,
+      "lastSeen": "2026-07-17",
       "sourceRepos": [
         "hackathon",
         "hackbay-demo",
@@ -1732,7 +1805,8 @@
         "health-hackathon",
         "coin-demo",
         "ipsen-botulinumtoxin-injektionsmuster",
-        "nerdAI"
+        "nerdAI",
+        "coding-challenge"
       ]
     }
   },
@@ -1744,8 +1818,8 @@
     "description": "",
     "autoRing": "high",
     "detected": {
-      "repoCount": 7,
-      "lastSeen": "2026-06-24",
+      "repoCount": 8,
+      "lastSeen": "2026-07-17",
       "sourceRepos": [
         "hackathon",
         "hackbay-demo",
@@ -1753,7 +1827,8 @@
         "health-hackathon",
         "coin-demo",
         "ipsen-botulinumtoxin-injektionsmuster",
-        "nerdAI"
+        "nerdAI",
+        "coding-challenge"
       ]
     }
   },
@@ -1848,7 +1923,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-07-01",
+      "lastSeen": "2026-08-03",
       "sourceRepos": [
         "angular-nestjs-template",
         "stargate",
@@ -1864,8 +1939,8 @@
     "description": "PostgreSQL (Pg) ist ein leistungsstarkes, quelloffenes relationales Datenbankmanagementsystem, das für seine Zuverlässigkeit, Erweiterbarkeit und SQL-Konformität bekannt ist. Es unterstützt komplexe Datentypen, ACID-konforme Transaktionen sowie fortgeschrittene Funktionen wie JSON-Verarbeitung und Volltextsuche. Der breite Einsatz in sieben Repositories – von Template-Projekten über KI-Anwendungen bis hin zu Microservices – unterstreicht seine Vielseitigkeit als bevorzugte Datenbanklösung für unterschiedlichste Anwendungsszenarien.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 8,
-      "lastSeen": "2026-07-06",
+      "repoCount": 9,
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "angular-nestjs-template",
         "coin-demo",
@@ -1874,7 +1949,8 @@
         "nerdware-order-app",
         "nerdfinder",
         "skaling-ai-compass",
-        "bayiko-cockpit"
+        "bayiko-cockpit",
+        "caparo"
       ]
     }
   },
@@ -1886,14 +1962,15 @@
     "description": "Supertest ist eine HTTP-Assertions-Bibliothek für Node.js, die auf SuperAgent aufbaut und das Testen von HTTP-Endpunkten vereinfacht. Sie ermöglicht das Senden von HTTP-Requests gegen Express-, NestJS- oder andere Node.js-Server und das Überprüfen von Statuscodes, Headern und Response-Bodies direkt in Integrationstests. Supertest wird typischerweise in Kombination mit Test-Frameworks wie Jest oder Mocha eingesetzt und eignet sich besonders für End-to-End-Tests von REST-APIs, ohne einen laufenden Server manuell starten zu müssen.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 7,
-      "lastSeen": "2026-07-01",
+      "repoCount": 8,
+      "lastSeen": "2026-08-03",
       "sourceRepos": [
         "angular-nestjs-template",
         "fantastic-garbanzo",
         "yt-semantic-release",
         "nw-semantic-release",
         "clean-architecture-vs-vertical-sliced-architecture",
+        "coding-challenge",
         "ai-gtm",
         "nerd-bites"
       ]
@@ -1924,7 +2001,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-07-06",
+      "lastSeen": "2026-08-06",
       "sourceRepos": [
         "coffee-demo",
         "ai-gtm",
@@ -1941,7 +2018,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 6,
-      "lastSeen": "2026-07-06",
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "coffee-demo",
         "capacity-planner",
@@ -1970,18 +2047,20 @@
   },
   {
     "name": "Zustand",
-    "ring": "dev",
+    "ring": "high",
     "quadrant": "languages-frameworks",
     "isNew": true,
     "description": "Zustand ist eine leichtgewichtige State-Management-Bibliothek für React-Anwendungen, die sich durch eine minimalistische API und geringen Boilerplate-Code auszeichnet. Im Gegensatz zu Redux verzichtet Zustand auf Provider-Komponenten und ermöglicht die Erstellung von Stores mit einfachen Hook-basierten Zugriffen. Die Bibliothek eignet sich besonders für kleine bis mittelgroße Projekte und Prototypen, bei denen ein unkompliziertes, performantes State-Management gewünscht ist. Der Einsatz in mehreren Prototyping- und Demo-Projekten bestätigt ihre Stärke im Bereich schneller Entwicklungszyklen.",
-    "autoRing": "dev",
+    "autoRing": "high",
     "detected": {
-      "repoCount": 3,
-      "lastSeen": "2026-06-05",
+      "repoCount": 5,
+      "lastSeen": "2026-07-30",
       "sourceRepos": [
         "coffee-demo",
         "hack-zollhof-2025",
-        "md-plattform-prototype"
+        "md-plattform-prototype",
+        "ideematec_offer_system",
+        "enterprise-evolution"
       ]
     }
   },
@@ -2043,11 +2122,12 @@
     "description": "Pydantic ist eine Python-Bibliothek zur Datenvalidierung und -serialisierung, die auf Python Type Hints basiert. Sie ermöglicht die Definition von Datenmodellen als Klassen, deren Felder zur Laufzeit automatisch validiert und in die korrekten Typen konvertiert werden. Pydantic wird häufig in Kombination mit FastAPI sowie bei der strukturierten Verarbeitung von LLM-Ausgaben eingesetzt, wie der Einsatz in den Projekten llm-workshop und nerdAI zeigt.",
     "autoRing": "dev",
     "detected": {
-      "repoCount": 2,
-      "lastSeen": "2026-06-05",
+      "repoCount": 3,
+      "lastSeen": "2026-08-05",
       "sourceRepos": [
         "llm-workshop",
-        "nerdAI"
+        "nerdAI",
+        "medizinischer-dienst"
       ]
     }
   },
@@ -2060,7 +2140,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-07-06",
+      "lastSeen": "2026-08-06",
       "sourceRepos": [
         "hack-zollhof-2025",
         "ai-gtm",
@@ -2094,7 +2174,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-06-09",
+      "lastSeen": "2026-07-28",
       "sourceRepos": [
         "SchickBauspeziAPI",
         "SchickBauspeziTheme",
@@ -2110,14 +2190,15 @@
     "description": "Radix UI ist eine Open-Source-Komponentenbibliothek für React, die ungestylte, barrierefreie UI-Primitives bereitstellt. Die Komponenten bieten vollständige WAI-ARIA-Konformität und lassen sich flexibel mit beliebigen Styling-Lösungen wie Tailwind CSS kombinieren. Radix UI wird in fünf Projekten eingesetzt und dient als Grundlage für zugängliche, anpassbare Benutzeroberflächen, ohne ein festes visuelles Design vorzugeben.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 5,
-      "lastSeen": "2026-06-05",
+      "repoCount": 6,
+      "lastSeen": "2026-07-27",
       "sourceRepos": [
         "capacity-planner",
         "Nerdlabsfigma",
         "nerdlabs-homepage",
         "vend",
-        "ki-cooking"
+        "ki-cooking",
+        "caparo"
       ]
     }
   },
@@ -2130,7 +2211,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 8,
-      "lastSeen": "2026-07-05",
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "capacity-planner",
         "Nerdlabsfigma",
@@ -2151,8 +2232,8 @@
     "description": "Recharts ist eine auf React basierende Charting-Bibliothek, die deklarative Komponenten zur Erstellung von Diagrammen und Datenvisualisierungen bereitstellt. Sie baut auf D3.js auf und bietet eine Vielzahl vorgefertigter Diagrammtypen wie Linien-, Balken-, Kreis- und Flächendiagramme, die sich nahtlos in React-Anwendungen integrieren lassen. Die Bibliothek wird in zahlreichen internen Projekten eingesetzt – von Dashboards und Planungstools bis hin zu Prototypen und Produktanwendungen – und hat sich als Standard für Datenvisualisierung im React-Ökosystem etabliert.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 8,
-      "lastSeen": "2026-07-06",
+      "repoCount": 10,
+      "lastSeen": "2026-08-06",
       "sourceRepos": [
         "capacity-planner",
         "Nerdlabsfigma",
@@ -2161,7 +2242,9 @@
         "nerdware-order-app",
         "vend",
         "ki-cooking",
-        "skaling-ai-compass"
+        "skaling-ai-compass",
+        "se-gs-berlin-material-prototype",
+        "enterprise-evolution"
       ]
     }
   },
@@ -2174,7 +2257,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-07-01",
+      "lastSeen": "2026-08-03",
       "sourceRepos": [
         "stargate",
         "ai-gtm"
@@ -2190,7 +2273,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-07-01",
+      "lastSeen": "2026-08-03",
       "sourceRepos": [
         "stargate",
         "ai-gtm"
@@ -2206,7 +2289,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-07-02",
+      "lastSeen": "2026-07-29",
       "sourceRepos": [
         "claude-plugins",
         "demo-mcp-nerdware"
@@ -2239,11 +2322,12 @@
     "description": "dnd kit ist eine moderne, leichtgewichtige Drag-and-Drop-Bibliothek für React, die als Nachfolger von react-beautiful-dnd konzipiert wurde. Sie bietet eine hook-basierte API mit hoher Flexibilität, Barrierefreiheit und Unterstützung für verschiedene Eingabemethoden wie Maus, Touch und Tastatur. Im Kontext der erkannten Repositories wird sie für sortierbare Listen (z. B. Bestellpositionen) sowie für interaktive visuelle Strukturen wie Mindmaps eingesetzt.",
     "autoRing": "dev",
     "detected": {
-      "repoCount": 2,
-      "lastSeen": "2026-07-06",
+      "repoCount": 3,
+      "lastSeen": "2026-08-06",
       "sourceRepos": [
         "nerdware-order-app",
-        "graphmind"
+        "graphmind",
+        "enterprise-evolution"
       ]
     }
   },
@@ -2256,7 +2340,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-07-06",
+      "lastSeen": "2026-08-06",
       "sourceRepos": [
         "nerdware-order-app",
         "nerd-bites"
@@ -2272,7 +2356,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-07-06",
+      "lastSeen": "2026-08-06",
       "sourceRepos": [
         "nerdware-order-app",
         "graphmind"
@@ -2288,7 +2372,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-07-06",
+      "lastSeen": "2026-08-06",
       "sourceRepos": [
         "nerdware-order-app",
         "graphmind"
@@ -2303,11 +2387,12 @@
     "description": "Testcontainers PostgreSQL ermöglicht das Starten einer echten PostgreSQL-Datenbank als Docker-Container direkt aus Integrationstests heraus. Dadurch können datenbankabhängige Tests gegen eine reale Datenbankinstanz ausgeführt werden, ohne auf externe Infrastruktur oder In-Memory-Ersatzlösungen angewiesen zu sein. Die Bibliothek übernimmt das Lifecycle-Management des Containers, einschließlich automatischem Start und Aufräumen nach Testabschluss. Der Einsatz in den Projekten nerdware-order-app und skaling-ai-compass zeigt die Relevanz für zuverlässige Integrationstests mit PostgreSQL.",
     "autoRing": "dev",
     "detected": {
-      "repoCount": 2,
-      "lastSeen": "2026-07-06",
+      "repoCount": 3,
+      "lastSeen": "2026-08-07",
       "sourceRepos": [
         "nerdware-order-app",
-        "skaling-ai-compass"
+        "skaling-ai-compass",
+        "nerdware-oidc-provider"
       ]
     }
   },
@@ -2320,7 +2405,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-07-06",
+      "lastSeen": "2026-08-06",
       "sourceRepos": [
         "nerdware-order-app",
         "nerdfinder",
@@ -2337,7 +2422,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-07-02",
+      "lastSeen": "2026-08-07",
       "sourceRepos": [
         "hetzner-landing-zone",
         "NerdBase"
@@ -2385,7 +2470,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-06-18",
+      "lastSeen": "2026-07-23",
       "sourceRepos": [
         "nerdhunter",
         "nerdfinder",
@@ -2418,7 +2503,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-07-05",
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "engineering-intelligence",
         "bayiko-cockpit"
@@ -2434,10 +2519,90 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-07-03",
+      "lastSeen": "2026-08-10",
       "sourceRepos": [
         "skaling-ai-compass",
         "bayiko-cockpit"
+      ]
+    }
+  },
+  {
+    "name": "Uvicorn Standard",
+    "ring": "dev",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "Uvicorn ist ein schneller ASGI-Webserver für Python, der auf uvloop und httptools basiert und als Standard-Server für Frameworks wie FastAPI und Starlette dient. Er zeichnet sich durch hohe Performance bei der Verarbeitung asynchroner HTTP-Anfragen aus und unterstützt HTTP/1.1 sowie WebSockets. In den Projekten nerdAI und medizinischer-dienst wird Uvicorn in der Standardkonfiguration (ohne zusätzliche Worker-Manager wie Gunicorn) als Applikationsserver eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-08-05",
+      "sourceRepos": [
+        "nerdAI",
+        "medizinischer-dienst"
+      ]
+    }
+  },
+  {
+    "name": "Next Auth",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "NextAuth.js ist eine Authentifizierungsbibliothek für Next.js-Anwendungen, die eine einfache Integration verschiedener Authentifizierungsanbieter wie OAuth, OpenID Connect, E-Mail-basierte Anmeldung und Credentials ermöglicht. Sie abstrahiert komplexe Authentifizierungsflüsse und bietet integriertes Session-Management sowie CSRF-Schutz. Im vorliegenden Kontext wird NextAuth sowohl als Client einer OIDC-Authentifizierung (nerdware-order-app) als auch in Verbindung mit einem eigenen OIDC-Provider eingesetzt.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-08-07",
+      "sourceRepos": [
+        "nerdware-order-app",
+        "nerdware-oidc-provider"
+      ]
+    }
+  },
+  {
+    "name": "Msw",
+    "ring": "dev",
+    "quadrant": "tools",
+    "isNew": true,
+    "description": "MSW (Mock Service Worker) ist eine API-Mocking-Bibliothek, die Service Worker im Browser und Request-Interception in Node.js nutzt, um Netzwerkanfragen auf Netzwerkebene abzufangen. Sie ermöglicht das Simulieren von REST- und GraphQL-APIs ohne Änderungen am Anwendungscode und eignet sich sowohl für Tests als auch für die lokale Entwicklung. Durch die netzwerknahe Interception bleiben die Mocks realistisch und unabhängig von der verwendeten HTTP-Client-Bibliothek.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-08-06",
+      "sourceRepos": [
+        "nerdware-order-app",
+        "caparo"
+      ]
+    }
+  },
+  {
+    "name": "Spring Boot Starter Security",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Spring Boot Starter Security ist ein Spring-Boot-Modul, das eine vorkonfigurierte Absicherung von Webanwendungen bereitstellt. Es integriert Spring Security mit Auto-Configuration und bietet standardmäßig Authentifizierung, Autorisierung sowie Schutz vor gängigen Angriffen wie CSRF und Session Fixation. In den erkannten Repositories wird es im Kontext von Prototyping und OpenID Connect (OIDC) eingesetzt, was auf die Nutzung für OAuth2- und OIDC-basierte Authentifizierungsszenarien hindeutet.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-08-07",
+      "sourceRepos": [
+        "se-gs-berlin-material-prototype",
+        "nerdware-oidc-provider"
+      ]
+    }
+  },
+  {
+    "name": "Spring Boot Starter Webmvc",
+    "ring": "dev",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "Spring Boot Starter Web MVC ist ein Starter-Paket des Spring-Boot-Frameworks, das alle notwendigen Abhängigkeiten für die Entwicklung von webbasierten Anwendungen und REST-APIs auf Basis von Spring MVC bündelt. Es enthält unter anderem einen eingebetteten Tomcat-Server, Jackson für JSON-Serialisierung sowie die automatische Konfiguration von Spring MVC. Im vorliegenden Kontext wird es sowohl für einen Prototyp als auch für einen OIDC-Provider eingesetzt, was seinen vielseitigen Einsatz bei der Bereitstellung von HTTP-Endpunkten unterstreicht.",
+    "autoRing": "dev",
+    "detected": {
+      "repoCount": 2,
+      "lastSeen": "2026-08-07",
+      "sourceRepos": [
+        "se-gs-berlin-material-prototype",
+        "nerdware-oidc-provider"
       ]
     }
   }
