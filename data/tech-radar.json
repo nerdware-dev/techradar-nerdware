@@ -15,7 +15,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 19,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -64,7 +64,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 48,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -126,7 +126,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 43,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "learning-digital",
         "techradar-nerdware",
@@ -204,7 +204,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-23",
       "sourceRepos": [
         "nerdware-order-app",
         "nerd-bites"
@@ -227,7 +227,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 15,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-30",
       "sourceRepos": [
         "terraform-nerdware",
         "townhall",
@@ -307,7 +307,7 @@
     "description": "Maven ist ein Build-Tool der Apache Software Foundation für die Projektverwaltung. Entwickler können damit Java-Projekte automatisieren. Maven ist ein Teil der Apache Software Foundation und wird von dieser gehostet. Das Tool ist aus einem Teil des Jakarta-Projekts hervorgegangen.",
     "detected": {
       "repoCount": 4,
-      "lastSeen": "2026-08-12",
+      "lastSeen": "2026-08-25",
       "sourceRepos": [
         "nerdware-cluster-playground-services",
         "health-hackathon",
@@ -347,7 +347,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 12,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-26",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -373,7 +373,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 18,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-26",
       "sourceRepos": [
         "townhall",
         "hackathon",
@@ -438,8 +438,8 @@
     "description": "Python ist eine universelle Programmiersprache, mit der sich Probleme und Aufgaben aus unterschiedlichsten Bereichen lösen lassen. Python setzt den Schwerpunkt auf Lesbarkeit und Einfachheit und verzichtet weitestgehend auf Klammern und das obligatorische Semikolon am Ende einer Zeile. Stattdessen ist penibel auf die korrekte Einrückung von Codezeilen und -blöcken zu achten.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 13,
-      "lastSeen": "2026-08-16",
+      "repoCount": 14,
+      "lastSeen": "2026-08-28",
       "sourceRepos": [
         "llm-comparison",
         "dtvp-scraper",
@@ -453,6 +453,7 @@
         "nerdhunter",
         "listenerd",
         "siemens-energy-etec",
+        "man-transport-solutions",
         "medizinischer-dienst"
       ]
     }
@@ -466,7 +467,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 57,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -537,7 +538,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 5,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-26",
       "sourceRepos": [
         "townhall",
         "nw-recruiting-metrics",
@@ -556,7 +557,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 4,
-      "lastSeen": "2026-08-12",
+      "lastSeen": "2026-08-25",
       "sourceRepos": [
         "nerdware-cluster-playground-services",
         "health-hackathon",
@@ -615,7 +616,7 @@
     "description": "Ziel von CI/CD, kurz für Continuous Integration und Continuous Delivery/Deployment, ist die Optimierung und Beschleunigung des Softwareentwicklungs-Lifecycle. Continuous Integration (CI) bezieht sich auf die Praktik, Codeänderungen automatisch und regelmäßig in ein gemeinsames Quellcode-Repository zu integrieren. Continuous Delivery und/oder Continuous Deployment (CD) ist ein zweiteiliger Prozess, der die Integration, das Testen und die Bereitstellung der Codeänderungen umfasst. Continuous Delivery beinhaltet kein automatisches Produktiv-Deployment, während beim Continuous Deployment Update-Releases automatisch in die Produktivumgebung übergeben werden.",
     "detected": {
       "repoCount": 43,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "learning-digital",
         "techradar-nerdware",
@@ -713,7 +714,7 @@
     "description": "Cloud-Networking bezieht sich auf die Gestaltung, Implementierung und Verwaltung von Netzwerkressourcen und -diensten in der Cloud. Es umfasst verschiedene Aspekte der Netzwerkkommunikation und -infrastruktur, die es Organisationen ermöglichen, ihre IT-Ressourcen in Cloud-Umgebungen effizient zu nutzen und zu verwalten.",
     "detected": {
       "repoCount": 19,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -745,7 +746,7 @@
     "description": "Infrastructure as Code (IaC) ist die Fähigkeit, Ihre Computerinfrastruktur mithilfe von Code anstelle manueller Prozesse und Einstellungen bereitzustellen und zu unterstützen. Jede Anwendungsumgebung erfordert viele Infrastrukturkomponenten wie Betriebssysteme, Datenbankverbindungen und Speicher. ",
     "detected": {
       "repoCount": 15,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-30",
       "sourceRepos": [
         "terraform-nerdware",
         "townhall",
@@ -774,7 +775,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 13,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -818,7 +819,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 31,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -863,7 +864,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 29,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -906,7 +907,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 31,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -951,7 +952,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 18,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-26",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -983,7 +984,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 24,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -1021,7 +1022,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 22,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "techradar-nerdware",
         "coffee-demo",
@@ -1057,7 +1058,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 11,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "techradar-nerdware",
         "townhall",
@@ -1082,7 +1083,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 15,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "techradar-nerdware",
         "xit-sync",
@@ -1111,7 +1112,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 15,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "techradar-nerdware",
         "coffee-demo",
@@ -1140,7 +1141,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 36,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "townhall",
         "pom-dekar-p",
@@ -1205,7 +1206,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 5,
-      "lastSeen": "2026-08-12",
+      "lastSeen": "2026-08-24",
       "sourceRepos": [
         "nerdware-cluster-playground-services",
         "hivemq-platform-operator-crds",
@@ -1224,7 +1225,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 20,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "cloudapi",
         "LLM-who-the-f...-is-alice",
@@ -1258,7 +1259,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 8,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "cloudapi",
         "aws-user-group-multi-tenancy-and-ephemeral-environments",
@@ -1280,7 +1281,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 11,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-28",
       "sourceRepos": [
         "aws-user-group-multi-tenancy-and-ephemeral-environments",
         "hack-zollhof-2025",
@@ -1337,7 +1338,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-07-28",
+      "lastSeen": "2026-08-28",
       "sourceRepos": [
         "SchickBauspeziAPI",
         "SchickBauspeziTheme",
@@ -1369,7 +1370,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-28",
       "sourceRepos": [
         "SchickBauspeziAPI",
         "shopware6-plugin-reference",
@@ -1623,7 +1624,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 11,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-30",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -1668,7 +1669,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 4,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-26",
       "sourceRepos": [
         "react-nestjs-template",
         "learning-digital",
@@ -1724,7 +1725,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 4,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-30",
       "sourceRepos": [
         "techradar-nerdware",
         "llm-workshop",
@@ -1742,7 +1743,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 4,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-26",
       "sourceRepos": [
         "townhall",
         "chat-room",
@@ -1760,7 +1761,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-26",
       "sourceRepos": [
         "townhall",
         "nw-recruiting-metrics"
@@ -1776,7 +1777,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-26",
       "sourceRepos": [
         "townhall",
         "coffee-demo"
@@ -1792,7 +1793,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-26",
       "sourceRepos": [
         "townhall",
         "fourdrop"
@@ -1934,7 +1935,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-30",
       "sourceRepos": [
         "angular-nestjs-template",
         "stargate",
@@ -1950,8 +1951,8 @@
     "description": "PostgreSQL (Pg) ist ein leistungsstarkes, quelloffenes relationales Datenbankmanagementsystem, das für seine Zuverlässigkeit, Erweiterbarkeit und SQL-Konformität bekannt ist. Es unterstützt komplexe Datentypen, ACID-konforme Transaktionen sowie fortgeschrittene Funktionen wie JSON-Verarbeitung und Volltextsuche. Der breite Einsatz in sieben Repositories – von Template-Projekten über KI-Anwendungen bis hin zu Microservices – unterstreicht seine Vielseitigkeit als bevorzugte Datenbanklösung für unterschiedlichste Anwendungsszenarien.",
     "autoRing": "high",
     "detected": {
-      "repoCount": 9,
-      "lastSeen": "2026-08-17",
+      "repoCount": 10,
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "angular-nestjs-template",
         "coin-demo",
@@ -1961,7 +1962,8 @@
         "nerdfinder",
         "skaling-ai-compass",
         "bayiko-cockpit",
-        "caparo"
+        "caparo",
+        "dm-tec-ai-layer"
       ]
     }
   },
@@ -1974,7 +1976,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 8,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-30",
       "sourceRepos": [
         "angular-nestjs-template",
         "fantastic-garbanzo",
@@ -2012,7 +2014,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-30",
       "sourceRepos": [
         "coffee-demo",
         "ai-gtm",
@@ -2029,7 +2031,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 6,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "coffee-demo",
         "capacity-planner",
@@ -2065,7 +2067,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 5,
-      "lastSeen": "2026-08-11",
+      "lastSeen": "2026-08-28",
       "sourceRepos": [
         "coffee-demo",
         "hack-zollhof-2025",
@@ -2151,7 +2153,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-30",
       "sourceRepos": [
         "hack-zollhof-2025",
         "ai-gtm",
@@ -2185,7 +2187,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-07-28",
+      "lastSeen": "2026-08-28",
       "sourceRepos": [
         "SchickBauspeziAPI",
         "SchickBauspeziTheme",
@@ -2222,7 +2224,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 8,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "capacity-planner",
         "Nerdlabsfigma",
@@ -2244,7 +2246,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 10,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-28",
       "sourceRepos": [
         "capacity-planner",
         "Nerdlabsfigma",
@@ -2268,7 +2270,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-30",
       "sourceRepos": [
         "stargate",
         "ai-gtm"
@@ -2284,7 +2286,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-30",
       "sourceRepos": [
         "stargate",
         "ai-gtm"
@@ -2334,7 +2336,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-28",
       "sourceRepos": [
         "nerdware-order-app",
         "graphmind",
@@ -2351,7 +2353,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-23",
       "sourceRepos": [
         "nerdware-order-app",
         "nerd-bites"
@@ -2367,7 +2369,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-23",
       "sourceRepos": [
         "nerdware-order-app",
         "graphmind"
@@ -2383,7 +2385,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-23",
       "sourceRepos": [
         "nerdware-order-app",
         "graphmind"
@@ -2399,7 +2401,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-25",
       "sourceRepos": [
         "nerdware-order-app",
         "skaling-ai-compass",
@@ -2416,7 +2418,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-23",
       "sourceRepos": [
         "nerdware-order-app",
         "nerdfinder",
@@ -2433,7 +2435,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-12",
+      "lastSeen": "2026-08-20",
       "sourceRepos": [
         "hetzner-landing-zone",
         "NerdBase"
@@ -2514,7 +2516,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "engineering-intelligence",
         "bayiko-cockpit"
@@ -2530,7 +2532,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-31",
       "sourceRepos": [
         "skaling-ai-compass",
         "bayiko-cockpit"
@@ -2562,7 +2564,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-25",
       "sourceRepos": [
         "nerdware-order-app",
         "nerdware-oidc-provider"
@@ -2578,7 +2580,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-17",
+      "lastSeen": "2026-08-23",
       "sourceRepos": [
         "nerdware-order-app",
         "caparo"
@@ -2594,7 +2596,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-12",
+      "lastSeen": "2026-08-25",
       "sourceRepos": [
         "se-gs-berlin-material-prototype",
         "nerdware-oidc-provider"
@@ -2610,7 +2612,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-12",
+      "lastSeen": "2026-08-25",
       "sourceRepos": [
         "se-gs-berlin-material-prototype",
         "nerdware-oidc-provider"
