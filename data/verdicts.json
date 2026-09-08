@@ -2207,6 +2207,12 @@
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
+  "pdfjs-dist": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-07"
+  },
   "pdfplumber": {
     "verdict": "noise",
     "source": "llm",
