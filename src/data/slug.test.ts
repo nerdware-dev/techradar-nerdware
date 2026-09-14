@@ -11,4 +11,9 @@ describe('slugify', () => {
   it('strips leading/trailing hyphens', () => {
     expect(slugify('  Tools!  ')).toBe('tools')
   })
+  it('distinguishes C, C++, and C# instead of collapsing them together', () => {
+    expect(slugify('C')).toBe('c')
+    expect(slugify('C++')).toBe('c-plus-plus')
+    expect(slugify('C#')).toBe('c-sharp')
+  })
 })
