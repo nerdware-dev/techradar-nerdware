@@ -22,3 +22,16 @@ export const RADAR_DATA_URL: string =
 
 /** Radius of the outermost ring, in SVG user units. */
 export const RADAR_SIZE = 400
+
+/** Rendered radius of a blip dot, in SVG user units (see Blip.tsx). */
+export const BLIP_RADIUS = 9
+
+/**
+ * Minimum center-to-center distance enforced between two blips placed in the
+ * same ring+quadrant segment. Sized to the plain dot diameter (2 * BLIP_RADIUS)
+ * plus a small gap, not to the larger "isNew" halo (BLIP_RADIUS + 4): at 2x the
+ * halo radius, packing 37 blips into the densest real segment (dev/languages-
+ * frameworks) is no longer geometrically feasible, so occasional halo overlap
+ * on "new" blips is accepted as the cheaper trade-off.
+ */
+export const MIN_BLIP_DISTANCE = 2 * BLIP_RADIUS + 4
