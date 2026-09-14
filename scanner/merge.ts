@@ -44,7 +44,6 @@ export function mergeRadar(
       next.detected = {
         repoCount: detection.repoCount,
         lastSeen: detection.lastSeen,
-        sourceRepos: detection.sourceRepos,
       }
       if (detection.derived) {
         // Implied abstract blip: record evidence only — never move its manual ring.
@@ -92,7 +91,6 @@ export function mergeRadar(
       detected: {
         repoCount: detection.repoCount,
         lastSeen: detection.lastSeen,
-        sourceRepos: detection.sourceRepos,
       },
     }
     if (cat?.needsReview) {

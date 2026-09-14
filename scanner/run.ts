@@ -10,7 +10,7 @@ import { SCANNER_CONFIG } from './config'
 import { createGitHubClient } from './github'
 import { createLLMClient } from './llm/createLLMClient'
 import { runScan } from './scan'
-import type { ScannerBlip } from './types'
+import type { Detection, ScannerBlip } from './types'
 
 async function main(): Promise<void> {
   // Load .env locally (gitignored); in CI the vars come from the environment.
@@ -57,13 +57,23 @@ async function main(): Promise<void> {
 
   await writeFile(SCANNER_CONFIG.paths.radar, JSON.stringify(result.candidate, null, 2) + '\n')
   await mkdir(SCANNER_CONFIG.paths.detectionsDir, { recursive: true })
+  // Source repo names never leave the scan process: they'd otherwise identify
+  // private client repos in a file this public repo commits and serves.
+  const withoutSourceRepos = (d: Detection): Omit<Detection, 'sourceRepos'> => ({
+    name: d.name,
+    repoCount: d.repoCount,
+    lastSeen: d.lastSeen,
+    quadrantHint: d.quadrantHint,
+    quadrant: d.quadrant,
+    derived: d.derived,
+  })
   await writeFile(
     join(SCANNER_CONFIG.paths.detectionsDir, `${today}.json`),
     JSON.stringify(
       {
-        detections: result.detections,
-        belowThreshold: result.belowThreshold,
-        suppressed: result.suppressed,
+        detections: result.detections.map(withoutSourceRepos),
+        belowThreshold: result.belowThreshold.map(withoutSourceRepos),
+        suppressed: result.suppressed.map(withoutSourceRepos),
       },
       null,
       2,

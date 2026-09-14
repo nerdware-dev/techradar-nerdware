@@ -594,7 +594,7 @@ import type { RepoScan } from './types'
 
 const scans: RepoScan[] = [
   {
-    repo: 'graphmind',
+    repo: 'repo-a',
     pushedAt: '2026-06-17',
     tokens: [
       { raw: 'react', kind: 'dependency' },
@@ -602,7 +602,7 @@ const scans: RepoScan[] = [
     ],
   },
   {
-    repo: 'vend',
+    repo: 'repo-b',
     pushedAt: '2026-06-15',
     tokens: [
       { raw: 'react-dom', kind: 'dependency' },
@@ -615,7 +615,7 @@ describe('aggregate', () => {
   it('collapses aliases and counts distinct repos', () => {
     const react = aggregate(scans).find((d) => d.name === 'React')!
     expect(react.repoCount).toBe(2)
-    expect(react.sourceRepos.sort()).toEqual(['graphmind', 'vend'])
+    expect(react.sourceRepos.sort()).toEqual(['repo-a', 'repo-b'])
   })
   it('records the most recent pushedAt as lastSeen', () => {
     const react = aggregate(scans).find((d) => d.name === 'React')!
@@ -1821,7 +1821,7 @@ import type { LLMClient } from './llm/types'
 import type { ScannerBlip } from './types'
 
 const gh: GitHubClient = {
-  listRepos: vi.fn().mockResolvedValue([{ name: 'graphmind', defaultBranch: 'main', pushedAt: '2026-06-18' }]),
+  listRepos: vi.fn().mockResolvedValue([{ name: 'repo-a', defaultBranch: 'main', pushedAt: '2026-06-18' }]),
   getLanguages: vi.fn().mockResolvedValue({ TypeScript: 1000 }),
   listFiles: vi.fn().mockResolvedValue(['package.json', 'Dockerfile']),
   getFileContent: vi.fn().mockResolvedValue(JSON.stringify({ dependencies: { react: '^19' } })),

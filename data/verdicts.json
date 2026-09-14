@@ -344,12 +344,6 @@
     "confidence": 0.95,
     "decidedAt": "2026-08-17"
   },
-  "bayiko-shared": {
-    "verdict": "noise",
-    "source": "llm",
-    "confidence": 0.95,
-    "decidedAt": "2026-06-29"
-  },
   "bcrypt": {
     "verdict": "noise",
     "source": "llm",
@@ -424,42 +418,6 @@
     "source": "llm",
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
-  },
-  "caparo-b1-identity": {
-    "verdict": "noise",
-    "source": "llm",
-    "confidence": 0.85,
-    "decidedAt": "2026-08-17"
-  },
-  "caparo-b2-termin-engine": {
-    "verdict": "noise",
-    "source": "llm",
-    "confidence": 0.95,
-    "decidedAt": "2026-08-17"
-  },
-  "caparo-b3-payment": {
-    "verdict": "noise",
-    "source": "llm",
-    "confidence": 0.95,
-    "decidedAt": "2026-08-17"
-  },
-  "caparo-contracts": {
-    "verdict": "noise",
-    "source": "llm",
-    "confidence": 0.85,
-    "decidedAt": "2026-08-17"
-  },
-  "caparo-infra": {
-    "verdict": "noise",
-    "source": "llm",
-    "confidence": 0.85,
-    "decidedAt": "2026-08-17"
-  },
-  "caparo-ui": {
-    "verdict": "noise",
-    "source": "llm",
-    "confidence": 0.85,
-    "decidedAt": "2026-08-17"
   },
   "chalk": {
     "verdict": "noise",
@@ -1164,42 +1122,6 @@
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
-  "github-com-nerdware-dev-go-odoo-v17": {
-    "verdict": "noise",
-    "source": "llm",
-    "confidence": 0.95,
-    "decidedAt": "2026-06-22"
-  },
-  "github-com-nerdware-dev-townhall-budget-core": {
-    "verdict": "noise",
-    "source": "llm",
-    "confidence": 0.95,
-    "decidedAt": "2026-06-22"
-  },
-  "github-com-nerdware-dev-townhall-core": {
-    "verdict": "noise",
-    "source": "llm",
-    "confidence": 0.9,
-    "decidedAt": "2026-06-22"
-  },
-  "github-com-nerdware-dev-townhall-datahub-core": {
-    "verdict": "noise",
-    "source": "llm",
-    "confidence": 0.95,
-    "decidedAt": "2026-06-22"
-  },
-  "github-com-nerdware-dev-townhall-order-core": {
-    "verdict": "noise",
-    "source": "llm",
-    "confidence": 0.95,
-    "decidedAt": "2026-06-22"
-  },
-  "github-com-nerdware-dev-townhall-timetracking-core": {
-    "verdict": "noise",
-    "source": "llm",
-    "confidence": 0.95,
-    "decidedAt": "2026-06-22"
-  },
   "github-com-pkasila-gorm-crypto": {
     "verdict": "noise",
     "source": "llm",
@@ -1315,18 +1237,6 @@
     "verdict": "noise",
     "source": "llm",
     "confidence": 0.85,
-    "decidedAt": "2026-06-22"
-  },
-  "graphmind-contracts": {
-    "verdict": "noise",
-    "source": "llm",
-    "confidence": 0.85,
-    "decidedAt": "2026-06-22"
-  },
-  "graphmind-ui": {
-    "verdict": "noise",
-    "source": "llm",
-    "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
   "gray-matter": {
@@ -1864,42 +1774,6 @@
     "verdict": "noise",
     "source": "llm",
     "confidence": 0.95,
-    "decidedAt": "2026-06-22"
-  },
-  "nerdfinder-contracts": {
-    "verdict": "noise",
-    "source": "llm",
-    "confidence": 0.9,
-    "decidedAt": "2026-06-22"
-  },
-  "nerdfinder-core": {
-    "verdict": "noise",
-    "source": "llm",
-    "confidence": 0.95,
-    "decidedAt": "2026-06-22"
-  },
-  "nerdfinder-db": {
-    "verdict": "noise",
-    "source": "llm",
-    "confidence": 0.95,
-    "decidedAt": "2026-06-22"
-  },
-  "nerdhunter-core": {
-    "verdict": "noise",
-    "source": "llm",
-    "confidence": 0.95,
-    "decidedAt": "2026-06-22"
-  },
-  "nerdhunter-db": {
-    "verdict": "noise",
-    "source": "llm",
-    "confidence": 0.95,
-    "decidedAt": "2026-06-22"
-  },
-  "nerdhunter-llm": {
-    "verdict": "noise",
-    "source": "llm",
-    "confidence": 0.85,
     "decidedAt": "2026-06-22"
   },
   "nerdware-date": {

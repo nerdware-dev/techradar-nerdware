@@ -78,7 +78,7 @@ The scanner writes the **effective** `ring` / `quadrant` / `description` (exactl
   "isNew": false,
   "description": "…German…",              // effective
   // ---- machine-owned (scanner writes freely) ----
-  "detected": { "repoCount": 7, "lastSeen": "2026-06-18", "sourceRepos": ["graphmind", "vend"] },
+  "detected": { "repoCount": 7, "lastSeen": "2026-06-18", "sourceRepos": ["repo-a", "repo-b"] },
   "autoRing": "high",                     // adoption alone would say "high"…
   // ---- human-owned (scanner READS, never writes) ----
   "ringOverride": "dev",        // …but a human pinned it to "dev", and the scanner obeys

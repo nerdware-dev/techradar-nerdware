@@ -8,8 +8,8 @@ import type { ScannerBlip } from './types'
 // techs clear the adoption floor (promoteMinRepos = 2) and auto-promote.
 const gh: GitHubClient = {
   listRepos: vi.fn().mockResolvedValue([
-    { name: 'graphmind', defaultBranch: 'main', pushedAt: '2026-06-18' },
-    { name: 'vend', defaultBranch: 'main', pushedAt: '2026-06-17' },
+    { name: 'repo-a', defaultBranch: 'main', pushedAt: '2026-06-18' },
+    { name: 'repo-b', defaultBranch: 'main', pushedAt: '2026-06-17' },
   ]),
   getLanguages: vi.fn().mockResolvedValue({ TypeScript: 1000 }),
   listFiles: vi.fn().mockResolvedValue(['package.json', 'Dockerfile']),

@@ -15,28 +15,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 19,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "townhall",
-        "cloudapi",
-        "aws-user-group-multi-tenancy-and-ephemeral-environments",
-        "angular-nestjs-template",
-        "serverless-example",
-        "fantastic-garbanzo",
-        "production-ready-serverless",
-        "coffee-demo",
-        "coin-demo",
-        "tender-parser",
-        "bid-flow-backend",
-        "hack-zollhof-2025",
-        "ai-gtm",
-        "nerdware-order-app",
-        "nerdfinder",
-        "NerdBase",
-        "bayiko-cockpit"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -47,10 +26,7 @@
     "description": "Die Azure-Cloudplattform besteht aus mehr als 200 Produkten und Clouddiensten und wurde dafür konzipiert, Sie bei der Entwicklung neuer Lösungen zu unterstützen. So können Sie aktuelle Herausforderungen bewältigen und den Weg für die Zukunft ebnen. Sie können Anwendungen in mehreren Clouds, lokal oder am Edge entwickeln, ausführen und verwalten.",
     "detected": {
       "repoCount": 1,
-      "lastSeen": "2024-01-31",
-      "sourceRepos": [
-        "cloudapi"
-      ]
+      "lastSeen": "2024-01-31"
     },
     "autoRing": "low",
     "ringOverride": "high"
@@ -64,57 +40,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 48,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "techradar-nerdware",
-        "townhall",
-        "hackathon",
-        "nerdware-cluster",
-        "nerdware-cluster-playground-services",
-        "pom-dekar-p",
-        "Skillerd",
-        "aws-user-group-multi-tenancy-and-ephemeral-environments",
-        "angular-nestjs-template",
-        "hackbay2024",
-        "fantastic-garbanzo",
-        "yt-semantic-release",
-        "nw-semantic-release",
-        "coffee-demo",
-        "llm-workshop",
-        "coin-demo",
-        "fourdrop",
-        "dtvp-scraper",
-        "tender-parser",
-        "bid-flow-backend",
-        "hack-zollhof-2025",
-        "ai-engineer-template",
-        "echo-clean-architecture",
-        "n8n-infra",
-        "stargate",
-        "skillard-excelled",
-        "ai-gtm",
-        "demo-mcp-nerdware",
-        "md-plattform-prototype",
-        "nerdware-order-app",
-        "hetzner-landing-zone",
-        "graphmind",
-        "nerdfinder",
-        "nerd-bites",
-        "vend",
-        "NerdBase",
-        "fegime-opensearch-prototype",
-        "bayiko-cockpit",
-        "bfz-moodle-plugin",
-        "se-gs-berlin-material-prototype",
-        "enterprise-evolution",
-        "caparo",
-        "nerdware-oidc-provider",
-        "medizinischer-dienst",
-        "dmtech-playground",
-        "dm-tec-ai-layer"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -126,52 +52,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 43,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "learning-digital",
-        "techradar-nerdware",
-        "townhall",
-        "hackathon",
-        "nerdware-cluster",
-        "nerdware-cluster-playground-services",
-        "pom-dekar-p",
-        "Skillerd",
-        "aws-user-group-multi-tenancy-and-ephemeral-environments",
-        "angular-nestjs-template",
-        "serverless-example",
-        "hackbay2024",
-        "fantastic-garbanzo",
-        "yt-semantic-release",
-        "nw-semantic-release",
-        "coffee-demo",
-        "coin-demo",
-        "fourdrop",
-        "dtvp-scraper",
-        "ai-engineer-template",
-        "ipsen-botulinumtoxin-injektionsmuster",
-        "SchickBauspeziAPI",
-        "SchickBauspeziTheme",
-        "n8n-infra",
-        "stargate",
-        "skillard-excelled",
-        "ai-gtm",
-        "claude-plugins",
-        "nerdlabs-homepage",
-        "nerdware-homepage",
-        "shopware6-plugin-reference",
-        "nerdware-order-app",
-        "hetzner-landing-zone",
-        "graphmind",
-        "nerdfinder",
-        "skaling-ai-compass",
-        "NerdBase",
-        "bayiko-cockpit",
-        "bfz-moodle-plugin",
-        "se-gs-berlin-material-prototype",
-        "enterprise-evolution",
-        "nerdware-oidc-provider",
-        "dm-tec-ai-layer"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -204,11 +85,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-23",
-      "sourceRepos": [
-        "nerdware-order-app",
-        "nerd-bites"
-      ]
+      "lastSeen": "2026-08-23"
     }
   },
   {
@@ -227,24 +104,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 15,
-      "lastSeen": "2026-09-04",
-      "sourceRepos": [
-        "terraform-nerdware",
-        "townhall",
-        "hackathon",
-        "aws-user-group-multi-tenancy-and-ephemeral-environments",
-        "angular-nestjs-template",
-        "yt-semantic-release",
-        "nw-semantic-release",
-        "coffee-demo",
-        "dtvp-scraper",
-        "stargate",
-        "ai-gtm",
-        "hetzner-landing-zone",
-        "scaleway-ai-cluster",
-        "enterprise-evolution",
-        "nergie-llmaas-gateway"
-      ]
+      "lastSeen": "2026-09-04"
     }
   },
   {
@@ -255,12 +115,7 @@
     "description": "Terragrunt ist ein Open-Source-Tool, das auf HashiCorp Terraform aufbaut und dazu dient, die Verwaltung von Terraform-Konfigurationen zu vereinfachen und zu verbessern. Terraform ist ein populäres Tool für das Infrastruktur-As-Code (IaC), das es ermöglicht, die Infrastrukturressourcen in verschiedenen Cloud-Plattformen und On-Premises-Infrastrukturen zu definieren, zu verwalten und zu versionieren.",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-06-05",
-      "sourceRepos": [
-        "aws-user-group-multi-tenancy-and-ephemeral-environments",
-        "angular-nestjs-template",
-        "coffee-demo"
-      ]
+      "lastSeen": "2026-06-05"
     },
     "autoRing": "dev"
   },
@@ -307,13 +162,7 @@
     "description": "Maven ist ein Build-Tool der Apache Software Foundation für die Projektverwaltung. Entwickler können damit Java-Projekte automatisieren. Maven ist ein Teil der Apache Software Foundation und wird von dieser gehostet. Das Tool ist aus einem Teil des Jakarta-Projekts hervorgegangen.",
     "detected": {
       "repoCount": 4,
-      "lastSeen": "2026-09-02",
-      "sourceRepos": [
-        "nerdware-cluster-playground-services",
-        "health-hackathon",
-        "se-gs-berlin-material-prototype",
-        "nerdware-oidc-provider"
-      ]
+      "lastSeen": "2026-09-02"
     },
     "autoRing": "dev"
   },
@@ -347,21 +196,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 12,
-      "lastSeen": "2026-09-04",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "townhall",
-        "chat-room",
-        "Skillerd",
-        "angular-nestjs-template",
-        "hackbay2024",
-        "coffee-demo",
-        "fourdrop",
-        "skillard-excelled",
-        "graphmind",
-        "caparo"
-      ]
+      "lastSeen": "2026-09-04"
     }
   },
   {
@@ -373,27 +208,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 18,
-      "lastSeen": "2026-09-04",
-      "sourceRepos": [
-        "townhall",
-        "hackathon",
-        "chat-room",
-        "Skillerd",
-        "angular-nestjs-template",
-        "hackbay2024",
-        "hackbay-demo",
-        "fantastic-garbanzo",
-        "health-hackathon",
-        "coin-demo",
-        "fourdrop",
-        "ipsen-botulinumtoxin-injektionsmuster",
-        "nerdAI",
-        "coding-challenge",
-        "skillard-excelled",
-        "claude-project-kickstart-example",
-        "NerdBase",
-        "dmtech-playground"
-      ]
+      "lastSeen": "2026-09-04"
     }
   },
   {
@@ -405,10 +220,7 @@
     "autoRing": "low",
     "detected": {
       "repoCount": 1,
-      "lastSeen": "2026-06-05",
-      "sourceRepos": [
-        "coffee-demo"
-      ]
+      "lastSeen": "2026-06-05"
     }
   },
   {
@@ -419,14 +231,7 @@
     "description": "NET ist eine kostenlose, plattformübergreifende Open-Source-Entwicklerplattform für die Erstellung vieler verschiedener Arten von Anwendungen. Es kann Programme ausführen, die in mehreren Sprachen geschrieben wurden, wobei C# am beliebtesten ist. Es basiert auf einer leistungsstarken Runtime, die in der Produktion von vielen anspruchsvollen Apps verwendet wird.",
     "detected": {
       "repoCount": 5,
-      "lastSeen": "2026-06-05",
-      "sourceRepos": [
-        "hackathon",
-        "Skillerd",
-        "hackbay2024",
-        "echo-clean-architecture",
-        "skillard-excelled"
-      ]
+      "lastSeen": "2026-06-05"
     },
     "autoRing": "high"
   },
@@ -439,23 +244,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 14,
-      "lastSeen": "2026-09-06",
-      "sourceRepos": [
-        "llm-comparison",
-        "dtvp-scraper",
-        "tender-parser",
-        "bid-flow-backend",
-        "ai-engineer-template",
-        "hubspot-to-odoo",
-        "nerdAI",
-        "claude-plugins",
-        "engineering-intelligence",
-        "nerdhunter",
-        "listenerd",
-        "siemens-energy-etec",
-        "man-transport-solutions",
-        "medizinischer-dienst"
-      ]
+      "lastSeen": "2026-09-06"
     }
   },
   {
@@ -467,66 +256,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 57,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "techradar-nerdware",
-        "townhall",
-        "hackathon",
-        "chat-room",
-        "pom-dekar-p",
-        "Skillerd",
-        "aws-user-group-multi-tenancy-and-ephemeral-environments",
-        "kata-typescript-boolean-expressions",
-        "angular-nestjs-template",
-        "hackbay2024",
-        "xit-sync",
-        "hackbay-demo",
-        "fantastic-garbanzo",
-        "yt-semantic-release",
-        "nw-semantic-release",
-        "clean-architecture-vs-vertical-sliced-architecture",
-        "coffee-demo",
-        "health-hackathon",
-        "coin-demo",
-        "fourdrop",
-        "hack-zollhof-2025",
-        "ipsen-botulinumtoxin-injektionsmuster",
-        "nerdAI",
-        "capacity-planner",
-        "coding-challenge",
-        "stargate",
-        "skillard-excelled",
-        "claude-project-kickstart-example",
-        "ai-gtm",
-        "demo-mcp-nerdware",
-        "Nerdlabsfigma",
-        "penzilla",
-        "nerdlabs-homepage",
-        "nerdware-homepage",
-        "engineering-intelligence",
-        "md-plattform-prototype",
-        "nerdware-order-app",
-        "nerdhunter",
-        "graphmind",
-        "nerdfinder",
-        "nerd-bites",
-        "vend",
-        "ki-cooking",
-        "skaling-ai-compass",
-        "NerdBase",
-        "bayiko-cockpit",
-        "ideematec_offer_system",
-        "se-gs-berlin-material-prototype",
-        "enterprise-evolution",
-        "playground-tldraw",
-        "caparo",
-        "playground-excalidraw",
-        "nerdware-oidc-provider",
-        "dmtech-playground",
-        "dm-tec-ai-layer"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -538,14 +268,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 5,
-      "lastSeen": "2026-09-04",
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics",
-        "hetzner-landing-zone",
-        "nerdfinder",
-        "NerdBase"
-      ]
+      "lastSeen": "2026-09-04"
     }
   },
   {
@@ -557,13 +280,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 4,
-      "lastSeen": "2026-09-02",
-      "sourceRepos": [
-        "nerdware-cluster-playground-services",
-        "health-hackathon",
-        "se-gs-berlin-material-prototype",
-        "nerdware-oidc-provider"
-      ]
+      "lastSeen": "2026-09-02"
     }
   },
   {
@@ -616,52 +333,7 @@
     "description": "Ziel von CI/CD, kurz für Continuous Integration und Continuous Delivery/Deployment, ist die Optimierung und Beschleunigung des Softwareentwicklungs-Lifecycle. Continuous Integration (CI) bezieht sich auf die Praktik, Codeänderungen automatisch und regelmäßig in ein gemeinsames Quellcode-Repository zu integrieren. Continuous Delivery und/oder Continuous Deployment (CD) ist ein zweiteiliger Prozess, der die Integration, das Testen und die Bereitstellung der Codeänderungen umfasst. Continuous Delivery beinhaltet kein automatisches Produktiv-Deployment, während beim Continuous Deployment Update-Releases automatisch in die Produktivumgebung übergeben werden.",
     "detected": {
       "repoCount": 43,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "learning-digital",
-        "techradar-nerdware",
-        "townhall",
-        "hackathon",
-        "nerdware-cluster",
-        "nerdware-cluster-playground-services",
-        "pom-dekar-p",
-        "Skillerd",
-        "aws-user-group-multi-tenancy-and-ephemeral-environments",
-        "angular-nestjs-template",
-        "serverless-example",
-        "hackbay2024",
-        "fantastic-garbanzo",
-        "yt-semantic-release",
-        "nw-semantic-release",
-        "coffee-demo",
-        "coin-demo",
-        "fourdrop",
-        "dtvp-scraper",
-        "ai-engineer-template",
-        "ipsen-botulinumtoxin-injektionsmuster",
-        "SchickBauspeziAPI",
-        "SchickBauspeziTheme",
-        "n8n-infra",
-        "stargate",
-        "skillard-excelled",
-        "ai-gtm",
-        "claude-plugins",
-        "nerdlabs-homepage",
-        "nerdware-homepage",
-        "shopware6-plugin-reference",
-        "nerdware-order-app",
-        "hetzner-landing-zone",
-        "graphmind",
-        "nerdfinder",
-        "skaling-ai-compass",
-        "NerdBase",
-        "bayiko-cockpit",
-        "bfz-moodle-plugin",
-        "se-gs-berlin-material-prototype",
-        "enterprise-evolution",
-        "nerdware-oidc-provider",
-        "dm-tec-ai-layer"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -714,28 +386,7 @@
     "description": "Cloud-Networking bezieht sich auf die Gestaltung, Implementierung und Verwaltung von Netzwerkressourcen und -diensten in der Cloud. Es umfasst verschiedene Aspekte der Netzwerkkommunikation und -infrastruktur, die es Organisationen ermöglichen, ihre IT-Ressourcen in Cloud-Umgebungen effizient zu nutzen und zu verwalten.",
     "detected": {
       "repoCount": 19,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "townhall",
-        "cloudapi",
-        "aws-user-group-multi-tenancy-and-ephemeral-environments",
-        "angular-nestjs-template",
-        "serverless-example",
-        "fantastic-garbanzo",
-        "production-ready-serverless",
-        "coffee-demo",
-        "coin-demo",
-        "tender-parser",
-        "bid-flow-backend",
-        "hack-zollhof-2025",
-        "ai-gtm",
-        "nerdware-order-app",
-        "nerdfinder",
-        "NerdBase",
-        "bayiko-cockpit"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -746,24 +397,7 @@
     "description": "Infrastructure as Code (IaC) ist die Fähigkeit, Ihre Computerinfrastruktur mithilfe von Code anstelle manueller Prozesse und Einstellungen bereitzustellen und zu unterstützen. Jede Anwendungsumgebung erfordert viele Infrastrukturkomponenten wie Betriebssysteme, Datenbankverbindungen und Speicher. ",
     "detected": {
       "repoCount": 15,
-      "lastSeen": "2026-09-04",
-      "sourceRepos": [
-        "terraform-nerdware",
-        "townhall",
-        "hackathon",
-        "aws-user-group-multi-tenancy-and-ephemeral-environments",
-        "angular-nestjs-template",
-        "yt-semantic-release",
-        "nw-semantic-release",
-        "coffee-demo",
-        "dtvp-scraper",
-        "stargate",
-        "ai-gtm",
-        "hetzner-landing-zone",
-        "scaleway-ai-cluster",
-        "enterprise-evolution",
-        "nergie-llmaas-gateway"
-      ]
+      "lastSeen": "2026-09-04"
     }
   },
   {
@@ -775,22 +409,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 13,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "angular-nestjs-template",
-        "fantastic-garbanzo",
-        "yt-semantic-release",
-        "nw-semantic-release",
-        "clean-architecture-vs-vertical-sliced-architecture",
-        "coffee-demo",
-        "coding-challenge",
-        "graphmind",
-        "nerd-bites",
-        "bayiko-cockpit",
-        "caparo"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -802,12 +421,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-09-02",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "se-gs-berlin-material-prototype"
-      ]
+      "lastSeen": "2026-09-02"
     }
   },
   {
@@ -819,40 +433,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 31,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "techradar-nerdware",
-        "townhall",
-        "pom-dekar-p",
-        "aws-user-group-multi-tenancy-and-ephemeral-environments",
-        "coffee-demo",
-        "hack-zollhof-2025",
-        "capacity-planner",
-        "coding-challenge",
-        "stargate",
-        "ai-gtm",
-        "penzilla",
-        "md-plattform-prototype",
-        "nerdware-order-app",
-        "nerdhunter",
-        "graphmind",
-        "nerdfinder",
-        "nerd-bites",
-        "vend",
-        "ki-cooking",
-        "skaling-ai-compass",
-        "bayiko-cockpit",
-        "ideematec_offer_system",
-        "se-gs-berlin-material-prototype",
-        "enterprise-evolution",
-        "playground-tldraw",
-        "caparo",
-        "playground-excalidraw",
-        "nerdware-oidc-provider",
-        "dm-tec-ai-layer"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -864,38 +445,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 29,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "townhall",
-        "hackathon",
-        "chat-room",
-        "Skillerd",
-        "angular-nestjs-template",
-        "serverless-example",
-        "hackbay2024",
-        "hackbay-demo",
-        "fantastic-garbanzo",
-        "yt-semantic-release",
-        "nw-semantic-release",
-        "clean-architecture-vs-vertical-sliced-architecture",
-        "coffee-demo",
-        "health-hackathon",
-        "coin-demo",
-        "fourdrop",
-        "ipsen-botulinumtoxin-injektionsmuster",
-        "nerdAI",
-        "coding-challenge",
-        "skillard-excelled",
-        "claude-project-kickstart-example",
-        "graphmind",
-        "nerd-bites",
-        "NerdBase",
-        "bayiko-cockpit",
-        "caparo",
-        "dmtech-playground"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -907,40 +457,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 31,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "techradar-nerdware",
-        "townhall",
-        "chat-room",
-        "pom-dekar-p",
-        "Skillerd",
-        "aws-user-group-multi-tenancy-and-ephemeral-environments",
-        "angular-nestjs-template",
-        "hackbay2024",
-        "fantastic-garbanzo",
-        "yt-semantic-release",
-        "nw-semantic-release",
-        "clean-architecture-vs-vertical-sliced-architecture",
-        "coffee-demo",
-        "fourdrop",
-        "capacity-planner",
-        "nerd-upload",
-        "coding-challenge",
-        "skillard-excelled",
-        "penzilla",
-        "md-plattform-prototype",
-        "nerdware-order-app",
-        "graphmind",
-        "vend",
-        "ki-cooking",
-        "skaling-ai-compass",
-        "NerdBase",
-        "bayiko-cockpit",
-        "se-gs-berlin-material-prototype",
-        "dm-tec-ai-layer"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -952,27 +469,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 18,
-      "lastSeen": "2026-09-04",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "townhall",
-        "chat-room",
-        "Skillerd",
-        "kata-typescript-boolean-expressions",
-        "angular-nestjs-template",
-        "serverless-example",
-        "hackbay2024",
-        "fantastic-garbanzo",
-        "yt-semantic-release",
-        "nw-semantic-release",
-        "clean-architecture-vs-vertical-sliced-architecture",
-        "coffee-demo",
-        "coding-challenge",
-        "skillard-excelled",
-        "graphmind",
-        "nerd-bites"
-      ]
+      "lastSeen": "2026-09-04"
     }
   },
   {
@@ -984,33 +481,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 24,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "techradar-nerdware",
-        "townhall",
-        "chat-room",
-        "Skillerd",
-        "angular-nestjs-template",
-        "hackbay2024",
-        "fantastic-garbanzo",
-        "yt-semantic-release",
-        "nw-semantic-release",
-        "clean-architecture-vs-vertical-sliced-architecture",
-        "coffee-demo",
-        "fourdrop",
-        "coding-challenge",
-        "skillard-excelled",
-        "nerdware-order-app",
-        "graphmind",
-        "ki-cooking",
-        "skaling-ai-compass",
-        "NerdBase",
-        "bayiko-cockpit",
-        "se-gs-berlin-material-prototype",
-        "dmtech-playground"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -1022,31 +493,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 22,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "techradar-nerdware",
-        "coffee-demo",
-        "fourdrop",
-        "capacity-planner",
-        "nerd-upload",
-        "coding-challenge",
-        "stargate",
-        "ai-gtm",
-        "Nerdlabsfigma",
-        "penzilla",
-        "nerdlabs-homepage",
-        "nerdware-homepage",
-        "graphmind",
-        "nerd-bites",
-        "vend",
-        "ki-cooking",
-        "skaling-ai-compass",
-        "bayiko-cockpit",
-        "ideematec_offer_system",
-        "playground-tldraw",
-        "caparo",
-        "playground-excalidraw"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -1058,20 +505,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 11,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "techradar-nerdware",
-        "townhall",
-        "fourdrop",
-        "ai-gtm",
-        "nerdlabs-homepage",
-        "nerdware-homepage",
-        "nerdware-order-app",
-        "skaling-ai-compass",
-        "bayiko-cockpit",
-        "ideematec_offer_system",
-        "caparo"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -1083,24 +517,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 15,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "techradar-nerdware",
-        "xit-sync",
-        "capacity-planner",
-        "stargate",
-        "ai-gtm",
-        "claude-plugins",
-        "demo-mcp-nerdware",
-        "md-plattform-prototype",
-        "nerdware-order-app",
-        "nerdhunter",
-        "graphmind",
-        "nerdfinder",
-        "nerd-bites",
-        "skaling-ai-compass",
-        "bayiko-cockpit"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -1112,24 +529,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 15,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "techradar-nerdware",
-        "coffee-demo",
-        "fourdrop",
-        "stargate",
-        "claude-project-kickstart-example",
-        "ai-gtm",
-        "nerdware-order-app",
-        "graphmind",
-        "nerdfinder",
-        "skaling-ai-compass",
-        "bayiko-cockpit",
-        "ideematec_offer_system",
-        "caparo",
-        "dmtech-playground",
-        "dm-tec-ai-layer"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -1141,45 +541,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 36,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "townhall",
-        "pom-dekar-p",
-        "Skillerd",
-        "aws-user-group-multi-tenancy-and-ephemeral-environments",
-        "angular-nestjs-template",
-        "hackbay2024",
-        "fantastic-garbanzo",
-        "coffee-demo",
-        "health-hackathon",
-        "coin-demo",
-        "fourdrop",
-        "hack-zollhof-2025",
-        "ipsen-botulinumtoxin-injektionsmuster",
-        "nerdAI",
-        "capacity-planner",
-        "stargate",
-        "skillard-excelled",
-        "ai-gtm",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "md-plattform-prototype",
-        "nerdware-order-app",
-        "nerdhunter",
-        "graphmind",
-        "nerdfinder",
-        "nerd-bites",
-        "vend",
-        "ki-cooking",
-        "NerdBase",
-        "bayiko-cockpit",
-        "ideematec_offer_system",
-        "se-gs-berlin-material-prototype",
-        "enterprise-evolution",
-        "caparo",
-        "nerdware-oidc-provider",
-        "dm-tec-ai-layer"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -1187,14 +549,11 @@
     "ring": "low",
     "quadrant": "languages-frameworks",
     "isNew": true,
-    "description": "Ruby ist eine dynamische, objektorientierte Programmiersprache, die für ihre elegante Syntax und hohe Entwicklerproduktivität bekannt ist. Sie wird häufig in der Webentwicklung (insbesondere mit dem Framework Ruby on Rails), für Scripting und Automatisierung sowie im DevOps-Bereich eingesetzt. Im Kontext des nerdware-cluster wird Ruby vermutlich für Infrastruktur-Automatisierung oder Konfigurationsmanagement verwendet.",
+    "description": "Ruby ist eine dynamische, objektorientierte Programmiersprache, die für ihre elegante Syntax und hohe Entwicklerproduktivität bekannt ist. Sie wird häufig in der Webentwicklung (insbesondere mit dem Framework Ruby on Rails), für Scripting und Automatisierung sowie im DevOps-Bereich eingesetzt. Im vorliegenden Kontext wird Ruby vermutlich für Infrastruktur-Automatisierung oder Konfigurationsmanagement verwendet.",
     "autoRing": "low",
     "detected": {
       "repoCount": 1,
-      "lastSeen": "2026-06-05",
-      "sourceRepos": [
-        "nerdware-cluster"
-      ]
+      "lastSeen": "2026-06-05"
     }
   },
   {
@@ -1206,14 +565,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 5,
-      "lastSeen": "2026-09-02",
-      "sourceRepos": [
-        "nerdware-cluster-playground-services",
-        "hivemq-platform-operator-crds",
-        "hetzner-landing-zone",
-        "graphmind",
-        "scaleway-ai-cluster"
-      ]
+      "lastSeen": "2026-09-02"
     }
   },
   {
@@ -1225,29 +577,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 20,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "cloudapi",
-        "LLM-who-the-f...-is-alice",
-        "serverless-example",
-        "yt-semantic-release",
-        "nw-semantic-release",
-        "production-ready-serverless",
-        "clean-architecture-vs-vertical-sliced-architecture",
-        "health-hackathon",
-        "ipsen-botulinumtoxin-injektionsmuster",
-        "nerd-upload",
-        "stargate",
-        "penzilla",
-        "shopware6-plugin-reference",
-        "engineering-intelligence",
-        "nerdware-order-app",
-        "fegime-opensearch-prototype",
-        "bayiko-cockpit",
-        "playground-tldraw",
-        "caparo",
-        "playground-excalidraw"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -1259,16 +589,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 7,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "cloudapi",
-        "aws-user-group-multi-tenancy-and-ephemeral-environments",
-        "coffee-demo",
-        "coin-demo",
-        "stargate",
-        "ai-gtm",
-        "bayiko-cockpit"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -1280,20 +601,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 11,
-      "lastSeen": "2026-09-04",
-      "sourceRepos": [
-        "aws-user-group-multi-tenancy-and-ephemeral-environments",
-        "hack-zollhof-2025",
-        "md-plattform-prototype",
-        "nerdware-order-app",
-        "nerdhunter",
-        "nerdfinder",
-        "skaling-ai-compass",
-        "se-gs-berlin-material-prototype",
-        "enterprise-evolution",
-        "nerdware-oidc-provider",
-        "dm-tec-ai-layer"
-      ]
+      "lastSeen": "2026-09-04"
     }
   },
   {
@@ -1301,14 +609,11 @@
     "ring": "low",
     "quadrant": "languages-frameworks",
     "isNew": true,
-    "description": "Jupyter Notebook ist eine interaktive, webbasierte Entwicklungsumgebung, die es ermöglicht, Code, Visualisierungen und erklärenden Text in einem einzigen Dokument zu kombinieren. Es unterstützt zahlreiche Programmiersprachen, wobei Python am weitesten verbreitet ist. Im Kontext des LLM-Workshops dient es als ideales Werkzeug für explorative Datenanalyse, das schrittweise Prototyping von KI-Modellen und die didaktische Aufbereitung von Machine-Learning-Workflows.",
+    "description": "Jupyter Notebook ist eine interaktive, webbasierte Entwicklungsumgebung, die es ermöglicht, Code, Visualisierungen und erklärenden Text in einem einzigen Dokument zu kombinieren. Es unterstützt zahlreiche Programmiersprachen, wobei Python am weitesten verbreitet ist. Im vorliegenden Kontext dient es als ideales Werkzeug für explorative Datenanalyse, das schrittweise Prototyping von KI-Modellen und die didaktische Aufbereitung von Machine-Learning-Workflows.",
     "autoRing": "low",
     "detected": {
       "repoCount": 1,
-      "lastSeen": "2026-06-05",
-      "sourceRepos": [
-        "llm-workshop"
-      ]
+      "lastSeen": "2026-06-05"
     }
   },
   {
@@ -1320,12 +625,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-08-05",
-      "sourceRepos": [
-        "llm-workshop",
-        "nerdAI",
-        "medizinischer-dienst"
-      ]
+      "lastSeen": "2026-08-05"
     }
   },
   {
@@ -1333,16 +633,11 @@
     "ring": "dev",
     "quadrant": "languages-frameworks",
     "isNew": true,
-    "description": "Twig ist eine moderne Template-Engine für PHP, die von SensioLabs entwickelt wurde und als Standard-Templating-Lösung in Symfony sowie Shopware 6 zum Einsatz kommt. Sie bietet eine übersichtliche, sandboxed Syntax zur Trennung von Logik und Darstellung, unterstützt Template-Vererbung, automatisches Output-Escaping und ist auf Performance durch Kompilierung zu nativem PHP-Code optimiert. Im vorliegenden Kontext wird Twig sowohl für die Theme-Entwicklung (SchickBauspeziTheme) als auch für die API- und Plugin-Ebene (SchickBauspeziAPI, shopware6-plugin-reference) zur Ausgabe von Frontend-Templates und E-Mail-Vorlagen eingesetzt.",
+    "description": "Twig ist eine moderne Template-Engine für PHP, die von SensioLabs entwickelt wurde und als Standard-Templating-Lösung in Symfony sowie Shopware 6 zum Einsatz kommt. Sie bietet eine übersichtliche, sandboxed Syntax zur Trennung von Logik und Darstellung, unterstützt Template-Vererbung, automatisches Output-Escaping und ist auf Performance durch Kompilierung zu nativem PHP-Code optimiert. Im vorliegenden Kontext wird Twig sowohl für die Theme-Entwicklung als auch für die API- und Plugin-Ebene zur Ausgabe von Frontend-Templates und E-Mail-Vorlagen eingesetzt.",
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-09-04",
-      "sourceRepos": [
-        "SchickBauspeziAPI",
-        "SchickBauspeziTheme",
-        "shopware6-plugin-reference"
-      ]
+      "lastSeen": "2026-09-04"
     }
   },
   {
@@ -1350,14 +645,11 @@
     "ring": "low",
     "quadrant": "languages-frameworks",
     "isNew": true,
-    "description": "Vue.js ist ein progressives JavaScript-Framework zur Entwicklung von Benutzeroberflächen und Single-Page-Applikationen. Es zeichnet sich durch eine niedrige Einstiegshürde, ein komponentenbasiertes Architekturmodell und ein reaktives Datenbindungssystem aus. Vue.js lässt sich sowohl inkrementell in bestehende Projekte integrieren als auch als vollständiges Framework mit offiziellem Routing und State-Management einsetzen. Im Kontext des Tech-Radars wird es für die Nerdware-Homepage verwendet.",
+    "description": "Vue.js ist ein progressives JavaScript-Framework zur Entwicklung von Benutzeroberflächen und Single-Page-Applikationen. Es zeichnet sich durch eine niedrige Einstiegshürde, ein komponentenbasiertes Architekturmodell und ein reaktives Datenbindungssystem aus. Vue.js lässt sich sowohl inkrementell in bestehende Projekte integrieren als auch als vollständiges Framework mit offiziellem Routing und State-Management einsetzen. Im Kontext des Tech-Radars wird es für interne Web-Auftritte verwendet.",
     "autoRing": "low",
     "detected": {
       "repoCount": 1,
-      "lastSeen": "2026-08-03",
-      "sourceRepos": [
-        "nerdware-homepage"
-      ]
+      "lastSeen": "2026-08-03"
     }
   },
   {
@@ -1365,16 +657,11 @@
     "ring": "dev",
     "quadrant": "languages-frameworks",
     "isNew": false,
-    "description": "PHP ist eine weit verbreitete serverseitige Skriptsprache, die primär für die Webentwicklung eingesetzt wird. Sie bildet die technische Grundlage zahlreicher Content-Management-Systeme und E-Commerce-Plattformen, darunter Shopware 6. Im vorliegenden Kontext wird PHP sowohl für eine API-Implementierung (SchickBauspeziAPI) als auch für die Shopware-6-Plugin-Entwicklung verwendet. Die Sprache zeichnet sich durch ein großes Ökosystem, breite Hosting-Unterstützung und eine aktive Weiterentwicklung (aktuell PHP 8.x) aus.",
+    "description": "PHP ist eine weit verbreitete serverseitige Skriptsprache, die primär für die Webentwicklung eingesetzt wird. Sie bildet die technische Grundlage zahlreicher Content-Management-Systeme und E-Commerce-Plattformen, darunter Shopware 6. Im vorliegenden Kontext wird PHP sowohl für API-Implementierungen als auch für die Shopware-6-Plugin-Entwicklung verwendet. Die Sprache zeichnet sich durch ein großes Ökosystem, breite Hosting-Unterstützung und eine aktive Weiterentwicklung (aktuell PHP 8.x) aus.",
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-09-04",
-      "sourceRepos": [
-        "SchickBauspeziAPI",
-        "shopware6-plugin-reference",
-        "bfz-moodle-plugin"
-      ]
+      "lastSeen": "2026-09-04"
     }
   },
   {
@@ -1386,11 +673,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2023-11-07",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ]
+      "lastSeen": "2023-11-07"
     }
   },
   {
@@ -1402,11 +685,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2023-11-07",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ]
+      "lastSeen": "2023-11-07"
     }
   },
   {
@@ -1418,11 +697,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2023-11-07",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ]
+      "lastSeen": "2023-11-07"
     }
   },
   {
@@ -1434,11 +709,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2023-11-07",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ]
+      "lastSeen": "2023-11-07"
     }
   },
   {
@@ -1450,13 +721,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 4,
-      "lastSeen": "2026-07-05",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "coffee-demo",
-        "graphmind"
-      ]
+      "lastSeen": "2026-07-05"
     }
   },
   {
@@ -1468,12 +733,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-06-05",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "coffee-demo"
-      ]
+      "lastSeen": "2026-06-05"
     }
   },
   {
@@ -1485,11 +745,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2023-11-07",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ]
+      "lastSeen": "2023-11-07"
     }
   },
   {
@@ -1501,11 +757,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2023-11-07",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ]
+      "lastSeen": "2023-11-07"
     }
   },
   {
@@ -1517,12 +769,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-09-02",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "se-gs-berlin-material-prototype"
-      ]
+      "lastSeen": "2026-09-02"
     }
   },
   {
@@ -1534,18 +781,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 9,
-      "lastSeen": "2026-07-08",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "coffee-demo",
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "graphmind",
-        "nerd-bites",
-        "ideematec_offer_system"
-      ]
+      "lastSeen": "2026-07-08"
     }
   },
   {
@@ -1557,11 +793,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2023-11-07",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ]
+      "lastSeen": "2023-11-07"
     }
   },
   {
@@ -1573,11 +805,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2023-11-07",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ]
+      "lastSeen": "2023-11-07"
     }
   },
   {
@@ -1589,11 +817,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2023-11-07",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital"
-      ]
+      "lastSeen": "2023-11-07"
     }
   },
   {
@@ -1605,13 +829,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 4,
-      "lastSeen": "2026-07-27",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "angular-nestjs-template",
-        "caparo"
-      ]
+      "lastSeen": "2026-07-27"
     }
   },
   {
@@ -1623,20 +841,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 11,
-      "lastSeen": "2026-08-31",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "techradar-nerdware",
-        "coffee-demo",
-        "stargate",
-        "ai-gtm",
-        "nerdware-order-app",
-        "graphmind",
-        "skaling-ai-compass",
-        "ideematec_offer_system",
-        "caparo"
-      ]
+      "lastSeen": "2026-08-31"
     }
   },
   {
@@ -1648,15 +853,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 6,
-      "lastSeen": "2026-06-05",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "chat-room",
-        "angular-nestjs-template",
-        "hackbay2024",
-        "coffee-demo"
-      ]
+      "lastSeen": "2026-06-05"
     }
   },
   {
@@ -1664,17 +861,11 @@
     "ring": "dev",
     "quadrant": "platforms",
     "isNew": true,
-    "description": "Serverless ist ein Cloud-Ausführungsmodell, bei dem der Cloud-Anbieter die Serverinfrastruktur vollständig verwaltet und Ressourcen automatisch bei Bedarf bereitstellt. Entwickler deployen einzelne Funktionen oder Anwendungen, ohne sich um Provisionierung, Skalierung oder Wartung von Servern kümmern zu müssen. Die Abrechnung erfolgt nutzungsbasiert nach tatsächlichem Verbrauch, was besonders bei variablen Lastprofilen kosteneffizient ist. Im vorliegenden Kontext wird Serverless sowohl als dediziertes Architekturmuster (serverless-example) als auch als Deployment-Strategie für Web-Anwendungen und Backend-Services eingesetzt.",
+    "description": "Serverless ist ein Cloud-Ausführungsmodell, bei dem der Cloud-Anbieter die Serverinfrastruktur vollständig verwaltet und Ressourcen automatisch bei Bedarf bereitstellt. Entwickler deployen einzelne Funktionen oder Anwendungen, ohne sich um Provisionierung, Skalierung oder Wartung von Servern kümmern zu müssen. Die Abrechnung erfolgt nutzungsbasiert nach tatsächlichem Verbrauch, was besonders bei variablen Lastprofilen kosteneffizient ist. Im vorliegenden Kontext wird Serverless sowohl als dediziertes Architekturmuster als auch als Deployment-Strategie für Web-Anwendungen und Backend-Services eingesetzt.",
     "autoRing": "dev",
     "detected": {
       "repoCount": 4,
-      "lastSeen": "2026-09-04",
-      "sourceRepos": [
-        "react-nestjs-template",
-        "learning-digital",
-        "townhall",
-        "serverless-example"
-      ]
+      "lastSeen": "2026-09-04"
     }
   },
   {
@@ -1686,14 +877,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 5,
-      "lastSeen": "2026-05-22",
-      "sourceRepos": [
-        "learning-digital",
-        "pom-dekar-p",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "ki-cooking"
-      ]
+      "lastSeen": "2026-05-22"
     }
   },
   {
@@ -1705,14 +889,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 5,
-      "lastSeen": "2026-05-22",
-      "sourceRepos": [
-        "learning-digital",
-        "pom-dekar-p",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "ki-cooking"
-      ]
+      "lastSeen": "2026-05-22"
     }
   },
   {
@@ -1724,13 +901,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 4,
-      "lastSeen": "2026-08-31",
-      "sourceRepos": [
-        "techradar-nerdware",
-        "llm-workshop",
-        "ai-gtm",
-        "nerdware-order-app"
-      ]
+      "lastSeen": "2026-08-31"
     }
   },
   {
@@ -1742,13 +913,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 4,
-      "lastSeen": "2026-09-04",
-      "sourceRepos": [
-        "townhall",
-        "chat-room",
-        "nw-recruiting-metrics",
-        "NerdBase"
-      ]
+      "lastSeen": "2026-09-04"
     }
   },
   {
@@ -1760,11 +925,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-09-04",
-      "sourceRepos": [
-        "townhall",
-        "nw-recruiting-metrics"
-      ]
+      "lastSeen": "2026-09-04"
     }
   },
   {
@@ -1776,11 +937,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-09-04",
-      "sourceRepos": [
-        "townhall",
-        "coffee-demo"
-      ]
+      "lastSeen": "2026-09-04"
     }
   },
   {
@@ -1788,15 +945,11 @@
     "ring": "dev",
     "quadrant": "languages-frameworks",
     "isNew": true,
-    "description": "Ngx Echarts ist eine Angular-Wrapper-Bibliothek für Apache ECharts, die eine nahtlose Integration der leistungsstarken Visualisierungsbibliothek in Angular-Anwendungen ermöglicht. Sie stellt Angular-Direktiven bereit, mit denen sich komplexe, interaktive Diagramme und Charts deklarativ in Templates einbinden lassen. Die Bibliothek unterstützt den vollen Funktionsumfang von ECharts, einschließlich diverser Diagrammtypen, Animationen und responsivem Verhalten. Sie wird in den Projekten Townhall und Fourdrop für die Datenvisualisierung eingesetzt.",
+    "description": "Ngx Echarts ist eine Angular-Wrapper-Bibliothek für Apache ECharts, die eine nahtlose Integration der leistungsstarken Visualisierungsbibliothek in Angular-Anwendungen ermöglicht. Sie stellt Angular-Direktiven bereit, mit denen sich komplexe, interaktive Diagramme und Charts deklarativ in Templates einbinden lassen. Die Bibliothek unterstützt den vollen Funktionsumfang von ECharts, einschließlich diverser Diagrammtypen, Animationen und responsivem Verhalten. Sie wird in mehreren internen Projekten für die Datenvisualisierung eingesetzt.",
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-09-04",
-      "sourceRepos": [
-        "townhall",
-        "fourdrop"
-      ]
+      "lastSeen": "2026-09-04"
     }
   },
   {
@@ -1808,17 +961,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 8,
-      "lastSeen": "2026-07-17",
-      "sourceRepos": [
-        "hackathon",
-        "hackbay-demo",
-        "fantastic-garbanzo",
-        "health-hackathon",
-        "coin-demo",
-        "ipsen-botulinumtoxin-injektionsmuster",
-        "nerdAI",
-        "coding-challenge"
-      ]
+      "lastSeen": "2026-07-17"
     }
   },
   {
@@ -1830,17 +973,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 8,
-      "lastSeen": "2026-07-17",
-      "sourceRepos": [
-        "hackathon",
-        "hackbay-demo",
-        "fantastic-garbanzo",
-        "health-hackathon",
-        "coin-demo",
-        "ipsen-botulinumtoxin-injektionsmuster",
-        "nerdAI",
-        "coding-challenge"
-      ]
+      "lastSeen": "2026-07-17"
     }
   },
   {
@@ -1852,11 +985,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-05",
-      "sourceRepos": [
-        "nerdware-cluster-playground-services",
-        "health-hackathon"
-      ]
+      "lastSeen": "2026-06-05"
     }
   },
   {
@@ -1868,11 +997,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-03-20",
-      "sourceRepos": [
-        "Skillerd",
-        "skillard-excelled"
-      ]
+      "lastSeen": "2026-03-20"
     }
   },
   {
@@ -1884,12 +1009,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-06-05",
-      "sourceRepos": [
-        "Skillerd",
-        "hackbay2024",
-        "skillard-excelled"
-      ]
+      "lastSeen": "2026-06-05"
     }
   },
   {
@@ -1901,12 +1021,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-06-05",
-      "sourceRepos": [
-        "LLM-who-the-f...-is-alice",
-        "llm-workshop",
-        "bid-flow-backend"
-      ]
+      "lastSeen": "2026-06-05"
     }
   },
   {
@@ -1914,15 +1029,11 @@
     "ring": "dev",
     "quadrant": "languages-frameworks",
     "isNew": true,
-    "description": "NgRx ist eine State-Management-Bibliothek für Angular-Anwendungen, die auf dem Redux-Pattern basiert und reaktive Programmierung mit RxJS nutzt. Sie bietet ein zentralisiertes, vorhersagbares State-Management durch den Einsatz von Actions, Reducern, Selektoren und Effects zur Handhabung von Seiteneffekten. In den erkannten Repositories wird NgRx sowohl in einer Projektvorlage (angular-nestjs-template) als auch in einer Demo-Anwendung (coin-demo) eingesetzt, was auf eine standardisierte Architekturentscheidung für Angular-Frontends hindeutet.",
+    "description": "NgRx ist eine State-Management-Bibliothek für Angular-Anwendungen, die auf dem Redux-Pattern basiert und reaktive Programmierung mit RxJS nutzt. Sie bietet ein zentralisiertes, vorhersagbares State-Management durch den Einsatz von Actions, Reducern, Selektoren und Effects zur Handhabung von Seiteneffekten. In den erkannten Repositories wird NgRx sowohl in einer Projektvorlage als auch in einer Demo-Anwendung eingesetzt, was auf eine standardisierte Architekturentscheidung für Angular-Frontends hindeutet.",
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2025-04-28",
-      "sourceRepos": [
-        "angular-nestjs-template",
-        "coin-demo"
-      ]
+      "lastSeen": "2025-04-28"
     }
   },
   {
@@ -1934,12 +1045,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-08-30",
-      "sourceRepos": [
-        "angular-nestjs-template",
-        "stargate",
-        "ai-gtm"
-      ]
+      "lastSeen": "2026-08-30"
     }
   },
   {
@@ -1951,19 +1057,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 10,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "angular-nestjs-template",
-        "coin-demo",
-        "stargate",
-        "ai-gtm",
-        "nerdware-order-app",
-        "nerdfinder",
-        "skaling-ai-compass",
-        "bayiko-cockpit",
-        "caparo",
-        "dm-tec-ai-layer"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -1975,17 +1069,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 8,
-      "lastSeen": "2026-08-30",
-      "sourceRepos": [
-        "angular-nestjs-template",
-        "fantastic-garbanzo",
-        "yt-semantic-release",
-        "nw-semantic-release",
-        "clean-architecture-vs-vertical-sliced-architecture",
-        "coding-challenge",
-        "ai-gtm",
-        "nerd-bites"
-      ]
+      "lastSeen": "2026-08-30"
     }
   },
   {
@@ -1997,11 +1081,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2025-01-03",
-      "sourceRepos": [
-        "angular-nestjs-template",
-        "fantastic-garbanzo"
-      ]
+      "lastSeen": "2025-01-03"
     }
   },
   {
@@ -2013,12 +1093,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-08-30",
-      "sourceRepos": [
-        "coffee-demo",
-        "ai-gtm",
-        "nerdware-order-app"
-      ]
+      "lastSeen": "2026-08-30"
     }
   },
   {
@@ -2030,15 +1105,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 6,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "coffee-demo",
-        "capacity-planner",
-        "stargate",
-        "ai-gtm",
-        "nerdware-order-app",
-        "bayiko-cockpit"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -2050,11 +1117,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-05",
-      "sourceRepos": [
-        "coffee-demo",
-        "nerd-upload"
-      ]
+      "lastSeen": "2026-06-05"
     }
   },
   {
@@ -2066,14 +1129,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 5,
-      "lastSeen": "2026-09-04",
-      "sourceRepos": [
-        "coffee-demo",
-        "hack-zollhof-2025",
-        "md-plattform-prototype",
-        "ideematec_offer_system",
-        "enterprise-evolution"
-      ]
+      "lastSeen": "2026-09-04"
     }
   },
   {
@@ -2085,11 +1141,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-05",
-      "sourceRepos": [
-        "health-hackathon",
-        "coin-demo"
-      ]
+      "lastSeen": "2026-06-05"
     }
   },
   {
@@ -2101,12 +1153,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-06-05",
-      "sourceRepos": [
-        "llm-workshop",
-        "dtvp-scraper",
-        "hack-zollhof-2025"
-      ]
+      "lastSeen": "2026-06-05"
     }
   },
   {
@@ -2118,12 +1165,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-06-05",
-      "sourceRepos": [
-        "llm-workshop",
-        "bid-flow-backend",
-        "nerdAI"
-      ]
+      "lastSeen": "2026-06-05"
     }
   },
   {
@@ -2131,16 +1173,11 @@
     "ring": "dev",
     "quadrant": "languages-frameworks",
     "isNew": true,
-    "description": "Pydantic ist eine Python-Bibliothek zur Datenvalidierung und -serialisierung, die auf Python Type Hints basiert. Sie ermöglicht die Definition von Datenmodellen als Klassen, deren Felder zur Laufzeit automatisch validiert und in die korrekten Typen konvertiert werden. Pydantic wird häufig in Kombination mit FastAPI sowie bei der strukturierten Verarbeitung von LLM-Ausgaben eingesetzt, wie der Einsatz in den Projekten llm-workshop und nerdAI zeigt.",
+    "description": "Pydantic ist eine Python-Bibliothek zur Datenvalidierung und -serialisierung, die auf Python Type Hints basiert. Sie ermöglicht die Definition von Datenmodellen als Klassen, deren Felder zur Laufzeit automatisch validiert und in die korrekten Typen konvertiert werden. Pydantic wird häufig in Kombination mit FastAPI sowie bei der strukturierten Verarbeitung von LLM-Ausgaben eingesetzt.",
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-08-05",
-      "sourceRepos": [
-        "llm-workshop",
-        "nerdAI",
-        "medizinischer-dienst"
-      ]
+      "lastSeen": "2026-08-05"
     }
   },
   {
@@ -2152,12 +1189,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-08-30",
-      "sourceRepos": [
-        "hack-zollhof-2025",
-        "ai-gtm",
-        "nerdware-order-app"
-      ]
+      "lastSeen": "2026-08-30"
     }
   },
   {
@@ -2169,12 +1201,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-07-05",
-      "sourceRepos": [
-        "ipsen-botulinumtoxin-injektionsmuster",
-        "capacity-planner",
-        "graphmind"
-      ]
+      "lastSeen": "2026-07-05"
     }
   },
   {
@@ -2186,12 +1213,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-09-04",
-      "sourceRepos": [
-        "SchickBauspeziAPI",
-        "SchickBauspeziTheme",
-        "shopware6-plugin-reference"
-      ]
+      "lastSeen": "2026-09-04"
     }
   },
   {
@@ -2203,15 +1225,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 6,
-      "lastSeen": "2026-07-27",
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking",
-        "caparo"
-      ]
+      "lastSeen": "2026-07-27"
     }
   },
   {
@@ -2223,17 +1237,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 8,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "md-plattform-prototype",
-        "graphmind",
-        "vend",
-        "ki-cooking",
-        "bayiko-cockpit"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -2245,19 +1249,7 @@
     "autoRing": "high",
     "detected": {
       "repoCount": 10,
-      "lastSeen": "2026-09-04",
-      "sourceRepos": [
-        "capacity-planner",
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "md-plattform-prototype",
-        "nerdware-order-app",
-        "vend",
-        "ki-cooking",
-        "skaling-ai-compass",
-        "se-gs-berlin-material-prototype",
-        "enterprise-evolution"
-      ]
+      "lastSeen": "2026-09-04"
     }
   },
   {
@@ -2269,11 +1261,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-30",
-      "sourceRepos": [
-        "stargate",
-        "ai-gtm"
-      ]
+      "lastSeen": "2026-08-30"
     }
   },
   {
@@ -2281,15 +1269,11 @@
     "ring": "dev",
     "quadrant": "tools",
     "isNew": true,
-    "description": "Das Netlify Vite Plugin für TanStack Start ermöglicht das nahtlose Deployment von TanStack Start-Anwendungen auf der Netlify-Plattform. Es integriert sich als Vite-Plugin in den Build-Prozess und konfiguriert automatisch serverlose Funktionen, Routing und Edge-Rendering für die Netlify-Infrastruktur. TanStack Start ist ein Full-Stack-Framework auf Basis von TanStack Router, das serverseitiges Rendering und typsichere APIs bietet. Der Einsatz in den Projekten Stargate und AI-GTM deutet auf eine Standardisierung moderner React-Full-Stack-Architekturen mit serverlosen Deployment-Strategien hin.",
+    "description": "Das Netlify Vite Plugin für TanStack Start ermöglicht das nahtlose Deployment von TanStack Start-Anwendungen auf der Netlify-Plattform. Es integriert sich als Vite-Plugin in den Build-Prozess und konfiguriert automatisch serverlose Funktionen, Routing und Edge-Rendering für die Netlify-Infrastruktur. TanStack Start ist ein Full-Stack-Framework auf Basis von TanStack Router, das serverseitiges Rendering und typsichere APIs bietet. Der Einsatz in mehreren internen Projekten deutet auf eine Standardisierung moderner React-Full-Stack-Architekturen mit serverlosen Deployment-Strategien hin.",
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-30",
-      "sourceRepos": [
-        "stargate",
-        "ai-gtm"
-      ]
+      "lastSeen": "2026-08-30"
     }
   },
   {
@@ -2301,11 +1285,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-07-29",
-      "sourceRepos": [
-        "claude-plugins",
-        "demo-mcp-nerdware"
-      ]
+      "lastSeen": "2026-07-29"
     }
   },
   {
@@ -2317,13 +1297,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 4,
-      "lastSeen": "2026-06-05",
-      "sourceRepos": [
-        "Nerdlabsfigma",
-        "nerdlabs-homepage",
-        "vend",
-        "ki-cooking"
-      ]
+      "lastSeen": "2026-06-05"
     }
   },
   {
@@ -2335,12 +1309,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-09-04",
-      "sourceRepos": [
-        "nerdware-order-app",
-        "graphmind",
-        "enterprise-evolution"
-      ]
+      "lastSeen": "2026-09-04"
     }
   },
   {
@@ -2352,11 +1321,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-23",
-      "sourceRepos": [
-        "nerdware-order-app",
-        "nerd-bites"
-      ]
+      "lastSeen": "2026-08-23"
     }
   },
   {
@@ -2368,11 +1333,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-23",
-      "sourceRepos": [
-        "nerdware-order-app",
-        "graphmind"
-      ]
+      "lastSeen": "2026-08-23"
     }
   },
   {
@@ -2380,15 +1341,11 @@
     "ring": "dev",
     "quadrant": "languages-frameworks",
     "isNew": true,
-    "description": "JOSE (Javascript Object Signing and Encryption) ist ein Framework-Standard, der JSON Web Tokens (JWT), JSON Web Signatures (JWS), JSON Web Encryption (JWE) und JSON Web Keys (JWK) umfasst. Es ermöglicht die sichere Übertragung von Claims und Daten zwischen Parteien durch standardisierte Signatur- und Verschlüsselungsmechanismen. In den Projekten nerdware-order-app und graphmind wird JOSE vermutlich für Authentifizierung, Autorisierung oder den sicheren Datenaustausch eingesetzt.",
+    "description": "JOSE (Javascript Object Signing and Encryption) ist ein Framework-Standard, der JSON Web Tokens (JWT), JSON Web Signatures (JWS), JSON Web Encryption (JWE) und JSON Web Keys (JWK) umfasst. Es ermöglicht die sichere Übertragung von Claims und Daten zwischen Parteien durch standardisierte Signatur- und Verschlüsselungsmechanismen. Im vorliegenden Kontext wird JOSE vermutlich für Authentifizierung, Autorisierung oder den sicheren Datenaustausch eingesetzt.",
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-23",
-      "sourceRepos": [
-        "nerdware-order-app",
-        "graphmind"
-      ]
+      "lastSeen": "2026-08-23"
     }
   },
   {
@@ -2396,16 +1353,11 @@
     "ring": "dev",
     "quadrant": "tools",
     "isNew": true,
-    "description": "Testcontainers PostgreSQL ermöglicht das Starten einer echten PostgreSQL-Datenbank als Docker-Container direkt aus Integrationstests heraus. Dadurch können datenbankabhängige Tests gegen eine reale Datenbankinstanz ausgeführt werden, ohne auf externe Infrastruktur oder In-Memory-Ersatzlösungen angewiesen zu sein. Die Bibliothek übernimmt das Lifecycle-Management des Containers, einschließlich automatischem Start und Aufräumen nach Testabschluss. Der Einsatz in den Projekten nerdware-order-app und skaling-ai-compass zeigt die Relevanz für zuverlässige Integrationstests mit PostgreSQL.",
+    "description": "Testcontainers PostgreSQL ermöglicht das Starten einer echten PostgreSQL-Datenbank als Docker-Container direkt aus Integrationstests heraus. Dadurch können datenbankabhängige Tests gegen eine reale Datenbankinstanz ausgeführt werden, ohne auf externe Infrastruktur oder In-Memory-Ersatzlösungen angewiesen zu sein. Die Bibliothek übernimmt das Lifecycle-Management des Containers, einschließlich automatischem Start und Aufräumen nach Testabschluss. Der Einsatz im vorliegenden Kontext zeigt die Relevanz für zuverlässige Integrationstests mit PostgreSQL.",
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-08-25",
-      "sourceRepos": [
-        "nerdware-order-app",
-        "skaling-ai-compass",
-        "nerdware-oidc-provider"
-      ]
+      "lastSeen": "2026-08-25"
     }
   },
   {
@@ -2417,12 +1369,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-08-23",
-      "sourceRepos": [
-        "nerdware-order-app",
-        "nerdfinder",
-        "skaling-ai-compass"
-      ]
+      "lastSeen": "2026-08-23"
     }
   },
   {
@@ -2430,15 +1377,11 @@
     "ring": "dev",
     "quadrant": "tools",
     "isNew": true,
-    "description": "pgx ist ein moderner PostgreSQL-Treiber für Go, der als performante Alternative zum klassischen lib/pq-Treiber entwickelt wurde. Er bietet native Unterstützung für das PostgreSQL-Wire-Protokoll, Verbindungspooling, Batch-Abfragen und umfangreiche Typunterstützung einschließlich benutzerdefinierter Typen. pgx zeichnet sich durch bessere Performance, ein idiomatischeres Go-API und Features wie automatisches Prepared-Statement-Caching aus. Im Kontext des Tech-Radars wird pgx in Infrastruktur- und Datenbank-Projekten wie der Hetzner Landing Zone und NerdBase eingesetzt.",
+    "description": "pgx ist ein moderner PostgreSQL-Treiber für Go, der als performante Alternative zum klassischen lib/pq-Treiber entwickelt wurde. Er bietet native Unterstützung für das PostgreSQL-Wire-Protokoll, Verbindungspooling, Batch-Abfragen und umfangreiche Typunterstützung einschließlich benutzerdefinierter Typen. pgx zeichnet sich durch bessere Performance, ein idiomatischeres Go-API und Features wie automatisches Prepared-Statement-Caching aus. Im Kontext des Tech-Radars wird pgx in mehreren Infrastruktur- und Datenbank-Projekten eingesetzt.",
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-09-02",
-      "sourceRepos": [
-        "hetzner-landing-zone",
-        "NerdBase"
-      ]
+      "lastSeen": "2026-09-02"
     }
   },
   {
@@ -2446,15 +1389,11 @@
     "ring": "dev",
     "quadrant": "languages-frameworks",
     "isNew": true,
-    "description": "Hono Node Server ist der Node.js-Adapter für das Hono-Web-Framework, der es ermöglicht, Hono-Anwendungen auf einem klassischen Node.js-HTTP-Server auszuführen. Er stellt die Brücke zwischen Honos plattformunabhängiger API und der Node.js-Runtime dar, sodass Entwickler von Honos leichtgewichtigem, an Web-Standards orientiertem Ansatz profitieren können, ohne auf eine Edge-Runtime angewiesen zu sein. In den Projekten nerdhunter und nerdfinder wird er als Backend-Server-Lösung eingesetzt.",
+    "description": "Hono Node Server ist der Node.js-Adapter für das Hono-Web-Framework, der es ermöglicht, Hono-Anwendungen auf einem klassischen Node.js-HTTP-Server auszuführen. Er stellt die Brücke zwischen Honos plattformunabhängiger API und der Node.js-Runtime dar, sodass Entwickler von Honos leichtgewichtigem, an Web-Standards orientiertem Ansatz profitieren können, ohne auf eine Edge-Runtime angewiesen zu sein. Im vorliegenden Kontext wird er als Backend-Server-Lösung eingesetzt.",
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-12",
-      "sourceRepos": [
-        "nerdhunter",
-        "nerdfinder"
-      ]
+      "lastSeen": "2026-06-12"
     }
   },
   {
@@ -2466,11 +1405,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-06-12",
-      "sourceRepos": [
-        "nerdhunter",
-        "nerdfinder"
-      ]
+      "lastSeen": "2026-06-12"
     }
   },
   {
@@ -2482,12 +1417,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 3,
-      "lastSeen": "2026-07-23",
-      "sourceRepos": [
-        "nerdhunter",
-        "nerdfinder",
-        "skaling-ai-compass"
-      ]
+      "lastSeen": "2026-07-23"
     }
   },
   {
@@ -2499,11 +1429,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-07-05",
-      "sourceRepos": [
-        "graphmind",
-        "nerd-bites"
-      ]
+      "lastSeen": "2026-07-05"
     }
   },
   {
@@ -2511,15 +1437,11 @@
     "ring": "dev",
     "quadrant": "tools",
     "isNew": true,
-    "description": "AWS CDK Lib ist die zentrale Bibliothek des AWS Cloud Development Kit, mit der Cloud-Infrastruktur mittels vertrauter Programmiersprachen wie TypeScript, Python oder Java als Code definiert werden kann. Sie stellt High-Level-Konstrukte (L2/L3) bereit, die AWS-Ressourcen mit sinnvollen Standardkonfigurationen abstrahieren und so die Komplexität von CloudFormation-Templates deutlich reduzieren. Im Kontext der Projekte engineering-intelligence und bayiko-cockpit wird sie zur programmatischen Definition und Bereitstellung der AWS-Infrastruktur eingesetzt.",
+    "description": "AWS CDK Lib ist die zentrale Bibliothek des AWS Cloud Development Kit, mit der Cloud-Infrastruktur mittels vertrauter Programmiersprachen wie TypeScript, Python oder Java als Code definiert werden kann. Sie stellt High-Level-Konstrukte (L2/L3) bereit, die AWS-Ressourcen mit sinnvollen Standardkonfigurationen abstrahieren und so die Komplexität von CloudFormation-Templates deutlich reduzieren. Im vorliegenden Kontext wird sie zur programmatischen Definition und Bereitstellung der AWS-Infrastruktur eingesetzt.",
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "engineering-intelligence",
-        "bayiko-cockpit"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -2531,11 +1453,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-09-07",
-      "sourceRepos": [
-        "skaling-ai-compass",
-        "bayiko-cockpit"
-      ]
+      "lastSeen": "2026-09-07"
     }
   },
   {
@@ -2543,15 +1461,11 @@
     "ring": "dev",
     "quadrant": "tools",
     "isNew": true,
-    "description": "Uvicorn ist ein leichtgewichtiger, hochperformanter ASGI-Webserver für Python, der auf uvloop und httptools basiert. Er dient als Standard-Server zum Ausführen von asynchronen Python-Webframeworks wie FastAPI oder Starlette in Produktions- und Entwicklungsumgebungen. In der Standard-Variante (ohne uvloop-Optimierung) bietet er breite Plattformkompatibilität bei solider Performance. Im Tech-Radar wird Uvicorn Standard in den Projekten nerdAI und medizinischer-dienst als HTTP-Server-Komponente eingesetzt.",
+    "description": "Uvicorn ist ein leichtgewichtiger, hochperformanter ASGI-Webserver für Python, der auf uvloop und httptools basiert. Er dient als Standard-Server zum Ausführen von asynchronen Python-Webframeworks wie FastAPI oder Starlette in Produktions- und Entwicklungsumgebungen. In der Standard-Variante (ohne uvloop-Optimierung) bietet er breite Plattformkompatibilität bei solider Performance. Im Tech-Radar wird Uvicorn Standard in mehreren internen Projekten als HTTP-Server-Komponente eingesetzt.",
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-05",
-      "sourceRepos": [
-        "nerdAI",
-        "medizinischer-dienst"
-      ]
+      "lastSeen": "2026-08-05"
     }
   },
   {
@@ -2559,15 +1473,11 @@
     "ring": "dev",
     "quadrant": "languages-frameworks",
     "isNew": true,
-    "description": "NextAuth.js (seit Version 5 auch als Auth.js bekannt) ist eine Open-Source-Authentifizierungsbibliothek für Next.js-Anwendungen, die eine einfache Integration verschiedener Authentifizierungsmethoden wie OAuth, OpenID Connect, E-Mail-basierte Anmeldung und Credentials ermöglicht. Sie abstrahiert die Komplexität von Session-Management, JWT-Handling und Provider-Konfiguration hinter einer einheitlichen API. Im vorliegenden Kontext wird NextAuth sowohl als Client einer OIDC-Authentifizierung (nerdware-order-app) als auch in Verbindung mit einem eigenen OIDC-Provider (nerdware-oidc-provider) eingesetzt.",
+    "description": "NextAuth.js (seit Version 5 auch als Auth.js bekannt) ist eine Open-Source-Authentifizierungsbibliothek für Next.js-Anwendungen, die eine einfache Integration verschiedener Authentifizierungsmethoden wie OAuth, OpenID Connect, E-Mail-basierte Anmeldung und Credentials ermöglicht. Sie abstrahiert die Komplexität von Session-Management, JWT-Handling und Provider-Konfiguration hinter einer einheitlichen API. Im vorliegenden Kontext wird NextAuth sowohl als Client einer OIDC-Authentifizierung als auch in Verbindung mit einem eigenen OIDC-Provider eingesetzt.",
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-25",
-      "sourceRepos": [
-        "nerdware-order-app",
-        "nerdware-oidc-provider"
-      ]
+      "lastSeen": "2026-08-25"
     }
   },
   {
@@ -2579,11 +1489,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-08-23",
-      "sourceRepos": [
-        "nerdware-order-app",
-        "caparo"
-      ]
+      "lastSeen": "2026-08-23"
     }
   },
   {
@@ -2595,11 +1501,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-09-02",
-      "sourceRepos": [
-        "se-gs-berlin-material-prototype",
-        "nerdware-oidc-provider"
-      ]
+      "lastSeen": "2026-09-02"
     }
   },
   {
@@ -2611,11 +1513,7 @@
     "autoRing": "dev",
     "detected": {
       "repoCount": 2,
-      "lastSeen": "2026-09-02",
-      "sourceRepos": [
-        "se-gs-berlin-material-prototype",
-        "nerdware-oidc-provider"
-      ]
+      "lastSeen": "2026-09-02"
     }
   }
 ]

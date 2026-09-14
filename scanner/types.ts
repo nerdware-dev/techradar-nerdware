@@ -79,7 +79,7 @@ export interface ScannerBlip {
   isNew: boolean | string
   description?: string
   // machine-owned
-  detected?: { repoCount: number; lastSeen: string; sourceRepos: string[] }
+  detected?: { repoCount: number; lastSeen: string }
   autoRing?: RingId
   needsReview?: boolean
   // human-owned (scanner reads, never writes)

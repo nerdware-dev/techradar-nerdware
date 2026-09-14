@@ -14,7 +14,7 @@ export async function triageAll(
   async function worker() {
     while (i < unknowns.length) {
       const d = unknowns[i++]
-      const context = `Used in ${d.repoCount} repositories: ${d.sourceRepos.join(', ')}.`
+      const context = `Used in ${d.repoCount} repositories.`
       out.set(slugify(d.name), await llm.triage(d.name, context))
     }
   }
