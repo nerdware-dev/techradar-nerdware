@@ -1,4 +1,11 @@
 {
+  "a2a-js-sdk": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.7,
+    "decidedAt": "2026-09-14"
+  },
   "accelerate": {
     "verdict": "noise",
     "source": "llm",
@@ -839,6 +846,12 @@
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
+  "eslint-import-resolver-typescript": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-14"
+  },
   "eslint-js": {
     "verdict": "noise",
     "source": "llm",
@@ -1037,6 +1050,12 @@
     "source": "llm",
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
+  },
+  "fontsource-variable-inter": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-14"
   },
   "fuse-js": {
     "verdict": "noise",
@@ -1585,6 +1604,12 @@
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
+  "jsonata": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-09-14"
+  },
   "jsonc-eslint-parser": {
     "verdict": "noise",
     "source": "llm",
@@ -1727,11 +1752,23 @@
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
+  "madge": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-14"
+  },
   "mailer": {
     "verdict": "noise",
     "source": "llm",
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
+  },
+  "mailparser": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-14"
   },
   "mammoth": {
     "verdict": "noise",
@@ -1902,11 +1939,41 @@
     "confidence": 0.85,
     "decidedAt": "2026-06-22"
   },
+  "nerdware-contracts": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-14"
+  },
   "nerdware-date": {
     "verdict": "noise",
     "source": "llm",
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
+  },
+  "nerdware-eslint-config": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-14"
+  },
+  "nerdware-test-support": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-14"
+  },
+  "nerdware-typescript-config": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-14"
+  },
+  "nerdware-ui": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-14"
   },
   "nest-winston": {
     "verdict": "noise",
@@ -2112,6 +2179,12 @@
     "source": "llm",
     "confidence": 0.85,
     "decidedAt": "2026-06-22"
+  },
+  "openapi-typescript": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-09-14"
   },
   "openapitools-openapi-generator-cli": {
     "verdict": "radar",
@@ -3115,6 +3188,12 @@
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
+  "stripe": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-14"
+  },
   "supabase-supabase-js": {
     "verdict": "radar",
     "quadrant": "platforms",
@@ -3411,6 +3490,12 @@
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
+  "unplugin-swc": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-09-14"
+  },
   "unstructured": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
@@ -3454,6 +3539,12 @@
     "verdict": "radar",
     "quadrant": "tools",
     "source": "seed"
+  },
+  "vite-plugin-dts": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-14"
   },
   "vite-tsconfig-paths": {
     "verdict": "noise",
@@ -3635,6 +3726,12 @@
     "source": "llm",
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
+  },
+  "yaml": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-14"
   },
   "yarn": {
     "verdict": "noise",
