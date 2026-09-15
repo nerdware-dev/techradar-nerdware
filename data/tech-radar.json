@@ -398,10 +398,29 @@
   },
   {
     "name": "C#",
-    "ring": "low",
+    "ring": "high",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": "C# (Aussprache „C Sharp“) ist eine moderne, objektorientierte und typsichere Programmiersprache. C# ermöglicht Entwicklern das Erstellen zahlreicher sicherer und robuster Anwendungen, die in .NET ausgeführt werden. C# hat seine Wurzeln in der C-Sprachenfamilie und ist Programmierern, die mit C, C++, Java und JavaScript arbeiten, sofort vertraut.",
+    "autoRing": "high",
+    "detected": {
+      "repoCount": 5,
+      "lastSeen": "2026-06-05",
+      "sourceRepos": [
+        "hackathon",
+        "Skillerd",
+        "hackbay2024",
+        "echo-clean-architecture",
+        "skillard-excelled"
+      ]
+    }
+  },
+  {
+    "name": "C++",
+    "ring": "low",
+    "quadrant": "languages-frameworks",
+    "isNew": true,
+    "description": "C++ ist eine kompilierte, statisch typisierte Programmiersprache mit manueller und optionaler automatischer Speicherverwaltung, die objektorientierte, generische und low-level Systemprogrammierung unterstützt. Sie wird vor allem dort eingesetzt, wo maximale Performance und direkter Hardwarezugriff gefragt sind.",
     "autoRing": "low",
     "detected": {
       "repoCount": 1,
