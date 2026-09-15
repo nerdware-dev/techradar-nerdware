@@ -2,9 +2,8 @@ import type { CSSProperties, MouseEvent } from 'react'
 import type { PlacedBlip } from '../radar/placement'
 import { useRadarState, useRadarDispatch } from '../state/radarStore'
 import { quadrantColor } from '../radar/quadrantColor'
+import { BLIP_RADIUS as RADIUS } from '../config'
 import styles from '../styles/blip.module.scss'
-
-const RADIUS = 9
 
 export function Blip({ placed }: { placed: PlacedBlip }) {
   const { blip, x, y, number } = placed

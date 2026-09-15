@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { placeBlips } from './placement'
 import { ringRadii } from './geometry'
-import { RINGS, QUADRANTS } from '../config'
+import { RINGS, QUADRANTS, MIN_BLIP_DISTANCE } from '../config'
 import type { Blip } from '../data/types'
 
 const mk = (name: string, ring: Blip['ring'], quadrant: Blip['quadrant']): Blip => ({
@@ -57,5 +57,27 @@ describe('placeBlips', () => {
       expect(r).toBeGreaterThanOrEqual(band.inner)
       expect(r).toBeLessThanOrEqual(band.outer)
     }
+  })
+
+  it('keeps a moderate number of blips in one segment at least MIN_BLIP_DISTANCE apart', () => {
+    const many: Blip[] = Array.from({ length: 12 }, (_, i) => mk(`Tool ${i}`, 'high', 'platforms'))
+    const placed = placeBlips(many, RINGS, QUADRANTS, 400)
+
+    for (let i = 0; i < placed.length; i++) {
+      for (let j = i + 1; j < placed.length; j++) {
+        const dist = Math.hypot(placed[i].x - placed[j].x, placed[i].y - placed[j].y)
+        expect(dist).toBeGreaterThanOrEqual(MIN_BLIP_DISTANCE - 0.001)
+      }
+    }
+  })
+
+  it('falls back to a deterministic, non-throwing layout when a segment is very crowded', () => {
+    const crowd: Blip[] = Array.from({ length: 37 }, (_, i) =>
+      mk(`Framework ${i}`, 'dev', 'languages-frameworks'),
+    )
+    const a = placeBlips(crowd, RINGS, QUADRANTS, 400)
+    const b = placeBlips(crowd, RINGS, QUADRANTS, 400)
+    expect(a).toEqual(b)
+    expect(a).toHaveLength(37)
   })
 })
