@@ -1,4 +1,10 @@
 {
+  "a2a-js-sdk": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-09-21"
+  },
   "accelerate": {
     "verdict": "noise",
     "source": "llm",
@@ -601,6 +607,12 @@
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
+  "croner": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-21"
+  },
   "cross-spawn": {
     "verdict": "noise",
     "source": "llm",
@@ -839,6 +851,12 @@
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
+  "eslint-import-resolver-typescript": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-21"
+  },
   "eslint-js": {
     "verdict": "noise",
     "source": "llm",
@@ -1038,6 +1056,12 @@
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
+  "fontsource-variable-inter": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-21"
+  },
   "fuse-js": {
     "verdict": "noise",
     "source": "llm",
@@ -1067,6 +1091,13 @@
     "source": "llm",
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
+  },
+  "github-com-anthropics-anthropic-sdk-go": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-09-21"
   },
   "github-com-aws-aws-lambda-go": {
     "verdict": "radar",
@@ -1163,6 +1194,13 @@
     "source": "llm",
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
+  },
+  "github-com-modelcontextprotocol-go-sdk": {
+    "verdict": "radar",
+    "quadrant": "languages-frameworks",
+    "source": "llm",
+    "confidence": 0.75,
+    "decidedAt": "2026-09-21"
   },
   "github-com-nerdware-dev-go-odoo-v17": {
     "verdict": "noise",
@@ -1459,6 +1497,12 @@
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
+  "inquirer-core": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-21"
+  },
   "inquirer-prompts": {
     "verdict": "noise",
     "source": "llm",
@@ -1584,6 +1628,12 @@
     "source": "llm",
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
+  },
+  "jsonata": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-09-21"
   },
   "jsonc-eslint-parser": {
     "verdict": "noise",
@@ -1727,11 +1777,23 @@
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
+  "madge": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-21"
+  },
   "mailer": {
     "verdict": "noise",
     "source": "llm",
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
+  },
+  "mailparser": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-21"
   },
   "mammoth": {
     "verdict": "noise",
@@ -1902,11 +1964,41 @@
     "confidence": 0.85,
     "decidedAt": "2026-06-22"
   },
+  "nerdware-contracts": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-21"
+  },
   "nerdware-date": {
     "verdict": "noise",
     "source": "llm",
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
+  },
+  "nerdware-eslint-config": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-21"
+  },
+  "nerdware-test-support": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-21"
+  },
+  "nerdware-typescript-config": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-21"
+  },
+  "nerdware-ui": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-21"
   },
   "nest-winston": {
     "verdict": "noise",
@@ -2112,6 +2204,12 @@
     "source": "llm",
     "confidence": 0.85,
     "decidedAt": "2026-06-22"
+  },
+  "openapi-typescript": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-21"
   },
   "openapitools-openapi-generator-cli": {
     "verdict": "radar",
@@ -3115,6 +3213,12 @@
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
+  "stripe": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-21"
+  },
   "supabase-supabase-js": {
     "verdict": "radar",
     "quadrant": "platforms",
@@ -3411,6 +3515,12 @@
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
   },
+  "unplugin-swc": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.92,
+    "decidedAt": "2026-09-21"
+  },
   "unstructured": {
     "verdict": "radar",
     "quadrant": "languages-frameworks",
@@ -3454,6 +3564,12 @@
     "verdict": "radar",
     "quadrant": "tools",
     "source": "seed"
+  },
+  "vite-plugin-dts": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-21"
   },
   "vite-tsconfig-paths": {
     "verdict": "noise",
@@ -3635,6 +3751,18 @@
     "source": "llm",
     "confidence": 0.95,
     "decidedAt": "2026-06-22"
+  },
+  "yaml": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.95,
+    "decidedAt": "2026-09-21"
+  },
+  "yao-pkg-pkg": {
+    "verdict": "noise",
+    "source": "llm",
+    "confidence": 0.85,
+    "decidedAt": "2026-09-21"
   },
   "yarn": {
     "verdict": "noise",
