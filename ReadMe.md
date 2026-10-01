@@ -33,7 +33,7 @@ Der Radar-Inhalt wird in `data/tech-radar.json` verwaltet. Die Datei kann direkt
 > Werte für `ring` und `quadrant` sind **case-insensitiv** — `high`, `HIGH` und `High` werden alle akzeptiert.
 > Bei einem Tippfehler erscheint eine klare Fehlermeldung statt einem leeren Radar.
 
-`addedAt` ist der Tag, an dem der Eintrag in den Radar aufgenommen wurde. Ab diesem Tag gilt er 90 Tage lang als „neu“ (`NEW_WINDOW_DAYS` in `src/config.ts`). Einträge ohne `addedAt` gelten nie als neu. Der Scanner setzt das Datum bei automatisch hinzugefügten Einträgen selbst.
+`addedAt` ist der Tag, an dem der Eintrag in den Radar aufgenommen wurde; bei Einträgen, die der Scanner hinzufügt, ist es der Tag des Scans. Ab diesem Tag gilt der Eintrag 90 Tage lang als „neu“ (`NEW_WINDOW_DAYS` in `src/config.ts`). Einträge ohne `addedAt` oder mit einem Datum in der Zukunft gelten nicht als neu. Ein Datum in einem anderen Format führt zu einer Fehlermeldung mit dem Namen des Eintrags.
 
 ---
 

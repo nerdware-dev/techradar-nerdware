@@ -37,9 +37,16 @@ describe('parseRadar', () => {
       expect(added(undefined).isNew).toBe(false)
     })
 
-    it('rejects an addedAt that is not a YYYY-MM-DD calendar date', () => {
-      expect(() => added('17.08.2026')).toThrow()
-      expect(() => added('2026-02-30')).toThrow()
+    it('is false for an addedAt in the future', () => {
+      expect(added('2026-10-02').isNew).toBe(false)
+      expect(added('2062-10-01').isNew).toBe(false)
+    })
+
+    it('rejects an addedAt that is not a YYYY-MM-DD calendar date, naming the entry', () => {
+      expect(() => added('17.08.2026')).toThrow(/Blip "X" \(#0\) has invalid addedAt "17.08.2026"/)
+      expect(() => added('2026-02-30')).toThrow(/invalid addedAt/)
+      const withNull = [{ name: 'X', ring: 'high', quadrant: 'tools', addedAt: null }]
+      expect(() => parseRadar(withNull, NOW)).toThrow(/invalid addedAt null/)
     })
   })
 
