@@ -10,7 +10,7 @@ import { AFTERGLOW_SLICES, SWEEP_ROTATION, SWEEP_START_DEG, SWEEP_TRAIL_DEG } fr
 import { usePrefersReducedMotion, useSweepAnimation } from '../radar/useSweepAnimation'
 import { applyZoom, NO_ZOOM, quadrantZoom, zoomedTranslate, zoomTransform } from '../radar/zoom'
 import { Blip } from './Blip'
-import { useRadarState, useRadarDispatch } from '../state/radarStore'
+import { useRadarState } from '../state/radarStore'
 import styles from '../styles/radar.module.scss'
 
 /** Distance from the bezel's top or bottom to a quadrant label's centre line. */
@@ -23,7 +23,6 @@ const QUADRANT_LABEL_GAP = 22
  */
 export function RadarView({ radar, placed }: { radar: Radar; placed: PlacedBlip[] }) {
   const { focusedQuadrant, hoveredBlipId, selectedBlipId } = useRadarState()
-  const dispatch = useRadarDispatch()
   const max = RADAR_SIZE
   // room for the quadrant labels, which sit just above/below the bezel in the corners
   const pad = 40
@@ -78,7 +77,6 @@ export function RadarView({ radar, placed }: { radar: Radar; placed: PlacedBlip[
       viewBox={`${-view} ${-view} ${2 * view} ${2 * view}`}
       role="img"
       aria-label="Tech Radar"
-      onClick={() => dispatch({ type: 'CLEAR_FOCUS' })}
     >
       {/* background scene, drawn in radar coordinates and scaled as a whole when zoomed */}
       <g data-scene className={styles.scene} style={{ transform: zoomTransform(zoom) }}>

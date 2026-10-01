@@ -52,7 +52,7 @@ export function Blip({
       onMouseEnter={() => dispatch({ type: 'HOVER_BLIP', id: blip.id })}
       onMouseLeave={() => dispatch({ type: 'HOVER_BLIP', id: null })}
       onClick={(e: MouseEvent) => {
-        e.stopPropagation() // don't let the radar background clear the focus
+        e.stopPropagation() // a click reaching the page clears the focus (App.tsx)
         dispatch({ type: 'SELECT_BLIP', id: blip.id, quadrant: blip.quadrant })
       }}
     >

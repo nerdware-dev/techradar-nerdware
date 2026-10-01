@@ -25,6 +25,33 @@ describe('App', () => {
     )
   })
 
+  async function renderFocused() {
+    vi.stubGlobal(
+      'fetch',
+      vi.fn().mockResolvedValue({ ok: true, json: () => Promise.resolve(data) }),
+    )
+    render(<App />)
+    await waitFor(() => expect(screen.getByLabelText('Docker')).toBeInTheDocument())
+    fireEvent.click(screen.getByLabelText('Docker'))
+    await waitFor(() =>
+      expect(screen.getByRole('heading', { name: 'Platforms' })).toBeInTheDocument(),
+    )
+  }
+
+  it('clears the focus on a click outside the radar', async () => {
+    await renderFocused()
+    fireEvent.click(screen.getByRole('banner'))
+    await waitFor(() =>
+      expect(screen.queryByRole('heading', { name: 'Platforms' })).not.toBeInTheDocument(),
+    )
+  })
+
+  it('keeps the focus on a click inside the sidebar', async () => {
+    await renderFocused()
+    fireEvent.click(screen.getByRole('searchbox'))
+    expect(screen.getByRole('heading', { name: 'Platforms' })).toBeInTheDocument()
+  })
+
   it('shows an error state when the fetch fails', async () => {
     vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: false, status: 500 }))
     render(<App />)
