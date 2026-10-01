@@ -6,9 +6,9 @@ import { SWEEP_PERIOD_MS } from './sweep'
 
 const KEYFRAMES: Keyframe[] = [{ opacity: 1 }, { opacity: 0 }]
 
-function Probe({ phase }: { phase: number }) {
+function Probe({ phase, enabled = true }: { phase: number; enabled?: boolean }) {
   const ref = useRef<HTMLDivElement>(null)
-  useSweepAnimation(ref, KEYFRAMES, phase)
+  useSweepAnimation(ref, KEYFRAMES, phase, enabled)
   return <div ref={ref} />
 }
 
@@ -19,18 +19,9 @@ function mockAnimate() {
   return { animate, animation }
 }
 
-function mockReducedMotion(matches: boolean) {
-  window.matchMedia = vi.fn(() => ({
-    matches,
-    addEventListener: vi.fn(),
-    removeEventListener: vi.fn(),
-  })) as unknown as typeof window.matchMedia
-}
-
 afterEach(() => {
-  // jsdom implements neither; remove the mocks so other tests see the real environment
+  // jsdom does not implement the Web Animations API; remove the mock for other tests
   delete (Element.prototype as Partial<Element>).animate
-  delete (window as Partial<Window>).matchMedia
 })
 
 describe('useSweepAnimation', () => {
@@ -52,10 +43,9 @@ describe('useSweepAnimation', () => {
     expect(animation.cancel).toHaveBeenCalled()
   })
 
-  it('does not animate when the user prefers reduced motion', () => {
+  it('does not animate when disabled', () => {
     const { animate } = mockAnimate()
-    mockReducedMotion(true)
-    render(<Probe phase={0} />)
+    render(<Probe phase={0} enabled={false} />)
     expect(animate).not.toHaveBeenCalled()
   })
 })

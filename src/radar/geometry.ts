@@ -47,3 +47,19 @@ export function annularSectorPath(
     'Z',
   ].join(' ')
 }
+
+/** Axis-aligned box given by its centre and half extents. */
+export interface Box {
+  x: number
+  y: number
+  halfWidth: number
+  halfHeight: number
+}
+
+/** True when the boxes overlap; boxes that only touch do not. */
+export function overlaps(a: Box, b: Box): boolean {
+  return (
+    Math.abs(a.x - b.x) < a.halfWidth + b.halfWidth &&
+    Math.abs(a.y - b.y) < a.halfHeight + b.halfHeight
+  )
+}

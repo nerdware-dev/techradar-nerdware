@@ -1,4 +1,5 @@
 import { BLIP_RADIUS } from '../config'
+import { overlaps, type Box } from './geometry'
 
 /** Font size of the name labels next to the dots, in SVG user units. */
 export const NAME_LABEL_FONT_SIZE = 11
@@ -22,17 +23,13 @@ export function estimateTextWidth(text: string, fontSize: number): number {
   return [...text].reduce((sum, char) => sum + charWidthEm(char), 0) * fontSize
 }
 
-/** Space kept between a label and its own dot, and around every other dot and label. */
+/**
+ * Gap between a label and its own dot. Other dots keep a full gap sideways and half of it
+ * above and below; other labels keep half of it sideways, while stacked labels rely on
+ * their line box, which is taller than the glyphs, to stay apart.
+ */
 const LABEL_GAP = 4
 const HALF_HEIGHT = 0.6 * NAME_LABEL_FONT_SIZE
-
-/** Axis-aligned box given by its centre and half extents. */
-export interface Box {
-  x: number
-  y: number
-  halfWidth: number
-  halfHeight: number
-}
 
 export interface NameLabel {
   blipId: string
@@ -52,13 +49,6 @@ export interface LabelTarget {
   name: string
   x: number
   y: number
-}
-
-function overlaps(a: Box, b: Box): boolean {
-  return (
-    Math.abs(a.x - b.x) < a.halfWidth + b.halfWidth &&
-    Math.abs(a.y - b.y) < a.halfHeight + b.halfHeight
-  )
 }
 
 function candidates(target: LabelTarget, width: number): { label: NameLabel; box: Box }[] {

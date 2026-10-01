@@ -1,25 +1,5 @@
-import { useEffect, useState, type RefObject } from 'react'
+import { useEffect, type RefObject } from 'react'
 import { SWEEP_PERIOD_MS } from './sweep'
-
-const REDUCED_MOTION_QUERY = '(prefers-reduced-motion: reduce)'
-
-function matchesReducedMotion(): boolean {
-  return typeof window.matchMedia === 'function' && window.matchMedia(REDUCED_MOTION_QUERY).matches
-}
-
-export function usePrefersReducedMotion(): boolean {
-  const [reduced, setReduced] = useState(matchesReducedMotion)
-
-  useEffect(() => {
-    if (typeof window.matchMedia !== 'function') return
-    const query = window.matchMedia(REDUCED_MOTION_QUERY)
-    const onChange = () => setReduced(query.matches)
-    query.addEventListener('change', onChange)
-    return () => query.removeEventListener('change', onChange)
-  }, [])
-
-  return reduced
-}
 
 /**
  * Plays `keyframes` once per sweep revolution on the element in `ref`, shifted
@@ -27,19 +7,21 @@ export function usePrefersReducedMotion(): boolean {
  * the document timeline's origin rather than to its own mount time, so the beam
  * and all blip pings stay in lockstep even when a blip mounts later than the
  * sweep (a remount would otherwise restart its animation out of sync).
- * Does nothing when the user prefers reduced motion.
+ * `enabled` is false when the user prefers reduced motion; the caller reads that
+ * preference once instead of every blip subscribing to it.
  */
 export function useSweepAnimation(
   ref: RefObject<Element | null>,
   keyframes: Keyframe[],
   phase: number,
+  enabled: boolean,
 ): void {
-  const reducedMotion = usePrefersReducedMotion()
-
   useEffect(() => {
+    if (!enabled) return
     const element = ref.current
-    if (reducedMotion) return
-    if (!element || typeof element.animate !== 'function') return
+    if (!element) return
+    // jsdom and very old browsers lack the Web Animations API
+    if (typeof element.animate !== 'function') return
 
     const animation = element.animate(keyframes, {
       duration: SWEEP_PERIOD_MS,
@@ -47,5 +29,5 @@ export function useSweepAnimation(
     })
     animation.startTime = phase * SWEEP_PERIOD_MS
     return () => animation.cancel()
-  }, [ref, keyframes, phase, reducedMotion])
+  }, [ref, keyframes, phase, enabled])
 }

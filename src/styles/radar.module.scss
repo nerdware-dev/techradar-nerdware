@@ -1,6 +1,6 @@
 /* as large as the column allows, but never taller than the viewport below the header */
 .svg {
-  width: min(100%, calc(100vh - 62px - 3rem));
+  width: min(100%, var(--content-height));
   height: auto;
   display: block;
   margin: 0 auto;
@@ -116,6 +116,11 @@
    font-size comes from NAME_LABEL_FONT_SIZE, which the label layout also uses */
 .nameLabels {
   animation: nameLabelsIn 0.2s ease var(--zoom-duration) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .nameLabels {
+    animation: none;
+  }
 }
 @keyframes nameLabelsIn {
   from {

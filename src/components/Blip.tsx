@@ -14,24 +14,27 @@ import styles from '../styles/blip.module.scss'
  * `zoom` moves the dot without scaling it, so dots keep their size when a quadrant is
  * zoomed in. `labeled` means a name label is already drawn next to the dot, so the
  * hover name is not repeated. `offscreen` means the zoom moved the dot out of the visible
- * area; it then leaves the tab order and the accessibility tree.
+ * area; it then leaves the tab order and the accessibility tree. `reducedMotion` turns the
+ * sweep ping off.
  */
 export function Blip({
   placed,
   zoom = NO_ZOOM,
   labeled = false,
   offscreen = false,
+  reducedMotion = false,
 }: {
   placed: PlacedBlip
   zoom?: Zoom
   labeled?: boolean
   offscreen?: boolean
+  reducedMotion?: boolean
 }) {
   const { blip, x, y, number } = placed
   const state = useRadarState()
   const dispatch = useRadarDispatch()
   const pingRef = useRef<SVGCircleElement>(null)
-  useSweepAnimation(pingRef, PING_KEYFRAMES, sweepPhase(x, y))
+  useSweepAnimation(pingRef, PING_KEYFRAMES, sweepPhase(x, y), !reducedMotion)
 
   const activeId = state.hoveredBlipId ?? state.selectedBlipId
   const isActive = activeId === blip.id

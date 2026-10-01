@@ -13,7 +13,8 @@ import type { PlacedBlip } from '../radar/placement'
 import { quadrantColor } from '../radar/quadrantColor'
 import { ringLabels, RING_LABEL_FONT_SIZE, type LabelAxis } from '../radar/ringLabels'
 import { AFTERGLOW_SLICES, SWEEP_ROTATION, SWEEP_START_DEG, SWEEP_TRAIL_DEG } from '../radar/sweep'
-import { usePrefersReducedMotion, useSweepAnimation } from '../radar/useSweepAnimation'
+import { usePrefersReducedMotion } from '../radar/usePrefersReducedMotion'
+import { useSweepAnimation } from '../radar/useSweepAnimation'
 import { applyZoom, NO_ZOOM, quadrantZoom, zoomedTranslate, zoomTransform } from '../radar/zoom'
 import { Blip } from './Blip'
 import { useRadarState, useRadarDispatch } from '../state/radarStore'
@@ -65,7 +66,7 @@ export function RadarView({ radar, placed }: { radar: Radar; placed: PlacedBlip[
 
   const sweepRef = useRef<SVGGElement>(null)
   const reducedMotion = usePrefersReducedMotion()
-  useSweepAnimation(sweepRef, SWEEP_ROTATION, 0)
+  useSweepAnimation(sweepRef, SWEEP_ROTATION, 0, !reducedMotion)
 
   // The sweep turns clockwise, so the afterglow lies counter-clockwise of the beam.
   const beam = polarToCartesian(SWEEP_START_DEG, max)
@@ -205,6 +206,7 @@ export function RadarView({ radar, placed }: { radar: Radar; placed: PlacedBlip[
           zoom={zoom}
           labeled={labeledIds.has(p.blip.id)}
           offscreen={isOffscreen(p)}
+          reducedMotion={reducedMotion}
         />
       ))}
 

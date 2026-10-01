@@ -1,6 +1,6 @@
 import type { Blip, Ring, Quadrant } from '../data/types'
 import { BLIP_RADIUS, MIN_BLIP_DISTANCE } from '../config'
-import { ringRadii, quadrantAngles, polarToCartesian } from './geometry'
+import { ringRadii, quadrantAngles, polarToCartesian, overlaps } from './geometry'
 import { ringLabels, type RingLabel } from './ringLabels'
 
 export interface PlacedBlip {
@@ -48,10 +48,7 @@ const LABEL_CLEARANCE = 3
 /** True when a dot centred at `point` would touch the label. */
 function overlapsLabel(point: Point, label: RingLabel): boolean {
   const reach = BLIP_RADIUS + LABEL_CLEARANCE
-  return (
-    Math.abs(point.x - label.x) < label.halfWidth + reach &&
-    Math.abs(point.y - label.y) < label.halfHeight + reach
-  )
+  return overlaps({ ...point, halfWidth: reach, halfHeight: reach }, label)
 }
 
 function randomAngleAndRadius(
