@@ -23,10 +23,14 @@ describe('parseRadar with scanner provenance fields', () => {
     expect(radar.blips[0].quadrant).toBe('languages-frameworks')
   })
 
+  it('keeps the repo count from the detection data', () => {
+    expect(parseRadar(withProvenance).blips[0].repoCount).toBe(7)
+  })
+
   it('renders only the standard fields the app needs', () => {
     const radar = parseRadar(withProvenance)
     expect(Object.keys(radar.blips[0]).sort()).toEqual(
-      ['description', 'id', 'isNew', 'name', 'quadrant', 'ring'].sort(),
+      ['description', 'id', 'isNew', 'name', 'quadrant', 'repoCount', 'ring'].sort(),
     )
   })
 })

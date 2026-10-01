@@ -25,9 +25,10 @@ export function QuadrantTable({ radar, placed }: { radar: Radar; placed: PlacedB
     >
       <h2>{quadrant.name}</h2>
       {rings.map((ring) => {
+        // blip numbers already encode the usage order (see placement.ts)
         const blips = radar.blips
           .filter((b) => b.quadrant === quadrant.id && b.ring === ring.id)
-          .sort((a, b) => a.name.localeCompare(b.name))
+          .sort((a, b) => numbers.get(a.id)! - numbers.get(b.id)!)
         if (blips.length === 0) return null
         return (
           <div key={ring.id}>

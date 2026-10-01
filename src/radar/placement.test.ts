@@ -50,6 +50,27 @@ describe('placeBlips', () => {
     expect(langs[0].number).toBe(1)
   })
 
+  it('numbers by ring, then most repos first, entries without scan data last, ties by name', () => {
+    const counted = (name: string, ring: Blip['ring'], repoCount?: number): Blip => ({
+      ...mk(name, ring, 'tools'),
+      repoCount,
+    })
+    const placed = placeBlips(
+      [
+        counted('Zeta', 'high', 9),
+        counted('Alpha', 'high'),
+        counted('Beta', 'high', 2),
+        counted('Gamma', 'high', 9),
+        counted('Delta', 'dev', 50),
+      ],
+      RINGS,
+      QUADRANTS,
+      400,
+    )
+    const order = [...placed].sort((a, b) => a.number - b.number).map((p) => p.blip.name)
+    expect(order).toEqual(['Gamma', 'Zeta', 'Beta', 'Alpha', 'Delta'])
+  })
+
   it('places every blip inside its ring band', () => {
     const placed = placeBlips(blips, RINGS, QUADRANTS, 400)
     const bands = ringRadii(RINGS.length, 400)

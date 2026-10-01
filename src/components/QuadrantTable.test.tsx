@@ -1,7 +1,13 @@
 import { describe, it, expect } from 'vitest'
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
+import { useEffect, type ReactNode } from 'react'
 import { QuadrantTable } from './QuadrantTable'
-import { RadarStoreProvider, radarReducer, initialState } from '../state/radarStore'
+import {
+  RadarStoreProvider,
+  radarReducer,
+  initialState,
+  useRadarDispatch,
+} from '../state/radarStore'
 import { parseRadar } from '../data/schema'
 import { placeBlips } from '../radar/placement'
 import { RADAR_SIZE } from '../config'
@@ -18,6 +24,14 @@ function Seeded({ children }: { children: React.ReactNode }) {
   return <RadarStoreProvider>{children}</RadarStoreProvider>
 }
 
+function FocusOn({ id, children }: { id: 'tools'; children: ReactNode }) {
+  const dispatch = useRadarDispatch()
+  useEffect(() => {
+    dispatch({ type: 'FOCUS_QUADRANT', id })
+  }, [dispatch, id])
+  return <>{children}</>
+}
+
 describe('QuadrantTable', () => {
   it('renders nothing when no quadrant is focused', () => {
     const { container } = render(
@@ -32,5 +46,23 @@ describe('QuadrantTable', () => {
     // unit check on selection logic that the table relies on
     const s = radarReducer(initialState, { type: 'FOCUS_QUADRANT', id: 'platforms' })
     expect(s.focusedQuadrant).toBe('platforms')
+  })
+
+  it('lists a ring most-used first, entries without scan data last', () => {
+    const counted = parseRadar([
+      { name: 'Little', ring: 'High', quadrant: 'tools', detected: { repoCount: 2 } },
+      { name: 'Curated', ring: 'High', quadrant: 'tools' },
+      { name: 'Lots', ring: 'High', quadrant: 'tools', detected: { repoCount: 12 } },
+    ])
+    const countedPlaced = placeBlips(counted.blips, counted.rings, counted.quadrants, RADAR_SIZE)
+    render(
+      <RadarStoreProvider>
+        <FocusOn id="tools">
+          <QuadrantTable radar={counted} placed={countedPlaced} />
+        </FocusOn>
+      </RadarStoreProvider>,
+    )
+    const rows = screen.getAllByRole('button').map((row) => row.textContent)
+    expect(rows).toEqual(['1Lots', '2Little', '3Curated'])
   })
 })

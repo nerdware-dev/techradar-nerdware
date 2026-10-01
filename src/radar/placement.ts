@@ -144,6 +144,17 @@ function findPosition(
   return bestPoint
 }
 
+/**
+ * Order within one ring: most-used first (by repo count), entries without scan
+ * data (hand-curated) last, ties by name. Blip numbers follow this order, and the
+ * quadrant list sorts by number, so both always agree.
+ */
+function byUsage(a: Blip, b: Blip): number {
+  const countA = a.repoCount ?? -1
+  const countB = b.repoCount ?? -1
+  return countB - countA || a.name.localeCompare(b.name)
+}
+
 export function placeBlips(
   blips: Blip[],
   rings: Ring[],
@@ -161,9 +172,7 @@ export function placeBlips(
     const angleSpan = end - start
     const inQuadrant = blips
       .filter((b) => b.quadrant === q.id)
-      .sort(
-        (a, b) => ringOrder.get(a.ring)! - ringOrder.get(b.ring)! || a.name.localeCompare(b.name),
-      )
+      .sort((a, b) => ringOrder.get(a.ring)! - ringOrder.get(b.ring)! || byUsage(a, b))
 
     inQuadrant.forEach((blip, i) => {
       const band = bands[ringOrder.get(blip.ring)!]

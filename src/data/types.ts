@@ -22,6 +22,8 @@ export interface Blip {
   quadrant: QuadrantId
   /** Derived: added to the radar within the last NEW_WINDOW_DAYS (see config.ts). */
   isNew: boolean
+  /** Number of org repos the scanner found it in; undefined for entries without scan data. */
+  repoCount?: number
   /** sanitized HTML */
   description: string
 }

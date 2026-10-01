@@ -21,6 +21,8 @@ const rawBlipSchema = z.object({
   quadrant: z.string().min(1),
   /** Calendar date (YYYY-MM-DD, UTC) the entry was added to the radar. */
   addedAt: z.iso.date().optional(),
+  /** Scanner provenance; only the repo count is used by the app. */
+  detected: z.object({ repoCount: z.number().int().nonnegative() }).optional(),
   description: z.string().optional().default(''),
 })
 
@@ -48,6 +50,7 @@ function toBlip(raw: z.infer<typeof rawBlipSchema>, index: number, now: Date): B
     ring: ring as RingId,
     quadrant: quadrant as QuadrantId,
     isNew: isRecentlyAdded(raw.addedAt, now),
+    repoCount: raw.detected?.repoCount,
     description: sanitize(raw.description ?? ''),
   }
 }
