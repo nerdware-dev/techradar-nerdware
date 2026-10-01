@@ -64,8 +64,10 @@
 .ringHigh .circle {
   fill: var(--q, #00ffbf);
 }
+/* 80% is the lowest mix that keeps the dark number at WCAG AA contrast (4.5:1) on every
+   quadrant colour; Languages & Frameworks is the tightest at 4.7:1 */
 .ringDev .circle {
-  fill: color-mix(in srgb, var(--q, #00ffbf) 65%, var(--bg));
+  fill: color-mix(in srgb, var(--q, #00ffbf) 80%, var(--bg));
 }
 .ringLow .circle {
   fill: color-mix(in srgb, var(--q, #00ffbf) 18%, var(--bg));
@@ -79,8 +81,13 @@
 .ringOut {
   --q: var(--text-mute);
 }
+/* outline only: a transparent (not 'none') fill keeps the whole dot hoverable, and the
+   resting halo would read as a fill, so only the hover halo (.active .halo) remains */
+.ringOut .halo {
+  opacity: 0;
+}
 .ringOut .circle {
-  fill: color-mix(in srgb, var(--q) 12%, var(--bg));
+  fill: transparent;
   stroke: var(--q);
   stroke-width: 1.5;
   stroke-dasharray: 3 2;
