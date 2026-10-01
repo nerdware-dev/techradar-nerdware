@@ -66,6 +66,34 @@ describe('RadarView', () => {
     expect(container.querySelectorAll('[data-dim]')).toHaveLength(3)
   })
 
+  it('zooms the background into the focused quadrant and labels its dots by name', () => {
+    const { container } = render(
+      <RadarStoreProvider>
+        <FocusOn id="platforms">
+          <RadarView radar={radar} placed={placed} />
+        </FocusOn>
+      </RadarStoreProvider>,
+    )
+    const scene = container.querySelector<SVGGElement>('[data-scene]')!
+    expect(scene.style.transform).toContain('scale(2)')
+    const names = [...container.querySelectorAll('[data-name-labels] text')].map(
+      (t) => t.textContent,
+    )
+    expect(names.sort()).toEqual(['AWS', 'Docker'])
+  })
+
+  it('neither zooms nor labels dots when no quadrant is focused', () => {
+    const { container } = render(
+      <RadarStoreProvider>
+        <RadarView radar={radar} placed={placed} />
+      </RadarStoreProvider>,
+    )
+    expect(container.querySelector<SVGGElement>('[data-scene]')!.style.transform).toContain(
+      'scale(1)',
+    )
+    expect(container.querySelector('[data-name-labels]')).toBeNull()
+  })
+
   describe('sweep', () => {
     afterEach(() => {
       delete (window as Partial<Window>).matchMedia

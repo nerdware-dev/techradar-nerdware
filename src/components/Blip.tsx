@@ -5,11 +5,25 @@ import { quadrantColor } from '../radar/quadrantColor'
 import { RING_CLASS } from '../radar/ringClass'
 import { PING_KEYFRAMES, sweepPhase } from '../radar/sweep'
 import { useSweepAnimation } from '../radar/useSweepAnimation'
+import { NO_ZOOM, zoomedTranslate, type Zoom } from '../radar/zoom'
 import { BLIP_RADIUS as RADIUS } from '../config'
 import { NewBadge } from './NewBadge'
 import styles from '../styles/blip.module.scss'
 
-export function Blip({ placed }: { placed: PlacedBlip }) {
+/**
+ * `zoom` moves the dot without scaling it, so dots keep their size when a quadrant is
+ * zoomed in. `labeled` means a name label is already drawn next to the dot, so the
+ * hover name is not repeated.
+ */
+export function Blip({
+  placed,
+  zoom = NO_ZOOM,
+  labeled = false,
+}: {
+  placed: PlacedBlip
+  zoom?: Zoom
+  labeled?: boolean
+}) {
   const { blip, x, y, number } = placed
   const state = useRadarState()
   const dispatch = useRadarDispatch()
@@ -26,8 +40,12 @@ export function Blip({ placed }: { placed: PlacedBlip }) {
   return (
     <g
       className={`${styles.group} ${isActive ? styles.active : ''} ${dimmed ? styles.dimmed : ''}`}
-      transform={`translate(${x} ${y})`}
-      style={{ '--q': quadrantColor(blip.quadrant) } as CSSProperties}
+      style={
+        {
+          '--q': quadrantColor(blip.quadrant),
+          transform: zoomedTranslate(zoom, { x, y }),
+        } as CSSProperties
+      }
       role="button"
       aria-label={blip.name}
       tabIndex={0}
@@ -48,7 +66,7 @@ export function Blip({ placed }: { placed: PlacedBlip }) {
         <circle className={styles.circle} r={RADIUS} />
         <text className={styles.number}>{number}</text>
         {blip.isNew && <NewBadge />}
-        {isActive && (
+        {isActive && !labeled && (
           <text className={styles.name} x={0} y={-RADIUS - 8}>
             {blip.name}
           </text>

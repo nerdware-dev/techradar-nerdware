@@ -41,6 +41,15 @@
   --font: 'Inter', system-ui, -apple-system, sans-serif;
   --font-display: 'Inter', system-ui, sans-serif;
   --font-mono: 'Inter', system-ui, sans-serif;
+
+  // Zooming into a quadrant: background scale, dot moves and label fade-in share it
+  --zoom-duration: 0.5s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --zoom-duration: 0s;
+  }
 }
 
 * {

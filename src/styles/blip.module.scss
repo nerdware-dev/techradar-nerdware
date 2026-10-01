@@ -1,6 +1,8 @@
 .group {
   cursor: pointer;
-  transition: opacity 0.25s ease;
+  transition:
+    opacity 0.25s ease,
+    transform var(--zoom-duration) ease;
 }
 .dimmed {
   opacity: 0.2;
