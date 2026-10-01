@@ -26,8 +26,13 @@ export const initialState: RadarState = {
 export function radarReducer(state: RadarState, action: RadarAction): RadarState {
   switch (action.type) {
     case 'FOCUS_QUADRANT':
-      return { ...state, focusedQuadrant: action.id }
+      if (action.id === state.focusedQuadrant) return state
+      // A selected blip lies in the focused quadrant (SELECT_BLIP focuses it). Kept across a
+      // switch, it would sit outside the zoomed view and still dim every visible blip.
+      return { ...state, focusedQuadrant: action.id, selectedBlipId: null }
     case 'CLEAR_FOCUS':
+      // every click on the page dispatches this; nothing to clear means nothing to re-render
+      if (state.focusedQuadrant === null && state.selectedBlipId === null) return state
       return { ...state, focusedQuadrant: null, selectedBlipId: null }
     case 'HOVER_BLIP':
       return { ...state, hoveredBlipId: action.id }

@@ -33,4 +33,28 @@ describe('radarReducer', () => {
     expect(cleared.focusedQuadrant).toBeNull()
     expect(cleared.selectedBlipId).toBeNull()
   })
+
+  it('switching to another quadrant drops the selection from the previous one', () => {
+    const selected = radarReducer(initialState, {
+      type: 'SELECT_BLIP',
+      id: 'vite',
+      quadrant: 'tools',
+    })
+    const switched = radarReducer(selected, { type: 'FOCUS_QUADRANT', id: 'platforms' })
+    expect(switched.focusedQuadrant).toBe('platforms')
+    expect(switched.selectedBlipId).toBeNull()
+  })
+
+  it('re-focusing the same quadrant keeps the selection and the state object', () => {
+    const selected = radarReducer(initialState, {
+      type: 'SELECT_BLIP',
+      id: 'vite',
+      quadrant: 'tools',
+    })
+    expect(radarReducer(selected, { type: 'FOCUS_QUADRANT', id: 'tools' })).toBe(selected)
+  })
+
+  it('CLEAR_FOCUS keeps the state object when there is nothing to clear', () => {
+    expect(radarReducer(initialState, { type: 'CLEAR_FOCUS' })).toBe(initialState)
+  })
 })
