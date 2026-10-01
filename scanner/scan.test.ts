@@ -53,7 +53,6 @@ describe('runScan', () => {
         name: 'Scrum',
         ring: 'high',
         quadrant: 'techniques',
-        isNew: 'FALSE',
         description: 'x',
         pinned: true,
       },
@@ -106,7 +105,6 @@ describe('runScan', () => {
         name: 'React',
         ring: 'high',
         quadrant: 'languages-frameworks',
-        isNew: 'FALSE',
         description: 'x',
       },
     ]

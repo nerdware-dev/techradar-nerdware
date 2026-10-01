@@ -4,20 +4,26 @@ import type { Detection, ScannerBlip } from './types'
 import type { RingId } from '../src/data/types'
 import { slugify } from '../src/data/slug'
 
+const TODAY = '2026-06-20'
+
 const existing: ScannerBlip[] = [
-  { name: 'AWS', ring: 'high', quadrant: 'platforms', isNew: 'FALSE', description: 'Cloud.' },
+  {
+    name: 'AWS',
+    ring: 'high',
+    quadrant: 'platforms',
+    addedAt: '2023-04-18',
+    description: 'Cloud.',
+  },
   {
     name: 'React',
     ring: 'low',
     quadrant: 'languages-frameworks',
-    isNew: 'FALSE',
     description: 'UI lib.',
   },
   {
     name: 'Scrum',
     ring: 'high',
     quadrant: 'techniques',
-    isNew: 'FALSE',
     description: 'Method.',
     pinned: true,
   },
@@ -40,12 +46,12 @@ const categorized = new Map([
 const descriptions = new Map([[slugify('Grafana'), 'Grafana ist ein Dashboard-Tool.']])
 
 describe('mergeRadar', () => {
-  const { candidate, changes } = mergeRadar(existing, detections, categorized, descriptions)
+  const { candidate, changes } = mergeRadar(existing, detections, categorized, descriptions, TODAY)
   const byName = (n: string) => candidate.find((b) => b.name === n)!
 
   it('adds a new blip with detection data, autoRing, quadrant and German description', () => {
     const g = byName('Grafana')
-    expect(g.isNew).toBe(true)
+    expect(g.addedAt).toBe(TODAY)
     expect(g.autoRing).toBe('low')
     expect(g.quadrant).toBe('tools')
     expect(g.description).toBe('Grafana ist ein Dashboard-Tool.')
@@ -67,7 +73,6 @@ describe('mergeRadar', () => {
         name: 'React',
         ring: 'High' as RingId,
         quadrant: 'languages-frameworks',
-        isNew: 'FALSE',
         description: 'x',
       },
     ]
@@ -76,6 +81,7 @@ describe('mergeRadar', () => {
       detections,
       categorized,
       descriptions,
+      TODAY,
     )
     expect(ch.ringMoves).toHaveLength(0)
     expect(c.find((b) => b.name === 'React')!.ring).toBe('High')
@@ -83,6 +89,10 @@ describe('mergeRadar', () => {
 
   it('never overwrites an existing human description', () => {
     expect(byName('React').description).toBe('UI lib.')
+  })
+
+  it('keeps the addedAt date of an existing blip', () => {
+    expect(byName('AWS').addedAt).toBe('2023-04-18')
   })
 
   it('keeps an undetected existing blip unchanged and lists it for review', () => {
@@ -102,14 +112,19 @@ describe('mergeRadar', () => {
         name: 'PHP',
         ring: 'Out' as RingId,
         quadrant: 'languages-frameworks',
-        isNew: 'FALSE',
         description: 'x',
       },
     ]
     const detected: Detection[] = [
       { name: 'PHP', repoCount: 3, sourceRepos: ['a', 'b', 'c'], lastSeen: '2026-06-18' },
     ]
-    const { candidate: c, changes: ch } = mergeRadar(retired, detected, categorized, descriptions)
+    const { candidate: c, changes: ch } = mergeRadar(
+      retired,
+      detected,
+      categorized,
+      descriptions,
+      TODAY,
+    )
     const php = c.find((b) => b.name === 'PHP')!
     expect(php.ring).toBe('Out') // stays out despite 3-repo adoption
     expect(php.detected?.repoCount).toBe(3) // detection data still recorded
@@ -123,12 +138,11 @@ describe('mergeRadar', () => {
         name: 'React',
         ring: 'dev',
         quadrant: 'languages-frameworks',
-        isNew: 'FALSE',
         description: 'x',
         ringOverride: 'dev',
       },
     ]
-    const { candidate: c } = mergeRadar(withOverride, detections, categorized, descriptions)
+    const { candidate: c } = mergeRadar(withOverride, detections, categorized, descriptions, TODAY)
     expect(c.find((b) => b.name === 'React')!.ring).toBe('dev')
   })
 })
@@ -139,7 +153,6 @@ describe('mergeRadar — derived detections', () => {
       name: 'Cloud Networking',
       ring: 'high',
       quadrant: 'platforms',
-      isNew: 'FALSE',
       description: 'Net.',
     },
   ]
@@ -153,7 +166,7 @@ describe('mergeRadar — derived detections', () => {
         derived: true,
       },
     ]
-    const { candidate, changes } = mergeRadar(existingD, detections, new Map(), new Map())
+    const { candidate, changes } = mergeRadar(existingD, detections, new Map(), new Map(), TODAY)
     const cn = candidate.find((b) => b.name === 'Cloud Networking')!
     expect(cn.detected?.repoCount).toBe(9)
     expect(cn.autoRing).toBeUndefined()
@@ -172,7 +185,7 @@ describe('mergeRadar — derived detections', () => {
         derived: true,
       },
     ]
-    const { candidate, changes } = mergeRadar([], detections, new Map(), new Map())
+    const { candidate, changes } = mergeRadar([], detections, new Map(), new Map(), TODAY)
     expect(candidate).toHaveLength(0)
     expect(changes.added).toHaveLength(0)
   })

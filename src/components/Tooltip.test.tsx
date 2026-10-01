@@ -10,7 +10,6 @@ const radar = parseRadar([
     name: 'Docker',
     ring: 'High',
     quadrant: 'platforms',
-    isNew: 'FALSE',
     description: 'Container <a href="https://x.y">docs</a>',
   },
 ])

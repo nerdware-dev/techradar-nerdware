@@ -134,7 +134,7 @@ export async function runScan(
   }
 
   const withDerived = deriveImplied(promoted)
-  const { candidate, changes } = mergeRadar(existing, withDerived, categorized, descriptions)
+  const { candidate, changes } = mergeRadar(existing, withDerived, categorized, descriptions, today)
   const report = renderReport(changes, repos.length, suppressed.length, belowThreshold.length)
   return {
     candidate,

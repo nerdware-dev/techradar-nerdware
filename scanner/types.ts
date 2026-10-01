@@ -76,8 +76,10 @@ export interface ScannerBlip {
   name: string
   ring: RingId
   quadrant: QuadrantId
-  isNew: boolean | string
   description?: string
+  /** ISO date (YYYY-MM-DD) the entry joined the radar. Written by the scanner for entries it
+   *  adds; hand-added entries set it themselves. The app derives "new" from it. */
+  addedAt?: string
   // machine-owned
   detected?: { repoCount: number; lastSeen: string; sourceRepos: string[] }
   autoRing?: RingId

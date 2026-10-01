@@ -16,13 +16,15 @@ export interface ChangeSet {
 }
 
 /** Combine machine detections with the existing radar, preserving all human-owned
- *  fields. New techs are added; detected existing blips are re-ringed to autoRing
- *  (unless a ringOverride is set); undetected existing blips are left untouched. */
+ *  fields. New techs are added (stamped with `today` as their addedAt); detected
+ *  existing blips are re-ringed to autoRing (unless a ringOverride is set);
+ *  undetected existing blips are left untouched. */
 export function mergeRadar(
   existing: ScannerBlip[],
   detections: Detection[],
   categorized: Map<string, { quadrant: QuadrantId; needsReview: boolean }>,
   descriptions: Map<string, string>,
+  today: string,
 ): { candidate: ScannerBlip[]; changes: ChangeSet } {
   const changes: ChangeSet = {
     added: [],
@@ -86,7 +88,7 @@ export function mergeRadar(
       name: detection.name,
       ring: ar,
       quadrant: cat?.quadrant ?? 'tools',
-      isNew: true,
+      addedAt: today,
       description: descriptions.get(slug) ?? '',
       autoRing: ar,
       detected: {

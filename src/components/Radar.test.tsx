@@ -9,9 +9,9 @@ import { AFTERGLOW_SLICES } from '../radar/sweep'
 import { RADAR_SIZE } from '../config'
 
 const radar = parseRadar([
-  { name: 'Docker', ring: 'High', quadrant: 'platforms', isNew: 'FALSE', description: 'd' },
-  { name: 'AWS', ring: 'Low', quadrant: 'platforms', isNew: 'TRUE', description: 'a' },
-  { name: 'Go', ring: 'Dev', quadrant: 'languages & frameworks', isNew: 'FALSE', description: 'g' },
+  { name: 'Docker', ring: 'High', quadrant: 'platforms', description: 'd' },
+  { name: 'AWS', ring: 'Low', quadrant: 'platforms', description: 'a' },
+  { name: 'Go', ring: 'Dev', quadrant: 'languages & frameworks', description: 'g' },
 ])
 const placed = placeBlips(radar.blips, radar.rings, radar.quadrants, RADAR_SIZE)
 

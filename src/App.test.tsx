@@ -3,8 +3,8 @@ import { render, screen, waitFor, fireEvent } from '@testing-library/react'
 import App from './App'
 
 const data = [
-  { name: 'Docker', ring: 'High', quadrant: 'platforms', isNew: 'FALSE', description: 'd' },
-  { name: 'AWS', ring: 'Low', quadrant: 'platforms', isNew: 'FALSE', description: 'a' },
+  { name: 'Docker', ring: 'High', quadrant: 'platforms', description: 'd' },
+  { name: 'AWS', ring: 'Low', quadrant: 'platforms', description: 'a' },
 ]
 
 afterEach(() => vi.restoreAllMocks())

@@ -7,7 +7,7 @@ describe('parseRadar with scanner provenance fields', () => {
       name: 'React',
       ring: 'high',
       quadrant: 'languages-frameworks',
-      isNew: false,
+      addedAt: '2026-06-18',
       description: 'UI.',
       detected: { repoCount: 7, lastSeen: '2026-06-18', sourceRepos: ['a', 'b'] },
       autoRing: 'high',

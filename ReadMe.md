@@ -17,7 +17,7 @@ Der Radar-Inhalt wird in `data/tech-radar.json` verwaltet. Die Datei kann direkt
   "name": "Neue Technologie",
   "ring": "High",
   "quadrant": "tools",
-  "isNew": true,
+  "addedAt": "2026-10-01",
   "description": "Kurze Beschreibung. <a href=\"https://example.com\">Mehr erfahren</a>"
 }
 ```
@@ -28,10 +28,12 @@ Der Radar-Inhalt wird in `data/tech-radar.json` verwaltet. Die Datei kann direkt
 | ---------- | ------------------------------------------------------------ |
 | `ring`     | `Low`, `Dev`, `High`, `Out`                                  |
 | `quadrant` | `techniques`, `platforms`, `tools`, `languages & frameworks` |
-| `isNew`    | `true` / `false` (Boolean)                                   |
+| `addedAt`  | Datum im Format `YYYY-MM-DD` (optional)                      |
 
 > Werte für `ring` und `quadrant` sind **case-insensitiv** — `high`, `HIGH` und `High` werden alle akzeptiert.
 > Bei einem Tippfehler erscheint eine klare Fehlermeldung statt einem leeren Radar.
+
+`addedAt` ist der Tag, an dem der Eintrag in den Radar aufgenommen wurde. Ab diesem Tag gilt er 90 Tage lang als „neu“ (`NEW_WINDOW_DAYS` in `src/config.ts`). Einträge ohne `addedAt` gelten nie als neu. Der Scanner setzt das Datum bei automatisch hinzugefügten Einträgen selbst.
 
 ---
 
