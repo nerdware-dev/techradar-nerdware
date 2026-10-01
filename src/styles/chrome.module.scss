@@ -119,3 +119,11 @@
   opacity: 0.24;
   box-shadow: none;
 }
+/* mirrors the blip's "new" badge (blip.module.scss .newBadge) */
+.newSwatch {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text);
+  box-shadow: 0 0 0 1.5px var(--bg);
+}

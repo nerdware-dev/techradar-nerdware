@@ -11,6 +11,10 @@ export function Legend({ radar }: { radar: Radar }) {
           {r.name}
         </span>
       ))}
+      <span className={styles.legendItem}>
+        <span className={styles.newSwatch} />
+        Neu
+      </span>
     </div>
   )
 }

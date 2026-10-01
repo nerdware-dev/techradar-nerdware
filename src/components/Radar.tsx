@@ -1,9 +1,11 @@
-import { useMemo } from 'react'
+import { useMemo, useRef } from 'react'
 import type { Radar } from '../data/types'
 import { RADAR_SIZE } from '../config'
 import { ringRadii, quadrantAngles, annularSectorPath, polarToCartesian } from '../radar/geometry'
 import type { PlacedBlip } from '../radar/placement'
 import { quadrantColor } from '../radar/quadrantColor'
+import { AFTERGLOW_SLICES, SWEEP_ROTATION, SWEEP_START_DEG, SWEEP_TRAIL_DEG } from '../radar/sweep'
+import { usePrefersReducedMotion, useSweepAnimation } from '../radar/useSweepAnimation'
 import { Blip } from './Blip'
 import { useRadarState, useRadarDispatch } from '../state/radarStore'
 import styles from '../styles/radar.module.scss'
@@ -17,9 +19,20 @@ export function RadarView({ radar, placed }: { radar: Radar; placed: PlacedBlip[
   const bands = useMemo(() => ringRadii(radar.rings.length, max), [radar.rings.length, max])
   const rings = useMemo(() => [...radar.rings].sort((a, b) => a.order - b.order), [radar.rings])
 
-  // radar sweep wedge: leading beam points up, trailing edge ~46° behind
-  const beam = polarToCartesian(-90, max)
-  const trail = polarToCartesian(-90 + 46, max)
+  const sweepRef = useRef<SVGGElement>(null)
+  const reducedMotion = usePrefersReducedMotion()
+  useSweepAnimation(sweepRef, SWEEP_ROTATION, 0)
+
+  // The sweep turns clockwise, so the afterglow lies counter-clockwise of the beam.
+  const beam = polarToCartesian(SWEEP_START_DEG, max)
+  const afterglow = useMemo(
+    () =>
+      Array.from({ length: AFTERGLOW_SLICES }, (_, i) => {
+        const reach = (SWEEP_TRAIL_DEG * (i + 1)) / AFTERGLOW_SLICES
+        return annularSectorPath(SWEEP_START_DEG - reach, SWEEP_START_DEG, 0, max)
+      }),
+    [max],
+  )
 
   const sectorOpacity = (qid: string) =>
     focusedQuadrant ? (qid === focusedQuadrant ? 0.15 : 0.02) : 0.06
@@ -62,22 +75,15 @@ export function RadarView({ radar, placed }: { radar: Radar; placed: PlacedBlip[
           )
         })}
 
-      {/* rotating radar sweep */}
-      <g>
-        <polygon
-          className={styles.sweepArea}
-          points={`0,0 ${beam.x},${beam.y} ${trail.x},${trail.y}`}
-        />
-        <line className={styles.sweepBeam} x1={0} y1={0} x2={beam.x} y2={beam.y} />
-        <animateTransform
-          attributeName="transform"
-          type="rotate"
-          from="0 0 0"
-          to="360 0 0"
-          dur="11s"
-          repeatCount="indefinite"
-        />
-      </g>
+      {/* rotating radar sweep; a static beam would only cover the ring labels */}
+      {!reducedMotion && (
+        <g ref={sweepRef} data-sweep className={styles.sweep}>
+          {afterglow.map((d, i) => (
+            <path key={i} className={styles.afterglow} d={d} />
+          ))}
+          <line className={styles.sweepBeam} x1={0} y1={0} x2={beam.x} y2={beam.y} />
+        </g>
+      )}
 
       {/* outer bezel + quadrant divider axes */}
       <circle className={styles.bezel} r={max} cx={0} cy={0} />

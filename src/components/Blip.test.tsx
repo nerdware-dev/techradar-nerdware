@@ -44,6 +44,16 @@ describe('Blip', () => {
     expect(container.querySelector('[data-isnew="true"]')).toBeTruthy()
   })
 
+  it('renders no isNew marker when the blip is not new', () => {
+    const { container } = renderBlip({ ...placed, blip: { ...placed.blip, isNew: false } })
+    expect(container.querySelector('[data-isnew="true"]')).toBeNull()
+  })
+
+  it('renders a ping element for the sweep flash', () => {
+    const { container } = renderBlip()
+    expect(container.querySelector('[data-ping]')).toBeTruthy()
+  })
+
   it('does not throw on click (selection dispatch)', () => {
     renderBlip()
     fireEvent.click(screen.getByLabelText('Docker'))

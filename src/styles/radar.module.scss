@@ -25,9 +25,16 @@
 }
 
 /* rotating radar sweep (brand cyan) */
-.sweepArea {
-  fill: rgba(0, 255, 191, 0.07);
+.sweep {
+  /* rotate around the radar centre, which is the origin of the user space */
+  transform-box: view-box;
+  transform-origin: 0 0;
   pointer-events: none;
+}
+/* each slice adds a little glow; ~24 overlap right behind the beam (≈ 0.18 total) */
+.afterglow {
+  fill: var(--brand);
+  fill-opacity: 0.008;
 }
 .sweepBeam {
   stroke: var(--brand);

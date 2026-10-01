@@ -1,10 +1,11 @@
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect, vi, afterEach } from 'vitest'
 import { render } from '@testing-library/react'
 import { useEffect, type ReactNode } from 'react'
 import { RadarView } from './Radar'
 import { RadarStoreProvider, useRadarDispatch } from '../state/radarStore'
 import { parseRadar } from '../data/schema'
 import { placeBlips } from '../radar/placement'
+import { AFTERGLOW_SLICES } from '../radar/sweep'
 import { RADAR_SIZE } from '../config'
 
 const radar = parseRadar([
@@ -63,5 +64,37 @@ describe('RadarView', () => {
     )
     // 4 quadrants total, 1 focused → 3 dim-overlay paths
     expect(container.querySelectorAll('[data-dim]')).toHaveLength(3)
+  })
+
+  describe('sweep', () => {
+    afterEach(() => {
+      delete (window as Partial<Window>).matchMedia
+    })
+
+    it('draws the afterglow as arc-ended slices behind the beam', () => {
+      const { container } = render(
+        <RadarStoreProvider>
+          <RadarView radar={radar} placed={placed} />
+        </RadarStoreProvider>,
+      )
+      const slices = container.querySelectorAll('[data-sweep] path')
+      expect(slices).toHaveLength(AFTERGLOW_SLICES)
+      // an arc command, not a straight chord, closes each slice at the bezel
+      for (const slice of slices) expect(slice.getAttribute('d')).toMatch(/ A /)
+    })
+
+    it('is not drawn when the user prefers reduced motion', () => {
+      window.matchMedia = vi.fn(() => ({
+        matches: true,
+        addEventListener: vi.fn(),
+        removeEventListener: vi.fn(),
+      })) as unknown as typeof window.matchMedia
+      const { container } = render(
+        <RadarStoreProvider>
+          <RadarView radar={radar} placed={placed} />
+        </RadarStoreProvider>,
+      )
+      expect(container.querySelector('[data-sweep]')).toBeNull()
+    })
   })
 })
