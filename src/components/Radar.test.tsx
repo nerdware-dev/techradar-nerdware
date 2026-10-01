@@ -1,8 +1,8 @@
 import { describe, it, expect, vi, afterEach } from 'vitest'
 import { render } from '@testing-library/react'
-import { useEffect, type ReactNode } from 'react'
 import { RadarView } from './Radar'
-import { RadarStoreProvider, useRadarDispatch } from '../state/radarStore'
+import { RadarStoreProvider } from '../state/radarStore'
+import { FocusOn } from '../test/radarState'
 import { parseRadar } from '../data/schema'
 import { placeBlips } from '../radar/placement'
 import { AFTERGLOW_SLICES } from '../radar/sweep'
@@ -14,14 +14,6 @@ const radar = parseRadar([
   { name: 'Go', ring: 'Dev', quadrant: 'languages & frameworks', description: 'g' },
 ])
 const placed = placeBlips(radar.blips, radar.rings, radar.quadrants, RADAR_SIZE)
-
-function FocusOn({ id, children }: { id: 'platforms'; children: ReactNode }) {
-  const dispatch = useRadarDispatch()
-  useEffect(() => {
-    dispatch({ type: 'FOCUS_QUADRANT', id })
-  }, [dispatch, id])
-  return <>{children}</>
-}
 
 describe('RadarView', () => {
   it('renders an svg with one circle per ring', () => {

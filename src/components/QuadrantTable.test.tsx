@@ -1,13 +1,8 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { useEffect, type ReactNode } from 'react'
 import { QuadrantTable } from './QuadrantTable'
-import {
-  RadarStoreProvider,
-  radarReducer,
-  initialState,
-  useRadarDispatch,
-} from '../state/radarStore'
+import { RadarStoreProvider, radarReducer, initialState } from '../state/radarStore'
+import { FocusOn } from '../test/radarState'
 import { parseRadar } from '../data/schema'
 import { placeBlips } from '../radar/placement'
 import { RADAR_SIZE } from '../config'
@@ -22,14 +17,6 @@ const placed = placeBlips(radar.blips, radar.rings, radar.quadrants, RADAR_SIZE)
 // Provider seeded with a focused quadrant for the test
 function Seeded({ children }: { children: React.ReactNode }) {
   return <RadarStoreProvider>{children}</RadarStoreProvider>
-}
-
-function FocusOn({ id, children }: { id: 'tools'; children: ReactNode }) {
-  const dispatch = useRadarDispatch()
-  useEffect(() => {
-    dispatch({ type: 'FOCUS_QUADRANT', id })
-  }, [dispatch, id])
-  return <>{children}</>
 }
 
 describe('QuadrantTable', () => {

@@ -9,7 +9,7 @@ import { Search } from './components/Search'
 import { RadarView } from './components/Radar'
 import { QuadrantNav } from './components/QuadrantNav'
 import { QuadrantTable } from './components/QuadrantTable'
-import { Tooltip } from './components/Tooltip'
+import { DetailCard } from './components/DetailCard'
 import { Legend } from './components/Legend'
 import { placeBlips } from './radar/placement'
 import { RADAR_SIZE } from './config'
@@ -67,7 +67,7 @@ export default function App() {
               <Search radar={load.radar} />
               <QuadrantNav radar={load.radar} />
               <Legend radar={load.radar} />
-              <Tooltip radar={load.radar} />
+              <DetailCard radar={load.radar} />
               <QuadrantTable radar={load.radar} placed={placed} />
             </aside>
           </main>

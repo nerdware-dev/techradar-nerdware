@@ -34,7 +34,7 @@
   color: var(--brand);
 }
 
-/* Detail card — fixed height and an overlay description, see Tooltip.tsx */
+/* Detail card — fixed height and an overlay description, see DetailCard.tsx */
 $detail-height: 76px;
 .detailHint {
   flex: none;
@@ -70,7 +70,7 @@ $detail-height: 76px;
   align-items: baseline;
   gap: 0.75rem;
 }
-.detailHead h3 {
+.detailHead h2 {
   flex: 1;
   min-width: 0;
   margin: 0;
