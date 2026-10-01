@@ -1,16 +1,22 @@
 import { useMemo, useRef } from 'react'
 import type { Radar } from '../data/types'
 import { RADAR_SIZE } from '../config'
-import { ringRadii, quadrantAngles, annularSectorPath, polarToCartesian } from '../radar/geometry'
+import {
+  ringRadii,
+  quadrantAngles,
+  annularSectorPath,
+  polarToCartesian,
+  isLowerQuadrant,
+} from '../radar/geometry'
 import { layoutNameLabels, NAME_LABEL_FONT_SIZE } from '../radar/nameLabels'
 import type { PlacedBlip } from '../radar/placement'
 import { quadrantColor } from '../radar/quadrantColor'
-import { ringLabels, RING_LABEL_FONT_SIZE } from '../radar/ringLabels'
+import { ringLabels, RING_LABEL_FONT_SIZE, type LabelAxis } from '../radar/ringLabels'
 import { AFTERGLOW_SLICES, SWEEP_ROTATION, SWEEP_START_DEG, SWEEP_TRAIL_DEG } from '../radar/sweep'
 import { usePrefersReducedMotion, useSweepAnimation } from '../radar/useSweepAnimation'
 import { applyZoom, NO_ZOOM, quadrantZoom, zoomedTranslate, zoomTransform } from '../radar/zoom'
 import { Blip } from './Blip'
-import { useRadarState } from '../state/radarStore'
+import { useRadarState, useRadarDispatch } from '../state/radarStore'
 import styles from '../styles/radar.module.scss'
 
 /** Distance from the bezel's top or bottom to a quadrant label's centre line. */
@@ -23,17 +29,26 @@ const QUADRANT_LABEL_GAP = 22
  */
 export function RadarView({ radar, placed }: { radar: Radar; placed: PlacedBlip[] }) {
   const { focusedQuadrant, hoveredBlipId, selectedBlipId } = useRadarState()
+  const dispatch = useRadarDispatch()
   const max = RADAR_SIZE
   // room for the quadrant labels, which sit just above/below the bezel in the corners
   const pad = 40
   const view = max + pad
   const bands = useMemo(() => ringRadii(radar.rings.length, max), [radar.rings.length, max])
-  const labels = useMemo(() => ringLabels(radar.rings, max), [radar.rings, max])
+  const labelSets = useMemo(
+    () => ({ up: ringLabels(radar.rings, max, 'up'), down: ringLabels(radar.rings, max, 'down') }),
+    [radar.rings, max],
+  )
 
-  const zoom = useMemo(() => {
-    const quadrant = radar.quadrants.find((q) => q.id === focusedQuadrant)
-    return quadrant ? quadrantZoom(quadrant.order, max) : NO_ZOOM
-  }, [radar.quadrants, focusedQuadrant, max])
+  const focused = radar.quadrants.find((q) => q.id === focusedQuadrant)
+  const zoom = useMemo(() => (focused ? quadrantZoom(focused.order, max) : NO_ZOOM), [focused, max])
+  // zooming into a lower quadrant moves the upper half of the axis out of view
+  const labelAxis: LabelAxis = focused && isLowerQuadrant(focused.order) ? 'down' : 'up'
+  const labels = labelSets[labelAxis]
+  const isOffscreen = (p: PlacedBlip) => {
+    const { x, y } = applyZoom(zoom, p)
+    return Math.abs(x) > view || Math.abs(y) > view
+  }
 
   const nameLabels = useMemo(() => {
     if (!focusedQuadrant) return []
@@ -147,17 +162,22 @@ export function RadarView({ radar, placed }: { radar: Radar; placed: PlacedBlip[
             })}
       </g>
 
-      {/* ring (competency) labels up the top axis; above the dim overlay, never dimmed */}
-      {labels.map((label) => (
-        <text
-          key={label.ringId}
-          className={styles.ringLabel}
-          style={{ transform: zoomedTranslate(zoom, label) }}
-          fontSize={RING_LABEL_FONT_SIZE}
-        >
-          {label.text}
-        </text>
-      ))}
+      {/* ring (competency) labels on the vertical axis, above the dim overlay so they are
+          never dimmed; both halves are drawn so switching between them fades, not flies */}
+      {(['up', 'down'] as const).map((axis) =>
+        labelSets[axis].map((label) => (
+          <text
+            key={`${axis}-${label.ringId}`}
+            data-ring-label={axis}
+            aria-hidden={axis !== labelAxis}
+            className={`${styles.ringLabel} ${axis !== labelAxis ? styles.hidden : ''}`}
+            style={{ transform: zoomedTranslate(zoom, label) }}
+            fontSize={RING_LABEL_FONT_SIZE}
+          >
+            {label.text}
+          </text>
+        )),
+      )}
 
       {/* quadrant labels — in the corners of the bounding square, hidden while zoomed */}
       {radar.quadrants.map((q) => {
@@ -179,24 +199,49 @@ export function RadarView({ radar, placed }: { radar: Radar; placed: PlacedBlip[
       })}
 
       {placed.map((p) => (
-        <Blip key={p.blip.id} placed={p} zoom={zoom} labeled={labeledIds.has(p.blip.id)} />
+        <Blip
+          key={p.blip.id}
+          placed={p}
+          zoom={zoom}
+          labeled={labeledIds.has(p.blip.id)}
+          offscreen={isOffscreen(p)}
+        />
       ))}
 
-      {/* name labels of the focused quadrant; keyed so they fade in again after each zoom */}
+      {/* name labels of the focused quadrant, keyed so they fade in again after each zoom.
+          A label acts like its dot; the dot itself is what assistive technology sees. */}
       {nameLabels.length > 0 && (
-        <g key={focusedQuadrant} data-name-labels className={styles.nameLabels}>
+        <g key={focusedQuadrant} data-name-labels aria-hidden="true" className={styles.nameLabels}>
           {nameLabels.map((label) => (
-            <text
+            <g
               key={label.blipId}
-              className={nameLabelClass(label.blipId)}
-              x={label.x}
-              y={label.y}
-              textAnchor={label.anchor}
-              data-side={label.side}
-              fontSize={NAME_LABEL_FONT_SIZE}
+              className={styles.nameLabelTarget}
+              onMouseEnter={() => dispatch({ type: 'HOVER_BLIP', id: label.blipId })}
+              onMouseLeave={() => dispatch({ type: 'HOVER_BLIP', id: null })}
+              onClick={(e) => {
+                e.stopPropagation() // a click reaching the page clears the focus (App.tsx)
+                dispatch({ type: 'SELECT_BLIP', id: label.blipId, quadrant: focused?.id })
+              }}
             >
-              {label.text}
-            </text>
+              {/* fixed hit area: the text shifts away from its enlarged dot while active */}
+              <rect
+                className={styles.nameLabelHit}
+                x={label.box.x - label.box.halfWidth}
+                y={label.box.y - label.box.halfHeight}
+                width={2 * label.box.halfWidth}
+                height={2 * label.box.halfHeight}
+              />
+              <text
+                className={nameLabelClass(label.blipId)}
+                x={label.x}
+                y={label.y}
+                textAnchor={label.anchor}
+                data-side={label.side}
+                fontSize={NAME_LABEL_FONT_SIZE}
+              >
+                {label.text}
+              </text>
+            </g>
           ))}
         </g>
       )}

@@ -14,7 +14,7 @@ const MAX_CHAR_WIDTH_EM = 0.8
 /** Half the rendered line box height, in em (Inter: 13.2 units tall at 11 units). */
 const HALF_LINE_HEIGHT_EM = 0.6
 
-/** A ring label, centred at (x, y) on the upward axis, and the box it covers. */
+/** A ring label, centred at (x, y) on the vertical axis, and the box it covers. */
 export interface RingLabel {
   ringId: RingId
   text: string
@@ -24,8 +24,11 @@ export interface RingLabel {
   halfHeight: number
 }
 
+/** Which half of the vertical axis the labels sit on. */
+export type LabelAxis = 'up' | 'down'
+
 /** One label per ring, at the middle of its band, innermost ring first. */
-export function ringLabels(rings: Ring[], maxRadius: number): RingLabel[] {
+export function ringLabels(rings: Ring[], maxRadius: number, axis: LabelAxis = 'up'): RingLabel[] {
   const bands = ringRadii(rings.length, maxRadius)
   return [...rings]
     .sort((a, b) => a.order - b.order)
@@ -35,7 +38,7 @@ export function ringLabels(rings: Ring[], maxRadius: number): RingLabel[] {
         ringId: ring.id,
         text,
         x: 0,
-        y: -(bands[i].inner + bands[i].outer) / 2,
+        y: ((axis === 'up' ? -1 : 1) * (bands[i].inner + bands[i].outer)) / 2,
         halfWidth: (text.length * MAX_CHAR_WIDTH_EM * RING_LABEL_FONT_SIZE) / 2,
         halfHeight: HALF_LINE_HEIGHT_EM * RING_LABEL_FONT_SIZE,
       }

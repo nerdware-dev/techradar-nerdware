@@ -113,7 +113,7 @@ describe('placeBlips', () => {
   it('keeps every dot of the real radar clear of the ring labels', () => {
     const radar = parseRadar(realData)
     const placed = placeBlips(radar.blips, radar.rings, radar.quadrants, 400)
-    const labels = ringLabels(radar.rings, 400)
+    const labels = [...ringLabels(radar.rings, 400, 'up'), ...ringLabels(radar.rings, 400, 'down')]
     for (const p of placed) {
       for (const label of labels) {
         const clearX = Math.abs(p.x - label.x) >= label.halfWidth + BLIP_RADIUS

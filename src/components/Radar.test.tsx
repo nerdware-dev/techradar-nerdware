@@ -82,6 +82,37 @@ describe('RadarView', () => {
     expect(names.sort()).toEqual(['AWS', 'Docker'])
   })
 
+  it('shows the ring labels on the lower axis while a lower quadrant is zoomed', () => {
+    const { container } = render(
+      <RadarStoreProvider>
+        <FocusOn id="platforms">
+          <RadarView radar={radar} placed={placed} />
+        </FocusOn>
+      </RadarStoreProvider>,
+    )
+    const shown = (axis: string) =>
+      [...container.querySelectorAll(`[data-ring-label="${axis}"]`)].every(
+        (l) => l.getAttribute('aria-hidden') === 'false',
+      )
+    expect(shown('down')).toBe(true)
+    expect(shown('up')).toBe(false)
+  })
+
+  it('takes dots moved out of the zoomed view out of the tab order', () => {
+    const { getByLabelText } = render(
+      <RadarStoreProvider>
+        <FocusOn id="platforms">
+          <RadarView radar={radar} placed={placed} />
+        </FocusOn>
+      </RadarStoreProvider>,
+    )
+    expect(getByLabelText('Docker').getAttribute('tabindex')).toBe('0')
+    // Go (languages & frameworks, upper right) lies far outside the zoomed lower-left view
+    const go = document.querySelector('[aria-label="Go"]')!
+    expect(go.getAttribute('tabindex')).toBe('-1')
+    expect(go.getAttribute('aria-hidden')).toBe('true')
+  })
+
   it('neither zooms nor labels dots when no quadrant is focused', () => {
     const { container } = render(
       <RadarStoreProvider>

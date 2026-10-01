@@ -46,6 +46,16 @@ describe('App', () => {
     )
   })
 
+  it('selects a dot and keeps the zoom when its name label is clicked', async () => {
+    await renderFocused()
+    const label = [...document.querySelectorAll('[data-name-labels] text')].find(
+      (t) => t.textContent === 'AWS',
+    )!
+    fireEvent.click(label)
+    expect(screen.getByRole('heading', { name: 'Platforms' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'AWS' })).toBeInTheDocument()
+  })
+
   it('keeps the focus on a click inside the sidebar', async () => {
     await renderFocused()
     fireEvent.click(screen.getByRole('searchbox'))

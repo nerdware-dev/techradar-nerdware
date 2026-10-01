@@ -13,16 +13,19 @@ import styles from '../styles/blip.module.scss'
 /**
  * `zoom` moves the dot without scaling it, so dots keep their size when a quadrant is
  * zoomed in. `labeled` means a name label is already drawn next to the dot, so the
- * hover name is not repeated.
+ * hover name is not repeated. `offscreen` means the zoom moved the dot out of the visible
+ * area; it then leaves the tab order and the accessibility tree.
  */
 export function Blip({
   placed,
   zoom = NO_ZOOM,
   labeled = false,
+  offscreen = false,
 }: {
   placed: PlacedBlip
   zoom?: Zoom
   labeled?: boolean
+  offscreen?: boolean
 }) {
   const { blip, x, y, number } = placed
   const state = useRadarState()
@@ -48,7 +51,8 @@ export function Blip({
       }
       role="button"
       aria-label={blip.name}
-      tabIndex={0}
+      aria-hidden={offscreen || undefined}
+      tabIndex={offscreen ? -1 : 0}
       onMouseEnter={() => dispatch({ type: 'HOVER_BLIP', id: blip.id })}
       onMouseLeave={() => dispatch({ type: 'HOVER_BLIP', id: null })}
       onClick={(e: MouseEvent) => {

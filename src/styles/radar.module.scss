@@ -87,7 +87,9 @@
   stroke: var(--bg);
   stroke-width: 3px;
   pointer-events: none;
-  transition: transform var(--zoom-duration) ease;
+  transition:
+    transform var(--zoom-duration) ease,
+    opacity var(--zoom-duration) ease;
 }
 /* text-anchor is set per corner in Radar.tsx */
 .quadrantLabel {
@@ -113,7 +115,6 @@
 /* name labels of the focused quadrant; they appear once the zoom has settled.
    font-size comes from NAME_LABEL_FONT_SIZE, which the label layout also uses */
 .nameLabels {
-  pointer-events: none;
   animation: nameLabelsIn 0.2s ease var(--zoom-duration) both;
 }
 @keyframes nameLabelsIn {
@@ -124,7 +125,14 @@
     opacity: 1;
   }
 }
+.nameLabelTarget {
+  cursor: pointer;
+}
+.nameLabelHit {
+  fill: transparent;
+}
 .nameLabel {
+  pointer-events: none;
   fill: var(--text-dim);
   font-family: var(--font);
   font-weight: 500;

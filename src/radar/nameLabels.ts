@@ -43,6 +43,8 @@ export interface NameLabel {
   anchor: 'start' | 'middle' | 'end'
   /** Which side of its dot the label sits on. */
   side: 'right' | 'left' | 'above' | 'below'
+  /** Area the text covers, e.g. as a hit target that stays put while the text shifts. */
+  box: Box
 }
 
 export interface LabelTarget {
@@ -69,10 +71,10 @@ function candidates(target: LabelTarget, width: number): { label: NameLabel; box
     anchor: NameLabel['anchor'],
     side: NameLabel['side'],
     boxX: number,
-  ) => ({
-    label: { blipId: id, text: name, x: lx, y: ly, anchor, side },
-    box: { x: boxX, y: ly, halfWidth, halfHeight: HALF_HEIGHT },
-  })
+  ) => {
+    const box = { x: boxX, y: ly, halfWidth, halfHeight: HALF_HEIGHT }
+    return { label: { blipId: id, text: name, x: lx, y: ly, anchor, side, box }, box }
+  }
   const above = y - offset - HALF_HEIGHT
   const below = y + offset + HALF_HEIGHT
   return [

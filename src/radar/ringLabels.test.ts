@@ -7,6 +7,11 @@ describe('ringLabels', () => {
   const labels = ringLabels(RINGS, 400)
   const bands = ringRadii(RINGS.length, 400)
 
+  it('mirrors the labels onto the lower half of the axis', () => {
+    const down = ringLabels(RINGS, 400, 'down')
+    down.forEach((label, i) => expect(label.y).toBeCloseTo(-labels[i].y))
+  })
+
   it('places one upper-case label per ring on the upward axis, mid-band, innermost first', () => {
     expect(labels.map((l) => l.text)).toEqual(['HIGH', 'DEVELOPING', 'LOW', 'OUT'])
     labels.forEach((label, i) => {

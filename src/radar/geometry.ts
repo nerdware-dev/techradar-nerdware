@@ -21,6 +21,12 @@ export function quadrantAngles(order: number): { start: number; end: number } {
   return { start: order * 90, end: order * 90 + 90 }
 }
 
+/** True for the quadrants below the horizontal axis (SVG y grows downward). */
+export function isLowerQuadrant(order: number): boolean {
+  const { start, end } = quadrantAngles(order)
+  return polarToCartesian((start + end) / 2, 1).y > 0
+}
+
 export function annularSectorPath(
   startDeg: number,
   endDeg: number,

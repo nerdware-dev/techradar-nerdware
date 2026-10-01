@@ -162,7 +162,8 @@ export function placeBlips(
   maxRadius: number,
 ): PlacedBlip[] {
   const bands = ringRadii(rings.length, maxRadius)
-  const labels = ringLabels(rings, maxRadius)
+  // the lower lane is used while a lower quadrant is zoomed in (see Radar.tsx)
+  const labels = [...ringLabels(rings, maxRadius, 'up'), ...ringLabels(rings, maxRadius, 'down')]
   const ringOrder = new Map(rings.map((r) => [r.id, r.order]))
   const result: PlacedBlip[] = []
   const placedBySegment = new Map<string, Point[]>()
