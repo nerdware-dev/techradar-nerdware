@@ -32,6 +32,20 @@ describe('layoutNameLabels', () => {
     expect(label.anchor).toBe('end')
   })
 
+  it('uses the spot above, then below, when both sides are blocked', () => {
+    const target = dot('React', 0, 0)
+    const sides = [
+      { x: 30, y: 0 },
+      { x: -30, y: 0 },
+    ]
+    const [above] = layoutNameLabels([target], [target, ...sides], [], 400)
+    expect(above.side).toBe('above')
+    expect(above.y).toBeLessThan(0)
+    const [below] = layoutNameLabels([target], [target, ...sides, { x: 0, y: -25 }], [], 400)
+    expect(below.side).toBe('below')
+    expect(below.y).toBeGreaterThan(0)
+  })
+
   it('gives earlier targets the preferred spot when they compete for it', () => {
     const first = dot('Alpha', 0, 0)
     const second = dot('Beta', 0, 0)

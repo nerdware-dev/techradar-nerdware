@@ -123,6 +123,13 @@ describe('placeBlips', () => {
     }
   })
 
+  it('fails loudly when no position in a segment is clear of the ring labels', () => {
+    // at radius 20 the ring labels cover the whole radar
+    expect(() => placeBlips([mk('Tiny', 'high', 'tools')], RINGS, QUADRANTS, 20)).toThrow(
+      /clear of the ring labels/,
+    )
+  })
+
   it('falls back to a deterministic, non-throwing layout when a segment is very crowded', () => {
     const crowd: Blip[] = Array.from({ length: 37 }, (_, i) =>
       mk(`Framework ${i}`, 'dev', 'languages-frameworks'),
