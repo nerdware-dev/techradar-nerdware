@@ -71,6 +71,21 @@ describe('placeBlips', () => {
     expect(order).toEqual(['Gamma', 'Zeta', 'Beta', 'Alpha', 'Delta'])
   })
 
+  it('keeps every dot in place when repo counts change, renumbering only', () => {
+    const many: Blip[] = Array.from({ length: 12 }, (_, i) => ({
+      ...mk(`Tool ${i}`, 'dev', 'tools'),
+      repoCount: i,
+    }))
+    const reversed = many.map((b) => ({ ...b, repoCount: 11 - b.repoCount! }))
+    const position = (placed: ReturnType<typeof placeBlips>) =>
+      Object.fromEntries(placed.map((p) => [p.blip.id, [p.x, p.y]]))
+    const before = placeBlips(many, RINGS, QUADRANTS, 400)
+    const after = placeBlips(reversed, RINGS, QUADRANTS, 400)
+    expect(position(after)).toEqual(position(before))
+    expect(after.find((p) => p.blip.id === 'tool 0')!.number).toBe(1)
+    expect(before.find((p) => p.blip.id === 'tool 0')!.number).toBe(12)
+  })
+
   it('places every blip inside its ring band', () => {
     const placed = placeBlips(blips, RINGS, QUADRANTS, 400)
     const bands = ringRadii(RINGS.length, 400)
