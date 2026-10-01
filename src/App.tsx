@@ -52,14 +52,12 @@ export default function App() {
           <div className={styles.radarWrap}>
             <RadarView radar={load.radar} placed={placed} />
           </div>
-          <aside className={styles.listCol}>
+          <aside className={styles.sidebar}>
             <Search radar={load.radar} />
             <QuadrantNav radar={load.radar} />
             <Legend radar={load.radar} />
-            <QuadrantTable radar={load.radar} placed={placed} />
-          </aside>
-          <aside className={styles.detailCol}>
             <Tooltip radar={load.radar} />
+            <QuadrantTable radar={load.radar} placed={placed} />
           </aside>
         </main>
       )}

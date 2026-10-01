@@ -1,8 +1,7 @@
+/* as large as the column allows, but never taller than the viewport below the header */
 .svg {
-  width: 100%;
+  width: min(100%, calc(100vh - 62px - 3rem));
   height: auto;
-  /* scale with viewport so the radar fills the space on large screens */
-  max-width: min(940px, 82vh);
   display: block;
   margin: 0 auto;
   overflow: visible;
@@ -77,12 +76,12 @@
   stroke-width: 3px;
   pointer-events: none;
 }
+/* text-anchor is set per corner in Radar.tsx */
 .quadrantLabel {
   font-family: var(--font);
   font-weight: 700;
   font-size: 13px;
   text-transform: uppercase;
-  text-anchor: middle;
   dominant-baseline: middle;
   pointer-events: none;
   opacity: 0.95;

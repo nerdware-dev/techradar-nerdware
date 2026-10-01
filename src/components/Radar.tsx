@@ -11,11 +11,15 @@ import { Blip } from './Blip'
 import { useRadarState, useRadarDispatch } from '../state/radarStore'
 import styles from '../styles/radar.module.scss'
 
+/** Distance from the bezel's top or bottom to a quadrant label's centre line. */
+const QUADRANT_LABEL_GAP = 22
+
 export function RadarView({ radar, placed }: { radar: Radar; placed: PlacedBlip[] }) {
   const { focusedQuadrant } = useRadarState()
   const dispatch = useRadarDispatch()
   const max = RADAR_SIZE
-  const pad = 132
+  // room for the quadrant labels, which sit just above/below the bezel in the corners
+  const pad = 40
   const view = max + pad
   const bands = useMemo(() => ringRadii(radar.rings.length, max), [radar.rings.length, max])
   const labels = useMemo(() => ringLabels(radar.rings, max), [radar.rings, max])
@@ -109,16 +113,18 @@ export function RadarView({ radar, placed }: { radar: Radar; placed: PlacedBlip[
         </text>
       ))}
 
-      {/* quadrant labels — pushed into the corner whitespace, clear of the rings */}
+      {/* quadrant labels — in the corners of the bounding square, outside the circle */}
       {radar.quadrants.map((q) => {
         const { start, end } = quadrantAngles(q.order)
-        const p = polarToCartesian((start + end) / 2, max * 1.18)
+        const corner = polarToCartesian((start + end) / 2, 1)
+        const onRight = corner.x > 0
         return (
           <text
             key={q.id}
             className={styles.quadrantLabel}
-            x={p.x}
-            y={p.y}
+            x={onRight ? max : -max}
+            y={Math.sign(corner.y) * (max + QUADRANT_LABEL_GAP)}
+            textAnchor={onRight ? 'end' : 'start'}
             style={{ fill: quadrantColor(q.id) }}
           >
             {q.name}
