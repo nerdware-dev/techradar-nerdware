@@ -1,6 +1,7 @@
 import type { Blip, Ring, Quadrant } from '../data/types'
-import { MIN_BLIP_DISTANCE } from '../config'
+import { BLIP_RADIUS, MIN_BLIP_DISTANCE } from '../config'
 import { ringRadii, quadrantAngles, polarToCartesian } from './geometry'
+import { ringLabels, type RingLabel } from './ringLabels'
 
 export interface PlacedBlip {
   blip: Blip
@@ -40,6 +41,18 @@ function mulberry32(seed: number): () => number {
 
 const PAD = 0.12 // fraction of band/sector kept clear of edges
 const MAX_RANDOM_ATTEMPTS = 40
+
+/** Gap between a ring label and the edge of a dot; also covers the label's 1.5-unit outline. */
+const LABEL_CLEARANCE = 3
+
+/** True when a dot centred at `point` would touch the label. */
+function overlapsLabel(point: Point, label: RingLabel): boolean {
+  const reach = BLIP_RADIUS + LABEL_CLEARANCE
+  return (
+    Math.abs(point.x - label.x) < label.halfWidth + reach &&
+    Math.abs(point.y - label.y) < label.halfHeight + reach
+  )
+}
 
 function randomAngleAndRadius(
   rng: () => number,
@@ -85,12 +98,13 @@ function closestDistance(point: Point, others: Point[]): number {
 
 /**
  * Finds a position for one blip that keeps it at least minDistance away from
- * every already-placed blip in the same ring+quadrant segment. Tries the
- * blip's own seeded random sequence first (keeps the existing scattered look
- * for sparse segments), then falls back to a deterministic grid scan so dense
- * segments still resolve without an unbounded search. If the segment is too
- * crowded for minDistance to be satisfiable at all, returns the least-bad
- * candidate seen instead of failing.
+ * every already-placed blip in the same ring+quadrant segment and clear of the
+ * ring labels. Tries the blip's own seeded random sequence first (keeps the
+ * existing scattered look for sparse segments), then falls back to a
+ * deterministic grid scan so dense segments still resolve without an unbounded
+ * search. If the segment is too crowded for minDistance to be satisfiable at
+ * all, returns the least-bad candidate seen instead of failing; label overlap
+ * is never traded off.
  */
 function findPosition(
   rng: () => number,
@@ -99,12 +113,14 @@ function findPosition(
   band: Band,
   placedInSegment: Point[],
   minDistance: number,
+  labels: RingLabel[],
 ): Point {
   let bestPoint: Point | null = null
   let bestDistance = -Infinity
 
   const consider = (angle: number, radius: number): Point | null => {
     const point = polarToCartesian(angle, radius)
+    if (labels.some((label) => overlapsLabel(point, label))) return null
     const distance = closestDistance(point, placedInSegment)
     if (distance > bestDistance) {
       bestDistance = distance
@@ -124,7 +140,8 @@ function findPosition(
     if (found) return found
   }
 
-  return bestPoint!
+  if (!bestPoint) throw new Error('No blip position in this segment is clear of the ring labels')
+  return bestPoint
 }
 
 export function placeBlips(
@@ -134,6 +151,7 @@ export function placeBlips(
   maxRadius: number,
 ): PlacedBlip[] {
   const bands = ringRadii(rings.length, maxRadius)
+  const labels = ringLabels(rings, maxRadius)
   const ringOrder = new Map(rings.map((r) => [r.id, r.order]))
   const result: PlacedBlip[] = []
   const placedBySegment = new Map<string, Point[]>()
@@ -153,7 +171,15 @@ export function placeBlips(
       const segmentKey = `${q.id}:${blip.ring}`
       const placedInSegment = placedBySegment.get(segmentKey) ?? []
 
-      const point = findPosition(rng, start, angleSpan, band, placedInSegment, MIN_BLIP_DISTANCE)
+      const point = findPosition(
+        rng,
+        start,
+        angleSpan,
+        band,
+        placedInSegment,
+        MIN_BLIP_DISTANCE,
+        labels,
+      )
       placedBySegment.set(segmentKey, [...placedInSegment, point])
       result.push({ blip, x: point.x, y: point.y, number: i + 1 })
     })

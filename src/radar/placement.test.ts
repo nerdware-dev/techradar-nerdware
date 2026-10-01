@@ -1,7 +1,10 @@
 import { describe, it, expect } from 'vitest'
 import { placeBlips } from './placement'
 import { ringRadii } from './geometry'
-import { RINGS, QUADRANTS, MIN_BLIP_DISTANCE } from '../config'
+import { ringLabels } from './ringLabels'
+import { RINGS, QUADRANTS, MIN_BLIP_DISTANCE, BLIP_RADIUS } from '../config'
+import { parseRadar } from '../data/schema'
+import realData from '../../data/tech-radar.json'
 import type { Blip } from '../data/types'
 
 const mk = (name: string, ring: Blip['ring'], quadrant: Blip['quadrant']): Blip => ({
@@ -67,6 +70,19 @@ describe('placeBlips', () => {
       for (let j = i + 1; j < placed.length; j++) {
         const dist = Math.hypot(placed[i].x - placed[j].x, placed[i].y - placed[j].y)
         expect(dist).toBeGreaterThanOrEqual(MIN_BLIP_DISTANCE - 0.001)
+      }
+    }
+  })
+
+  it('keeps every dot of the real radar clear of the ring labels', () => {
+    const radar = parseRadar(realData)
+    const placed = placeBlips(radar.blips, radar.rings, radar.quadrants, 400)
+    const labels = ringLabels(radar.rings, 400)
+    for (const p of placed) {
+      for (const label of labels) {
+        const clearX = Math.abs(p.x - label.x) >= label.halfWidth + BLIP_RADIUS
+        const clearY = Math.abs(p.y - label.y) >= label.halfHeight + BLIP_RADIUS
+        expect(clearX || clearY, `${p.blip.name} overlaps ${label.text}`).toBe(true)
       }
     }
   })

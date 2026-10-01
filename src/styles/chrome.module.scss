@@ -82,7 +82,7 @@
   }
 }
 
-/* Legend — competency rings as a cyan intensity scale */
+/* Legend — the ring dot styles as drawn on the radar, plus the "new" badge */
 .legend {
   display: flex;
   gap: 1rem;
@@ -100,30 +100,8 @@
   align-items: center;
 }
 .swatch {
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  background: var(--brand);
-  box-shadow: 0 0 8px rgba(0, 255, 191, 0.6);
-}
-.legendItem:nth-child(1) .swatch {
-  opacity: 1;
-}
-.legendItem:nth-child(2) .swatch {
-  opacity: 0.68;
-}
-.legendItem:nth-child(3) .swatch {
-  opacity: 0.42;
-}
-.legendItem:nth-child(4) .swatch {
-  opacity: 0.24;
-  box-shadow: none;
-}
-/* mirrors the blip's "new" badge (blip.module.scss .newBadge) */
-.newSwatch {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--text);
-  box-shadow: 0 0 0 1.5px var(--bg);
+  width: 15px;
+  height: 15px;
+  flex: none;
+  overflow: visible;
 }

@@ -65,12 +65,13 @@
 }
 
 /* labels (Inter, DS 0 tracking) */
+/* font-size comes from RING_LABEL_FONT_SIZE, which blip placement also uses to keep clear */
 .ringLabel {
   fill: var(--text-mute);
   font-family: var(--font);
-  font-size: 11px;
   font-weight: 600;
   text-anchor: middle;
+  dominant-baseline: central;
   paint-order: stroke;
   stroke: var(--bg);
   stroke-width: 3px;

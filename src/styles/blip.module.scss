@@ -58,6 +58,36 @@
     filter 0.18s ease;
 }
 
+/* ring encoding, centre outward: solid → softer → outline → grey dashed outline */
+.ringHigh .circle {
+  fill: var(--q, #00ffbf);
+}
+.ringDev .circle {
+  fill: color-mix(in srgb, var(--q, #00ffbf) 65%, var(--bg));
+}
+.ringLow .circle {
+  fill: color-mix(in srgb, var(--q, #00ffbf) 18%, var(--bg));
+  stroke: var(--q, #00ffbf);
+  stroke-width: 1.5;
+}
+.ringLow .number {
+  fill: var(--q, #00ffbf);
+}
+/* retired tech drops its quadrant hue; halo and ping turn grey with it */
+.ringOut {
+  --q: var(--text-mute);
+}
+.ringOut .circle {
+  fill: color-mix(in srgb, var(--q) 12%, var(--bg));
+  stroke: var(--q);
+  stroke-width: 1.5;
+  stroke-dasharray: 3 2;
+  filter: none;
+}
+.ringOut .number {
+  fill: var(--text-dim);
+}
+
 .active .circle {
   transform: scale(1.45);
   filter: drop-shadow(0 0 11px var(--q, #00ffbf));

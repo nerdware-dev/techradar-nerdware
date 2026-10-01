@@ -4,6 +4,7 @@ import { RADAR_SIZE } from '../config'
 import { ringRadii, quadrantAngles, annularSectorPath, polarToCartesian } from '../radar/geometry'
 import type { PlacedBlip } from '../radar/placement'
 import { quadrantColor } from '../radar/quadrantColor'
+import { ringLabels, RING_LABEL_FONT_SIZE } from '../radar/ringLabels'
 import { AFTERGLOW_SLICES, SWEEP_ROTATION, SWEEP_START_DEG, SWEEP_TRAIL_DEG } from '../radar/sweep'
 import { usePrefersReducedMotion, useSweepAnimation } from '../radar/useSweepAnimation'
 import { Blip } from './Blip'
@@ -17,7 +18,7 @@ export function RadarView({ radar, placed }: { radar: Radar; placed: PlacedBlip[
   const pad = 132
   const view = max + pad
   const bands = useMemo(() => ringRadii(radar.rings.length, max), [radar.rings.length, max])
-  const rings = useMemo(() => [...radar.rings].sort((a, b) => a.order - b.order), [radar.rings])
+  const labels = useMemo(() => ringLabels(radar.rings, max), [radar.rings, max])
 
   const sweepRef = useRef<SVGGElement>(null)
   const reducedMotion = usePrefersReducedMotion()
@@ -96,15 +97,17 @@ export function RadarView({ radar, placed }: { radar: Radar; placed: PlacedBlip[
       ))}
 
       {/* ring (competency) labels up the top axis */}
-      {rings.map((ring, i) => {
-        const b = bands[i]
-        const midR = (b.inner + b.outer) / 2
-        return (
-          <text key={ring.id} className={styles.ringLabel} x={0} y={-midR}>
-            {ring.name.toUpperCase()}
-          </text>
-        )
-      })}
+      {labels.map((label) => (
+        <text
+          key={label.ringId}
+          className={styles.ringLabel}
+          x={label.x}
+          y={label.y}
+          fontSize={RING_LABEL_FONT_SIZE}
+        >
+          {label.text}
+        </text>
+      ))}
 
       {/* quadrant labels — pushed into the corner whitespace, clear of the rings */}
       {radar.quadrants.map((q) => {

@@ -49,6 +49,11 @@ describe('Blip', () => {
     expect(container.querySelector('[data-isnew="true"]')).toBeNull()
   })
 
+  it('marks the dot with its ring so the ring style applies', () => {
+    const { container } = renderBlip({ ...placed, blip: { ...placed.blip, ring: 'out' } })
+    expect(container.querySelector('[data-ring="out"]')).toBeTruthy()
+  })
+
   it('renders a ping element for the sweep flash', () => {
     const { container } = renderBlip()
     expect(container.querySelector('[data-ping]')).toBeTruthy()

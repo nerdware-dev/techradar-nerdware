@@ -2,13 +2,12 @@ import { useRef, type CSSProperties, type MouseEvent } from 'react'
 import type { PlacedBlip } from '../radar/placement'
 import { useRadarState, useRadarDispatch } from '../state/radarStore'
 import { quadrantColor } from '../radar/quadrantColor'
+import { RING_CLASS } from '../radar/ringClass'
 import { PING_KEYFRAMES, sweepPhase } from '../radar/sweep'
 import { useSweepAnimation } from '../radar/useSweepAnimation'
 import { BLIP_RADIUS as RADIUS } from '../config'
+import { NewBadge } from './NewBadge'
 import styles from '../styles/blip.module.scss'
-
-/** The "new" badge sits on the dot's upper-right rim (45°). */
-const NEW_BADGE_OFFSET = RADIUS * Math.SQRT1_2
 
 export function Blip({ placed }: { placed: PlacedBlip }) {
   const { blip, x, y, number } = placed
@@ -39,20 +38,16 @@ export function Blip({ placed }: { placed: PlacedBlip }) {
         dispatch({ type: 'SELECT_BLIP', id: blip.id, quadrant: blip.quadrant })
       }}
     >
-      <g className={styles.enter} style={{ animationDelay: `${(number % 14) * 0.05}s` }}>
+      <g
+        data-ring={blip.ring}
+        className={`${styles.enter} ${RING_CLASS[blip.ring]}`}
+        style={{ animationDelay: `${(number % 14) * 0.05}s` }}
+      >
         <circle ref={pingRef} data-ping className={styles.ping} r={RADIUS} />
         <circle className={styles.halo} r={RADIUS} />
         <circle className={styles.circle} r={RADIUS} />
         <text className={styles.number}>{number}</text>
-        {blip.isNew && (
-          <circle
-            data-isnew="true"
-            className={styles.newBadge}
-            cx={NEW_BADGE_OFFSET}
-            cy={-NEW_BADGE_OFFSET}
-            r={3.2}
-          />
-        )}
+        {blip.isNew && <NewBadge />}
         {isActive && (
           <text className={styles.name} x={0} y={-RADIUS - 8}>
             {blip.name}
