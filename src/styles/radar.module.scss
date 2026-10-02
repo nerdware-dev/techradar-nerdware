@@ -1,11 +1,18 @@
+/* as large as the column allows, but never taller than the viewport below the header */
 .svg {
-  width: 100%;
+  width: min(100%, var(--content-height));
   height: auto;
-  /* scale with viewport so the radar fills the space on large screens */
-  max-width: min(940px, 82vh);
   display: block;
   margin: 0 auto;
-  overflow: visible;
+  /* dots of other quadrants move outside the view while zoomed */
+  overflow: hidden;
+}
+
+/* scaled as a whole when a quadrant is zoomed; strokes keep their width (non-scaling) */
+.scene {
+  transform-box: view-box;
+  transform-origin: 0 0;
+  transition: transform var(--zoom-duration) ease;
 }
 
 /* per-quadrant sector tints */
@@ -25,13 +32,21 @@
 }
 
 /* rotating radar sweep (brand cyan) */
-.sweepArea {
-  fill: rgba(0, 255, 191, 0.07);
+.sweep {
+  /* rotate around the radar centre, which is the origin of the user space */
+  transform-box: view-box;
+  transform-origin: 0 0;
   pointer-events: none;
+}
+/* each slice adds a little glow; ~24 overlap right behind the beam (≈ 0.18 total) */
+.afterglow {
+  fill: var(--brand);
+  fill-opacity: 0.008;
 }
 .sweepBeam {
   stroke: var(--brand);
   stroke-width: 2;
+  vector-effect: non-scaling-stroke;
   opacity: 0.5;
   filter: drop-shadow(0 0 7px rgba(0, 255, 191, 0.7));
   pointer-events: none;
@@ -42,46 +57,116 @@
   fill: none;
   stroke: var(--grid-strong);
   stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
   pointer-events: none;
 }
 .ring {
   fill: none;
   stroke: var(--grid);
   stroke-width: 1;
+  vector-effect: non-scaling-stroke;
   pointer-events: none;
 }
 .axis {
   stroke: var(--grid);
   stroke-width: 1;
+  vector-effect: non-scaling-stroke;
   stroke-dasharray: 2 7;
   pointer-events: none;
 }
 
 /* labels (Inter, DS 0 tracking) */
+/* font-size comes from RING_LABEL_FONT_SIZE, which blip placement also uses to keep clear */
 .ringLabel {
   fill: var(--text-mute);
   font-family: var(--font);
-  font-size: 11px;
   font-weight: 600;
   text-anchor: middle;
+  dominant-baseline: central;
   paint-order: stroke;
   stroke: var(--bg);
   stroke-width: 3px;
   pointer-events: none;
+  transition:
+    transform var(--zoom-duration) ease,
+    opacity var(--zoom-duration) ease;
 }
+/* text-anchor is set per corner in Radar.tsx */
 .quadrantLabel {
   font-family: var(--font);
   font-weight: 700;
   font-size: 13px;
   text-transform: uppercase;
-  text-anchor: middle;
   dominant-baseline: middle;
   pointer-events: none;
   opacity: 0.95;
+  transition: opacity var(--zoom-duration) ease;
+}
+.hidden {
+  opacity: 0;
 }
 
 /* focus dim overlay */
 .dim {
   fill: rgba(21, 21, 21, 0.76);
   pointer-events: none;
+}
+
+/* name labels of the focused quadrant; they appear once the zoom has settled.
+   font-size comes from NAME_LABEL_FONT_SIZE, which the label layout also uses */
+.nameLabels {
+  animation: nameLabelsIn 0.2s ease var(--zoom-duration) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .nameLabels {
+    animation: none;
+  }
+}
+@keyframes nameLabelsIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.nameLabelTarget {
+  cursor: pointer;
+}
+.nameLabelHit {
+  fill: transparent;
+}
+.nameLabel {
+  pointer-events: none;
+  fill: var(--text-dim);
+  font-family: var(--font);
+  font-weight: 500;
+  dominant-baseline: central;
+  paint-order: stroke;
+  stroke: var(--bg);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  transition:
+    opacity 0.25s ease,
+    fill 0.15s ease,
+    transform 0.18s ease;
+}
+.nameLabelActive {
+  fill: var(--text);
+}
+/* the active dot grows (blip.module.scss .active); keep its label off the enlarged rim */
+.nameLabelActive[data-side='right'] {
+  transform: translateX(5px);
+}
+.nameLabelActive[data-side='left'] {
+  transform: translateX(-5px);
+}
+.nameLabelActive[data-side='above'] {
+  transform: translateY(-5px);
+}
+.nameLabelActive[data-side='below'] {
+  transform: translateY(5px);
+}
+.nameLabelDimmed {
+  opacity: 0.2;
 }

@@ -1,15 +1,15 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState, type ReactNode } from 'react'
 import './styles/tokens.scss'
 import styles from './styles/app.module.scss'
 import type { Radar } from './data/types'
 import { loadRadar } from './data/loadRadar'
-import { RadarStoreProvider } from './state/radarStore'
+import { RadarStoreProvider, useRadarDispatch } from './state/radarStore'
 import { Header } from './components/Header'
 import { Search } from './components/Search'
 import { RadarView } from './components/Radar'
 import { QuadrantNav } from './components/QuadrantNav'
 import { QuadrantTable } from './components/QuadrantTable'
-import { Tooltip } from './components/Tooltip'
+import { DetailCard } from './components/DetailCard'
 import { Legend } from './components/Legend'
 import { placeBlips } from './radar/placement'
 import { RADAR_SIZE } from './config'
@@ -18,6 +18,15 @@ type Load =
   | { status: 'loading' }
   | { status: 'error'; message: string }
   | { status: 'ready'; radar: Radar }
+
+/**
+ * Any click that reaches the page clears the quadrant focus (and zooms out). Dots and the
+ * sidebar stop their clicks from getting here.
+ */
+function ClearFocusOnClick({ children }: { children: ReactNode }) {
+  const dispatch = useRadarDispatch()
+  return <div onClick={() => dispatch({ type: 'CLEAR_FOCUS' })}>{children}</div>
+}
 
 export default function App() {
   const [load, setLoad] = useState<Load>({ status: 'loading' })
@@ -40,29 +49,30 @@ export default function App() {
 
   return (
     <RadarStoreProvider>
-      <Header />
-      {load.status === 'loading' && <p className={styles.status}>Lade Tech Radar…</p>}
-      {load.status === 'error' && (
-        <p className={styles.status} role="alert">
-          Fehler beim Laden: {load.message}
-        </p>
-      )}
-      {load.status === 'ready' && (
-        <main className={styles.layout}>
-          <div className={styles.radarWrap}>
-            <RadarView radar={load.radar} placed={placed} />
-          </div>
-          <aside className={styles.listCol}>
-            <Search radar={load.radar} />
-            <QuadrantNav radar={load.radar} />
-            <Legend radar={load.radar} />
-            <QuadrantTable radar={load.radar} placed={placed} />
-          </aside>
-          <aside className={styles.detailCol}>
-            <Tooltip radar={load.radar} />
-          </aside>
-        </main>
-      )}
+      <ClearFocusOnClick>
+        <Header />
+        {load.status === 'loading' && <p className={styles.status}>Lade Tech Radar…</p>}
+        {load.status === 'error' && (
+          <p className={styles.status} role="alert">
+            Fehler beim Laden: {load.message}
+          </p>
+        )}
+        {load.status === 'ready' && (
+          <main className={styles.layout}>
+            <div className={styles.radarWrap}>
+              <RadarView radar={load.radar} placed={placed} />
+            </div>
+            {/* the sidebar has its own focus controls; clicks in it never clear the focus */}
+            <aside className={styles.sidebar} onClick={(e) => e.stopPropagation()}>
+              <Search radar={load.radar} />
+              <QuadrantNav radar={load.radar} />
+              <Legend radar={load.radar} />
+              <DetailCard radar={load.radar} />
+              <QuadrantTable radar={load.radar} placed={placed} />
+            </aside>
+          </main>
+        )}
+      </ClearFocusOnClick>
     </RadarStoreProvider>
   )
 }

@@ -1,6 +1,7 @@
 import type { Blip, Ring, Quadrant } from '../data/types'
-import { MIN_BLIP_DISTANCE } from '../config'
-import { ringRadii, quadrantAngles, polarToCartesian } from './geometry'
+import { BLIP_RADIUS, MIN_BLIP_DISTANCE } from '../config'
+import { ringRadii, quadrantAngles, polarToCartesian, overlaps } from './geometry'
+import { ringLabels, type RingLabel } from './ringLabels'
 
 export interface PlacedBlip {
   blip: Blip
@@ -40,6 +41,15 @@ function mulberry32(seed: number): () => number {
 
 const PAD = 0.12 // fraction of band/sector kept clear of edges
 const MAX_RANDOM_ATTEMPTS = 40
+
+/** Gap between a ring label and the edge of a dot; also covers the label's 1.5-unit outline. */
+const LABEL_CLEARANCE = 3
+
+/** True when a dot centred at `point` would touch the label. */
+function overlapsLabel(point: Point, label: RingLabel): boolean {
+  const reach = BLIP_RADIUS + LABEL_CLEARANCE
+  return overlaps({ ...point, halfWidth: reach, halfHeight: reach }, label)
+}
 
 function randomAngleAndRadius(
   rng: () => number,
@@ -85,12 +95,13 @@ function closestDistance(point: Point, others: Point[]): number {
 
 /**
  * Finds a position for one blip that keeps it at least minDistance away from
- * every already-placed blip in the same ring+quadrant segment. Tries the
- * blip's own seeded random sequence first (keeps the existing scattered look
- * for sparse segments), then falls back to a deterministic grid scan so dense
- * segments still resolve without an unbounded search. If the segment is too
- * crowded for minDistance to be satisfiable at all, returns the least-bad
- * candidate seen instead of failing.
+ * every already-placed blip in the same ring+quadrant segment and clear of the
+ * ring labels. Tries the blip's own seeded random sequence first (keeps the
+ * existing scattered look for sparse segments), then falls back to a
+ * deterministic grid scan so dense segments still resolve without an unbounded
+ * search. If the segment is too crowded for minDistance to be satisfiable at
+ * all, returns the least-bad candidate seen instead of failing; label overlap
+ * is never traded off.
  */
 function findPosition(
   rng: () => number,
@@ -99,12 +110,14 @@ function findPosition(
   band: Band,
   placedInSegment: Point[],
   minDistance: number,
+  labels: RingLabel[],
 ): Point {
   let bestPoint: Point | null = null
   let bestDistance = -Infinity
 
   const consider = (angle: number, radius: number): Point | null => {
     const point = polarToCartesian(angle, radius)
+    if (labels.some((label) => overlapsLabel(point, label))) return null
     const distance = closestDistance(point, placedInSegment)
     if (distance > bestDistance) {
       bestDistance = distance
@@ -124,7 +137,19 @@ function findPosition(
     if (found) return found
   }
 
-  return bestPoint!
+  if (!bestPoint) throw new Error('No blip position in this segment is clear of the ring labels')
+  return bestPoint
+}
+
+/**
+ * Order within one ring: most-used first (by repo count), entries without scan
+ * data (hand-curated) last, ties by name. Blip numbers follow this order, and the
+ * quadrant list sorts by number, so both always agree.
+ */
+function byUsage(a: Blip, b: Blip): number {
+  const countA = a.repoCount ?? -1
+  const countB = b.repoCount ?? -1
+  return countB - countA || a.name.localeCompare(b.name)
 }
 
 export function placeBlips(
@@ -134,6 +159,8 @@ export function placeBlips(
   maxRadius: number,
 ): PlacedBlip[] {
   const bands = ringRadii(rings.length, maxRadius)
+  // the lower lane is used while a lower quadrant is zoomed in (see Radar.tsx)
+  const labels = [...ringLabels(rings, maxRadius, 'up'), ...ringLabels(rings, maxRadius, 'down')]
   const ringOrder = new Map(rings.map((r) => [r.id, r.order]))
   const result: PlacedBlip[] = []
   const placedBySegment = new Map<string, Point[]>()
@@ -141,22 +168,34 @@ export function placeBlips(
   for (const q of quadrants) {
     const { start, end } = quadrantAngles(q.order)
     const angleSpan = end - start
-    const inQuadrant = blips
-      .filter((b) => b.quadrant === q.id)
-      .sort(
-        (a, b) => ringOrder.get(a.ring)! - ringOrder.get(b.ring)! || a.name.localeCompare(b.name),
-      )
+    const inQuadrant = blips.filter((b) => b.quadrant === q.id)
+    const byRing = (a: Blip, b: Blip) => ringOrder.get(a.ring)! - ringOrder.get(b.ring)!
+    const numbers = new Map(
+      [...inQuadrant].sort((a, b) => byRing(a, b) || byUsage(a, b)).map((b, i) => [b.id, i + 1]),
+    )
+    // Collisions are resolved in placement order, so placing by usage would move dots
+    // whenever a weekly scan changes a repo count. Placing by name keeps positions
+    // stable; only the numbers follow usage.
+    const byName = [...inQuadrant].sort((a, b) => byRing(a, b) || a.name.localeCompare(b.name))
 
-    inQuadrant.forEach((blip, i) => {
+    for (const blip of byName) {
       const band = bands[ringOrder.get(blip.ring)!]
       const rng = mulberry32(hashString(blip.name))
       const segmentKey = `${q.id}:${blip.ring}`
       const placedInSegment = placedBySegment.get(segmentKey) ?? []
 
-      const point = findPosition(rng, start, angleSpan, band, placedInSegment, MIN_BLIP_DISTANCE)
+      const point = findPosition(
+        rng,
+        start,
+        angleSpan,
+        band,
+        placedInSegment,
+        MIN_BLIP_DISTANCE,
+        labels,
+      )
       placedBySegment.set(segmentKey, [...placedInSegment, point])
-      result.push({ blip, x: point.x, y: point.y, number: i + 1 })
-    })
+      result.push({ blip, x: point.x, y: point.y, number: numbers.get(blip.id)! })
+    }
   }
 
   return result

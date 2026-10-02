@@ -41,6 +41,20 @@
   --font: 'Inter', system-ui, -apple-system, sans-serif;
   --font-display: 'Inter', system-ui, sans-serif;
   --font-mono: 'Inter', system-ui, sans-serif;
+
+  // Page frame: the header is 30px logo + 2 × 1rem padding (chrome.module.scss .header);
+  // the content height is what the header and the layout's vertical padding leave over
+  --header-height: 62px;
+  --content-height: calc(100vh - var(--header-height) - 3rem);
+
+  // Zooming into a quadrant: background scale, dot moves and label fade-in share it
+  --zoom-duration: 0.5s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --zoom-duration: 0s;
+  }
 }
 
 * {

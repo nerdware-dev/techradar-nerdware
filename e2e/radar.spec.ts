@@ -5,17 +5,15 @@ const RADAR = [
     name: 'Docker',
     ring: 'High',
     quadrant: 'platforms',
-    isNew: 'FALSE',
     description: 'Container platform.',
   },
   {
     name: 'React',
     ring: 'High',
     quadrant: 'languages & frameworks',
-    isNew: 'FALSE',
     description: 'UI library.',
   },
-  { name: 'Vite', ring: 'Dev', quadrant: 'tools', isNew: 'TRUE', description: 'Build tool.' },
+  { name: 'Vite', ring: 'Dev', quadrant: 'tools', description: 'Build tool.' },
 ]
 
 test.beforeEach(async ({ page }) => {

@@ -1,28 +1,91 @@
-import { useMemo } from 'react'
+import { useMemo, useRef } from 'react'
 import type { Radar } from '../data/types'
 import { RADAR_SIZE } from '../config'
-import { ringRadii, quadrantAngles, annularSectorPath, polarToCartesian } from '../radar/geometry'
+import {
+  ringRadii,
+  quadrantAngles,
+  annularSectorPath,
+  polarToCartesian,
+  isLowerQuadrant,
+} from '../radar/geometry'
+import { layoutNameLabels, NAME_LABEL_FONT_SIZE } from '../radar/nameLabels'
 import type { PlacedBlip } from '../radar/placement'
 import { quadrantColor } from '../radar/quadrantColor'
+import { ringLabels, RING_LABEL_FONT_SIZE, type LabelAxis } from '../radar/ringLabels'
+import { AFTERGLOW_SLICES, SWEEP_ROTATION, SWEEP_START_DEG, SWEEP_TRAIL_DEG } from '../radar/sweep'
+import { usePrefersReducedMotion } from '../radar/usePrefersReducedMotion'
+import { useSweepAnimation } from '../radar/useSweepAnimation'
+import { applyZoom, NO_ZOOM, quadrantZoom, zoomedTranslate, zoomTransform } from '../radar/zoom'
 import { Blip } from './Blip'
 import { useRadarState, useRadarDispatch } from '../state/radarStore'
 import styles from '../styles/radar.module.scss'
 
+/** Distance from the bezel's top or bottom to a quadrant label's centre line. */
+const QUADRANT_LABEL_GAP = 22
+
+/**
+ * Focusing a quadrant zooms it to fill the radar. Only the background scene is scaled;
+ * dots and all text are moved to their zoomed positions but keep their size, so the
+ * quadrant gains room between points and its dots can carry name labels.
+ */
 export function RadarView({ radar, placed }: { radar: Radar; placed: PlacedBlip[] }) {
-  const { focusedQuadrant } = useRadarState()
+  const { focusedQuadrant, hoveredBlipId, selectedBlipId } = useRadarState()
   const dispatch = useRadarDispatch()
   const max = RADAR_SIZE
-  const pad = 132
+  // room for the quadrant labels, which sit just above/below the bezel in the corners
+  const pad = 40
   const view = max + pad
   const bands = useMemo(() => ringRadii(radar.rings.length, max), [radar.rings.length, max])
-  const rings = useMemo(() => [...radar.rings].sort((a, b) => a.order - b.order), [radar.rings])
+  const labelSets = useMemo(
+    () => ({ up: ringLabels(radar.rings, max, 'up'), down: ringLabels(radar.rings, max, 'down') }),
+    [radar.rings, max],
+  )
 
-  // radar sweep wedge: leading beam points up, trailing edge ~46° behind
-  const beam = polarToCartesian(-90, max)
-  const trail = polarToCartesian(-90 + 46, max)
+  const focused = radar.quadrants.find((q) => q.id === focusedQuadrant)
+  const zoom = useMemo(() => (focused ? quadrantZoom(focused.order, max) : NO_ZOOM), [focused, max])
+  // zooming into a lower quadrant moves the upper half of the axis out of view
+  const labelAxis: LabelAxis = focused && isLowerQuadrant(focused.order) ? 'down' : 'up'
+  const labels = labelSets[labelAxis]
+  const isOffscreen = (p: PlacedBlip) => {
+    const { x, y } = applyZoom(zoom, p)
+    return Math.abs(x) > view || Math.abs(y) > view
+  }
+
+  const nameLabels = useMemo(() => {
+    if (!focusedQuadrant) return []
+    const targets = placed
+      .filter((p) => p.blip.quadrant === focusedQuadrant)
+      .sort((a, b) => a.number - b.number)
+      .map((p) => ({ id: p.blip.id, name: p.blip.name, ...applyZoom(zoom, p) }))
+    const dots = placed.map((p) => applyZoom(zoom, p))
+    const ringLabelBoxes = labels.map((l) => ({ ...l, ...applyZoom(zoom, l) }))
+    return layoutNameLabels(targets, dots, ringLabelBoxes, view)
+  }, [focusedQuadrant, placed, zoom, labels, view])
+  const labeledIds = useMemo(() => new Set(nameLabels.map((l) => l.blipId)), [nameLabels])
+  const activeId = hoveredBlipId ?? selectedBlipId
+
+  const sweepRef = useRef<SVGGElement>(null)
+  const reducedMotion = usePrefersReducedMotion()
+  useSweepAnimation(sweepRef, SWEEP_ROTATION, 0, !reducedMotion)
+
+  // The sweep turns clockwise, so the afterglow lies counter-clockwise of the beam.
+  const beam = polarToCartesian(SWEEP_START_DEG, max)
+  const afterglow = useMemo(
+    () =>
+      Array.from({ length: AFTERGLOW_SLICES }, (_, i) => {
+        const reach = (SWEEP_TRAIL_DEG * (i + 1)) / AFTERGLOW_SLICES
+        return annularSectorPath(SWEEP_START_DEG - reach, SWEEP_START_DEG, 0, max)
+      }),
+    [max],
+  )
 
   const sectorOpacity = (qid: string) =>
     focusedQuadrant ? (qid === focusedQuadrant ? 0.15 : 0.02) : 0.06
+
+  const nameLabelClass = (blipId: string) => {
+    if (activeId === null) return styles.nameLabel
+    return `${styles.nameLabel} ${blipId === activeId ? styles.nameLabelActive : styles.nameLabelDimmed}`
+  }
 
   return (
     <svg
@@ -30,86 +93,105 @@ export function RadarView({ radar, placed }: { radar: Radar; placed: PlacedBlip[
       viewBox={`${-view} ${-view} ${2 * view} ${2 * view}`}
       role="img"
       aria-label="Tech Radar"
-      onClick={() => dispatch({ type: 'CLEAR_FOCUS' })}
     >
-      {/* per-quadrant sector tints — make the sectors read clearly */}
-      {radar.quadrants.map((q) => {
-        const { start, end } = quadrantAngles(q.order)
-        return (
-          <path
-            key={`sector-${q.id}`}
-            className={styles.sector}
-            d={annularSectorPath(start, end, 0, max)}
-            style={{ fill: quadrantColor(q.id), fillOpacity: sectorOpacity(q.id) }}
-          />
-        )
-      })}
-
-      {/* concentric band shading (decorative; outer drawn first) */}
-      {bands
-        .slice()
-        .reverse()
-        .map((b, idx) => {
-          const i = bands.length - 1 - idx
+      {/* background scene, drawn in radar coordinates and scaled as a whole when zoomed */}
+      <g data-scene className={styles.scene} style={{ transform: zoomTransform(zoom) }}>
+        {/* per-quadrant sector tints — make the sectors read clearly */}
+        {radar.quadrants.map((q) => {
+          const { start, end } = quadrantAngles(q.order)
           return (
-            <circle
-              key={`band-${i}`}
-              className={i % 2 === 0 ? styles.bandA : styles.bandB}
-              r={b.outer}
-              cx={0}
-              cy={0}
+            <path
+              key={`sector-${q.id}`}
+              className={styles.sector}
+              d={annularSectorPath(start, end, 0, max)}
+              style={{ fill: quadrantColor(q.id), fillOpacity: sectorOpacity(q.id) }}
             />
           )
         })}
 
-      {/* rotating radar sweep */}
-      <g>
-        <polygon
-          className={styles.sweepArea}
-          points={`0,0 ${beam.x},${beam.y} ${trail.x},${trail.y}`}
-        />
-        <line className={styles.sweepBeam} x1={0} y1={0} x2={beam.x} y2={beam.y} />
-        <animateTransform
-          attributeName="transform"
-          type="rotate"
-          from="0 0 0"
-          to="360 0 0"
-          dur="11s"
-          repeatCount="indefinite"
-        />
+        {/* concentric band shading (decorative; outer drawn first) */}
+        {bands
+          .slice()
+          .reverse()
+          .map((b, idx) => {
+            const i = bands.length - 1 - idx
+            return (
+              <circle
+                key={`band-${i}`}
+                className={i % 2 === 0 ? styles.bandA : styles.bandB}
+                r={b.outer}
+                cx={0}
+                cy={0}
+              />
+            )
+          })}
+
+        {/* rotating radar sweep; a static beam would only cover the ring labels */}
+        {!reducedMotion && (
+          <g ref={sweepRef} data-sweep className={styles.sweep}>
+            {afterglow.map((d, i) => (
+              <path key={i} className={styles.afterglow} d={d} />
+            ))}
+            <line className={styles.sweepBeam} x1={0} y1={0} x2={beam.x} y2={beam.y} />
+          </g>
+        )}
+
+        {/* outer bezel + quadrant divider axes */}
+        <circle className={styles.bezel} r={max} cx={0} cy={0} />
+        <line className={styles.axis} x1={-max} y1={0} x2={max} y2={0} />
+        <line className={styles.axis} x1={0} y1={-max} x2={0} y2={max} />
+
+        {/* ring grid circles — exactly one per ring (data-ring-circle) */}
+        {bands.map((b, i) => (
+          <circle key={i} data-ring-circle r={b.outer} cx={0} cy={0} className={styles.ring} />
+        ))}
+
+        {/* focus dim overlay over the other quadrants */}
+        {focusedQuadrant &&
+          radar.quadrants
+            .filter((q) => q.id !== focusedQuadrant)
+            .map((q) => {
+              const { start, end } = quadrantAngles(q.order)
+              return (
+                <path
+                  key={q.id}
+                  data-dim
+                  className={styles.dim}
+                  d={annularSectorPath(start, end, 0, max)}
+                />
+              )
+            })}
       </g>
 
-      {/* outer bezel + quadrant divider axes */}
-      <circle className={styles.bezel} r={max} cx={0} cy={0} />
-      <line className={styles.axis} x1={-max} y1={0} x2={max} y2={0} />
-      <line className={styles.axis} x1={0} y1={-max} x2={0} y2={max} />
-
-      {/* ring grid circles — exactly one per ring (data-ring-circle) */}
-      {bands.map((b, i) => (
-        <circle key={i} data-ring-circle r={b.outer} cx={0} cy={0} className={styles.ring} />
-      ))}
-
-      {/* ring (competency) labels up the top axis */}
-      {rings.map((ring, i) => {
-        const b = bands[i]
-        const midR = (b.inner + b.outer) / 2
-        return (
-          <text key={ring.id} className={styles.ringLabel} x={0} y={-midR}>
-            {ring.name.toUpperCase()}
+      {/* ring (competency) labels on the vertical axis, above the dim overlay so they are
+          never dimmed; both halves are drawn so switching between them fades, not flies */}
+      {(['up', 'down'] as const).map((axis) =>
+        labelSets[axis].map((label) => (
+          <text
+            key={`${axis}-${label.ringId}`}
+            data-ring-label={axis}
+            aria-hidden={axis !== labelAxis}
+            className={`${styles.ringLabel} ${axis !== labelAxis ? styles.hidden : ''}`}
+            style={{ transform: zoomedTranslate(zoom, label) }}
+            fontSize={RING_LABEL_FONT_SIZE}
+          >
+            {label.text}
           </text>
-        )
-      })}
+        )),
+      )}
 
-      {/* quadrant labels — pushed into the corner whitespace, clear of the rings */}
+      {/* quadrant labels — in the corners of the bounding square, hidden while zoomed */}
       {radar.quadrants.map((q) => {
         const { start, end } = quadrantAngles(q.order)
-        const p = polarToCartesian((start + end) / 2, max * 1.18)
+        const corner = polarToCartesian((start + end) / 2, 1)
+        const onRight = corner.x > 0
         return (
           <text
             key={q.id}
-            className={styles.quadrantLabel}
-            x={p.x}
-            y={p.y}
+            className={`${styles.quadrantLabel} ${focusedQuadrant ? styles.hidden : ''}`}
+            x={onRight ? max : -max}
+            y={Math.sign(corner.y) * (max + QUADRANT_LABEL_GAP)}
+            textAnchor={onRight ? 'end' : 'start'}
             style={{ fill: quadrantColor(q.id) }}
           >
             {q.name}
@@ -117,27 +199,54 @@ export function RadarView({ radar, placed }: { radar: Radar; placed: PlacedBlip[
         )
       })}
 
-      {/* focus dim overlay — UNDER the blips, so the active blip + its label
-          (which may extend over a neighbouring quadrant) never get darkened */}
-      {focusedQuadrant &&
-        radar.quadrants
-          .filter((q) => q.id !== focusedQuadrant)
-          .map((q) => {
-            const { start, end } = quadrantAngles(q.order)
-            return (
-              <path
-                key={q.id}
-                data-dim
-                className={styles.dim}
-                d={annularSectorPath(start, end, 0, max)}
-              />
-            )
-          })}
-
-      {/* blips on top of everything */}
       {placed.map((p) => (
-        <Blip key={p.blip.id} placed={p} />
+        <Blip
+          key={p.blip.id}
+          placed={p}
+          zoom={zoom}
+          labeled={labeledIds.has(p.blip.id)}
+          offscreen={isOffscreen(p)}
+          reducedMotion={reducedMotion}
+        />
       ))}
+
+      {/* name labels of the focused quadrant, keyed so they fade in again after each zoom.
+          A label acts like its dot; the dot itself is what assistive technology sees. */}
+      {nameLabels.length > 0 && (
+        <g key={focusedQuadrant} data-name-labels aria-hidden="true" className={styles.nameLabels}>
+          {nameLabels.map((label) => (
+            <g
+              key={label.blipId}
+              className={styles.nameLabelTarget}
+              onMouseEnter={() => dispatch({ type: 'HOVER_BLIP', id: label.blipId })}
+              onMouseLeave={() => dispatch({ type: 'HOVER_BLIP', id: null })}
+              onClick={(e) => {
+                e.stopPropagation() // a click reaching the page clears the focus (App.tsx)
+                dispatch({ type: 'SELECT_BLIP', id: label.blipId, quadrant: focused?.id })
+              }}
+            >
+              {/* fixed hit area: the text shifts away from its enlarged dot while active */}
+              <rect
+                className={styles.nameLabelHit}
+                x={label.box.x - label.box.halfWidth}
+                y={label.box.y - label.box.halfHeight}
+                width={2 * label.box.halfWidth}
+                height={2 * label.box.halfHeight}
+              />
+              <text
+                className={nameLabelClass(label.blipId)}
+                x={label.x}
+                y={label.y}
+                textAnchor={label.anchor}
+                data-side={label.side}
+                fontSize={NAME_LABEL_FONT_SIZE}
+              >
+                {label.text}
+              </text>
+            </g>
+          ))}
+        </g>
+      )}
     </svg>
   )
 }

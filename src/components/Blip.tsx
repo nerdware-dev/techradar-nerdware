@@ -1,14 +1,41 @@
-import type { CSSProperties, MouseEvent } from 'react'
+import { useRef, type CSSProperties, type MouseEvent } from 'react'
 import type { PlacedBlip } from '../radar/placement'
 import { useRadarState, useRadarDispatch } from '../state/radarStore'
 import { quadrantColor } from '../radar/quadrantColor'
+import { RING_CLASS } from '../radar/ringClass'
+import { PING_KEYFRAMES, sweepPhase } from '../radar/sweep'
+import { useSweepAnimation } from '../radar/useSweepAnimation'
+import { NO_ZOOM, zoomedTranslate, type Zoom } from '../radar/zoom'
 import { BLIP_RADIUS as RADIUS } from '../config'
+import { NewBadge } from './NewBadge'
 import styles from '../styles/blip.module.scss'
 
-export function Blip({ placed }: { placed: PlacedBlip }) {
+/**
+ * `zoom` moves the dot without scaling it, so dots keep their size when a quadrant is
+ * zoomed in. `labeled` means a name label is already drawn next to the dot, so the
+ * hover name is not repeated. `offscreen` means the zoom moved the dot out of the visible
+ * area; it then leaves the tab order and the accessibility tree. `reducedMotion` turns the
+ * sweep ping off.
+ */
+export function Blip({
+  placed,
+  zoom = NO_ZOOM,
+  labeled = false,
+  offscreen = false,
+  reducedMotion = false,
+}: {
+  placed: PlacedBlip
+  zoom?: Zoom
+  labeled?: boolean
+  offscreen?: boolean
+  reducedMotion?: boolean
+}) {
   const { blip, x, y, number } = placed
   const state = useRadarState()
   const dispatch = useRadarDispatch()
+  const pingRef = useRef<SVGCircleElement>(null)
+  useSweepAnimation(pingRef, PING_KEYFRAMES, sweepPhase(x, y), !reducedMotion)
+
   const activeId = state.hoveredBlipId ?? state.selectedBlipId
   const isActive = activeId === blip.id
   // dim when another blip is active, or when a different quadrant is focused
@@ -19,24 +46,34 @@ export function Blip({ placed }: { placed: PlacedBlip }) {
   return (
     <g
       className={`${styles.group} ${isActive ? styles.active : ''} ${dimmed ? styles.dimmed : ''}`}
-      transform={`translate(${x} ${y})`}
-      style={{ '--q': quadrantColor(blip.quadrant) } as CSSProperties}
+      style={
+        {
+          '--q': quadrantColor(blip.quadrant),
+          transform: zoomedTranslate(zoom, { x, y }),
+        } as CSSProperties
+      }
       role="button"
       aria-label={blip.name}
-      tabIndex={0}
+      aria-hidden={offscreen || undefined}
+      tabIndex={offscreen ? -1 : 0}
       onMouseEnter={() => dispatch({ type: 'HOVER_BLIP', id: blip.id })}
       onMouseLeave={() => dispatch({ type: 'HOVER_BLIP', id: null })}
       onClick={(e: MouseEvent) => {
-        e.stopPropagation() // don't let the radar background clear the focus
+        e.stopPropagation() // a click reaching the page clears the focus (App.tsx)
         dispatch({ type: 'SELECT_BLIP', id: blip.id, quadrant: blip.quadrant })
       }}
     >
-      <g className={styles.enter} style={{ animationDelay: `${(number % 14) * 0.05}s` }}>
-        {blip.isNew && <circle data-isnew="true" className={styles.newRing} r={RADIUS + 4} />}
+      <g
+        data-ring={blip.ring}
+        className={`${styles.enter} ${RING_CLASS[blip.ring]}`}
+        style={{ animationDelay: `${(number % 14) * 0.05}s` }}
+      >
+        <circle ref={pingRef} data-ping className={styles.ping} r={RADIUS} />
         <circle className={styles.halo} r={RADIUS} />
         <circle className={styles.circle} r={RADIUS} />
         <text className={styles.number}>{number}</text>
-        {isActive && (
+        {blip.isNew && <NewBadge />}
+        {isActive && !labeled && (
           <text className={styles.name} x={0} y={-RADIUS - 8}>
             {blip.name}
           </text>

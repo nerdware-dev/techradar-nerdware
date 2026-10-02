@@ -34,39 +34,103 @@
   color: var(--brand);
 }
 
-/* Detail column */
+/* Detail card — fixed height and an overlay description, see DetailCard.tsx */
+$detail-height: 76px;
 .detailHint {
+  flex: none;
+  height: $detail-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px dashed var(--panel-border);
   border-radius: 12px;
-  padding: 1.25rem;
+  padding: 0 1.25rem;
   color: var(--text-mute);
   font-size: 13px;
   line-height: 19px;
   text-align: center;
 }
-.tooltip {
-  max-height: calc(100vh - 5rem);
-  overflow-y: auto;
+.detail {
+  position: relative;
+  flex: none;
+  height: $detail-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.15rem;
   border: 1px solid var(--panel-border);
   border-left: 3px solid var(--accent, var(--brand));
   border-radius: 12px;
-  padding: 0.9rem 1.05rem;
+  padding: 0 1.05rem;
   background: var(--panel);
   box-shadow: 0 14px 44px rgba(0, 0, 0, 0.5);
 }
-.tooltip h3 {
-  margin: 0 0 0.45rem;
+.detailHead {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+.detailHead h2 {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 26px;
   font-weight: 600;
   color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.tooltip div {
+.more {
+  flex: none;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--accent, var(--brand));
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 600;
+}
+.detailMeta {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+  color: var(--text-dim);
+  font-size: 12px;
+  line-height: 20px;
+}
+.newTag {
+  padding: 0 0.4rem;
+  border-radius: 999px;
+  background: var(--text);
+  color: var(--bg);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+/* overlays the quadrant list instead of pushing it down */
+.description {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  z-index: 5;
+  max-height: 50vh;
+  overflow-y: auto;
+  padding: 0.9rem 1.05rem;
+  border: 1px solid var(--panel-border);
+  border-radius: 12px;
+  background: var(--panel);
+  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.6);
   color: var(--text-dim);
   font-size: 14px;
   line-height: 20px;
 }
-.tooltip :global(a) {
+.description :global(a) {
   color: var(--accent, var(--brand));
   text-decoration: none;
   border-bottom: 1px solid color-mix(in srgb, var(--accent, var(--brand)) 50%, transparent);
@@ -82,7 +146,7 @@
   }
 }
 
-/* Legend — competency rings as a cyan intensity scale */
+/* Legend — the ring dot styles as drawn on the radar, plus the "new" badge */
 .legend {
   display: flex;
   gap: 1rem;
@@ -100,22 +164,8 @@
   align-items: center;
 }
 .swatch {
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  background: var(--brand);
-  box-shadow: 0 0 8px rgba(0, 255, 191, 0.6);
-}
-.legendItem:nth-child(1) .swatch {
-  opacity: 1;
-}
-.legendItem:nth-child(2) .swatch {
-  opacity: 0.68;
-}
-.legendItem:nth-child(3) .swatch {
-  opacity: 0.42;
-}
-.legendItem:nth-child(4) .swatch {
-  opacity: 0.24;
-  box-shadow: none;
+  width: 15px;
+  height: 15px;
+  flex: none;
+  overflow: visible;
 }

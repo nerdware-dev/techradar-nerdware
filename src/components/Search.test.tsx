@@ -5,8 +5,8 @@ import { RadarStoreProvider } from '../state/radarStore'
 import { parseRadar } from '../data/schema'
 
 const radar = parseRadar([
-  { name: 'Apache Kafka', ring: 'High', quadrant: 'platforms', isNew: 'FALSE', description: 'k' },
-  { name: 'Docker', ring: 'High', quadrant: 'platforms', isNew: 'FALSE', description: 'd' },
+  { name: 'Apache Kafka', ring: 'High', quadrant: 'platforms', description: 'k' },
+  { name: 'Docker', ring: 'High', quadrant: 'platforms', description: 'd' },
 ])
 
 function renderSearch() {

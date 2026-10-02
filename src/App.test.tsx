@@ -3,8 +3,8 @@ import { render, screen, waitFor, fireEvent } from '@testing-library/react'
 import App from './App'
 
 const data = [
-  { name: 'Docker', ring: 'High', quadrant: 'platforms', isNew: 'FALSE', description: 'd' },
-  { name: 'AWS', ring: 'Low', quadrant: 'platforms', isNew: 'FALSE', description: 'a' },
+  { name: 'Docker', ring: 'High', quadrant: 'platforms', description: 'd' },
+  { name: 'AWS', ring: 'Low', quadrant: 'platforms', description: 'a' },
 ]
 
 afterEach(() => vi.restoreAllMocks())
@@ -23,6 +23,43 @@ describe('App', () => {
     await waitFor(() =>
       expect(screen.getByRole('heading', { name: 'Platforms' })).toBeInTheDocument(),
     )
+  })
+
+  async function renderFocused() {
+    vi.stubGlobal(
+      'fetch',
+      vi.fn().mockResolvedValue({ ok: true, json: () => Promise.resolve(data) }),
+    )
+    render(<App />)
+    await waitFor(() => expect(screen.getByLabelText('Docker')).toBeInTheDocument())
+    fireEvent.click(screen.getByLabelText('Docker'))
+    await waitFor(() =>
+      expect(screen.getByRole('heading', { name: 'Platforms' })).toBeInTheDocument(),
+    )
+  }
+
+  it('clears the focus on a click outside the radar', async () => {
+    await renderFocused()
+    fireEvent.click(screen.getByRole('banner'))
+    await waitFor(() =>
+      expect(screen.queryByRole('heading', { name: 'Platforms' })).not.toBeInTheDocument(),
+    )
+  })
+
+  it('selects a dot and keeps the zoom when its name label is clicked', async () => {
+    await renderFocused()
+    const label = [...document.querySelectorAll('[data-name-labels] text')].find(
+      (t) => t.textContent === 'AWS',
+    )!
+    fireEvent.click(label)
+    expect(screen.getByRole('heading', { name: 'Platforms' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'AWS' })).toBeInTheDocument()
+  })
+
+  it('keeps the focus on a click inside the sidebar', async () => {
+    await renderFocused()
+    fireEvent.click(screen.getByRole('searchbox'))
+    expect(screen.getByRole('heading', { name: 'Platforms' })).toBeInTheDocument()
   })
 
   it('shows an error state when the fetch fails', async () => {

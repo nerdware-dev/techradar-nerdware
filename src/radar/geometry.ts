@@ -21,6 +21,12 @@ export function quadrantAngles(order: number): { start: number; end: number } {
   return { start: order * 90, end: order * 90 + 90 }
 }
 
+/** True for the quadrants below the horizontal axis (SVG y grows downward). */
+export function isLowerQuadrant(order: number): boolean {
+  const { start, end } = quadrantAngles(order)
+  return polarToCartesian((start + end) / 2, 1).y > 0
+}
+
 export function annularSectorPath(
   startDeg: number,
   endDeg: number,
@@ -40,4 +46,20 @@ export function annularSectorPath(
     `A ${inner} ${inner} 0 ${largeArc} 0 ${p1.x} ${p1.y}`,
     'Z',
   ].join(' ')
+}
+
+/** Axis-aligned box given by its centre and half extents. */
+export interface Box {
+  x: number
+  y: number
+  halfWidth: number
+  halfHeight: number
+}
+
+/** True when the boxes overlap; boxes that only touch do not. */
+export function overlaps(a: Box, b: Box): boolean {
+  return (
+    Math.abs(a.x - b.x) < a.halfWidth + b.halfWidth &&
+    Math.abs(a.y - b.y) < a.halfHeight + b.halfHeight
+  )
 }

@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, afterEach } from 'vitest'
 import { loadRadar } from './loadRadar'
 
-const sample = [{ name: 'Docker', ring: 'High', quadrant: 'platforms', isNew: 'FALSE', description: 'x' }]
+const sample = [{ name: 'Docker', ring: 'High', quadrant: 'platforms', description: 'x' }]
 
 afterEach(() => vi.restoreAllMocks())
 

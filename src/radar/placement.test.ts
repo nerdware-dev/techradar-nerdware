@@ -1,7 +1,10 @@
 import { describe, it, expect } from 'vitest'
 import { placeBlips } from './placement'
 import { ringRadii } from './geometry'
-import { RINGS, QUADRANTS, MIN_BLIP_DISTANCE } from '../config'
+import { ringLabels } from './ringLabels'
+import { RINGS, QUADRANTS, MIN_BLIP_DISTANCE, BLIP_RADIUS } from '../config'
+import { parseRadar } from '../data/schema'
+import realData from '../../data/tech-radar.json'
 import type { Blip } from '../data/types'
 
 const mk = (name: string, ring: Blip['ring'], quadrant: Blip['quadrant']): Blip => ({
@@ -47,6 +50,42 @@ describe('placeBlips', () => {
     expect(langs[0].number).toBe(1)
   })
 
+  it('numbers by ring, then most repos first, entries without scan data last, ties by name', () => {
+    const counted = (name: string, ring: Blip['ring'], repoCount?: number): Blip => ({
+      ...mk(name, ring, 'tools'),
+      repoCount,
+    })
+    const placed = placeBlips(
+      [
+        counted('Zeta', 'high', 9),
+        counted('Alpha', 'high'),
+        counted('Beta', 'high', 2),
+        counted('Gamma', 'high', 9),
+        counted('Delta', 'dev', 50),
+      ],
+      RINGS,
+      QUADRANTS,
+      400,
+    )
+    const order = [...placed].sort((a, b) => a.number - b.number).map((p) => p.blip.name)
+    expect(order).toEqual(['Gamma', 'Zeta', 'Beta', 'Alpha', 'Delta'])
+  })
+
+  it('keeps every dot in place when repo counts change, renumbering only', () => {
+    const many: Blip[] = Array.from({ length: 12 }, (_, i) => ({
+      ...mk(`Tool ${i}`, 'dev', 'tools'),
+      repoCount: i,
+    }))
+    const reversed = many.map((b) => ({ ...b, repoCount: 11 - b.repoCount! }))
+    const position = (placed: ReturnType<typeof placeBlips>) =>
+      Object.fromEntries(placed.map((p) => [p.blip.id, [p.x, p.y]]))
+    const before = placeBlips(many, RINGS, QUADRANTS, 400)
+    const after = placeBlips(reversed, RINGS, QUADRANTS, 400)
+    expect(position(after)).toEqual(position(before))
+    expect(after.find((p) => p.blip.id === 'tool 0')!.number).toBe(1)
+    expect(before.find((p) => p.blip.id === 'tool 0')!.number).toBe(12)
+  })
+
   it('places every blip inside its ring band', () => {
     const placed = placeBlips(blips, RINGS, QUADRANTS, 400)
     const bands = ringRadii(RINGS.length, 400)
@@ -69,6 +108,26 @@ describe('placeBlips', () => {
         expect(dist).toBeGreaterThanOrEqual(MIN_BLIP_DISTANCE - 0.001)
       }
     }
+  })
+
+  it('keeps every dot of the real radar clear of the ring labels', () => {
+    const radar = parseRadar(realData)
+    const placed = placeBlips(radar.blips, radar.rings, radar.quadrants, 400)
+    const labels = [...ringLabels(radar.rings, 400, 'up'), ...ringLabels(radar.rings, 400, 'down')]
+    for (const p of placed) {
+      for (const label of labels) {
+        const clearX = Math.abs(p.x - label.x) >= label.halfWidth + BLIP_RADIUS
+        const clearY = Math.abs(p.y - label.y) >= label.halfHeight + BLIP_RADIUS
+        expect(clearX || clearY, `${p.blip.name} overlaps ${label.text}`).toBe(true)
+      }
+    }
+  })
+
+  it('fails loudly when no position in a segment is clear of the ring labels', () => {
+    // at radius 20 the ring labels cover the whole radar
+    expect(() => placeBlips([mk('Tiny', 'high', 'tools')], RINGS, QUADRANTS, 20)).toThrow(
+      /clear of the ring labels/,
+    )
   })
 
   it('falls back to a deterministic, non-throwing layout when a segment is very crowded', () => {
